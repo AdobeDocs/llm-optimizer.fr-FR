@@ -1,9 +1,9 @@
 ---
 title: Opportunités d’optimisation
 description: Voici la présentation de l’article.
-source-git-commit: 8c38027e46b53d85776fffe17597883c742235d6
+source-git-commit: ea8434daef2402f0dc9ac2d4f6060c38c9137fe6
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Vous trouverez ci-dessous un tableau des opportunités actuellement prises en ch
 
 ### Récupérer l’opportunité de visibilité du contenu {#recover-contet}
 
-Comme indiqué ci-dessus, l’opportunité de visibilité du contenu signale les pages où le contenu clé est perdu pour les agents d’IA en raison du rendu côté client. Pour chaque page identifiée, il vous indique exactement quel contenu est absent de la vue de l’agent d’IA, ce qui vous aide à identifier les écarts de visibilité. Elle est également prise en charge par une fonctionnalité de pré-rendu basée sur les serveurs Edge, qui peut diffuser plus de contenu HTML au trafic de l’agent sans nécessiter de modifications du système de gestion de contenu (CMS). Veuillez noter que cette fonctionnalité est actuellement en **accès anticipé** et nécessite également une configuration de la part de l&#39;équipe LLMO pour permettre une diffusion optimisée du contenu.
+Comme indiqué ci-dessus, l’opportunité de visibilité du contenu signale les pages où le contenu clé est perdu pour les agents d’IA en raison du rendu côté client. Pour chaque page identifiée, il vous indique exactement quel contenu est absent de la vue de l’agent d’IA, ce qui vous aide à identifier les écarts de visibilité. Elle est également prise en charge par une fonctionnalité de pré-rendu basée sur les serveurs Edge, qui peut diffuser plus de contenu HTML au trafic de l’agent sans nécessiter de modifications du système de gestion de contenu (CMS). Cette fonctionnalité est actuellement en accès anticipé et doit être configurée par l&#39;équipe LLMO. Veuillez contacter `llmo-at-edge@adobe.com` pour activer l’opportunité de visibilité du contenu.
 
 ### Outils supplémentaires
 

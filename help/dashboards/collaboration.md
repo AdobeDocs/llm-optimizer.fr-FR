@@ -1,20 +1,20 @@
 ---
 title: Collaboration
 description: Voici la présentation de l’article.
-source-git-commit: 57d086bbdb08200d832a1374ee356e5357a64d94
+source-git-commit: 5dbf794b87df92583daec83ab02063821ee7a412
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 4%
+source-wordcount: '94'
+ht-degree: 1%
 
 ---
 
 
-# Vue d’ensemble
+# Collaboration
 
-Collaboration vous permet d’inviter des membres de l’équipe dans l’espace de travail LLM Optimizer de votre entreprise afin que tout le monde puisse accéder aux informations et aux analyses au même endroit. En ajoutant des collègues, vous vous assurez que les équipes marketing, SEO, PR et techniques peuvent travailler ensemble en toute transparence sur les améliorations de visibilité de la marque, partager des résultats et agir de manière coordonnée sur les opportunités.
+Collaboration vous permet d’inviter des membres de l’équipe dans l’espace de travail LLM Optimizer de votre entreprise afin que tout le monde puisse accéder aux informations et aux analyses à partir d’un seul emplacement. En ajoutant des collègues, vous vous assurez que les équipes marketing, SEO, PR et techniques peuvent travailler ensemble en toute transparence sur les améliorations de visibilité de la marque, partager des résultats et agir de manière coordonnée sur les opportunités.
 
-**Ajouter une image ici**
+## Comment inviter des membres de l’équipe
 
-## Filtres
+Vous pouvez inviter des membres de l&#39;équipe en ajoutant leur adresse électronique dans le champ **Adresse électronique** et en cliquant sur **Envoyer une invitation**. S’ils acceptent, ils rejoindront l’espace de travail LLM Optimizer de votre entreprise.
 
-Dans la partie supérieure du tableau de bord, vous pouvez affiner l’affichage en procédant comme suit :
+![Invitation Collaboration](/help/dashboards/assets/collaboration.png)
