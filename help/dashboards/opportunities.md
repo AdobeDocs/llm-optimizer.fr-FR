@@ -1,9 +1,9 @@
 ---
 title: Opportunités d’optimisation
 description: Voici la présentation de l’article.
-source-git-commit: 77bddfa7351d573c20a0f68a08b69000bc06beb8
+source-git-commit: 8c38027e46b53d85776fffe17597883c742235d6
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,16 @@ Vous trouverez ci-dessous un tableau des opportunités actuellement prises en ch
 | Résumer les paragraphes longs | Contenu (sur site) | Détecte les paragraphes qui dépassent les seuils de longueur recommandés. Affiche les URL concernées et les fragments de texte surdimensionnés. | Créez des résumés ou divisez du texte long en sections plus courtes et analysables. |
 | Recommandations relatives au contenu structuré (FAQ) | Contenu (sur site) | Détecte les invites à forte popularité sans entrées de FAQ correspondantes. Affiche les invites associées, les catégories et les URL concernées. | Ajoutez des blocs de schéma de FAQ avec des réponses concises pour correspondre aux requêtes courantes. |
 | Détecter l&#39;absence de Hreflang | Contenu (sur site) | Indique qu’il manque des attributs hreflang aux pages. Fournit les URL affectées et la couverture attendue par langue/région. | Implémentez des balises de redéfinition pour indiquer les versions localisées correctes. |
-| Détecter les canoniques manquants | Contenu (sur site) | Détecte les paragraphes qui dépassent les seuils de longueur recommandés. Affiche les URL concernées et les fragments de texte surdimensionnés. | Créez des résumés ou divisez du texte long en sections plus courtes et analysables. |
+| Détecter les canoniques manquants | Contenu (sur site) | Recherche les pages sans balises canoniques ou dont les balises sont en conflit. Répertorie les URL concernées et les doublons. | Ajoutez des balises canoniques pointant vers la version préférée de chaque page. Assurer une utilisation cohérente entre les variantes. |
 | Détecter les en-têtes vides | Contenu (sur site) | Indique les pages contenant des balises d’en-tête, mais pas de texte. Affiche l’URL et l’emplacement des balises vides. | Ajoutez un texte descriptif aux en-têtes qui reflètent le contenu sous ceux-ci. |
 | Détecter les en-têtes en double | Contenu (sur site) | Analyse les en-têtes HTML et marque les en-têtes répétés. Affiche les URL concernées et les fragments de texte dupliqués. | Modifier les en-têtes pour qu’ils soient uniques et maintenir la hiérarchie (H1 → H2 → H3). Fusionner ou renommer les sections en double. |
 | Détecter le trafic d’agent bloqué | GÉOLOCALISATION TECHNIQUE | Analyse les journaux du réseau CDN pour les requêtes bloquées provenant d’agents d’IA connus (par exemple, GPTBot, PerplexityBot). Indique les URL et les agents affectés. | Mettez à jour robots.txt ou les configurations de serveur pour autoriser l’accès aux robots d’exploration AI pris en charge, le cas échéant. |
 | Détection des problèmes liés aux écrans 404/403/5xx | GÉOLOCALISATION TECHNIQUE | Surveille les journaux CDN pour les réponses d’erreur. Fréquence des rapports, URL affectées et estimation des accès perdus. | Correction de liens rompus, mise à jour des autorisations et résolution des problèmes côté serveur afin que le contenu clé renvoie 200 réponses. |
+
+### Récupérer l’opportunité de visibilité du contenu {#recover-contet}
+
+Comme indiqué ci-dessus, l’opportunité de visibilité du contenu signale les pages où le contenu clé est perdu pour les agents d’IA en raison du rendu côté client. Pour chaque page identifiée, il vous indique exactement quel contenu est absent de la vue de l’agent d’IA, ce qui vous aide à identifier les écarts de visibilité. Elle est également prise en charge par une fonctionnalité de pré-rendu basée sur les serveurs Edge, qui peut diffuser plus de contenu HTML au trafic de l’agent sans nécessiter de modifications du système de gestion de contenu (CMS). Veuillez noter que cette fonctionnalité est actuellement en **accès anticipé** et nécessite également une configuration de la part de l&#39;équipe LLMO pour permettre une diffusion optimisée du contenu.
+
+### Outils supplémentaires
+
+Le [Vérificateur de visibilité LLM](https://chromewebstore.google.com/detail/is-your-webpage-citable/jbjngahjjdgonbeinjlepfamjdmdcbcc) est une extension de Chrome qui vous permet de voir exactement à quelle proportion du contenu de votre page web les LLM peuvent accéder, ainsi que ce qui reste masqué. Conçu comme un outil de diagnostic autonome et gratuit, il ne nécessite aucune licence de produit ni configuration. En un seul clic, les utilisateurs et utilisatrices peuvent évaluer la lisibilité de l’ordinateur de n’importe quel site et afficher côte à côte une comparaison de ce que voient les agents d’IA par rapport à ce que voient les utilisateurs et utilisatrices humains. En outre, estime la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer.
