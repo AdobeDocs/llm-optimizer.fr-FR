@@ -67,7 +67,7 @@ Voici quelques ressources qui peuvent vous aider à tirer le meilleur parti de L
 
 * Le [démarrage rapide](/help/overview/quick-start.md) vous permet d’être rapidement opérationnel.
 * [Présentation des tableaux de bord](/help/dashboards/dashboards-overview.md) décrit tous les tableaux de bord disponibles dans LLM Optimizer.
-* [ Bonnes pratiques ](/help/tutorials/best-practices.md) vous guide tout au long de l’utilisation de l’outil afin d’obtenir les informations dont vous avez besoin pour votre marque.
+* [&#x200B; Bonnes pratiques &#x200B;](/help/tutorials/best-practices.md) vous guide tout au long de l’utilisation de l’outil afin d’obtenir les informations dont vous avez besoin pour votre marque.
 
 
 
