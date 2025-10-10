@@ -1,9 +1,9 @@
 ---
 title: Configuration du client
-description: Voici la présentation de l’article.
-source-git-commit: 5dbf794b87df92583daec83ab02063821ee7a412
+description: Utilisez la configuration client pour définir comment votre marque sera surveillée et analysée sur la plateforme de l’optimiseur LLM.
+source-git-commit: 7d01b35cb2153e020f0b64e493aad263fb9bb09f
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '736'
 ht-degree: 1%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Configuration du client
 
-La configuration client est l’endroit où vous définissez la manière dont votre marque sera surveillée et analysée au sein de la plateforme. Vous pouvez personnaliser des catégories (telles que des unités commerciales ou des lignes de produits), suivre les concurrents et ajouter des alias de mention de marque pour capturer toutes les variations de votre marque dans les invites. Cette configuration garantit que la plateforme adapte les informations à votre contexte commercial, ce qui permet une visibilité, un trafic et une analyse des opportunités précis.
+La configuration client est l’endroit où vous définissez comment votre marque sera surveillée et analysée sur la plateforme LLM optimizer. Vous pouvez personnaliser des catégories (telles que des unités commerciales ou des lignes de produits), suivre les concurrents et ajouter des alias de mention de marque pour capturer toutes les variations de votre marque dans les invites. Cette configuration garantit que la plateforme adapte les informations à votre contexte commercial, ce qui permet une visibilité, un trafic et une analyse des opportunités précis.
 
 ![Tableau de bord de configuration du client](/help/dashboards/assets/customer-config.png)
 
