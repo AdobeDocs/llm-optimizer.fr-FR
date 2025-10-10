@@ -1,9 +1,9 @@
 ---
 title: Démarrage rapide
-description: Voici l’article de démarrage rapide.
-source-git-commit: 5dbf794b87df92583daec83ab02063821ee7a412
+description: Découvrez comment commencer à utiliser l’optimiseur LLM et passez par le processus d’intégration.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Le processus d’intégration commence par l’intégration de votre domaine. Le
 
 ### Clients AEM Cloud
 
-Les clients AEM Cloud (Cloud Service/Managed Services/Service Edge Delivery) verront l’option permettant d’essayer LLM Optimizer via la carte d’annonce de produit dans [Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Les clients AEM Cloud (Cloud Service/Managed Services/Service Edge Delivery) verront l’option permettant d’essayer LLM Optimizer via la carte d’annonce de produit dans [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Les invites nouvellement ajoutées n&#39;apparaîtront pas dans Brand Presence tant que le traitement ne sera pas terminé. Les clients AEM Cloud (Cloud Service, Managed Services/Service Edge Delivery) peuvent utiliser la version d’évaluation gratuite de LLM Optimizer. L’utilisation de plus de 200 invites nécessite un contrat de licence séparé. L’accès est fourni « en l’état » et « selon disponibilité », et peut être modifié, limité ou supprimé par Adobe à tout moment. Veuillez contacter votre [représentant de compte] pour plus d’informations.

@@ -1,9 +1,9 @@
 ---
 title: Trafic d’agent
-description: Voici la présentation de l’article.
-source-git-commit: f92ca3eaa81d05135c65df60267280314c6e2d6f
+description: Découvrez comment utiliser le tableau de bord du trafic d’agents afin de voir comment les agents d’IA interagissent avec votre site.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '969'
 ht-degree: 0%
 
 ---

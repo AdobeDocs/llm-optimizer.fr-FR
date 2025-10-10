@@ -1,9 +1,9 @@
 ---
 title: Trafic de référence
-description: Voici la présentation de l’article.
-source-git-commit: c83b4929a82331534654fcfdccd41d91eefe6d92
+description: Découvrez comment utiliser le tableau de bord du trafic de référence pour voir comment les visiteurs accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de référence.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---

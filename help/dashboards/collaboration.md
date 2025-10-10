@@ -1,10 +1,10 @@
 ---
 title: Collaboration
-description: Voici la présentation de l’article.
-source-git-commit: 5dbf794b87df92583daec83ab02063821ee7a412
+description: Découvrez comment utiliser le tableau de bord de la collaboration pour inviter des membres de l’équipe dans l’espace de travail LLM Optimizer de votre entreprise.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 1%
+source-wordcount: '106'
+ht-degree: 0%
 
 ---
 

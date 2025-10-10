@@ -1,9 +1,9 @@
 ---
 title: Inspecteur d’URL
-description: Voici la présentation de l’article.
-source-git-commit: e35ddb9b055d2f974fd94b3a21e13e92d05c8799
+description: Découvrez comment utiliser l’Inspecteur d’URL pour analyser les performances de pages spécifiques de votre domaine dans les recherches par IA.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 L’Inspecteur d’URL vous permet d’analyser les performances de pages spécifiques de votre domaine dans les recherches par IA. Il combine la visibilité, le trafic des agents et les données de référence au niveau de l’URL pour vous donner une vue granulaire des URL citées et de leur fréquence d’apparition dans les réponses. **RÉSEAU CDN SR-NEEDS?**
 
-![&#x200B; Inspecteur d’URL &#x200B;](/help/dashboards/assets/url-insp.png)
+![ Inspecteur d’URL ](/help/dashboards/assets/url-insp.png)
 
 ## Filtres
 
