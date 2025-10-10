@@ -21,7 +21,7 @@ Le processus d’intégration commence par l’intégration de votre domaine. Le
 
 ### Clients AEM Cloud
 
-Les clients AEM Cloud (Cloud Service/Managed Services/Service Edge Delivery) verront l’option permettant d’essayer LLM Optimizer via la carte d’annonce de produit dans [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Les clients AEM Cloud (Cloud Service/Managed Services/Service Edge Delivery) verront l’option permettant d’essayer LLM Optimizer via la carte d’annonce de produit dans [Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Les invites nouvellement ajoutées n&#39;apparaîtront pas dans Brand Presence tant que le traitement ne sera pas terminé. Les clients AEM Cloud (Cloud Service, Managed Services/Service Edge Delivery) peuvent utiliser la version d’évaluation gratuite de LLM Optimizer. L’utilisation de plus de 200 invites nécessite un contrat de licence séparé. L’accès est fourni « en l’état » et « selon disponibilité », et peut être modifié, limité ou supprimé par Adobe à tout moment. Veuillez contacter votre [représentant de compte] pour plus d’informations.
