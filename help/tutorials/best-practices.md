@@ -112,7 +112,7 @@ Voici comment garder un œil sur la visibilité de votre marque dans les LLM :
    * Veillez à ce que votre contenu témoigne de votre expertise, de votre fiabilité et de votre autorité (SEAT).
 
 1. Améliorez votre contenu
-   * Utilisez les Opportunités LLM Optimizer pour identifier et apporter immédiatement des modifications spécifiquement recommandées à votre site. Voir [ Opportunités ](/help/dashboards/opportunities.md) (puis mesurer les résultats). Passez régulièrement en revue la section sur les opportunités et donnez suite aux recommandations.
+   * Utilisez les Opportunités LLM Optimizer pour identifier et apporter immédiatement des modifications spécifiquement recommandées à votre site. Voir [&#x200B; Opportunités &#x200B;](/help/dashboards/opportunities.md) (puis mesurer les résultats). Passez régulièrement en revue la section sur les opportunités et donnez suite aux recommandations.
    * Mettez à jour votre site web et d’autres contenus pour le rendre plus pertinent par rapport aux invites que vous souhaitez cibler.
    * Ajoutez à vos pages des FAQ qui répondent aux questions courantes que les utilisateurs peuvent se poser.
    * Assurez-vous que votre contenu est facile à trouver et à lire pour les gestionnaires de contenu. Résolvez les problèmes tels que les pages bloquées ou les problèmes liés au code de votre site web.
