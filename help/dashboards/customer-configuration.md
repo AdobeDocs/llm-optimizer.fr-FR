@@ -1,9 +1,9 @@
 ---
 title: Configuration du client
 description: Utilisez la configuration client pour définir comment votre marque sera surveillée et analysée sur la plateforme de l’optimiseur LLM.
-source-git-commit: 653a6be856412faac8783fa9dc7b759a7c6e1f68
+source-git-commit: b39a6acbcb86c91d23c3aab790266f37b579f651
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '1608'
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ Examinez et mettez à jour régulièrement les invites pour vous assurer qu&#39;
 
 >[!TIP]
 >
->* Vous pouvez utiliser des outils tels que LLM Optimizer et la console de recherche Google avec des filtres RegEx pour identifier les structures de questions courantes (par exemple, « comment », « quoi », « quand », « où »).
+>* Vous pouvez utiliser des outils tels que Adobe LLM Optimizer et la console de recherche Google avec des filtres RegEx pour identifier les structures de questions courantes (par exemple, « comment », « quoi », « quand », « où ») et découvrir les invites que les personnes utilisent pour visiter votre site.
 >* Pour savoir quelles invites sont pertinentes pour votre site/marque, vous pouvez utiliser les données de recherche sur site, les FAQ dans les pages de résultats des moteurs de recherche ou même demander directement aux chatbots LLM quelles questions les clients peuvent poser sur votre marque.
 
 ### Bonnes pratiques pour les concurrents
