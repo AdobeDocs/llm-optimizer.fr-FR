@@ -1,9 +1,9 @@
 ---
 title: Bonnes pratiques relatives aux catégories, rubriques et invites
 description: Optimisez les informations LLM en configurant les catégories, les rubriques, les invites et les concurrents pour une surveillance de marque personnalisée et une analyse de contenu stratégique.
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Lors de la création de la liste, tenez compte des points suivants :
 
 * Un éditeur peut-il comprendre le sujet en 5 secondes à partir du texte d’invite ? Si ce n’est pas le cas, renommez/simplifiez.
 * Une autre équipe sera-t-elle propriétaire du correctif pour différents sujets ? Si oui, vous avez choisi des sujets utiles.
-  <!-- Last bullet point does not make sense. Clarification needed.-->
+  <!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
 
 Quelques conseils utiles supplémentaires :
 
@@ -94,14 +94,20 @@ Quelques conseils utiles supplémentaires :
 >
 > * Conservez les rubriques basées sur l’intention, et non sur l’organisation.
 > * N’ajoutez pas de catégories/filtres pour les marques/non-marques/zones géographiques, car vous pouvez les filtrer spécifiquement dans l’onglet **[!UICONTROL Marques]**.
-> * Les rubriques sont réparties dans plusieurs catégories, vous ne pouvez **pas** avoir différentes rubriques par catégorie.
-> * Une seule invite peut exister dans plusieurs rubriques ou catégories.
+> * Les sujets sont répartis en plusieurs catégories. Vous **pouvez pas définir** rubriques uniques pour chaque catégorie.
+> * Une seule invite **peut** existe dans plusieurs rubriques ou catégories.
 
 ## Bonnes pratiques relatives aux invites
 
 Les invites identifient les questions ou requêtes spécifiques que les clients posent, ce qui peut avoir un impact sur votre entreprise. Il s’agit des questions ou requêtes réelles que les utilisateurs saisissent dans les LLM.
 
 Examinez et mettez à jour régulièrement les invites pour vous assurer qu&#39;elles correspondent aux besoins du client et aux objectifs de l&#39;entreprise.
+
+Recommandations relatives aux invites :
+
+* Regroupez les invites similaires en fonction de ce que les utilisateurs demandent.
+* Concentrez-vous sur les invites les plus importantes pour vos clients.
+* Vérifiez si votre marque a de bonnes chances d’être mentionnée pour certaines invites.
 
 >[!TIP]
 >
