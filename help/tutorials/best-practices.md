@@ -142,7 +142,7 @@ Pour suivre la progression, procédez comme suit :
    * Veillez à ce que votre contenu témoigne de votre expertise, de votre fiabilité et de votre autorité (SEAT).
 
 1. Améliorez votre contenu
-   * Utilisez les Opportunités LLM Optimizer pour identifier et apporter immédiatement des modifications spécifiquement recommandées à votre site. Voir [ Opportunités ](/help/dashboards/opportunities.md) (puis mesurer les résultats). Passez régulièrement en revue la section sur les opportunités et donnez suite aux recommandations.
+   * Utilisez les Opportunités LLM Optimizer pour identifier et apporter immédiatement des modifications spécifiquement recommandées à votre site. Voir [&#x200B; Opportunités &#x200B;](/help/dashboards/opportunities.md) (puis mesurer les résultats). Passez régulièrement en revue la section sur les opportunités et donnez suite aux recommandations.
    * Mettez à jour votre site web et d’autres contenus pour le rendre plus pertinent par rapport aux invites que vous souhaitez cibler.
    * Ajoutez à vos pages des FAQ qui répondent aux questions courantes que les utilisateurs peuvent se poser.
    * Assurez-vous que votre contenu est facile à trouver et à lire pour les gestionnaires de contenu. Résolvez les problèmes tels que les pages bloquées ou les problèmes liés au code de votre site web.
@@ -193,7 +193,7 @@ Pour optimiser le trafic d’agent :
 * Vérifiez les fonctionnalités d’analyse en consultant les paramètres robots.txt et CDN.
 * Utilisez le [Inspecteur d’URL](/help/dashboards/url-inspector.md) pour analyser les performances des URL.
 * Suivez le comportement des robots en accédant aux journaux de votre réseau CDN dans le tableau de bord de trafic [Agence](/help/dashboards/agentic-traffic.md).
-* Segmentez le trafic pour comprendre les résultats commerciaux. Voir [ Bonnes pratiques pour les catégories, les rubriques, les invites et les concurrents](/help/overview/best-practices-topics-prompts.md).
+* Segmentez le trafic pour comprendre les résultats commerciaux. Voir [&#x200B; Bonnes pratiques pour les catégories, les rubriques, les invites et les concurrents](/help/overview/best-practices-topics-prompts.md).
 
 Voici les mesures à surveiller :
 
