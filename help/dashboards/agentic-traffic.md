@@ -1,9 +1,9 @@
 ---
 title: Trafic d’agent
 description: Découvrez comment utiliser le tableau de bord du trafic d’agents afin de voir comment les agents d’IA interagissent avec votre site.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
@@ -22,15 +22,26 @@ Cette page présente les éléments suivants :
 * [Déplacements en haut et en bas](#top-bottom-movers)
 * [Analyse des performances de l’agent utilisateur et de l’URL](#user-url-performance)
 
-## Configuration du réseau CDN {#cdn-setup}
+## Transfert du journal CDN {#cdn-setup}
 
-Lors de la première connexion, le tableau de bord Trafic d’agent est vide. Pour afficher les interactions génétiques, vous devez configurer le **transfert du journal CDN**. **À déterminer, pointez vers la configuration du réseau CDN dans le démarrage rapide/l’intégration ?**
+Sans **transfert du journal CDN**, le tableau de bord du trafic agent est vide. Pour afficher les interactions génétiques, vous devez configurer le **transfert du journal CDN**.  Lors de la première connexion, un message s’affiche, comme illustré dans l’image ci-dessous.
 
-![Configuration du réseau CDN](/help/dashboards/assets/ag-log-forward.png)
+![Configuration du réseau CDN](/help/dashboards/assets/ag-log-forward1.png)
+
+Sélectionnez **Aller à la configuration** et vous accéderez automatiquement à l’onglet **Configuration du réseau CDN** du tableau de bord [configuration du client](/help/dashboards/customer-configuration.md).
+
+![Configuration du réseau CDN intégrée](/help/dashboards/assets/ag-log-forward2.png)
+
+Sur cet onglet, sélectionnez **Réseau CDN intégré**. Et la fenêtre du fournisseur de réseau CDN s’affiche.
+
+![Fournisseur CDN](/help/dashboards/assets/ag-log-forward3.png)
+
+Dans la fenêtre **Fournisseur de réseau CDN intégré** :
 
 1. Sélectionnez votre fournisseur de réseau CDN (par exemple, Akamai, Fastly géré par Adobe, Fastly, AWS Cloudfront, Azure CDN, Cloudflare ou autre).
-2. Saisissez l’adresse e-mail principale du contact.
-3. Cliquez sur **Demander l’activation** pour activer le transfert du journal.
+2. Cliquez sur **Intégration** pour activer le transfert du journal.
+
+Si vous sélectionnez **Autre**, vous devrez contacter Adobe pour obtenir de l’aide.
 
 Une fois activés, les journaux sont ingérés et le tableau de bord est renseigné avec des mesures telles que le nombre total d’interactions de l’agent, le taux de succès, les accès par marché, l’analyse des agents utilisateur et les performances au niveau de l’URL.
 
@@ -39,11 +50,11 @@ Une fois activés, les journaux sont ingérés et le tableau de bord est renseig
 En haut de la page, vous pouvez appliquer des filtres pour affiner votre vue. Les filtres que vous choisissez auront un impact sur **toutes** les sections présentes sur le tableau de bord. Vous pouvez personnaliser les éléments suivants :
 
 * **Période** - Sélectionnez la période pour les données affichées. Par exemple, les 4 dernières semaines. Vous avez également la possibilité de personnaliser la période en sélectionnant l’option **Semaines personnalisées**.
-* **Catégorie** - Filtrez les résultats affichés par catégories prédéfinies. Vous pouvez également ajouter des catégories personnalisées à ce champ (**SR**-how ?).
+* **Catégorie** - Filtrez les résultats affichés par catégories prédéfinies ou catégories personnalisées.
 * **Platform** - Choisissez le moteur d’IA à analyser.
 * **Type d’agent** - Filtrez par le type d’agent d’IA qui a interagi avec votre site. Vous pouvez filtrer entre les robots d’exploration, les chatbots ou tous les agents.
-* **Taux de succès** - Filtrez par la qualité de l’interaction (élevée, moyenne ou faible). Cette mesure représente le pourcentage de requêtes HTTP réussies, y compris les réponses directes réussies et les redirections.
-* **Type de contenu** - Filtrez par type de contenu (HTML ou txt).
+* **Taux de succès** - Filtrez par la qualité de l’interaction (élevée, moyenne ou faible). Cette mesure représente le pourcentage de requêtes HTTP réussies, y compris les réponses directes réussies (codes d’état 2xx) et les redirections (codes d’état 3xx).
+* **Type de contenu** - Affichez l’interaction agent pour différents types de contenu, tels qu’HTML, PDF, etc.
 
 Après avoir sélectionné le filtre souhaité, cliquez sur **Appliquer les filtres** pour appliquer la sélection au tableau de bord.
 
@@ -69,10 +80,9 @@ Utilisez le graphique Tendances du trafic d’agent pour effectuer le suivi des 
 
 ## Déplacements en haut et en bas {#top-bottom-movers}
 
-Ces deux mesures trient les URL comme suit :
+La vue des déménageurs en haut et en bas met en évidence les URL présentant les plus grands changements de trafic d’agent d’une semaine à l’autre, à savoir les visites ou les accès des systèmes d’IA accédant à votre contenu. Les déménagements les plus importants affichent des pages qui gagnent en visibilité ou en engagement, tandis que les déménagements les plus importants affichent les URL qui connaissent les déclins les plus importants. Cela vous permet d’identifier rapidement le contenu à la hausse, ceux qui peuvent nécessiter une attention particulière et les endroits où les modèles de découverte pilotés par l’IA se modifient.
 
-* **Principaux déménageurs** - Les URL qui connaissent la plus forte augmentation du trafic des agents de la semaine la plus ancienne à la plus récente.
-* **Bottom Movers** - URL présentant la plus forte diminution du trafic des agents de la semaine la plus ancienne à la plus récente.
+![Déplacements haut et bas](/help/dashboards/assets/movers.png)
 
 ## Analyse des performances de l’agent utilisateur et de l’URL {#user-url-performance}
 
@@ -104,6 +114,12 @@ Le tableau Analyse des performances des URL affiche une vue détaillée des URL 
 * **Taux de succès** - Pourcentage de requêtes HTTP réussies, y compris les réponses directes réussies et les redirections.
 * **Catégorie** - La catégorie qui correspond le mieux au contenu de votre page.
 
-Le tableau Performances des URL comporte un champ de recherche pour un accès rapide aux URL. Vous pouvez également utiliser l’option **Exporter** pour télécharger le fichier csv de la table et partager les informations avec votre équipe ou inclure la table dans les rapports d’exécution.
+Le tableau Performances des URL comporte un champ de recherche pour un accès rapide aux URL. Vous pouvez également afficher des détails supplémentaires pour chaque URL en cliquant sur l’icône d’informations à la fin de chaque ligne.
+
+![détails de l’URL](/help/dashboards/assets/details.png)
+
+La vue Détails de l’URL offre une compréhension globale des performances d’une page, en indiquant la fréquence à laquelle elle est citée, le sentiment des réponses de l’IA lorsqu’elle est mentionnée, les sujets et les invites dans lesquels elle apparaît et les tendances du trafic d’agents et de recommandations au fil du temps.
 
 >[!ENDTABS]
+
+Pour les deux tableaux, vous pouvez utiliser l’option **Exporter** pour télécharger le tableau .csv et partager les informations avec votre équipe ou inclure le tableau dans les rapports d’exécution.
