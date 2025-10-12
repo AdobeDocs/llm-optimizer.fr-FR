@@ -1,9 +1,9 @@
 ---
 title: Inspecteur d’URL
 description: Découvrez comment utiliser l’Inspecteur d’URL pour analyser les performances de pages spécifiques de votre domaine dans les recherches par IA.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: 6d845628264885fd40fc6e14dff89b8aa80f9ca5
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Inspecteur d’URL
 
-L’Inspecteur d’URL vous permet d’analyser les performances de pages spécifiques de votre domaine dans les recherches par IA. Il combine la visibilité, le trafic des agents et les données de référence au niveau de l’URL pour vous donner une vue granulaire des URL citées et de leur fréquence d’apparition dans les réponses. **RÉSEAU CDN SR-NEEDS?**
+L’Inspecteur d’URL vous permet d’analyser les performances de pages spécifiques de votre domaine dans les recherches par IA. Il combine la visibilité, le trafic des agents et les données de référence au niveau de l’URL pour vous donner une vue granulaire des URL citées et de leur fréquence d’apparition dans les réponses.
 
-![&#x200B; Inspecteur d’URL &#x200B;](/help/dashboards/assets/url-insp.png)
+![ Inspecteur d’URL ](/help/dashboards/assets/url-insp.png)
 
 ## Filtres
 
@@ -22,26 +22,27 @@ En haut de la page, vous pouvez appliquer des filtres pour affiner votre vue. Le
 * **Période** - Sélectionnez la période pour les données affichées. Par exemple, les 4 dernières semaines. Vous avez également la possibilité de personnaliser la période en sélectionnant l’option **Semaines personnalisées**.
 * **Catégorie** - Filtrez les résultats affichés par catégories.
 * **Platform** - Choisissez le moteur d’IA à analyser.
-* **Canal** - Filtrez entre les canaux tels que les canaux gagnés, les canaux concurrents et les canaux sociaux.
+* **Type de contenu de page** - Filtrez par type de contenu.
 * **Région** - Filtrez les résultats par zone géographique. Toutes les régions ne seront pas disponibles au lancement.
+
 Après avoir sélectionné le filtre souhaité, cliquez sur **Appliquer les filtres** pour appliquer la sélection au tableau de bord.
 
 ## Mesures de vue d’ensemble
 
 L’Inspecteur d’URL fournit plusieurs mesures d’aperçu afin que vous puissiez évaluer rapidement les performances de vos pages dans les recherches par IA. Les mesures suivantes sont fournies :
 
-* **Invites uniques avec citations détenues** - Nombre total d’invites d’IA uniques avec citations détenues.(**SR-more detail ? quelles sont les citations détenues**)
+* **Invites uniques avec citations détenues** - Nombre total d’invites d’IA uniques avec citations détenues.
 * **Nombre total d’invites uniques** - Nombre total d’invites uniques de l’IA.
 * **URL citées uniques** - Nombre d’URL détenues uniques qui ont été citées.
 * **Nombre total de fois citées** - Nombre total de fois où une URL détenue a été citée dans les réponses générées par l’IA.
-* **Nombre total d’accès aux agents** - Nombre total d’accès provenant des agents AI sur vos URL.
-* **Accès de référence à partir des LLM** - Nombre total d’accès dirigés depuis les réponses générées par l’IA vers vos URL.
+<!-- * **Total agentic hits** - The total number of hits from AI agents on your URLs.
+* **Referral hits from LLMs** - The total number of hits directed from AI-generated answers to your URLs.-->
 
 Les indicateurs de tendance pour chaque mesure d’aperçu montrent l’évolution de ces valeurs au fil du temps par rapport à la période précédente.
 
 ## Les URL citées
 
-La vue de l’URL citée répertorie toutes les URL de votre marque qui ont été citées dans les réponses générées par l’IA, avec des mesures annexes. Le tableau de données comporte également un champ de recherche pour un accès rapide à des URL spécifiques. Les mesures suivantes sont fournies :
+La vue de l’URL citée répertorie toutes les URL de votre marque qui ont été citées dans les réponses générées par l’IA, avec des mesures annexes. Le tableau de données comporte également un champ de recherche pour un accès rapide à des URL spécifiques. Vous pouvez également utiliser l’option **Exporter** pour télécharger le fichier csv de la table et partager les informations avec votre équipe ou inclure la table dans les rapports d’exécution. Les mesures suivantes sont fournies :
 
 * **URL** - URL analysée
 * **Nombre de citations** - Nombre de fois où l’URL a été citée dans des réponses générées par l’IA.
@@ -66,4 +67,8 @@ Les mesures suivantes sont fournies :
 * **Catégories** - Catégories de produits ou rubriques associées à l’URL.
 * **Régions** - Région géographique dans laquelle l’URL a été citée.
 
-Chaque URL comporte un bouton **Détails** lorsque vous placez le pointeur de la souris dessus. Cliquez sur le bouton pour afficher une fenêtre distincte avec des détails supplémentaires.
+### Fenêtre Détails
+
+Pour les vues citées et de tendance, les URL comportent un bouton **Détails** lorsque vous placez le pointeur de la souris sur une URL spécifique. Cliquez sur le bouton pour afficher une fenêtre distincte avec plus de détails. La fenêtre de détails indique la fréquence de citation de l’URL, le sentiment des réponses de l’IA lorsqu’elle est mentionnée, les sujets et les invites dans lesquels elle apparaît et les tendances du trafic d’agent et de référence au fil du temps (pour les URL détenues).
+
+![Fenêtre Détails](/help/dashboards/assets/details-url.png)
