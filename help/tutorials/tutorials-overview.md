@@ -1,7 +1,7 @@
 ---
-title: Principes fondamentaux de LLM Optimizer
+title: Présentation de LLM Optimizer
 description: Découvrez comment Adobe LLM Optimizer améliore la visibilité de la marque dans les recherches pilotées par l’IA. Effectuez le suivi des mentions, des citations et des informations. Commencez dès aujourd’hui à optimiser votre engagement et votre influence.
-source-git-commit: b39a6acbcb86c91d23c3aab790266f37b579f651
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -32,9 +32,6 @@ Adobe LLM Optimizer propose une suite d’outils conçus pour l’optimisation g
 * Découvrez des opportunités exploitables : identifiez les améliorations de contenu et techniques (comme les FAQ, les résumés, les schémas, les crawlability) pour améliorer les mentions et les citations.
 * Suivi de l’impact du trafic : surveillez le trafic à la fois organique (assistant d’IA) et de référence vers vos propriétés, en établissant un lien entre la visibilité et l’engagement.
 * Activer Team Collaboration : partagez des tableaux de bord, attribuez des propriétaires et alignez les objectifs entre les équipes de marketing, d’optimisation pour les moteurs de recherche et de communication.
-
-
-<!-- I'm adding headings because LLMs like them and that way we'll rank better. Generally question format/question words in the the title is preferred. We can discuss. Or we can mirror what we did for Sites Optimizer and have this info on another page-->
 
 ## Importance de l’optimisation de la gestion du cycle de vie des informations pour votre marque
 

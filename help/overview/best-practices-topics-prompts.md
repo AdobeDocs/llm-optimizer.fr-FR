@@ -1,24 +1,27 @@
 ---
 title: Bonnes pratiques relatives aux catégories, rubriques et invites
-description: Description ici
-source-git-commit: 099d4387b6a5efd25e142db13e309a181fe67941
+description: Optimisez les informations LLM en configurant les catégories, les rubriques, les invites et les concurrents pour une surveillance de marque personnalisée et une analyse de contenu stratégique.
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 1%
+source-wordcount: '945'
+ht-degree: 0%
 
 ---
 
 
-# Introduction ici
-
-La configuration client est l’endroit où vous définissez comment votre marque sera surveillée et analysée sur la plateforme LLM optimizer. Vous pouvez personnaliser des catégories (telles que des unités commerciales ou des lignes de produits), suivre les concurrents et ajouter des alias de mention de marque pour capturer toutes les variations de votre marque dans les invites. Cette configuration garantit que la plateforme adapte les informations à votre contexte commercial, ce qui permet une visibilité, un trafic et une analyse des opportunités précis.
-
-## Bonnes pratiques relatives à la configuration des catégories, rubriques et invites
+# Bonnes pratiques relatives à la configuration des catégories, rubriques, invites et concurrents
 
 Cette section décrit les bonnes pratiques pour décider de la manière dont vous souhaitez configurer vos catégories, rubriques, invites et concurrents.
+
 Il s&#39;agit d&#39;une première étape essentielle. Ce que vous décidez maintenant détermine la manière dont les informations sont adaptées au contexte de votre entreprise. Toute modification apportée aux catégories à l’avenir réinitialise les données historiques.
 
-### Bonnes pratiques pour les catégories
+Dans le tableau de bord [[!UICONTROL Configuration du client]](/help/dashboards/customer-configuration.md), vous définissez la manière dont votre marque sera surveillée et analysée au sein de la plateforme LLM Optimizer. Voir [[!UICONTROL Configuration client]](/help/dashboards/customer-configuration.md) pour plus d’informations sur l’utilisation du tableau de bord.
+
+![Fenêtre de configuration du client](/help/assets/best-practices/customer-configuration-best-practices.png)
+
+Dans le tableau de bord [!UICONTROL Configuration du client], vous pouvez personnaliser des catégories (telles que des unités commerciales ou des lignes de produits), effectuer le suivi des concurrents et ajouter des alias de mention de marque pour capturer toutes les variations de votre marque dans les invites. Cette configuration garantit que la plateforme adapte les informations à votre contexte commercial, ce qui permet une visibilité, un trafic et une analyse des opportunités précis.
+
+## Bonnes pratiques pour les catégories
 
 Les catégories permettent d’organiser votre contenu en unités opérationnelles stratégiques ou en regroupements logiques. Il s’agit du compartiment « comme il se doit » et de la structure organisationnelle de niveau supérieur de votre contenu.
 
@@ -46,16 +49,17 @@ La manière de décider de la configuration des catégories repose sur une quest
 >
 > * Choisissez une approche et respectez-la.
 > * Vous ne pouvez avoir qu’un seul modèle de catégorie **one** par compte/marque. Ne mélangez pas **SBU** et **URL_DIR** en même temps.
+>   <!--Can you mix Product/Service with these?-->
 
 Exemple :
 
 | Type de site | Catégorie | Exemples de taxonomie de rubrique |
 |---------|----------|---------|
-| Entreprises ayant plusieurs entreprises | SBU | Ensemble d’intentions réduit (procédure, dépannage, comparaison, tarification, politique) |
+| Entreprises ayant plusieurs entreprises | SBU | Petit ensemble d’intentions (procédure, dépannage, comparaison, tarification, politique) |
 | Site lourd de documentation/support | URL_DIR | Comment, dépannage, référence, notes de mise à jour |
 | Catalogue eCommerce/Services | Produit/Service | Comparaison, Avis, Prix/Disponibilité, Comment faire, Dépannage |
 
-### Bonnes pratiques relatives aux rubriques
+## Bonnes pratiques relatives aux rubriques
 
 Les rubriques vous aident à comprendre l’intention de l’utilisateur : elles vous montrent ce que celui-ci souhaite. Ils vous permettent de regrouper les invites avec une intention d&#39;utilisateur similaire. Considérez cela comme un regroupement des invites pertinentes.
 
@@ -73,12 +77,13 @@ Lorsque vous décidez des sujets, vous souhaitez créer une liste courte et plat
 * Tarifs et disponibilité
 * Politique et garantie
 * Contact d’assistance
-* Entreprise / Actualités (si vous en avez vraiment besoin)
+* Corporate/News (si vous en avez vraiment besoin)
 
 Lors de la création de la liste, tenez compte des points suivants :
 
 * Un éditeur peut-il comprendre le sujet en 5 secondes à partir du texte d’invite ? Si ce n’est pas le cas, renommez/simplifiez.
 * Une autre équipe sera-t-elle propriétaire du correctif pour différents sujets ? Si oui, vous avez choisi des sujets utiles.
+  <!-- Last bullet point does not make sense. Clarification needed.-->
 
 Quelques conseils utiles supplémentaires :
 
@@ -88,11 +93,11 @@ Quelques conseils utiles supplémentaires :
 >[!IMPORTANT]
 >
 > * Conservez les rubriques basées sur l’intention, et non sur l’organisation.
-> * N’ajoutez pas de catégories/filtres pour les marques/non-marques/zones géographiques, car vous pouvez les filtrer spécifiquement dans l’onglet **Marques**.
+> * N’ajoutez pas de catégories/filtres pour les marques/non-marques/zones géographiques, car vous pouvez les filtrer spécifiquement dans l’onglet **[!UICONTROL Marques]**.
 > * Les rubriques sont réparties dans plusieurs catégories, vous ne pouvez **pas** avoir différentes rubriques par catégorie.
 > * Une seule invite peut exister dans plusieurs rubriques ou catégories.
 
-### Bonnes pratiques relatives aux invites
+## Bonnes pratiques relatives aux invites
 
 Les invites identifient les questions ou requêtes spécifiques que les clients posent, ce qui peut avoir un impact sur votre entreprise. Il s’agit des questions ou requêtes réelles que les utilisateurs saisissent dans les LLM.
 
@@ -103,7 +108,7 @@ Examinez et mettez à jour régulièrement les invites pour vous assurer qu&#39;
 >* Vous pouvez utiliser des outils tels que Adobe LLM Optimizer et la console de recherche Google avec des filtres RegEx pour identifier les structures de questions courantes (par exemple, « comment », « quoi », « quand », « où ») et découvrir les invites que les personnes utilisent pour visiter votre site.
 >* Pour savoir quelles invites sont pertinentes pour votre site/marque, vous pouvez utiliser les données de recherche sur site, les FAQ dans les pages de résultats des moteurs de recherche ou même demander directement aux chatbots LLM quelles questions les clients peuvent poser sur votre marque.
 
-### Bonnes pratiques pour les concurrents
+## Bonnes pratiques pour les concurrents
 
 Les concurrents vous permettent de surveiller la visibilité et les mentions dans les réponses LLM pour les invites et les sujets importants pour votre entreprise.
 
@@ -114,4 +119,9 @@ Grâce au suivi des concurrents, vous pouvez voir à quelle fréquence les concu
 >[!TIP]
 >
 >Examinez régulièrement les mentions et citations des concurrents pour identifier les domaines dans lesquels votre marque peut s&#39;améliorer.
+
+## En savoir plus
+
+* Le [tableau de bord de configuration du client](/help/dashboards/customer-configuration.md) vous permet de configurer vos catégories, rubriques, invites et concurrents.
+* [Bonnes pratiques relatives à LLM Optimizer](/help/tutorials/best-practices.md) décrit les bonnes pratiques concernant l’optimisation de LLM
 

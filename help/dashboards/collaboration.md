@@ -1,10 +1,10 @@
 ---
 title: Collaboration
 description: Découvrez comment utiliser le tableau de bord de la collaboration pour inviter des membres de l’équipe dans l’espace de travail LLM Optimizer de votre entreprise.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,6 +15,6 @@ Collaboration vous permet d’inviter des membres de l’équipe dans l’espace
 
 ## Comment inviter des membres de l’équipe
 
-Vous pouvez inviter des membres de l&#39;équipe en ajoutant leur adresse électronique dans le champ **Adresse électronique** et en cliquant sur **Envoyer une invitation**. S’ils acceptent, ils rejoindront l’espace de travail LLM Optimizer de votre entreprise.
+Vous pouvez inviter des membres de l&#39;équipe en ajoutant leur adresse électronique dans le champ **Adresse électronique** et en cliquant sur **Envoyer une invitation**. S’ils acceptent, ils rejoindront l’espace de travail LLM Optimizer de votre organisation.
 
 ![Invitation Collaboration](/help/dashboards/assets/collaboration.png)

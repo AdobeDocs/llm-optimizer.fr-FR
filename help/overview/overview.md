@@ -1,9 +1,9 @@
 ---
 title: Présentation de LLM Optimizer
 description: Découvrez comment Adobe LLM Optimizer améliore la visibilité de la marque dans les recherches pilotées par l’IA. Effectuez le suivi des mentions, des citations et des informations. Commencez dès aujourd’hui à optimiser votre engagement et votre influence.
-source-git-commit: bb3e3e4ebc7499fb8c8dfc165eb87595b40a4b4c
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,8 @@ Voici quelques ressources qui peuvent vous aider à tirer le meilleur parti de L
 
 * Le [démarrage rapide](/help/overview/quick-start.md) vous permet d’être rapidement opérationnel.
 * [Présentation des tableaux de bord](/help/dashboards/dashboards-overview.md) décrit tous les tableaux de bord disponibles dans LLM Optimizer.
-* [&#x200B; Bonnes pratiques &#x200B;](/help/tutorials/best-practices.md) vous guide tout au long de l’utilisation de l’outil afin d’obtenir les informations dont vous avez besoin pour votre marque.
+* [Les bonnes pratiques relatives à la configuration des catégories, rubriques, invites et concurrents](/help/overview/best-practices-topics-prompts.md) contiennent des informations essentielles pour la configuration de LLM Optimizer.
+* [Bonnes pratiques](/help/tutorials/best-practices.md) vous permet de découvrir les bonnes pratiques d’optimisation de la gestion du cycle de vie des informations pour améliorer la visibilité de votre marque dans la recherche IA.
 
 
 
