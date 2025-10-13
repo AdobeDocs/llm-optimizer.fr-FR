@@ -1,9 +1,9 @@
 ---
 title: Principes de base de LLM Optimizer
 description: Découvrez comment Adobe LLM Optimizer améliore la visibilité de la marque dans les recherches pilotées par l’IA. Effectuez le suivi des mentions, des citations et des informations. Commencez dès aujourd’hui à optimiser votre engagement et votre influence.
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe LLM Optimizer est une application IA dédiée à l’optimisation généra
 Adobe LLM Optimizer propose une suite d’outils conçus pour l’optimisation générative des moteurs :
 
 * Mesurer la visibilité de la marque : suivez quand, où et à quelle fréquence votre marque apparaît dans les résultats de recherche optimisés par l’IA, avec un score de visibilité clair pour l’évaluation comparative.
-* Compétiteurs de référence : Comparez la part de voix et de présence de votre marque par rapport à vos concurrents dans les moteurs génératifs.
+* Comparer la part de voix et de présence de votre marque par rapport à ses concurrents et autres dans les moteurs génératifs.
 * Découvrez des opportunités exploitables : identifiez les améliorations de contenu et techniques (comme les FAQ, les résumés, les schémas, les crawlability) pour améliorer les mentions et les citations.
 * Suivi de l’impact du trafic : surveillez le trafic à la fois organique (assistant d’IA) et de référence vers vos propriétés, en établissant un lien entre la visibilité et l’engagement.
 * Activer Team Collaboration : partagez des tableaux de bord, attribuez des propriétaires et alignez les objectifs entre les équipes de marketing, d’optimisation pour les moteurs de recherche et de communication.
@@ -53,7 +53,7 @@ L’optimisation générative du moteur est par nature transversale. LLM Optimiz
 Avec Adobe LLM Optimizer, vous pouvez :
 
 **Mesurer la visibilité de la marque** - Suivez quand, où et à quelle fréquence votre marque est mentionnée dans les résultats de recherche optimisés par l’IA. Allez au-delà des conjectures avec un score de visibilité clair que vous pouvez comparer au fil du temps.
-**Compétiteurs de référence** - Découvrez comment votre marque se compare à ses concurrents dans les moteurs génératifs. Identifier la part des écarts de voix et découvrir les avantages concurrentiels.
+**Benchmark Other** - Découvrez comment votre marque se compare aux autres dans les moteurs génératifs. Identifier la part des écarts de voix et découvrir les avantages concurrentiels.
 **Découvrir les opportunités exploitables** - Identifiez les opportunités de contenu (par exemple, les FAQ, les résumés, les schémas) et les opportunités techniques (crawlabilité, problèmes d’indexation) qui augmentent directement les mentions et les citations.
 **Suivi de l’impact du trafic depuis l’IA** - Surveillez le trafic des agences (provenant des assistants d’IA) et le trafic de référence (clics des utilisateurs dans les citations) vers vos propriétés. Liez la visibilité géographique à un engagement réel.
 **Activer Team Collaboration** - Partagez des tableaux de bord, attribuez des propriétaires pour les invites ou les catégories, et assurez-vous que les objectifs de visibilité sont suivis dans les fonctions marketing, SEO et communications.

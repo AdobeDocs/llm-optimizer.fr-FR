@@ -1,17 +1,17 @@
 ---
-title: Bonnes pratiques relatives aux catégories, rubriques et invites
-description: Optimisez les informations LLM en configurant les catégories, les rubriques, les invites et les concurrents pour une surveillance de marque personnalisée et une analyse de contenu stratégique.
-source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
+title: Bonnes pratiques relatives aux catégories, rubriques, invites et autres
+description: Optimisez les informations LLM en configurant des catégories, des rubriques, des invites et d'autres marques pour effectuer le suivi, y compris les concurrents, pour une surveillance de marque personnalisée et une analyse de contenu stratégique.
+source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '1014'
 ht-degree: 0%
 
 ---
 
 
-# Bonnes pratiques relatives à la configuration des catégories, rubriques, invites et concurrents
+# Bonnes pratiques relatives à la configuration des catégories, rubriques, invites et autres à suivre
 
-Cette section décrit les bonnes pratiques pour décider de la manière dont vous souhaitez configurer vos catégories, rubriques, invites et concurrents.
+Cette section décrit les bonnes pratiques pour décider de la manière dont vous souhaitez configurer les catégories, rubriques, invites et autres éléments à suivre.
 
 Il s&#39;agit d&#39;une première étape essentielle. Ce que vous décidez maintenant détermine la manière dont les informations sont adaptées au contexte de votre entreprise. Toute modification apportée aux catégories à l’avenir réinitialise les données historiques.
 
@@ -19,7 +19,7 @@ Dans le tableau de bord [[!UICONTROL Configuration du client]](/help/dashboards/
 
 ![Fenêtre de configuration du client](/help/assets/best-practices/customer-configuration-best-practices.png)
 
-Dans le tableau de bord [!UICONTROL Configuration du client], vous pouvez personnaliser des catégories (telles que des unités commerciales ou des lignes de produits), effectuer le suivi des concurrents et ajouter des alias de mention de marque pour capturer toutes les variations de votre marque dans les invites. Cette configuration garantit que la plateforme adapte les informations à votre contexte commercial, ce qui permet une visibilité, un trafic et une analyse des opportunités précis.
+Dans le tableau de bord [!UICONTROL Configuration du client], vous pouvez personnaliser des catégories (telles que des unités commerciales ou des lignes de produits), effectuer le suivi d’autres marques et ajouter des alias de mention de marque pour capturer toutes les variations de votre marque dans les invites. Cette configuration garantit que la plateforme adapte les informations à votre contexte commercial, ce qui permet une visibilité, un trafic et une analyse des opportunités précis.
 
 ## Bonnes pratiques pour les catégories
 
@@ -44,6 +44,8 @@ La manière de décider de la configuration des catégories repose sur une quest
 * Si vous êtes un *chef d&#39;entreprise*, choisissez l&#39;approche **SBU**.
 * Si vous êtes un *propriétaire de contenu/web*, choisissez l’approche **URL_DIR**.
 * Si vous êtes un *responsable du marchandisage/des offres*, choisissez l’approche **Catégorie de produit/service**.
+
+![Ajout de catégories dans LLM Optimizer](/help/assets/best-practices/add-category.png)
 
 >[!IMPORTANT]
 >
@@ -79,6 +81,8 @@ Lorsque vous décidez des sujets, vous souhaitez créer une liste courte et plat
 * Contact d’assistance
 * Corporate/News (si vous en avez vraiment besoin)
 
+![Ajout de rubriques dans LLM Optimizer](/help/assets/best-practices/add-topic.png)
+
 Lors de la création de la liste, tenez compte des points suivants :
 
 * Un éditeur peut-il comprendre le sujet en 5 secondes à partir du texte d’invite ? Si ce n’est pas le cas, renommez/simplifiez.
@@ -88,7 +92,7 @@ Lors de la création de la liste, tenez compte des points suivants :
 Quelques conseils utiles supplémentaires :
 
 * Utilisez vos connaissances de votre entreprise ou de votre site pour définir des sujets qui correspondent aux objectifs stratégiques de votre marque
-* Examinez comment votre marque se compare à ses concurrents sur des sujets spécifiques.
+* Comparez votre marque à d’autres marques sur des sujets spécifiques.
 
 >[!IMPORTANT]
 >
@@ -114,20 +118,20 @@ Recommandations relatives aux invites :
 >* Vous pouvez utiliser des outils tels que Adobe LLM Optimizer et la console de recherche Google avec des filtres RegEx pour identifier les structures de questions courantes (par exemple, « comment », « quoi », « quand », « où ») et découvrir les invites que les personnes utilisent pour visiter votre site.
 >* Pour savoir quelles invites sont pertinentes pour votre site/marque, vous pouvez utiliser les données de recherche sur site, les FAQ dans les pages de résultats des moteurs de recherche ou même demander directement aux chatbots LLM quelles questions les clients peuvent poser sur votre marque.
 
-## Bonnes pratiques pour les concurrents
+## Bonnes pratiques de tracking des autres marques
 
-Les concurrents vous permettent de surveiller la visibilité et les mentions dans les réponses LLM pour les invites et les sujets importants pour votre entreprise.
+Suivi Les autres vous permettent de surveiller la visibilité et les mentions dans les réponses LLM pour les invites et les sujets importants pour votre entreprise.
 
-L’onglet [!UICONTROL **Suivi des concurrents**] vous permet d’ajouter des concurrents et de suivre leur visibilité pour des invites et des sujets spécifiques.
+L’onglet [!UICONTROL **Suivi d’autres utilisateurs**] vous permet d’ajouter d’autres utilisateurs, y compris des concurrents, pour suivre leur visibilité pour des invites et des rubriques spécifiques.
 
-Grâce au suivi des concurrents, vous pouvez voir à quelle fréquence les concurrents sont mentionnés aux côtés de votre marque dans différentes régions et catégories et comparer leur visibilité à la vôtre.
+Avec le suivi d’autres marques, vous pouvez voir à quelle fréquence d’autres marques sont mentionnées à côté de votre marque dans différentes régions et catégories et comparer leur visibilité à la vôtre.
 
 >[!TIP]
 >
->Examinez régulièrement les mentions et citations des concurrents pour identifier les domaines dans lesquels votre marque peut s&#39;améliorer.
+>Examinez régulièrement les mentions et les citations des concurrents ou d&#39;autres entreprises afin de déterminer les domaines où votre marque peut s&#39;améliorer.
 
 ## En savoir plus
 
-* Le [tableau de bord de configuration du client](/help/dashboards/customer-configuration.md) vous permet de configurer vos catégories, rubriques, invites et concurrents.
+* Le [tableau de bord de configuration du client](/help/dashboards/customer-configuration.md) vous permet de configurer le suivi des catégories, rubriques, invites et autres.
 * [Bonnes pratiques relatives à LLM Optimizer](/help/tutorials/best-practices.md) décrit les bonnes pratiques concernant l’optimisation de LLM
 

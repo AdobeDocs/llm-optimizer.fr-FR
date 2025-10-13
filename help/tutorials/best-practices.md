@@ -1,9 +1,9 @@
 ---
 title: Bonnes pratiques relatives à LLM Optimizer
 description: Découvrez les bonnes pratiques d’optimisation de la gestion du cycle de vie des informations pour accroître la visibilité de la marque dans la recherche IA. Informations pour l’évaluation et l’optimisation du contenu.
-source-git-commit: a76d348a94495682d648ef0aad268e835e321017
+source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
-source-wordcount: '1659'
+source-wordcount: '1675'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Autres considérations relatives à l’optimisation de LLM :
 Pour réussir votre campagne d’optimisation LLM, procédez comme suit :
 
 * Identifier les sujets à forte valeur ajoutée conformes aux intentions du client. Alignez l’intention rapide sur les objectifs commerciaux et les besoins du client.
-* Mentionnez des concurrents ponctuels pour trouver des lacunes et des occasions. Concentrez-vous sur les invites où les concurrents sont cités, indiquant une opportunité d&#39;inclusion de la marque.
+* Spot mentionne à d&#39;autres, y compris des concurrents, pour trouver des lacunes et des opportunités. Concentrez-vous sur les invites où d&#39;autres sont cités, indiquant une opportunité d&#39;inclusion de marque.
 * Regrouper les invites par intention à l&#39;aide du clustering de rubriques : utilisez les rubriques et les champs de recherche pour regrouper des objectifs utilisateurs similaires pour la visibilité de l&#39;évaluation des performances.
 * Évaluez la crédibilité de la marque à l&#39;aide des normes EEAT (Experience, Expertise, Autorité, Fiabilité) et YMYL (Your Money or Your Life).
 
@@ -92,7 +92,7 @@ Voici quelques bonnes pratiques d’optimisation :
 1. Garantir l’accessibilité technique
 
    * Vérifiez les paramètres robots.txt et CDN pour permettre aux agents d’IA d’analyser votre site.
-   * Utilisez l’Inspecteur d’URL pour identifier les pages bloquées ou inaccessibles. Voir [&#x200B; Inspecteur d’URL](/help/dashboards/url-inspector.md).
+   * Utilisez l’Inspecteur d’URL pour identifier les pages bloquées ou inaccessibles. Voir [ Inspecteur d’URL](/help/dashboards/url-inspector.md).
 
 2. Actualiser et structurer le contenu
 
@@ -109,7 +109,7 @@ Voici quelques bonnes pratiques d’optimisation :
 
    * Utilisez le [tableau de bord des opportunités](/help/dashboards/opportunities.md) pour identifier les recommandations et agir en conséquence.
    * Suivez le score de visibilité, le sentiment et la fréquence de citation.
-   * Ajustez en fonction de l&#39;activité de la concurrence et des tendances rapides.
+   * Ajustez en fonction de l&#39;activité de l&#39;autre (y compris les concurrents) et des tendances rapides.
 
 ## Optimisation hors site : étendre votre empreinte de marque
 
@@ -131,7 +131,7 @@ Principaux canaux hors site :
 Bonnes pratiques :
 
 * Diversifiez votre empreinte hors site.
-* Surveillez les citations à l’aide de Adobe LLM Optimizer. Voir [&#x200B; Tableau de bord de la présence de la marque &#x200B;](/help/dashboards/brand-presence.md).
+* Surveillez les citations à l’aide de Adobe LLM Optimizer. Voir [ Tableau de bord de la présence de la marque ](/help/dashboards/brand-presence.md).
 * Mettez à jour le contenu obsolète et recherchez de nouvelles opportunités d’inclusion.
 * Coordonnez-vous avec les équipes de relations publiques et sociales.
 * Veiller à ce que les contributions soient impartiales et informatives.
@@ -158,25 +158,25 @@ Pour suivre la progression, procédez comme suit :
 1. Évaluez votre visibilité actuelle.
    * Déterminez la fréquence à laquelle votre marque est mentionnée et citée, ainsi que le sentiment exprimé dans Adobe LLM Optimizer. Voir le tableau de bord [Brand Presence](/help/dashboards/brand-presence.md).
    * L’analyse des invites où votre marque apparaît et celles où elle n’apparaît pas.
-   * Comparez leur visibilité à celle de leurs concurrents.
+   * Comparez la visibilité par rapport à d’autres, y compris celle de vos concurrents (dans **Suivi des autres** dans le [Tableau de bord de configuration du client](/help/dashboards/customer-configuration.md)).
    * Vérifiez la visibilité sur les plateformes générées par les utilisateurs comme Reddit, Quora et Wikipedia. Segment par plateforme (ChatGPT, mode IA de Google, etc.)
    * Surveillez le trafic des agents pour savoir quelles pages sont visitées par les LLM. Souvent, le trafic des agences n’atteint **pas** la page d’accueil, mais d’autres pages situées plus bas dans la hiérarchie. Voir le tableau de bord [Trafic d’agent](/help/assets/overview/agentic-traffic-card.png).
 1. Surveillez les modifications au fil du temps.
-   * Utilisez des filtres temporels pour effectuer le suivi des équipes hebdomadaires et mensuelles
+   * Utilisez des filtres temporels pour effectuer le suivi des équipes hebdomadaires et mensuelles.
    * Surveillez les pics ou les baisses de score de visibilité.
    * Analysez les tendances des sentiments pour comprendre la perception de la marque.
 1. Mettez en corrélation la visibilité avec le trafic, l’engagement et les conversions.
    * Utilisez les fonctionnalités d’attribution pour associer les améliorations de visibilité au trafic, à l’engagement et aux conversions. Les fonctionnalités d’attribution de Adobe LLM Optimizer vous permettent de mettre en relation les améliorations des mesures de visibilité (mentions, citations, sentiment) avec des résultats commerciaux réels tels que le trafic sur le site, l’interaction client et les conversions. Cela prouve le retour sur investissement de vos efforts d’optimisation.
    * Suivez les modifications du trafic d’agents et de recommandations pour valider le retour sur investissement de l’optimisation.
 1. Améliorer votre contenu
-   * Utilisez le [tableau de bord des opportunités](/help/dashboards/opportunities.md) de LLM Optimizer pour identifier et apporter immédiatement des modifications spécifiquement recommandées à votre site. Voir [&#x200B; Opportunités &#x200B;](/help/dashboards/opportunities.md) (puis mesurer les résultats). Passez régulièrement en revue la section sur les opportunités et donnez suite aux recommandations.
+   * Utilisez le [tableau de bord des opportunités](/help/dashboards/opportunities.md) de LLM Optimizer pour identifier et apporter immédiatement des modifications spécifiquement recommandées à votre site. Voir [ Opportunités ](/help/dashboards/opportunities.md) (puis mesurer les résultats). Passez régulièrement en revue la section sur les opportunités et donnez suite aux recommandations.
    * Donner la priorité aux pages dont la visibilité diminue
    * Mettez à jour votre site web et d’autres contenus pour le rendre plus pertinent par rapport aux invites que vous souhaitez cibler.
    * Ajoutez à vos pages des FAQ qui répondent aux questions courantes que les utilisateurs peuvent se poser.
    * Assurez-vous que votre contenu est facile à trouver et à lire pour les gestionnaires de contenu. Résolvez les problèmes tels que les pages bloquées ou les problèmes liés au code de votre site web.
    * Veiller à ce que les contributions à des plateformes comme Wikipédia et Reddit soient impartiales, non commerciales et apportent une valeur ajoutée.
    * Utilisez Adobe LLM Optimizer pour suivre l’évolution de votre visibilité au fil du temps.
-   * Si vous remarquez que les concurrents sont mentionnés plus souvent, ajustez votre stratégie pour conserver une longueur d&#39;avance.
+   * Si vous remarquez que d&#39;autres, y compris des concurrents, sont mentionnés plus souvent, ajustez votre stratégie pour conserver une longueur d&#39;avance.
    * Continuez à mettre à jour votre contenu pour qu’il corresponde à ce que les gens recherchent et sur quoi ils posent des questions.
 1. Ajustez les stratégies [hors site](#offsite-optimization---expanding-your-brand-footprint) et [sur site](#onsite-optimization---strengthening-your-owned-content) en fonction des informations.
 
@@ -226,7 +226,7 @@ Pour optimiser le trafic d’agent :
 * Vérifiez les fonctionnalités d’analyse en consultant les paramètres robots.txt et CDN.
 * Utilisez l’[Inspecteur d’URL](/help/dashboards/url-inspector.md) pour analyser les performances des URL.
 * Suivez le comportement des robots en accédant aux journaux de votre réseau CDN dans le tableau de bord de trafic [Agence](/help/dashboards/agentic-traffic.md).
-* Segmentez le trafic pour comprendre les résultats commerciaux. Voir [&#x200B; Bonnes pratiques pour les catégories, les rubriques, les invites et les concurrents](/help/overview/best-practices-topics-prompts.md).
+* Segmentez le trafic pour comprendre les résultats commerciaux. Voir [Bonnes pratiques pour les catégories, les rubriques et les invites](/help/overview/best-practices-topics-prompts.md).
 
 Voici les mesures à surveiller :
 
