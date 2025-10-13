@@ -1,23 +1,19 @@
 ---
 title: Configuration du client
 description: Utilisez la configuration client pour définir comment votre marque sera surveillée et analysée sur la plateforme de l’optimiseur LLM.
-source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '843'
 ht-degree: 1%
 
 ---
 
 
-# Configuration client
+# Configuration du client {#customer-configuration}
 
-La configuration client est l’endroit où vous définissez comment votre marque sera surveillée et analysée sur la plateforme LLM optimizer. Vous pouvez personnaliser des catégories (telles que des unités commerciales ou des lignes de produits), suivre les concurrents et ajouter des alias de mention de marque pour capturer toutes les variations de votre marque dans les invites. Cette configuration garantit que la plateforme adapte les informations à votre contexte commercial, ce qui permet une visibilité, un trafic et une analyse des opportunités précis.
+Le tableau de bord de configuration du client est un outil puissant qui fournit des informations sur la visibilité de votre marque dans les LLM. En configurant correctement des catégories, des rubriques, des invites et des concurrents, vous pouvez vous assurer que votre marque est bien positionnée pour apparaître dans les réponses générées par LLM. Cette configuration garantit que la plateforme adapte les informations à votre contexte commercial, ce qui permet une visibilité, un trafic et une analyse des opportunités précis.
 
 ![Tableau de bord de configuration du client](/help/dashboards/assets/customer-config.png)
-
-## Tableau de bord de configuration du client
-
-Le tableau de bord de configuration du client est un outil puissant qui fournit des informations sur la visibilité de votre marque dans les LLM. En configurant correctement des catégories, des rubriques, des invites et des concurrents, vous pouvez vous assurer que votre marque est bien positionnée pour apparaître dans les réponses générées par LLM. Examiner régulièrement des informations telles que Share of Voice, la visibilité du contenu et les opportunités vous aidera à adapter votre stratégie et à garder une longueur d’avance sur vos concurrents.
 
 Pour configurer la manière dont LLM Optimizer surveille et analyse la présence de votre marque sur différents marchés et paysages concurrentiels, vous avez accès aux onglets suivants :
 
@@ -25,11 +21,15 @@ Pour configurer la manière dont LLM Optimizer surveille et analyse la présence
 * [Suivi des concurrents](#competitor-tracking)
 * [Alias de marque](#brand-aliases)
 * [Data Insights](#data-insights)
-* [Réseau CDN de l’agence](#agentic-cdn)
+* [Configuration du réseau CDN](#agentic-cdn)
+
+>[!IMPORTANT]
+>
+> Pour plus d’informations sur la configuration des catégories, rubriques, invites et concurrents, reportez-vous à la page [Bonnes pratiques de configuration des catégories, rubriques, invites et concurrents](/help/overview/best-practices-topics-prompts.md).
 
 ## Catégories {#categories}
 
-Dans l’onglet Catégories , vous pouvez définir les catégories métier ou les lignes de produits dont vous souhaitez effectuer le suivi et les associer à des régions spécifiques. Dans l’ensemble, l’onglet Catégories correspond à toutes les autres personnalisations de cette page, car les catégories apparaissent dans le champ Catégorie pour les autres personnalisations (suivi des concurrents, alias, etc.). Pour ajouter une nouvelle catégorie :
+Dans l’onglet Catégories , vous pouvez définir les catégories métier ou les lignes de produits dont vous souhaitez effectuer le suivi et les associer à des régions spécifiques. Dans l’ensemble, l’onglet Catégories correspond à presque toutes les autres personnalisations de cette page, car les catégories apparaissent dans le champ Catégorie pour les autres personnalisations (suivi des concurrents, alias, etc.). Pour ajouter une nouvelle catégorie :
 
 1. Cliquez sur le bouton **Ajouter**.
 2. Dans la nouvelle fenêtre de configuration, ajoutez le **Nom de la catégorie**.
@@ -90,7 +90,15 @@ De plus, vous pouvez également ajouter des rubriques/invites à la liste indép
 
 Sur la liste, vous pouvez cliquer sur chaque rubrique et la ou les invites associées apparaîtront. Pour supprimer la rubrique et ses invites associées, cliquez sur l&#39;icône de suppression de la liste.
 
-<!--## Agentic CDN {#agentic-cdn}
+## Configuration du réseau CDN {#cdn-configuration}
 
-Not available (will it be available for release?).-->
+Dans cet onglet, vous pouvez configurer vos flux CDN pour permettre à Adobe LLM Optimizer d’analyser vos données CDN. Ces données seront utilisées pour alimenter les tableaux de bord (comme le trafic d’agent), fournissant des informations sur les modèles de trafic, les mesures de performances et les opportunités d’optimisation. Pour intégrer votre fournisseur de réseau CDN, cliquez sur **Intégrer le réseau CDN**.
 
+![Réseau CDN de configuration du client](/help/overview/assets/cc-cdn.png)
+
+Dans la fenêtre **Fournisseur de réseau CDN intégré** :
+
+1. Sélectionnez votre fournisseur de réseau CDN (par exemple, Akamai, Fastly géré par Adobe, Fastly, AWS Cloudfront, Azure CDN, Cloudflare ou autre).
+2. Cliquez sur **Intégration** pour activer le transfert du journal.
+
+Si vous sélectionnez **Autre**, vous devrez contacter Adobe pour obtenir de l’aide.

@@ -1,9 +1,9 @@
 ---
 title: Présence de la marque
 description: Découvrez comment utiliser le tableau de bord de la présence de la marque pour comprendre comment votre marque est perçue au niveau des réponses générées par l’IA.
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Présence de la marque {#brand-presence}
 
-Le tableau de bord de la présence de la marque donne un aperçu de la manière dont votre marque est perçue au niveau des réponses générées par l’IA. Il indique où, à quelle fréquence et dans quel contexte votre marque est mentionnée. Vous pouvez utiliser le tableau de bord pour mesurer la visibilité, suivre les citations, comparer les concurrents et explorer les tendances des sentiments. Le tableau de bord est divisé en plusieurs sections, chacune fournissant des informations différentes. Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
+Le tableau de bord de la présence de la marque fournit un aperçu détaillé de la manière dont votre marque est perçue au niveau des réponses générées par l’IA. Il indique où, à quelle fréquence et dans quel contexte votre marque est mentionnée. Vous pouvez utiliser le tableau de bord pour mesurer la visibilité, suivre les citations, comparer les concurrents et explorer les tendances des sentiments. Le tableau de bord est divisé en plusieurs sections, chacune fournissant des informations différentes. Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
 
 ![Présence de la marque](/help/dashboards/assets/brand-main.png)
 
@@ -44,7 +44,7 @@ Le tableau de bord met en évidence trois mesures très importantes en haut de l
 
 ### Score de visibilité {#visibility-score}
 
-Le score de visibilité est composé de facteurs tels que : mentions, citations, sentiment et classement. Chaque facteur est associé à un certain « poids » qui s’ajoute au score final. Par exemple, mentionne « plus de poids », car la visibilité n’a d’importance que si votre marque est citée.
+Le score de visibilité est composé de facteurs tels que : mentions, citations, sentiment et classement. Chaque facteur est associé à un certain « poids » qui s’ajoute au score final.
 
 ### Mentions {#mentions}
 
@@ -72,7 +72,9 @@ Dans la section d’analyse des tendances des sentiments, vous pouvez suivre la 
 
 ## Informations sur les données et partage de la voix {#data-insights}
 
-En arrondissant le tableau de bord, nous disposons de deux tableaux importants : les informations sur les données et la part de voix. Les informations présentées dans ces tableaux vous aideront à déterminer où votre marque est forte et où une optimisation est nécessaire.  Grâce au tableau **informations sur les données**, vous pouvez explorer les rubriques et répondre aux questions des utilisateurs et utilisatrices afin d’évaluer et d’optimiser l’impact du contenu. Les résultats sont détaillés par rubriques et invites. Dans le même temps, le tableau **part de voix** compare la voix de votre marque à celle d’autres concurrents sur plusieurs sujets. Il vous aide également à identifier les lacunes et à établir des priorités pour les sujets à venir.
+En arrondissant le tableau de bord, nous disposons de deux tableaux importants : les informations sur les données et la part de voix. Les informations présentées dans ces tableaux vous aideront à déterminer où votre marque est forte et où une optimisation est nécessaire.
+
+Grâce au tableau **informations sur les données**, vous pouvez explorer les rubriques et répondre aux questions des utilisateurs et utilisatrices afin d’évaluer et d’optimiser l’impact du contenu. Les résultats sont détaillés par rubriques et invites. Dans le même temps, le tableau **part de voix** compare la voix de votre marque à celle d’autres concurrents sur plusieurs sujets. Il vous aide également à identifier les lacunes et à établir des priorités pour les sujets à venir.
 
 ![Data Insights](/help/dashboards/assets/data-insights.png)
 
@@ -86,12 +88,12 @@ Cliquez sur les onglets ci-dessous pour obtenir plus d’informations sur chaque
 
 Le tableau des informations sur les données vous permet d’explorer les rubriques et les invites des utilisateurs pour évaluer et optimiser l’impact du contenu. Elle affiche les mesures suivantes :
 
-* **Rubrique** - La catégorie de rubrique représente les mots-clés SEO et les questions des utilisateurs liées à votre marque. Vous pouvez cliquer pour développer chaque rubrique et voir les invites individuelles analysées pour la présence de la marque. Chaque rubrique et chaque bouton comportent un bouton **Détails** lorsque vous passez la souris dessus. Cliquez sur le bouton pour afficher une fenêtre distincte avec des détails supplémentaires.
+* **Rubrique** - La catégorie de rubrique représente les mots-clés SEO et les questions des utilisateurs liées à votre marque. Vous pouvez cliquer pour développer chaque rubrique et voir les invites individuelles analysées pour la présence de la marque. Chaque rubrique comporte un bouton **Détails** lorsque vous placez le pointeur de la souris dessus. Cliquez sur le bouton pour afficher une fenêtre distincte avec des détails supplémentaires.
 * **Region** : affiche la région des invites.
 * **Popularité** - La catégorie de popularité représente le volume de recherche de cette rubrique par rapport à toutes les autres rubriques de l’analyse. La valeur peut être Élevée, Medium ou Faible.
 * **Score de visibilité** - Score de visibilité pour cette rubrique. Il reflète des facteurs pondérés tels que les mentions, les citations, les sentiments et le rang.
 * **Mentions** - Nombre de fois où votre marque a été mentionnée dans les réponses de l’IA pour cette rubrique ou cette combinaison rubrique/invite.
-* **Sentiment** - La perception de la marque dans les réponses de l’IA en ce qui concerne chaque sujet, calculée sous la forme d’une moyenne sur toutes les semaines. Uniquement renseigné lorsque votre marque est réellement mentionnée
+* **Sentiment** - La perception de la marque dans les réponses de l’IA en ce qui concerne chaque sujet, calculée sous la forme d’une moyenne sur toutes les semaines. Uniquement renseigné lorsque votre marque est réellement mentionnée.
 * **Position** - La prédominance relative de votre marque dans les réponses de l’IA, calculée sous la forme d’une moyenne sur toutes les semaines.
 * **Toutes les citations** - Nombre de sources uniques citées dans les réponses de l’IA pour cette rubrique ou cette combinaison de rubrique/invite (y compris les citations détenues).
 * **Citations détenues** - Nombre de fois où votre marque a été citée dans les réponses de l’IA pour ce mot-clé ou cette combinaison mot-clé/question.

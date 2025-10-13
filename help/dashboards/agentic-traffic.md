@@ -1,9 +1,9 @@
 ---
 title: Trafic d’agent
 description: Découvrez comment utiliser le tableau de bord du trafic d’agents afin de voir comment les agents d’IA interagissent avec votre site.
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1100'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,9 @@ ht-degree: 0%
 
 # Trafic d’agent {#agentic-traffic}
 
-Le tableau de bord Trafic agent vous montre comment les agents d’IA (robots d’exploration et chatbots) interagissent avec votre site. Cette vue vous permet de suivre le nombre total de requêtes et les mesures générales liées aux performances. Vous pouvez également afficher la distribution du trafic sur les marchés, les catégories, les pages et les agents. Les données utilisées par ce tableau de bord proviennent des journaux CDN. Vous devez donc configurer le **transfert des journaux CDN** pour afficher les mesures. Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
+Le tableau de bord du trafic d’agents montre comment les agents d’IA (robots d’exploration et chatbots) interagissent avec votre site. Cette vue vous permet de suivre le nombre total de requêtes et les mesures générales liées aux performances. Vous pouvez également afficher la distribution du trafic sur les marchés, les catégories, les pages et les agents. Les données utilisées par ce tableau de bord proviennent des journaux CDN. Vous devez donc configurer le **transfert des journaux CDN** pour afficher les mesures. Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
+
+![Distribution du trafic](/help/dashboards/assets/ag-main.png)
 
 Cette page présente les éléments suivants :
 
@@ -34,8 +36,7 @@ Sélectionnez **Aller à la configuration** et vous accéderez automatiquement �
 
 Sur cet onglet, sélectionnez **Réseau CDN intégré**. Et la fenêtre du fournisseur de réseau CDN s’affiche.
 
-![Fournisseur CDN](/help/dashboards/assets/ag-log-forward3.png)
-
+<!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
 Dans la fenêtre **Fournisseur de réseau CDN intégré** :
 
 1. Sélectionnez votre fournisseur de réseau CDN (par exemple, Akamai, Fastly géré par Adobe, Fastly, AWS Cloudfront, Azure CDN, Cloudflare ou autre).
@@ -80,7 +81,7 @@ Utilisez le graphique Tendances du trafic d’agent pour effectuer le suivi des 
 
 ## Déplacements en haut et en bas {#top-bottom-movers}
 
-La vue des déménageurs en haut et en bas met en évidence les URL présentant les plus grands changements de trafic d’agent d’une semaine à l’autre, à savoir les visites ou les accès des systèmes d’IA accédant à votre contenu. Les déménagements les plus importants affichent des pages qui gagnent en visibilité ou en engagement, tandis que les déménagements les plus importants affichent les URL qui connaissent les déclins les plus importants. Cela vous permet d’identifier rapidement le contenu à la hausse, ceux qui peuvent nécessiter une attention particulière et les endroits où les modèles de découverte pilotés par l’IA se modifient.
+La vue des déménageurs en haut et en bas met en évidence les URL présentant les plus grands changements de trafic d’agent d’une semaine à l’autre, à savoir les visites ou les accès des systèmes d’IA accédant à votre contenu. Top Movers affiche les pages qui gagnent en visibilité ou en engagement, tandis que Bottom Movers révèle les URL qui connaissent les baisses les plus importantes. Cela vous permet d’identifier rapidement le contenu à la hausse, ceux qui peuvent nécessiter une attention particulière et les endroits où les modèles de découverte pilotés par l’IA se modifient.
 
 ![Déplacements haut et bas](/help/dashboards/assets/movers.png)
 
@@ -99,8 +100,6 @@ Le tableau Analyse de l’agent utilisateur fournit une répartition du trafic p
 * **Type de page** - Type de page.
 * **Type d’agent** - L’agent d’IA qui analyse la page, soit un robot d’exploration, soit un chatbot.
 * **Accès** - Nombre total de requêtes effectuées par les agents d’IA pour ce type de page spécifique.
-
-Vous pouvez également utiliser l’option **Exporter** pour télécharger le tableau .csv et partager l’analyse de l’agent avec votre équipe ou l’inclure dans les rapports d’exécution.
 
 >[!TAB Analyse des performances des URL]
 
@@ -122,4 +121,4 @@ La vue Détails de l’URL offre une compréhension globale des performances d�
 
 >[!ENDTABS]
 
-Pour les deux tableaux, vous pouvez utiliser l’option **Exporter** pour télécharger le tableau .csv et partager les informations avec votre équipe ou inclure le tableau dans les rapports d’exécution.
+Sur les deux tableaux, vous pouvez utiliser l’option **Exporter** pour télécharger le tableau .csv et partager les informations avec votre équipe ou inclure le tableau dans les rapports d’exécution.

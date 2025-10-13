@@ -1,9 +1,9 @@
 ---
 title: Démarrage rapide
 description: Prise en main de Adobe LLM Optimizer - Intégrez votre marque, déverrouillez les informations de visibilité de l’IA et explorez les tableaux de bord pour améliorer les performances des recherches.
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Démarrage rapide
 
-Pour commencer à utiliser l’optimiseur LLM, vous devez terminer le processus d’intégration comme décrit dans les étapes présentées ci-dessous. Une fois le processus terminé[&#x200B; vous disposerez d’un accès complet aux tableaux de bord de LLM Optimizer &#x200B;](/help/dashboards/dashboards-overview.md)et à d’autres fonctionnalités.
+Pour commencer à utiliser l’optimiseur LLM, vous devez terminer le processus d’intégration comme décrit dans les étapes présentées ci-dessous. Une fois le processus terminé[ vous disposerez d’un accès complet aux tableaux de bord de LLM Optimizer ](/help/dashboards/dashboards-overview.md)et à d’autres fonctionnalités.
 
 ## Présentation de l’intégration
 
@@ -21,7 +21,7 @@ Le processus d’intégration commence par l’intégration de votre domaine. Le
 
 ### Essayer Avant d&#39;acheter
 
-Les clients AEM Cloud (Cloud Service, Managed Services, Edge Delivery Service) ont la possibilité d’utiliser l’offre Essayer avant d’acheter . Il s’agit d’une version d’évaluation gratuite de LLM Optimizer avec jusqu’à 200 invites gratuites. L’utilisation de plus de 200 invites nécessite un contrat de licence séparé. L’accès est fourni « en l’état » et « selon disponibilité », et peut être modifié, limité ou supprimé par Adobe à tout moment.
+Les clients AEM Cloud (Cloud Service, Managed Services, Edge Delivery Service) ont la possibilité d’utiliser l’offre **Essayer avant d’acheter**. Il s’agit d’une version d’évaluation gratuite de LLM Optimizer avec jusqu’à 200 invites gratuites. L’utilisation de plus de 200 invites nécessite un contrat de licence séparé. L’accès est fourni « en l’état » et « selon disponibilité », et peut être modifié, limité ou supprimé par Adobe à tout moment.
 
 Certaines fonctionnalités du produit ne sont pas disponibles dans la version gratuite :
 
@@ -32,10 +32,10 @@ Consultez la section ci-dessous pour plus d’informations sur l’activation de
 
 ### Clients AEM Cloud
 
-Si vous êtes un client AEM Cloud, vous avez la possibilité d’essayer LLM Optimizer à l’aide de la carte Annonce de produit dans [Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Si vous êtes un client AEM Cloud, vous avez la possibilité d’essayer LLM Optimizer à l’aide de la carte Annonce de produit dans [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
->Les invites nouvellement ajoutées n&#39;apparaîtront pas dans le [tableau de bord de présence de la marque](/help/dashboards/brand-presence.md) tant que le traitement n&#39;est pas terminé. Les clients AEM Cloud (Cloud Service, Managed Services/Service Edge Delivery) peuvent utiliser la version d’évaluation gratuite de LLM Optimizer. L’utilisation de plus de 200 invites nécessite un contrat de licence séparé. L’accès est fourni « en l’état » et « selon disponibilité », et peut être modifié, limité ou supprimé par Adobe à tout moment. Veuillez contacter votre représentant de compte pour plus d’informations.
+>Les invites nouvellement ajoutées n&#39;apparaîtront pas dans le [tableau de bord de présence de la marque](/help/dashboards/brand-presence.md) tant que le traitement n&#39;est pas terminé. Les clients AEM Cloud peuvent utiliser la version d’évaluation gratuite de LLM Optimizer. L’utilisation de plus de 200 invites nécessite un contrat de licence séparé. L’accès est fourni « en l’état » et « selon disponibilité », et peut être modifié, limité ou supprimé par Adobe à tout moment. Veuillez contacter votre représentant de compte pour plus d’informations.
 
 ![Version d&#39;évaluation de LLM Optimizer](/help/overview/assets/llm-trial.png)
 
@@ -73,6 +73,10 @@ Pour déclencher l’analyse de la présence de la marque et renseigner le table
 >[!NOTE]
 >Les invites exactes que vous demandez aux LLM ne sont pas disponibles publiquement car elles ne sont pas divulguées par les LLM.
 
+>[!NOTE]
+>
+> Pour plus d’informations sur la configuration des catégories, rubriques, invites et concurrents, reportez-vous à la page [Bonnes pratiques de configuration des catégories, rubriques, invites et concurrents](/help/overview/best-practices-topics-prompts.md).
+
 ### Étape 3 : préremplissage automatique des informations
 
 Une fois votre domaine intégré et que vous avez fourni les catégories et les rubriques, LLM Optimizer déclenche automatiquement l’analyse de présence de la marque.
@@ -83,7 +87,7 @@ Pour déverrouiller les informations sur le trafic d’agence et le trafic de r�
 
 ![Réseau CDN de configuration du client](/help/overview/assets/cc-cdn.png)
 
-Si aucun fournisseur de réseau CDN n’a été ajouté au préalable, vous serez invité à ajouter le transfert de journal CDN lors de l’accès initial aux tableaux de bord du trafic de référence et des agences. Pour plus d’informations, consultez :
+Si aucun fournisseur de réseau CDN n’a été ajouté au préalable comme dans l’exemple ci-dessus, vous serez invité à ajouter le transfert de journal CDN lors de l’accès initial aux tableaux de bord du trafic d’agence et de référence. Pour plus d’informations, consultez :
 
 * [Trafic d’agent](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [Trafic de référence](/help/dashboards/referral-traffic.md#setup#setup)
@@ -97,4 +101,4 @@ Après avoir fourni des informations pour le transfert du journal CDN, vous pouv
 * Utilisez [Opportunités](/help/dashboards/opportunities.md) pour identifier les améliorations de contenu et techniques.
 * Exportez des données et collaborez avec votre équipe ou invitez votre collègue à utiliser le produit.
 
-Enfin, pour comprendre pleinement les fonctionnalités de l’optimiseur LLM, explorez tous les [tableaux de bord](/help/dashboards/dashboards-overview.md) disponibles.
+Enfin, pour comprendre pleinement les fonctionnalités de LLM Optimizer, vous devez explorer tous les [tableaux de bord](/help/dashboards/dashboards-overview.md) disponibles.

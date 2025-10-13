@@ -1,9 +1,9 @@
 ---
 title: Trafic de référence
 description: Découvrez comment utiliser le tableau de bord du trafic de référence pour voir comment les visiteurs accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de référence.
-source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Trafic de référence
 
-Le trafic de référence montre comment les visiteurs et visiteuses accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de référence. Il suit et analyse les sources de trafic, les modèles de référence et les mesures de conversion des sites web et plateformes externes. Cela vous aidera à comprendre quelles sources, régions et pages génèrent le trafic le plus engagé. Les données proviennent des journaux CDN ou de la télémétrie opérationnelle d’AEM. Ces deux sources protègent la confidentialité et ne capturent pas de données personnelles des utilisateurs.
+Le trafic de référence montre comment les visiteurs et visiteuses accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de référence. Il suit et analyse les sources de trafic, les modèles de référence et les mesures de conversion des sites web et plateformes externes. Cela vous aidera à comprendre quelles sources, régions et pages génèrent le trafic le plus engagé. Les données proviennent des journaux CDN ou de [la télémétrie opérationnelle d’AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service). Ces deux sources protègent la confidentialité et ne capturent pas de données personnelles des utilisateurs. Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
 
-Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
+![Page de référence](/help/dashboards/assets/referral-traffic.png)
 
 Cette page présente les éléments suivants :
 
