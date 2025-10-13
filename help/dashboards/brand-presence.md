@@ -1,7 +1,7 @@
 ---
 title: Présence de la marque
 description: Découvrez comment utiliser le tableau de bord de la présence de la marque pour comprendre comment votre marque est perçue au niveau des réponses générées par l’IA.
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+source-git-commit: a37c4e7d2e26f16dc10dc7bc39ba58ba1df77cd5
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Le tableau de bord de la présence de la marque fournit un aperçu détaillé de la manière dont votre marque est perçue au niveau des réponses générées par l’IA. Il indique où, à quelle fréquence et dans quel contexte votre marque est mentionnée. Vous pouvez utiliser le tableau de bord pour mesurer la visibilité, suivre les citations et explorer les tendances de sentiment. Le tableau de bord est divisé en plusieurs sections, chacune fournissant des informations différentes. Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
 
-![Présence de la marque](/help/dashboards/assets/brand-main1.png)
+![Présence de la marque](/help/dashboards/assets/brand-main.png)
 
 Cette page présente les éléments suivants :
 
@@ -60,7 +60,7 @@ Les indicateurs de tendance pour chaque mesure clé montrent l’évolution de c
 
 Dans la section de comparaison des autres marques, vous pouvez sélectionner jusqu’à cinq autres marques et comparer leurs mentions et citations par rapport à votre marque. Vous pouvez ainsi afficher et comparer vos performances par rapport à celles d’autres marques.
 
-![Comparaison d’autres utilisateurs](/help/dashboards/assets/competitor-comparison1.png)
+![Comparaison d’autres utilisateurs](/help/dashboards/assets/other-comparison.png)
 
 Les autres marques sont sélectionnées dans la liste déroulante et les graphiques sont mis à jour lorsque vous cliquez sur **Appliquer des filtres**. Les graphiques affichent côte à côte les mentions hebdomadaires et les citations hebdomadaires. Vous pouvez également placer le pointeur de la souris sur le graphique pour voir l’évolution des données sur la période hebdomadaire.
 

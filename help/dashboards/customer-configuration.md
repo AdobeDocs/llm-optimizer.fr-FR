@@ -1,9 +1,9 @@
 ---
 title: Configuration du client
 description: Utilisez la configuration client pour définir comment votre marque sera surveillée et analysée sur la plateforme de l’optimiseur LLM.
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+source-git-commit: a37c4e7d2e26f16dc10dc7bc39ba58ba1df77cd5
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '800'
 ht-degree: 2%
 
 ---
@@ -98,7 +98,7 @@ Dans cet onglet, vous pouvez configurer vos flux CDN pour permettre à Adobe LLM
 
 Dans la fenêtre **Fournisseur de réseau CDN intégré** :
 
-1. Sélectionnez votre fournisseur de réseau CDN (par exemple, Akamai, Fastly géré par Adobe, Fastly, AWS Cloudfront, Azure CDN, Cloudflare ou autre).
+1. Sélectionnez votre fournisseur de réseau CDN.
 2. Cliquez sur **Intégration** pour activer le transfert du journal.
 
 Si vous sélectionnez **Autre**, vous devrez contacter Adobe pour obtenir de l’aide.
