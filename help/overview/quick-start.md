@@ -1,9 +1,9 @@
 ---
 title: Démarrage rapide
 description: Prise en main de Adobe LLM Optimizer - Intégrez votre marque, déverrouillez les informations de visibilité de l’IA et explorez les tableaux de bord pour améliorer les performances des recherches.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Démarrage rapide
 
-Pour commencer à utiliser l’optimiseur LLM, vous devez terminer le processus d’intégration comme décrit dans les étapes présentées ci-dessous. Une fois le processus terminé[&#x200B; vous disposerez d’un accès complet aux tableaux de bord de LLM Optimizer &#x200B;](/help/dashboards/dashboards-overview.md)et à d’autres fonctionnalités.
+Pour commencer à utiliser l’optimiseur LLM, vous devez terminer le processus d’intégration comme décrit dans les étapes présentées ci-dessous. Une fois le processus terminé[ vous disposerez d’un accès complet aux tableaux de bord de LLM Optimizer ](/help/dashboards/dashboards-overview.md)et à d’autres fonctionnalités.
 
 ## Présentation de l’intégration
 
@@ -32,7 +32,7 @@ Consultez la section ci-dessous pour plus d’informations sur l’activation de
 
 ### Clients AEM Cloud
 
-Si vous êtes un client AEM Cloud, vous avez la possibilité d’essayer LLM Optimizer à l’aide de la carte Annonce de produit dans [Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Si vous êtes un client AEM Cloud, vous avez la possibilité d’essayer LLM Optimizer à l’aide de la carte Annonce de produit dans [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Les invites nouvellement ajoutées n&#39;apparaîtront pas dans le [tableau de bord de présence de la marque](/help/dashboards/brand-presence.md) tant que le traitement n&#39;est pas terminé. Les clients AEM Cloud peuvent utiliser la version d’évaluation gratuite de LLM Optimizer. L’utilisation de plus de 200 invites nécessite un contrat de licence séparé. L’accès est fourni « en l’état » et « selon disponibilité », et peut être modifié, limité ou supprimé par Adobe à tout moment. Veuillez contacter votre représentant de compte pour plus d’informations.
@@ -68,14 +68,14 @@ Pour déclencher l’analyse de la présence de la marque et renseigner le table
 * Saisissez **rubriques personnalisées** ou sous-rubriques dont vous souhaitez effectuer le suivi. Les rubriques peuvent être des thèmes spécifiques liés à un volume élevé de mots-clés sans marque associés à votre domaine.
 * Créez **vos invites** pour surveiller la visibilité dans des requêtes spécifiques. Les invites sont des requêtes (avec et sans marque) qui fournissent une visibilité de base. Seul un nombre limité d’invites sera généré automatiquement en fonction des catégories et des rubriques que vous avez fournies.
 * Définissez la mention **alias** pour vous assurer que toutes les mentions d’une marque sont capturées et prises en compte.
-* Définissez **alias de la concurrence** pour suivre précisément les concurrents.
+* Définissez **autres alias** pour suivre précisément d’autres marques.
 
 >[!NOTE]
 >Les invites exactes que vous demandez aux LLM ne sont pas disponibles publiquement car elles ne sont pas divulguées par les LLM.
 
 >[!NOTE]
 >
-> Pour plus d’informations sur la configuration des catégories, rubriques, invites et concurrents, reportez-vous à la page [Bonnes pratiques de configuration des catégories, rubriques, invites et concurrents](/help/overview/best-practices-topics-prompts.md).
+> Pour plus d’informations sur la configuration des catégories, rubriques et invites, reportez-vous à la page [Bonnes pratiques pour la configuration des catégories, rubriques, invites](/help/overview/best-practices-topics-prompts.md).
 
 ### Étape 3 : préremplissage automatique des informations
 
@@ -96,7 +96,7 @@ Si aucun fournisseur de réseau CDN n’a été ajouté au préalable comme dans
 
 Après avoir fourni des informations pour le transfert du journal CDN, vous pouvez :
 
-* Affichez le tableau de bord [Brand Presence](/help/dashboards/brand-presence.md), visualisez votre score de visibilité et suivez vos performances par rapport à vos concurrents.
+* Affichez le tableau de bord [Présence de la marque](/help/dashboards/brand-presence.md) et visualisez votre score de visibilité et suivez vos performances par rapport aux autres marques.
 * Explorez les tableaux de bord [Agentic](/help/dashboards/agentic-traffic.md) et [Referral Traffic](/help/dashboards/referral-traffic.md), si le transfert du journal CDN a été configuré.
 * Utilisez [Opportunités](/help/dashboards/opportunities.md) pour identifier les améliorations de contenu et techniques.
 * Exportez des données et collaborez avec votre équipe ou invitez votre collègue à utiliser le produit.

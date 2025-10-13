@@ -1,35 +1,35 @@
 ---
 title: Configuration du client
 description: Utilisez la configuration client pour définir comment votre marque sera surveillée et analysée sur la plateforme de l’optimiseur LLM.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 1%
+source-wordcount: '813'
+ht-degree: 2%
 
 ---
 
 
 # Configuration du client {#customer-configuration}
 
-Le tableau de bord de configuration du client est un outil puissant qui fournit des informations sur la visibilité de votre marque dans les LLM. En configurant correctement des catégories, des rubriques, des invites et des concurrents, vous pouvez vous assurer que votre marque est bien positionnée pour apparaître dans les réponses générées par LLM. Cette configuration garantit que la plateforme adapte les informations à votre contexte commercial, ce qui permet une visibilité, un trafic et une analyse des opportunités précis.
+Le tableau de bord de configuration du client est un outil puissant qui fournit des informations sur la visibilité de votre marque dans les LLM. En configurant correctement des catégories, des rubriques et des invites, vous pouvez vous assurer que votre marque est bien positionnée pour apparaître dans les réponses générées par LLM. Cette configuration garantit que la plateforme adapte les informations à votre contexte commercial, ce qui permet une visibilité, un trafic et une analyse des opportunités précis.
 
 ![Tableau de bord de configuration du client](/help/dashboards/assets/customer-config.png)
 
 Pour configurer la manière dont LLM Optimizer surveille et analyse la présence de votre marque sur différents marchés et paysages concurrentiels, vous avez accès aux onglets suivants :
 
 * [Catégories](#categories)
-* [Suivi des concurrents](#competitor-tracking)
+* [Suivi d’autres](#others-tracking)
 * [Alias de marque](#brand-aliases)
 * [Data Insights](#data-insights)
 * [Configuration du réseau CDN](#agentic-cdn)
 
 >[!IMPORTANT]
 >
-> Pour plus d’informations sur la configuration des catégories, rubriques, invites et concurrents, reportez-vous à la page [Bonnes pratiques de configuration des catégories, rubriques, invites et concurrents](/help/overview/best-practices-topics-prompts.md).
+> Pour plus d’informations sur la configuration des catégories, rubriques et invites, reportez-vous à la page [Bonnes pratiques pour la configuration des catégories, rubriques, invites](/help/overview/best-practices-topics-prompts.md).
 
 ## Catégories {#categories}
 
-Dans l’onglet Catégories , vous pouvez définir les catégories métier ou les lignes de produits dont vous souhaitez effectuer le suivi et les associer à des régions spécifiques. Dans l’ensemble, l’onglet Catégories correspond à presque toutes les autres personnalisations de cette page, car les catégories apparaissent dans le champ Catégorie pour les autres personnalisations (suivi des concurrents, alias, etc.). Pour ajouter une nouvelle catégorie :
+Dans l’onglet Catégories , vous pouvez définir les catégories métier ou les lignes de produits dont vous souhaitez effectuer le suivi et les associer à des régions spécifiques. Dans l’ensemble, l’onglet Catégories correspond à presque toutes les autres personnalisations de cette page, car les catégories apparaissent dans le champ Catégorie pour les autres personnalisations (autres suivi, alias, etc.). Pour ajouter une nouvelle catégorie :
 
 1. Cliquez sur le bouton **Ajouter**.
 2. Dans la nouvelle fenêtre de configuration, ajoutez le **Nom de la catégorie**.
@@ -38,19 +38,19 @@ Dans l’onglet Catégories , vous pouvez définir les catégories métier ou le
 
 L’ajout de nouvelles catégories ne génère pas automatiquement de rubriques et d’invites - elles doivent être ajoutées manuellement à partir de l’onglet [Data Insights](#data-insights).
 
-Pour supprimer une catégorie, cliquez sur l’icône de suppression dans la liste des catégories. Attention, car **la suppression d’une catégorie supprimera également les éléments associés** tels que les concurrents que vous avez peut-être configurés ou les alias de marque liés à cette catégorie spécifique.
+Pour supprimer une catégorie, cliquez sur l’icône de suppression dans la liste des catégories. Attention, car **la suppression d’une catégorie supprimera également les éléments associés** comme les alias de marque liés à cette catégorie spécifique.
 
-## Suivi des concurrents {#competitor-tracking}
+## Suivi d’autres {#others-tracking}
 
-En utilisant le suivi des concurrents, vous pouvez suivre la manière dont vos concurrents sont mentionnés par rapport à votre marque dans différentes catégories et régions. Surveillez leur présence et leurs performances dans vos segments de marché. Pour personnaliser le tracking des concurrents :
+En utilisant cet onglet, vous pouvez suivre la manière dont vos collègues sont mentionnés par rapport à votre marque dans différentes catégories et régions. Surveillez leur présence et leurs performances dans vos segments de marché. Pour personnaliser le tracking :
 
-1. Pour ajouter un nouveau concurrent, cliquez sur le bouton **Ajouter**.
+1. Cliquez sur le bouton **Ajouter**.
 2. Dans la nouvelle fenêtre de configuration, sélectionnez la **Catégorie**. Les catégories créées précédemment apparaîtront ici.
-3. Ajoutez le nom du concurrent.
-4. Personnalisez l’alias et les domaines concurrents si nécessaire.
-5. Cliquez sur **Enregistrer** pour que le nouveau concurrent apparaisse dans la liste des concurrents.
+3. Ajoutez le nom de l&#39;autre.
+4. Personnalisez les autres alias et domaines si nécessaire.
+5. Cliquez sur **Enregistrer**.
 
-Pour supprimer un concurrent, cliquez sur l’icône de suppression dans la liste des concurrents.
+Pour supprimer une entrée dans la liste , cliquez sur l’icône de suppression .
 
 ## Alias de marque {#brand-aliases}
 
