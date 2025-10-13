@@ -1,9 +1,9 @@
 ---
 title: Configuration du client
 description: Utilisez la configuration client pour définir comment votre marque sera surveillée et analysée sur la plateforme de l’optimiseur LLM.
-source-git-commit: 099d4387b6a5efd25e142db13e309a181fe67941
+source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '789'
 ht-degree: 1%
 
 ---
@@ -90,7 +90,7 @@ De plus, vous pouvez également ajouter des rubriques/invites à la liste indép
 
 Sur la liste, vous pouvez cliquer sur chaque rubrique et la ou les invites associées apparaîtront. Pour supprimer la rubrique et ses invites associées, cliquez sur l&#39;icône de suppression de la liste.
 
-## Réseau CDN de l’agence {#agentic-cdn}
+<!--## Agentic CDN {#agentic-cdn}
 
-Non disponible (sera-t-il disponible pour publication ?).
+Not available (will it be available for release?).-->
 

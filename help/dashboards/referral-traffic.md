@@ -1,7 +1,7 @@
 ---
 title: Trafic de référence
 description: Découvrez comment utiliser le tableau de bord du trafic de référence pour voir comment les visiteurs accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de référence.
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 0%
@@ -78,10 +78,10 @@ Les tableaux Détails des sources de référence et Analyse des performances des
 
 La vue Détails des sources de référence répartit le trafic provenant de différentes plateformes telles qu’OpenAI, Microsoft, Google et Perplexity. Il affiche des mesures clés telles que les visites, le taux de rebond et le type de canal, ce qui vous aide à comprendre quelles sources d’IA et de recherche génèrent le trafic le plus engagé sur votre site.
 
-**Source** - Source du trafic de référence.
-**Visites** - Nombre total de visites pour chaque source.
-**Taux de rebond** - Pourcentage de sessions provenant de la source de référence qui n’ont eu aucun événement d’engagement.
-**Canal** - Le canal de la source, gagnée, payée ou les deux.
+* **Source** - Source du trafic de référence.
+* **Visites** - Nombre total de visites pour chaque source.
+* **Taux de rebond** - Pourcentage de sessions provenant de la source de référence qui n’ont eu aucun événement d’engagement.
+* **Canal** - Le canal de la source, gagnée, payée ou les deux.
 
 >[!TAB Analyse des performances des URL]
 
