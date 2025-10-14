@@ -1,9 +1,9 @@
 ---
 title: Démarrage rapide
 description: Prise en main de Adobe LLM Optimizer - Intégrez votre marque, déverrouillez les informations de visibilité de l’IA et explorez les tableaux de bord pour améliorer les performances des recherches.
-source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
+source-git-commit: 7a945ab37c7f45742cff093ef8f3133cf5971991
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Démarrage rapide
 
-Pour commencer à utiliser l’optimiseur LLM, vous devez terminer le processus d’intégration comme décrit dans les étapes présentées ci-dessous. Une fois le processus terminé[&#x200B; vous disposerez d’un accès complet aux tableaux de bord de LLM Optimizer &#x200B;](/help/dashboards/dashboards-overview.md)et à d’autres fonctionnalités.
+Pour commencer à utiliser l’optimiseur LLM, vous devez terminer le processus d’intégration comme décrit dans les étapes présentées ci-dessous. Une fois le processus terminé[ vous disposerez d’un accès complet aux tableaux de bord de LLM Optimizer ](/help/dashboards/dashboards-overview.md)et à d’autres fonctionnalités.
 
 ## Présentation de l’intégration
 
@@ -32,7 +32,7 @@ Consultez la section ci-dessous pour plus d’informations sur l’activation de
 
 ### Clients AEM Cloud
 
-Si vous êtes un client AEM Cloud, vous avez la possibilité d’essayer LLM Optimizer à l’aide de la carte Annonce de produit dans [Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Si vous êtes un client AEM Cloud, vous avez la possibilité d’essayer LLM Optimizer à l’aide de la carte Annonce de produit dans [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Les invites nouvellement ajoutées n&#39;apparaîtront pas dans le [tableau de bord de présence de la marque](/help/dashboards/brand-presence.md) tant que le traitement n&#39;est pas terminé. Les clients AEM Cloud peuvent utiliser la version d’évaluation gratuite de LLM Optimizer. L’utilisation de plus de 200 invites nécessite un contrat de licence séparé. L’accès est fourni « en l’état » et « selon disponibilité », et peut être modifié, limité ou supprimé par Adobe à tout moment. Veuillez contacter votre représentant de compte pour plus d’informations.
@@ -54,7 +54,7 @@ En outre, vous devez également configurer le [transfert de journal CDN](#step-4
 
 ### Clients cloud non AEM
 
-Une fois l’accord commercial finalisé, vous serez intégré via la commande slackbot avec le domaine que vous souhaitez intégrer sur LLM Optimizer. Une fois cette intégration terminée, vous pourrez vous connecter à LLM Optimizer via [https://llmo.now](https://llmo.now).
+Une fois l’accord commercial finalisé, vous serez intégré au domaine que vous souhaitez intégrer à LLM Optimizer. Une fois cette intégration terminée, vous pourrez vous connecter à LLM Optimizer via [https://llmo.now](https://llmo.now).
 
 ### Étape 2 : personnalisation des catégories, des rubriques et des invites
 
