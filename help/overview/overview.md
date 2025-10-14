@@ -1,7 +1,8 @@
 ---
 title: Présentation de LLM Optimizer
 description: Découvrez comment Adobe LLM Optimizer améliore la visibilité de la marque dans les recherches pilotées par l’IA. Effectuez le suivi des mentions, des citations et des informations. Commencez dès aujourd’hui à optimiser votre engagement et votre influence.
-source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
+feature: Onboarding
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -10,6 +11,8 @@ ht-degree: 0%
 
 
 # Présentation de LLM Optimizer
+
+>[!SLIDE](llm-optimizer-overview)
 
 Cette page présente tout ce que vous devez savoir sur Adobe LLM Optimizer avant de commencer à utiliser l’outil :
 
@@ -54,11 +57,11 @@ L’optimisation générative du moteur est par nature transversale. LLM Optimiz
 
 Avec Adobe LLM Optimizer, vous pouvez :
 
-**Mesurer la visibilité de la marque** - Suivez quand, où et à quelle fréquence votre marque est mentionnée dans les résultats de recherche optimisés par l’IA. Allez au-delà des conjectures avec un score de visibilité clair que vous pouvez comparer au fil du temps. Voir [&#x200B; Tableau de bord de la présence de la marque &#x200B;](/help/dashboards/brand-presence.md).
-**Comparer les autres** - Voyez comment votre marque se compare aux autres, y compris aux concurrents dans les moteurs génératifs. Identifier la part des écarts de voix et découvrir les avantages concurrentiels. Voir [&#x200B; Tableau de bord de la présence de la marque &#x200B;](/help/dashboards/brand-presence.md).
+**Mesurer la visibilité de la marque** - Suivez quand, où et à quelle fréquence votre marque est mentionnée dans les résultats de recherche optimisés par l’IA. Allez au-delà des conjectures avec un score de visibilité clair que vous pouvez comparer au fil du temps. Voir [ Tableau de bord de la présence de la marque ](/help/dashboards/brand-presence.md).
+**Comparer les autres** - Voyez comment votre marque se compare aux autres, y compris aux concurrents dans les moteurs génératifs. Identifier la part des écarts de voix et découvrir les avantages concurrentiels. Voir [ Tableau de bord de la présence de la marque ](/help/dashboards/brand-presence.md).
 **Découvrir les opportunités exploitables** - Identifiez les opportunités de contenu (par exemple, les FAQ, les résumés, les schémas) et les opportunités techniques (crawlabilité, problèmes d’indexation) qui augmentent directement les mentions et les citations. Voir [Tableau de bord des opportunités](/help/dashboards/opportunities.md).
 **Suivi de l’impact du trafic depuis l’IA** - Surveillez le trafic des agences (provenant des assistants d’IA) et le trafic de référence (clics des utilisateurs dans les citations) vers vos propriétés. Liez la visibilité géographique à un engagement réel. Voir [Tableau de bord du trafic dynamique](/help/dashboards/agentic-traffic.md) et [Tableau de bord du trafic de référence](/help/dashboards/referral-traffic.md).
-**Activer Team Collaboration** - Partagez des tableaux de bord, attribuez des propriétaires pour les invites ou les catégories, et assurez-vous que les objectifs de visibilité sont suivis dans les fonctions de marketing, d&#39;optimisation du moteur de recherche (SEO) et de communication. Voir le tableau de bord Collaboration [&#128279;](/help/dashboards/collaboration.md).
+**Activer Team Collaboration** - Partagez des tableaux de bord, attribuez des propriétaires pour les invites ou les catégories, et assurez-vous que les objectifs de visibilité sont suivis dans les fonctions de marketing, d&#39;optimisation du moteur de recherche (SEO) et de communication. Voir le tableau de bord Collaboration [](/help/dashboards/collaboration.md).
 
 ## En savoir plus
 

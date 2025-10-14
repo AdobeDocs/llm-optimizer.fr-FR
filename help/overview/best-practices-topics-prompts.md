@@ -1,7 +1,8 @@
 ---
 title: Bonnes pratiques relatives aux catégories, rubriques, invites et autres
 description: Optimisez les informations LLM en configurant des catégories, des rubriques, des invites et d'autres marques pour effectuer le suivi, y compris les concurrents, pour une surveillance de marque personnalisée et une analyse de contenu stratégique.
-source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
+feature: Best Practices, Customer Configuration
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 0%

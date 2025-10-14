@@ -1,7 +1,8 @@
 ---
 title: Trafic de référence
-description: Découvrez comment utiliser le tableau de bord du trafic de référence pour voir comment les visiteurs accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de référence.
-source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
+description: Découvrez comment utiliser le tableau de bord du trafic de référence pour voir comment les visiteurs et visiteuses accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de référence.
+feature: Referral Traffic
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
@@ -62,7 +63,7 @@ Outre les mesures de performances globales présentées ci-dessus, le panneau **
 
 <!--## Top Referral URLs {#top-referrals}
 
-The Top Referral URLs list surfaces your site’s most visited pages from referrals.
+The Top Referral URLs list surfaces your site's most visited pages from referrals.
 
 ![Top Referral URLs](/help/dashboards/assets/top-url.png)-->
 
