@@ -1,9 +1,9 @@
 ---
 title: Trafic de référence
 description: Découvrez comment utiliser le tableau de bord du trafic de référence pour voir comment les visiteurs accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de référence.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Trafic de référence
 
-Le trafic de référence montre comment les visiteurs et visiteuses accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de référence. Il suit et analyse les sources de trafic, les modèles de référence et les mesures de conversion des sites web et plateformes externes. Cela vous aidera à comprendre quelles sources, régions et pages génèrent le trafic le plus engagé. Les données proviennent des journaux CDN ou de [la télémétrie opérationnelle d’AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service). Ces deux sources protègent la confidentialité et ne capturent pas de données personnelles des utilisateurs. Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
+Le trafic de référence montre comment les visiteurs et visiteuses accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de référence. Il suit et analyse les sources de trafic, les modèles de référence et les mesures de conversion des sites web et plateformes externes. Cela vous aidera à comprendre quelles sources, régions et pages génèrent le trafic le plus engagé. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
 
 ![Page de référence](/help/dashboards/assets/referral-traffic.png)
 
@@ -25,7 +25,7 @@ Cette page présente les éléments suivants :
 
 ## Configuration {#setup}
 
-Lors de la première connexion, le tableau de bord Trafic de référence peut apparaître vide. Pour afficher vos données, vous devez configurer un fournisseur de trafic de référence en sélectionnant **Accéder à la configuration**.
+Lors de la première connexion, le tableau de bord Trafic de référence peut apparaître vide. Pour afficher vos données, vous devez configurer le [transfert du journal CDN](/help/dashboards/customer-configuration.md#cdn-configuration) en sélectionnant **Accéder à la configuration**.
 
 ![Configuration du parrainage](/help/dashboards/assets/referral-setup1.png)
 
@@ -33,7 +33,7 @@ Lors de la première connexion, le tableau de bord Trafic de référence peut ap
 2. Enter a primary contact email.
 3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM-->
 
-Une fois qu’un fournisseur de trafic de référence a été sélectionné, le tableau de bord s’affiche avec les mesures de trafic de référence.
+Une fois activé, le tableau de bord s’affichera avec les mesures de trafic de parrainage.
 
 ## Filtres {#filters}
 

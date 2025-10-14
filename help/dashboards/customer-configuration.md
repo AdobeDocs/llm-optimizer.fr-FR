@@ -1,9 +1,9 @@
 ---
 title: Configuration du client
 description: Utilisez la configuration client pour définir comment votre marque sera surveillée et analysée sur la plateforme de l’optimiseur LLM.
-source-git-commit: a37c4e7d2e26f16dc10dc7bc39ba58ba1df77cd5
+source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '802'
 ht-degree: 2%
 
 ---
@@ -92,7 +92,7 @@ Sur la liste, vous pouvez cliquer sur chaque rubrique et la ou les invites assoc
 
 ## Configuration du réseau CDN {#cdn-configuration}
 
-Dans cet onglet, vous pouvez configurer vos flux CDN pour permettre à Adobe LLM Optimizer d’analyser vos données CDN. Ces données seront utilisées pour alimenter les tableaux de bord (comme le trafic d’agent), fournissant des informations sur les modèles de trafic, les mesures de performances et les opportunités d’optimisation. Pour intégrer votre fournisseur de réseau CDN, cliquez sur **Intégrer le réseau CDN**.
+Dans cet onglet, vous pouvez configurer vos flux CDN pour permettre à Adobe LLM Optimizer d’analyser vos données CDN. Ces données seront utilisées pour alimenter les tableaux de bord (tels que le trafic d’agence et de référence), fournissant des informations sur les modèles de trafic, les mesures de performances et les opportunités d’optimisation. Pour intégrer votre fournisseur de réseau CDN, cliquez sur **Intégrer le réseau CDN**.
 
 ![Réseau CDN de configuration du client](/help/overview/assets/cc-cdn.png)
 
@@ -101,4 +101,4 @@ Dans la fenêtre **Fournisseur de réseau CDN intégré** :
 1. Sélectionnez votre fournisseur de réseau CDN.
 2. Cliquez sur **Intégration** pour activer le transfert du journal.
 
-Si vous sélectionnez **Autre**, vous devrez contacter Adobe pour obtenir de l’aide.
+Si vous sélectionnez **Autre**, vous devrez contacter llmo-now@adobe.com pour obtenir de l’aide.
