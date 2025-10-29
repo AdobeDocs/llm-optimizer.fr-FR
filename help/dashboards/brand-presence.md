@@ -2,9 +2,9 @@
 title: Présence de la marque
 description: Découvrez comment utiliser le tableau de bord de la présence de la marque pour comprendre comment votre marque est perçue au niveau des réponses générées par l’IA.
 feature: Brand Presence
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,7 @@ En haut de la page, vous pouvez appliquer des filtres pour affiner votre vue. Le
 
 * **Période** - Sélectionnez la période pour les données affichées. Par exemple, les 4 dernières semaines. Vous avez également la possibilité de personnaliser la période en sélectionnant l’option **Semaines personnalisées**.
 * **Catégorie** - Filtrez les résultats affichés par catégories prédéfinies ou catégories personnalisées.
+* **Sujet** - Filtrez par sujet afin d’analyser les thèmes du contenu et les domaines où votre marque apparaît dans les réponses de l’IA.
 * **Platform** - Choisissez le moteur d’IA à analyser.
 * **Origine des invites** - Sélectionnez l’origine des invites. L’origine peut être saisie par l’utilisateur ou générée par l’IA.
 * **Invite de branding** - Filtrez les résultats à l’aide d’invites de marque ou non.
@@ -47,9 +48,9 @@ Le tableau de bord met en évidence trois mesures très importantes en haut de l
 
 Le score de visibilité est composé de facteurs tels que : mentions, citations, sentiment et classement. Chaque facteur est associé à un certain « poids » qui s’ajoute au score final.
 
-### Mentions {#mentions}
+### Mentions de marque {#mentions}
 
-Cette mesure représente le nombre total de fois où votre marque ou vos catégories ont été mentionnées dans les invites d’IA échantillonnées. Par exemple, vous avez la marque « Café B », avec les catégories « Machines » et « Accessoires », et cette mesure comptabilise le nombre total de fois qu’elles apparaissent dans les réponses de l’IA échantillonnée.
+Cette mesure représente le nombre total de fois où votre marque ou vos catégories ont été mentionnées dans les invites d’IA échantillonnées. Par exemple, si vous disposez de la marque « Café B », avec les catégories « Machines » et « Accessoires », cette mesure comptabilise le nombre total de fois qu’elles apparaissent dans les réponses de l’IA échantillonnée.
 
 ### Citations {#citations}
 
@@ -63,11 +64,11 @@ Dans la section de comparaison des autres marques, vous pouvez sélectionner jus
 
 ![Comparaison d’autres utilisateurs](/help/dashboards/assets/other-comparison.png)
 
-Les autres marques sont sélectionnées dans la liste déroulante et les graphiques sont mis à jour lorsque vous cliquez sur **Appliquer des filtres**. Les graphiques affichent côte à côte les mentions hebdomadaires et les citations hebdomadaires. Vous pouvez également placer le pointeur de la souris sur le graphique pour voir l’évolution des données sur la période hebdomadaire.
+Les autres marques sont sélectionnées dans la liste déroulante et les graphiques sont mis à jour lorsque vous cliquez sur **Appliquer des filtres**. Les graphiques affichent côte à côte les mentions de marque hebdomadaires et les citations de marque hebdomadaires. Vous pouvez également placer le pointeur de la souris sur le graphique pour voir l’évolution des données sur la période hebdomadaire.
 
 ## Analyse Des Tendances Des Sentiments {#sentiment-trend}
 
-Dans la section d’analyse des tendances des sentiments, vous pouvez suivre la manière dont votre marque est perçue dans les réponses de l’IA échantillonnée. La mesure de tendance du sentiment peut être positive, neutre ou négative. Par exemple, il peut être positif si les réponses mettent en évidence la qualité du produit ou négatif si elles mentionnent un mauvais service. Le graphique de tendance montre les changements dans la perception de la marque d&#39;une semaine à l&#39;autre. La section n’est renseignée qu’une fois votre marque mentionnée.
+Dans la section d’analyse des tendances des sentiments, vous pouvez suivre la manière dont votre marque est perçue dans les réponses de l’IA échantillonnée. La mesure de tendance du sentiment peut être positive, neutre ou négative. Par exemple, il peut être positif si les réponses mettent en évidence la qualité du produit ou négatif si elles mentionnent un mauvais service. Le graphique de tendance montre les changements dans la perception de la marque d&#39;une semaine à l&#39;autre. Cette section n’est renseignée qu’une fois votre marque mentionnée.
 
 ![Tendance des sentiments](/help/dashboards/assets/sentiment-trend.png)
 
@@ -79,7 +80,7 @@ Grâce au tableau **informations sur les données**, vous pouvez explorer les ru
 
 ![Data Insights](/help/dashboards/assets/data-insights.png)
 
-Les deux tableaux comportent un champ de recherche pour un accès rapide aux rubriques. Vous pouvez également utiliser l’option **Exporter** pour télécharger le fichier csv de la table et partager les informations avec votre équipe ou inclure la table dans les rapports d’exécution.
+Les deux tableaux comportent un champ de recherche pour un accès rapide aux rubriques et vous pouvez personnaliser les mesures affichées en cliquant sur le bouton **Configurer les colonnes**. Vous pouvez également utiliser l’option **Exporter** pour télécharger le fichier csv de la table et partager les informations avec votre équipe ou inclure les tables dans les rapports d’exécution.
 
 Cliquez sur les onglets ci-dessous pour obtenir plus d’informations sur chaque tableau et les mesures associées.
 
@@ -98,6 +99,9 @@ Le tableau des informations sur les données vous permet d’explorer les rubriq
 * **Position** - La prédominance relative de votre marque dans les réponses de l’IA, calculée sous la forme d’une moyenne sur toutes les semaines.
 * **Toutes les citations** - Nombre de sources uniques citées dans les réponses de l’IA pour cette rubrique ou cette combinaison de rubrique/invite (y compris les citations détenues).
 * **Citations détenues** - Nombre de fois où votre marque a été citée dans les réponses de l’IA pour ce mot-clé ou cette combinaison mot-clé/question.
+  <!--* **Executions**-->
+
+Vous pouvez également afficher des détails supplémentaires pour chaque rubrique en cliquant sur l’icône **Détails** à la fin de chaque ligne.
 
 >[!TAB Part de voix]
 

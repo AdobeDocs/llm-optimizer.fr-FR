@@ -2,9 +2,9 @@
 title: Inspecteur d’URL
 description: Découvrez comment utiliser l’Inspecteur d’URL pour analyser les performances de pages spécifiques de votre domaine dans les recherches par IA.
 feature: URL Inspector
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 L’Inspecteur d’URL vous permet d’analyser les performances de pages spécifiques de votre domaine dans les recherches par IA. Il combine la visibilité, le trafic des agents et les données de référence au niveau de l’URL pour vous donner une vue granulaire des URL citées et de leur fréquence d’apparition dans les réponses.
 
-![&#x200B; Inspecteur d’URL &#x200B;](/help/dashboards/assets/url-insp.png)
+![ Inspecteur d’URL ](/help/dashboards/assets/url-insp.png)
 
 ## Filtres
 
@@ -36,14 +36,14 @@ L’Inspecteur d’URL fournit plusieurs mesures d’aperçu afin que vous puiss
 * **Nombre total d’invites uniques** - Nombre total d’invites uniques de l’IA.
 * **URL citées uniques** - Nombre d’URL détenues uniques qui ont été citées.
 * **Nombre total de fois citées** - Nombre total de fois où une URL détenue a été citée dans les réponses générées par l’IA.
-<!-- * **Total agentic hits** - The total number of hits from AI agents on your URLs.
-* **Referral hits from LLMs** - The total number of hits directed from AI-generated answers to your URLs.-->
+* **Nombre total d’accès aux agents** - Nombre total d’accès provenant des agents AI sur vos URL.
+* **Accès de référence à partir des LLM** - Nombre total d’accès dirigés depuis les réponses générées par l’IA vers vos URL.
 
 Les indicateurs de tendance pour chaque mesure d’aperçu montrent l’évolution de ces valeurs au fil du temps par rapport à la période précédente.
 
 ## Les URL citées
 
-La vue des URL citées répertorie toutes les URL de votre marque qui ont été citées dans les réponses générées par l’IA, avec des mesures annexes. Le tableau de données comporte également un champ de recherche pour un accès rapide à des URL spécifiques. Vous pouvez également utiliser l’option **Exporter** pour télécharger le fichier csv de la table et partager les informations avec votre équipe ou inclure la table dans les rapports d’exécution.
+La vue des URL citées répertorie toutes les URL de votre marque qui ont été citées dans les réponses générées par l’IA, avec des mesures annexes. Les deux tableaux comportent un champ de recherche pour un accès rapide aux rubriques et vous pouvez personnaliser les mesures affichées en cliquant sur le bouton **Configurer les colonnes**. Vous pouvez également utiliser l’option **Exporter** pour télécharger le fichier csv de la table et partager les informations avec votre équipe ou inclure la table dans les rapports d’exécution.
 
 ![URL citées](/help/dashboards/assets/cited-urls.png)
 
@@ -74,6 +74,6 @@ Les mesures suivantes sont fournies :
 
 ### Fenêtre Détails
 
-Pour les vues citées et de tendance, les URL comportent un bouton **Détails** lorsque vous placez le pointeur de la souris sur une URL spécifique. Cliquez sur le bouton pour afficher une fenêtre distincte avec des détails supplémentaires. La fenêtre de détails indique la fréquence de citation de l’URL, le sentiment des réponses de l’IA lorsqu’elle est mentionnée, les sujets et les invites dans lesquels elle apparaît et les tendances du trafic d’agent et de référence au fil du temps (pour les URL détenues).
+Pour les vues citées et de tendance, les URL comportent un bouton **Détails** à la fin de chaque ligne. Cliquez sur le bouton pour afficher une fenêtre distincte avec des détails supplémentaires. La fenêtre de détails indique la fréquence à laquelle l’URL est citée, <!--the sentiment of AI responses where it is mentioned,--> les rubriques et les invites dans lesquelles elle apparaît et les tendances du trafic d’agents et de référents au fil du temps (pour les URL détenues).
 
 ![Fenêtre Détails](/help/dashboards/assets/details-url.png)

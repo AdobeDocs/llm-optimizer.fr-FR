@@ -2,9 +2,9 @@
 title: Trafic d’agent
 description: Découvrez comment utiliser le tableau de bord du trafic d’agents afin de voir comment les agents d’IA interagissent avec votre site.
 feature: Agentic Traffic
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ En haut de la page, il y a trois mesures clés que vous devez connaître :
 
 * **Interactions avec les agents** - Cette mesure représente le nombre total de requêtes effectuées par des agents AI sur votre site web. Cela inclut tout le trafic provenant des moteurs de recherche, des chatbots et d’autres trafics non humains.
 * **Taux de succès** - Cette mesure représente le pourcentage de requêtes HTTP réussies, y compris les réponses directes réussies et les redirections.
-* **TTFB moyen** - Le temps jusqu’au premier octet (TTFB) mesure le temps nécessaire pour que le premier octet de données soit reçu du serveur. Des valeurs faibles indiquent des temps de réponse du serveur plus rapides.
+* **TTFB moyen** - Le temps jusqu’au premier octet (TTFB) mesure le temps nécessaire pour que le premier octet de données soit reçu du serveur. La valeur moyenne est pondérée en fonction du nombre de requêtes renvoyant chaque code et exclut les requêtes qui ont donné lieu à des réponses 5xx. Des valeurs faibles indiquent des temps de réponse du serveur plus rapides.
 
 Les indicateurs de tendance pour chaque mesure clé montrent l’évolution de ces valeurs au fil du temps par rapport à la période précédente.
 
@@ -82,7 +82,7 @@ Utilisez le graphique Tendances du trafic d’agent pour effectuer le suivi des 
 
 ## Déplacements en haut et en bas {#top-bottom-movers}
 
-La vue des déménageurs en haut et en bas met en évidence les URL présentant les plus grands changements de trafic d’agent d’une semaine à l’autre, à savoir les visites ou les accès des systèmes d’IA accédant à votre contenu. Top Movers affiche les pages qui gagnent en visibilité ou en engagement, tandis que Bottom Movers révèle les URL qui connaissent les baisses les plus importantes. Cela vous permet d’identifier rapidement le contenu à la hausse, ceux qui peuvent nécessiter une attention particulière et les endroits où les modèles de découverte pilotés par l’IA se modifient.
+La vue des déménageurs en haut et en bas met en évidence les URL présentant les plus grands changements de trafic d’agent d’une semaine à l’autre, à savoir les visites ou les accès des systèmes d’IA accédant à votre contenu. Le tableau **Principaux déménageurs** montre les pages qui gagnent en visibilité ou en engagement, tandis que le tableau **Principaux déménageurs** révèle les URL qui connaissent les déclins les plus importants. Cela vous permet d’identifier rapidement le contenu à la hausse, ceux qui peuvent nécessiter une attention particulière et les endroits où les modèles de découverte pilotés par l’IA se modifient.
 
 ![Déplacements haut et bas](/help/dashboards/assets/movers.png)
 
@@ -102,6 +102,8 @@ Le tableau Analyse de l’agent utilisateur fournit une répartition du trafic p
 * **Type d’agent** - L’agent d’IA qui analyse la page, soit un robot d’exploration, soit un chatbot.
 * **Accès** - Nombre total de requêtes effectuées par les agents d’IA pour ce type de page spécifique.
 
+Vous pouvez personnaliser les mesures affichées en cliquant sur le bouton **Configurer les colonnes**.
+
 >[!TAB Analyse des performances des URL]
 
 Le tableau Analyse des performances des URL affiche une vue détaillée des URL individuelles. Cela inclut les accès, les agents uniques, les principaux agents, les taux de succès et les catégories. Vous pouvez ainsi identifier les pages à forte valeur ajoutée, détecter les écarts d’analyse et optimiser le contenu pour les moteurs d’IA. Les URL sont classées par volume de trafic. Le tableau contient les catégories suivantes :
@@ -113,13 +115,15 @@ Le tableau Analyse des performances des URL affiche une vue détaillée des URL 
 * **Type d’agent principal** - Type de l’agent AI qui a généré le plus de trafic vers cette URL.
 * **Taux de succès** - Pourcentage de requêtes HTTP réussies, y compris les réponses directes réussies et les redirections.
 * **Catégorie** - La catégorie qui correspond le mieux au contenu de votre page.
+* **TTFB moyen (ms)** - Temps jusqu’au premier octet (TTFB) mesure le temps nécessaire au premier octet de données à recevoir du serveur (en millisecondes). La valeur moyenne est pondérée en fonction du nombre de requêtes renvoyant chaque code et exclut les requêtes qui ont donné lieu à des réponses 5xx. Des valeurs faibles indiquent des temps de réponse du serveur plus rapides.
+* **Codes de réponse** - les codes d’état HTTP observés pour l’URL.
 
-Le tableau Performances des URL comporte un champ de recherche pour un accès rapide aux URL. Vous pouvez également afficher des détails supplémentaires pour chaque URL en cliquant sur l’icône d’informations à la fin de chaque ligne.
+Le tableau Performances des URL comporte un champ de recherche pour un accès rapide aux URL et vous pouvez personnaliser les mesures affichées en cliquant sur le bouton **Configurer les colonnes**. Vous pouvez également afficher des détails supplémentaires pour chaque URL en cliquant sur l’icône **Détails** à la fin de chaque ligne.
 
 ![détails de l’URL](/help/dashboards/assets/details.png)
 
-La vue Détails de l’URL offre une compréhension globale des performances d’une page, en indiquant la fréquence à laquelle elle est citée, le sentiment des réponses de l’IA lorsqu’elle est mentionnée, les sujets et les invites dans lesquels elle apparaît et les tendances du trafic d’agents et de recommandations au fil du temps.
+La vue Détails de l’URL offre une compréhension holistique des performances d’une page, montrant la fréquence à laquelle elle est citée, le sentiment des réponses de l’IA où elle est mentionnée, les sujets et les invites dans lesquels elle apparaît et les tendances du trafic d’agents et de recommandations au fil du temps.
 
 >[!ENDTABS]
 
-Sur les deux tableaux, vous pouvez utiliser l’option **Exporter** pour télécharger le tableau .csv et partager les informations avec votre équipe ou inclure le tableau dans les rapports d’exécution.
+Sur les deux tableaux, vous pouvez utiliser l’option **Exporter** pour télécharger le tableau .csv et partager les informations avec votre équipe ou inclure les tableaux dans les rapports d’exécution.

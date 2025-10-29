@@ -2,9 +2,9 @@
 title: Trafic de référence
 description: Découvrez comment utiliser le tableau de bord du trafic de référence pour voir comment les visiteurs et visiteuses accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de référence.
 feature: Referral Traffic
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Lors de la première connexion, le tableau de bord Trafic de référence peut ap
 2. Enter a primary contact email.
 3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM-->
 
-Une fois activé, le tableau de bord s’affichera avec les mesures de trafic de parrainage.
+Une fois activé, le tableau de bord sera renseigné avec les mesures de trafic de référence.
 
 ## Filtres {#filters}
 
@@ -54,12 +54,13 @@ Après avoir sélectionné le filtre souhaité, cliquez sur **Appliquer les filt
 Le tableau de bord met en évidence les performances globales des références en affichant des mesures clés, notamment :
 
 * **Trafic de référence total** - Trafic de référence total provenant de toutes les sources.
+* **Trafic de référence provenant des LLM** - Trafic de référence total provenant des LLM.
 * **Taux de consentement** - Pourcentage de visiteurs et visiteuses qui acceptent une invite de consentement.
 * **Taux de rebond** - Pourcentage de sessions provenant de sources de référence qui n’ont eu aucun événement d’engagement.
 
 ![Page de référence](/help/dashboards/assets/referral-traffic.png)
 
-Outre les mesures de performances globales présentées ci-dessus, le panneau **Principales régions** répartit le trafic par zone géographique. Pendant ce temps, le panneau **Principales sources de référence** montre les plateformes qui génèrent le plus de visites. Les indicateurs de tendance des mesures montrent l’évolution de ces valeurs au fil du temps par rapport à la période précédente.
+Outre les mesures de performances globales présentées ci-dessus, trois panneaux supplémentaires présentent la distribution du trafic sur différents marchés, différentes sources de référence et différentes catégories d’intention de page <!-- the **Top Regions** panel breaks down traffic by geography. Meanwhile, the **Top Referral Sources** panel shows the platforms driving the most visits. Trend indicators for the metrics show how these values are changing over time compared to the previous period.-->
 
 <!--## Top Referral URLs {#top-referrals}
 
@@ -90,4 +91,4 @@ La vue Analyse des performances des URL classe les pages les plus performantes e
 
 >[!ENDTABS]
 
-Sur les deux tableaux, vous pouvez utiliser l’option **Exporter** pour télécharger le tableau .csv et partager les informations avec votre équipe ou inclure le tableau de trafic de référence dans les rapports d’exécution.
+Sur les deux tableaux, vous pouvez utiliser l’option **Exporter** pour télécharger le tableau .csv et partager les informations avec votre équipe ou inclure les tableaux dans les rapports d’exécution. De plus, pour les deux tableaux, vous pouvez personnaliser les mesures affichées en cliquant sur le bouton **Configurer les colonnes**.
