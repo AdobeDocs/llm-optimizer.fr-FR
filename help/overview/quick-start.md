@@ -2,9 +2,9 @@
 title: Démarrage rapide
 description: Prise en main de Adobe LLM Optimizer - Intégrez votre marque, déverrouillez les informations de visibilité de l’IA et explorez les tableaux de bord pour améliorer les performances des recherches.
 feature: Quickstart, Onboarding
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 48f7f64cd68c442f4a6837c5f4b7b29c3b175d1b
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Démarrage rapide
 
-Pour commencer à utiliser l’optimiseur LLM, vous devez terminer le processus d’intégration comme décrit dans les étapes présentées ci-dessous. Une fois le processus terminé[&#x200B; vous disposerez d’un accès complet aux tableaux de bord de LLM Optimizer &#x200B;](/help/dashboards/dashboards-overview.md)et à d’autres fonctionnalités.
+Pour commencer à utiliser l’optimiseur LLM, vous devez terminer le processus d’intégration comme décrit dans les étapes présentées ci-dessous. Une fois le processus terminé[ vous disposerez d’un accès complet aux tableaux de bord de LLM Optimizer ](/help/dashboards/dashboards-overview.md)et à d’autres fonctionnalités.
 
 ## Présentation de l’intégration
 
@@ -33,7 +33,7 @@ Consultez la section ci-dessous pour plus d’informations sur l’activation de
 
 ### Clients AEM Cloud
 
-Si vous êtes un client AEM Cloud, vous avez la possibilité d’essayer LLM Optimizer à l’aide de la carte Annonce de produit dans [Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Si vous êtes un client AEM Cloud, vous avez la possibilité d’essayer LLM Optimizer à l’aide de la carte Annonce de produit dans [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Les invites nouvellement ajoutées n&#39;apparaîtront pas dans le [tableau de bord de présence de la marque](/help/dashboards/brand-presence.md) tant que le traitement n&#39;est pas terminé. Les clients AEM Cloud peuvent utiliser la version d’évaluation gratuite de LLM Optimizer. L’utilisation de plus de 200 invites nécessite un contrat de licence séparé. L’accès est fourni « en l’état » et « selon disponibilité », et peut être modifié, limité ou supprimé par Adobe à tout moment. Veuillez contacter votre représentant de compte pour plus d’informations.
@@ -47,7 +47,7 @@ Une fois que vous avez cliqué sur le bouton **Essayer LLM Optimizer**, vous êt
 >[!NOTE]
 >Le domaine que vous avez fourni sera utilisé par tous les membres de votre organisation et ne peut pas être modifié.
 
-Pour déclencher l’analyse de la présence de la marque, vous devez fournir les catégories, les rubriques et les invites.
+Un petit ensemble de catégories, de rubriques et d’invites sera généré pendant la phase d’intégration. L’analyse de la présence de la marque sur ces invites sera disponible peu de temps après l’intégration de votre site.
 
 ![Analyse de la présence des marques](/help/overview/assets/bp-analysis.png)
 
@@ -59,7 +59,7 @@ Une fois l’accord commercial finalisé, vous serez intégré au domaine que vo
 
 ### Étape 2 : personnalisation des catégories, des rubriques et des invites
 
-Pour déclencher l’analyse de la présence de la marque et renseigner le tableau de bord avec des informations sur la visibilité de votre marque, vous devez personnaliser les catégories, les rubriques et les invites. Cette configuration est créée dans le [tableau de bord de configuration du client](/help/dashboards/customer-configuration.md).
+Une fois votre site intégré, vous pouvez afficher l’analyse de la présence de la marque en fonction du petit ensemble d’invites qui ont été générées automatiquement pendant la phase d’intégration. À l’avenir, vous pourrez personnaliser les catégories, les rubriques et les invites de votre marque. Cette configuration est créée dans le [tableau de bord de configuration du client](/help/dashboards/customer-configuration.md).
 
 ![Tableau de bord de configuration du client](/help/overview/assets/prompt-creation.png)
 
@@ -78,9 +78,9 @@ Pour déclencher l’analyse de la présence de la marque et renseigner le table
 >
 > Pour plus d’informations sur la configuration des catégories, rubriques et invites, reportez-vous à la page [Bonnes pratiques pour la configuration des catégories, rubriques, invites](/help/overview/best-practices-topics-prompts.md).
 
-### Étape 3 : préremplissage automatique des informations
+### Étape 3 : Informations sur la présence de la marque
 
-Une fois votre domaine intégré et que vous avez fourni les catégories et les rubriques, LLM Optimizer déclenche automatiquement l’analyse de présence de la marque.
+Une fois votre domaine intégré, des informations initiales s’affichent dans la vue de présence de la marque en fonction des invites qui ont été générées automatiquement lors de l’intégration. Une fois que vous avez personnalisé vos propres catégories, rubriques et invites, LLM Optimizer déclenche automatiquement l&#39;analyse de la présence de la marque sur les invites que vous avez fournies et les résultats seront disponibles dans 24 heures.
 
 ### Étape 4 : fournir des informations pour le transfert du journal CDN {#step-4}
 
