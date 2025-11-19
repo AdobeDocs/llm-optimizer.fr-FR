@@ -2,9 +2,9 @@
 title: Démarrage rapide
 description: Prise en main de Adobe LLM Optimizer - Intégrez votre marque, déverrouillez les informations de visibilité de l’IA et explorez les tableaux de bord pour améliorer les performances des recherches.
 feature: Quickstart, Onboarding
-source-git-commit: 48f7f64cd68c442f4a6837c5f4b7b29c3b175d1b
+source-git-commit: 3068247d9d13d0c3cd22e2077daa06fd1680d6b3
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -12,11 +12,22 @@ ht-degree: 0%
 
 # Démarrage rapide
 
-Pour commencer à utiliser l’optimiseur LLM, vous devez terminer le processus d’intégration comme décrit dans les étapes présentées ci-dessous. Une fois le processus terminé[&#x200B; vous disposerez d’un accès complet aux tableaux de bord de LLM Optimizer &#x200B;](/help/dashboards/dashboards-overview.md)et à d’autres fonctionnalités.
+Pour commencer à utiliser l’optimiseur LLM, vous devez terminer le processus d’intégration comme décrit dans les étapes présentées ci-dessous. Une fois le processus terminé[ vous disposerez d’un accès complet aux tableaux de bord de LLM Optimizer ](/help/dashboards/dashboards-overview.md)et à d’autres fonctionnalités.
 
 ## Présentation de l’intégration
 
 Le processus d’intégration commence par l’intégration de votre domaine. Le processus est différent selon que vous êtes un client AEM Cloud ou non. Une fois le processus terminé, vous devrez fournir des informations pour le transfert du journal CDN et enfin personnaliser les catégories, les rubriques et les invites. Chaque partie du processus est détaillée ci-dessous, ainsi que des conseils utiles sur la manière de commencer à utiliser LLM Optimizer dès que possible.
+
+### Autoriser Adobe LLM Optimizer à accéder aux pages publiques
+
+Pour fournir un contenu précis et des recommandations techniques, Adobe LLM Optimizer doit pouvoir accéder à vos pages destinées au public. Pour ce faire, vous devez utiliser un robot d’exploration interne sécurisé (agent utilisateur Spacecat/1.0).
+
+Configuration requise :
+
+* Ajoutez l’agent utilisateur Spacecat/1.0 à la Liste autorisée dans le fichier robots.txt de votre site ou dans les règles de gestion du trafic de robots
+* Assurez-vous que les pages ne sont pas bloquées au niveau du domaine ou du réseau CDN. Les pages bloquées ne peuvent pas être indexées, ce qui signifie que les tâches d’optimisation et les informations ne peuvent pas être générées pour elles.
+
+Si la visibilité du contenu apparaît faible dans le tableau de bord, vérifiez que le robot d’exploration a accès à vos domaines. L’accès restreint est une cause courante d’indexation incomplète.
 
 ## Étape 1 : intégration de votre domaine
 
@@ -33,7 +44,7 @@ Consultez la section ci-dessous pour plus d’informations sur l’activation de
 
 ### Clients AEM Cloud
 
-Si vous êtes un client AEM Cloud, vous avez la possibilité d’essayer LLM Optimizer à l’aide de la carte Annonce de produit dans [Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Si vous êtes un client AEM Cloud, vous avez la possibilité d’essayer LLM Optimizer à l’aide de la carte Annonce de produit dans [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Les invites nouvellement ajoutées n&#39;apparaîtront pas dans le [tableau de bord de présence de la marque](/help/dashboards/brand-presence.md) tant que le traitement n&#39;est pas terminé. Les clients AEM Cloud peuvent utiliser la version d’évaluation gratuite de LLM Optimizer. L’utilisation de plus de 200 invites nécessite un contrat de licence séparé. L’accès est fourni « en l’état » et « selon disponibilité », et peut être modifié, limité ou supprimé par Adobe à tout moment. Veuillez contacter votre représentant de compte pour plus d’informations.
