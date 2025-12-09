@@ -2,9 +2,9 @@
 title: Présence de la marque
 description: Découvrez comment utiliser le tableau de bord de la présence de la marque pour comprendre comment votre marque est perçue au niveau des réponses générées par l’IA.
 feature: Brand Presence
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
+source-git-commit: 24183fbe2577bb9402f8b6aaaf1e46c75403383d
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1292'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ En haut de la page, vous pouvez appliquer des filtres pour affiner votre vue. Le
 * **Période** - Sélectionnez la période pour les données affichées. Par exemple, les 4 dernières semaines. Vous avez également la possibilité de personnaliser la période en sélectionnant l’option **Semaines personnalisées**.
 * **Catégorie** - Filtrez les résultats affichés par catégories prédéfinies ou catégories personnalisées.
 * **Sujet** - Filtrez par sujet afin d’analyser les thèmes du contenu et les domaines où votre marque apparaît dans les réponses de l’IA.
-* **Platform** - Choisissez le moteur d’IA à analyser.
+* **Platform** - Choisissez le moteur d’IA à analyser. LLM Optimizer prend actuellement en charge le ChatGPT, les présentations de l’IA Google, le mode Google AI, le copilote Microsoft, Google Gemini et Perplexity.
 * **Origine des invites** - Sélectionnez l’origine des invites. L’origine peut être saisie par l’utilisateur ou générée par l’IA.
 * **Invite de branding** - Filtrez les résultats à l’aide d’invites de marque ou non.
 * **Région** - Filtrez les résultats par zone géographique. Toutes les régions ne seront pas disponibles au lancement.
