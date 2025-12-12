@@ -459,7 +459,7 @@ Cette opportunité signale les pages où le contenu clé est masqué pour les ag
 
 Votre page Web est-elle accessible ? Le [Adobe LLM Optimizer : votre page web est-elle accessible ?](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc)’extension Chrome vous permet de voir exactement à quelle proportion du contenu de votre page web les LLM peuvent accéder et ce qui reste masqué. Conçu comme un outil de diagnostic autonome et gratuit, il ne nécessite aucune licence de produit ni configuration.
 
-En un seul clic, vous pouvez évaluer la lisibilité de la machine de n’importe quel site, afficher côte à côte ce que voient les agents d’IA par rapport à ce que voient les utilisateurs humains et estimer la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer. Voir [&#x200B; L’IA peut-elle lire votre site web ?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) pour plus d’informations.
+En un seul clic, vous pouvez évaluer la lisibilité de la machine de n’importe quel site, afficher côte à côte ce que voient les agents d’IA par rapport à ce que voient les utilisateurs humains et estimer la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer. Voir [&#x200B; L’IA peut-elle lire votre site web ?](https://business.adobe.com/fr/blog/introducing-the-llm-optimizer-chrome-extension) pour plus d’informations.
 
 ### Optimiser les en-têtes pour les LLM
 
