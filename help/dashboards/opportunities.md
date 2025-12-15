@@ -2,9 +2,9 @@
 title: Opportunités d’optimisation
 description: Découvrez comment utiliser le tableau de bord des opportunités pour détecter automatiquement comment votre site peut être amélioré afin d’augmenter la visibilité de la marque.
 feature: Opportunities
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 533565d089076d651bb633ea7e426b0a4282de97
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ Vous trouverez ci-dessous un tableau des opportunités actuellement prises en ch
 | Détecter le trafic d’agent bloqué | GÉOLOCALISATION TECHNIQUE | Analyse les journaux du réseau CDN pour les requêtes bloquées provenant d’agents d’IA connus (par exemple, GPTBot, PerplexityBot). Indique les URL et les agents affectés. | Mettez à jour robots.txt ou les configurations de serveur pour autoriser l’accès aux robots d’exploration AI pris en charge, le cas échéant. |
 | Détection des problèmes liés aux écrans 404/403/5xx | GÉOLOCALISATION TECHNIQUE | Surveille les journaux CDN pour les réponses d’erreur. Fréquence des rapports, URL affectées et estimation des accès perdus. | Correction de liens rompus, mise à jour des autorisations et résolution des problèmes côté serveur afin que le contenu clé renvoie 200 réponses. |
 | Récupérer la visibilité du contenu (accès anticipé) | GÉOLOCALISATION TECHNIQUE | Indique les pages où le contenu critique est masqué aux agents d’IA. Affiche les URL affectées et le contenu attendu qui peut être récupéré. | pré-effectuer le rendu des pages afin que davantage de contenu soit disponible pour les agents d’IA sans exécution de JavaScript. |
+
+## Optimisation automatique {#auto-optimization}
+
+L’optimisation automatique permet le déploiement en un clic des optimisations recommandées, ce qui réduit l’effort manuel et le délai d’évaluation. Les optimisations peuvent être appliquées à la source de contenu ou à la périphérie du réseau CDN. L’optimisation automatique basée sur Edge est actuellement disponible en accès anticipé pour certaines opportunités. Pour plus d’informations, consultez la page [Optimiser sur Edge](/help/dashboards/optimize-at-edge.md).
 
 ### Récupérer l’opportunité de visibilité du contenu {#recover-contet}
 
