@@ -85,7 +85,7 @@ Pour déployer la règle, vous devez effectuer les opérations suivantes :
 
 * créez un [pipeline de configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * validez le fichier de configuration `cdn.yaml` dans votre référentiel
-* déployez la clé api en tant que [ variable d’environnement secrète ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
+* déployez la clé api en tant que [&#x200B; variable d’environnement secrète &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 * exécution du pipeline de configuration
 
 
