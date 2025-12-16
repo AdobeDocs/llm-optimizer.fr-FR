@@ -2,9 +2,9 @@
 title: Opportunités d’optimisation
 description: Découvrez comment utiliser le tableau de bord des opportunités pour détecter automatiquement comment votre site peut être amélioré afin d’augmenter la visibilité de la marque.
 feature: Opportunities
-source-git-commit: 533565d089076d651bb633ea7e426b0a4282de97
+source-git-commit: 39658a057fd4d67f74dc286e1687e384133ac653
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ Vous trouverez ci-dessous un tableau des opportunités actuellement prises en ch
 
 L’optimisation automatique permet le déploiement en un clic des optimisations recommandées, ce qui réduit l’effort manuel et le délai d’évaluation. Les optimisations peuvent être appliquées à la source de contenu ou à la périphérie du réseau CDN. L’optimisation automatique basée sur Edge est actuellement disponible en accès anticipé pour certaines opportunités. Pour plus d’informations, consultez la page [Optimiser sur Edge](/help/dashboards/optimize-at-edge.md).
 
-### Récupérer l’opportunité de visibilité du contenu {#recover-contet}
+<!--### Recover Content Visibility Opportunity {#recover-contet}
 
-Comme indiqué ci-dessus, l’opportunité de visibilité du contenu signale les pages où le contenu clé est perdu pour les agents d’IA en raison du rendu côté client. Pour chaque page identifiée, il vous indique exactement quel contenu est absent de la vue de l’agent d’IA, ce qui vous aide à identifier les écarts de visibilité. Elle est également prise en charge par une fonctionnalité de pré-rendu basée sur les serveurs Edge, qui peut diffuser plus de contenu HTML au trafic de l’agent sans nécessiter de modifications du système de gestion de contenu (CMS). Cette fonctionnalité est actuellement en accès anticipé et nécessite une configuration par l’équipe LLM Optimizer. Veuillez contacter `llmo-at-edge@adobe.com` pour activer l’opportunité de visibilité du contenu.
+As stated above, the content visibility opportunity, flags pages where key content is lost for AI agents due to client-side rendering. For each identified page, it shows you exactly which content is missing from the AI agent view, helping you pinpoint visibility gaps. It's also supported by an edge-based pre-rendering capability that can serve more HTML content to agentic traffic without requiring Content Management System (CMS) changes. This functionality is currently in Early Access and requires setup from the LLM Optimizer team. Please contact `llmo-at-edge@adobe.com` to activate the content visibility opportunity.-->
 
 ### Outils supplémentaires
 
