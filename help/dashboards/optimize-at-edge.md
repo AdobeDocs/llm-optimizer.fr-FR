@@ -2,9 +2,9 @@
 title: Optimiser dans Edge
 description: Découvrez comment diffuser des optimisations dans LLM Optimizer à la périphérie du réseau CDN sans apporter de modifications de création requises.
 feature: Opportunities
-source-git-commit: 52984ea987ecacbd6d3bb08a6d04ff634fdf2779
+source-git-commit: 1ef457043d1ad06dc7fa19363fab232562b30d6c
 workflow-type: tm+mt
-source-wordcount: '2206'
+source-wordcount: '2178'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-La configuration du routage est effectuée à l’aide d’une règle [originSelector CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Les prérequis sont les suivants :
+La configuration du routage est effectuée à l’aide d’une règle [originSelector CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Les prérequis sont les suivants :
 
 * décider du domaine à acheminer
 * décidez des chemins à acheminer
@@ -82,7 +82,7 @@ La configuration du routage est effectuée à l’aide d’une règle [originSel
 
 Pour déployer la règle, vous devez effectuer les opérations suivantes :
 
-* créez un [pipeline de configuration](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* créez un [pipeline de configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * validez le fichier de configuration `cdn.yaml` dans votre référentiel
 * exécution du pipeline de configuration
 
@@ -469,7 +469,7 @@ Le tableau suivant présente les opportunités qui peuvent améliorer l’expér
 
 Le [Adobe LLM Optimizer : votre page web est-elle accessible ?](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc)’extension Chrome vous permet de voir exactement à quelle proportion du contenu de votre page web les LLM peuvent accéder et ce qui reste masqué. Conçu comme un outil de diagnostic autonome et gratuit, il ne nécessite aucune licence de produit ni configuration.
 
-En un seul clic, vous pouvez évaluer la lisibilité de la machine de n’importe quel site. Vous pouvez comparer côte à côte ce que voient les agents d’IA et ce que voient les utilisateurs et utilisatrices, et estimer la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer. Consultez le [L’IA peut-elle lire votre site web ?](https://business.adobe.com/fr/blog/introducing-the-llm-optimizer-chrome-extension) plus d’informations.
+En un seul clic, vous pouvez évaluer la lisibilité de la machine de n’importe quel site. Vous pouvez comparer côte à côte ce que voient les agents d’IA et ce que voient les utilisateurs et utilisatrices, et estimer la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer. Consultez le [L’IA peut-elle lire votre site web ?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) plus d’informations.
 
 ## Opportunités détaillées
 
@@ -555,7 +555,7 @@ Si vous cliquez sur **Déployer les optimisations** avant d’avoir terminé la 
 
 Q : Que se passe-t-il lorsque le contenu est mis à jour à la source ?
 
-Nous diffusons la version optimisée de la page à partir du cache tant que la page source sous-jacente n’a pas changé. Cependant, lorsque la source change, notre système s’actualise automatiquement afin que les agents d’IA reçoivent toujours le contenu le plus récent. En effet, nous utilisons les paramètres de durée de vie (TTL) du cache réduits (par ordre de minutes) afin que toute mise à jour de contenu sur votre site déclenche une nouvelle optimisation dans cette fenêtre. Comme il n’existe pas de TTL universelle adaptée à chaque site, nous pouvons configurer cette TTL en fonction de vos règles d’invalidation du cache afin de nous assurer que les deux systèmes restent synchronisés.
+Nous diffusons la version optimisée de la page à partir du cache tant que la page source sous-jacente n’a pas changé. Cependant, lorsque la source change, notre système s’actualise automatiquement afin que les agents d’IA reçoivent toujours le contenu le plus récent. En effet, nous utilisons les paramètres de durée de vie (TTL) du cache réduits (par ordre de minutes) afin que toute mise à jour de contenu sur votre site déclenche une nouvelle optimisation dans cette fenêtre. <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 Q. L’optimisation sur Edge est-elle réservée aux sites qui utilisent Adobe Edge Delivery Service (EDS) ?
 
