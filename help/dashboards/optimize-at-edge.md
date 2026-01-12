@@ -2,9 +2,9 @@
 title: Optimiser dans Edge
 description: Découvrez comment diffuser des optimisations dans LLM Optimizer à la périphérie du réseau CDN sans apporter de modifications de création requises.
 feature: Opportunities
-source-git-commit: 3986fec2dcb9537f5b8f94ce9c72558845aba376
+source-git-commit: 2311bd2990c6ff7ecee22ca82b25987df10e7e1c
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2188'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 Cette page fournit un aperçu détaillé sur la manière de fournir des optimisations à la périphérie du réseau CDN sans aucune modification de création. Elle couvre le processus d’intégration, les opportunités d’optimisation disponibles et comment optimiser automatiquement à la périphérie.
 
 >[!NOTE]
->Cette fonctionnalité est actuellement en accès anticipé. Vous pouvez en savoir plus sur les programmes d’accès anticipé [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
+>Cette fonctionnalité est actuellement en accès anticipé. Vous pouvez en savoir plus sur les programmes d’accès anticipé [ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## Qu’est-ce que l’optimisation chez Edge ?
 
@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-La configuration du routage est effectuée à l’aide d’une règle [originSelector CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Les prérequis sont les suivants :
+La configuration du routage est effectuée à l’aide d’une règle [originSelector CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Les prérequis sont les suivants :
 
 * décider du domaine à acheminer
 * décidez des chemins à acheminer
@@ -82,7 +82,7 @@ La configuration du routage est effectuée à l’aide d’une règle [originSel
 
 Pour déployer la règle, vous devez effectuer les opérations suivantes :
 
-* créez un [pipeline de configuration](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* créez un [pipeline de configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * validez le fichier de configuration `cdn.yaml` dans votre référentiel
 * exécution du pipeline de configuration
 
@@ -467,9 +467,9 @@ Le tableau suivant présente les opportunités qui peuvent améliorer l’expér
 
 ### Outils supplémentaires
 
-Le [Adobe LLM Optimizer : votre page web est-elle accessible ?](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc)’extension Chrome vous permet de voir exactement à quelle proportion du contenu de votre page web les LLM peuvent accéder et ce qui reste masqué. Conçu comme un outil de diagnostic autonome et gratuit, il ne nécessite aucune licence de produit ni configuration.
+Le [Adobe LLM Optimizer : votre page web est-elle accessible ?](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) extension Chrome indique la proportion de contenu de page web auquel les LLM peuvent accéder et ce qui reste masqué. Conçu comme un outil de diagnostic autonome et gratuit, il ne nécessite aucune licence de produit ni configuration.
 
-En un seul clic, vous pouvez évaluer la lisibilité de la machine de n’importe quel site. Vous pouvez comparer côte à côte ce que voient les agents d’IA et ce que voient les utilisateurs et utilisatrices, et estimer la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer. Consultez le [L’IA peut-elle lire votre site web ?](https://business.adobe.com/fr/blog/introducing-the-llm-optimizer-chrome-extension) plus d’informations.
+En un seul clic, vous pouvez évaluer la lisibilité de la machine de n’importe quel site. Vous pouvez comparer côte à côte ce que voient les agents d’IA et ce que voient les utilisateurs et utilisatrices, et estimer la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer. Consultez le [L’IA peut-elle lire votre site web ?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) plus d’informations.
 
 ## Opportunités détaillées
 
@@ -503,7 +503,7 @@ Cette opportunité trouve des pages avec des paragraphes longs et complexes qui 
 
 Pour chaque opportunité, vous pouvez prévisualiser, modifier, déployer, afficher en direct et restaurer les optimisations en périphérie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477986/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Prévisualisation
 
