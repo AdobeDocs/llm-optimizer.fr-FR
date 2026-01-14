@@ -2,9 +2,9 @@
 title: Bonnes pratiques relatives aux catégories, rubriques, invites et autres
 description: Optimisez les informations LLM en configurant des catégories, des rubriques, des invites et d'autres marques pour effectuer le suivi, y compris les concurrents, pour une surveillance de marque personnalisée et une analyse de contenu stratégique.
 feature: Best Practices, Customer Configuration
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: a4dd9b1aece2936fb95a2e831ec8b41946bc5f46
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Bonnes pratiques relatives à la configuration des catégories, rubriques, invites et autres à suivre
 
-Cette section décrit les bonnes pratiques pour décider de la manière dont vous souhaitez configurer les catégories, rubriques, invites et autres éléments à suivre.
+Cette section décrit les bonnes pratiques pour décider de la manière dont vous souhaitez configurer les catégories, rubriques, invites et autres éléments à suivre. En outre, il contient des informations sur la bibliothèque d’invites de l’industrie, qu’Adobe a développée grâce à des recherches approfondies menées avec des experts de l’industrie.
 
 Il s&#39;agit d&#39;une première étape essentielle. Ce que vous décidez maintenant détermine la manière dont les informations sont adaptées au contexte de votre entreprise. Toute modification apportée aux catégories à l’avenir réinitialise les données historiques.
 
@@ -21,6 +21,43 @@ Dans le tableau de bord [[!UICONTROL Configuration du client]](/help/dashboards/
 ![Fenêtre de configuration du client](/help/assets/best-practices/customer-configuration-best-practices.png)
 
 Dans le tableau de bord [!UICONTROL Configuration du client], vous pouvez personnaliser des catégories (telles que des unités commerciales ou des lignes de produits), effectuer le suivi d’autres marques et ajouter des alias de mention de marque pour capturer toutes les variations de votre marque dans les invites. Cette configuration garantit que la plateforme adapte les informations à votre contexte commercial, ce qui permet une visibilité, un trafic et une analyse des opportunités précis.
+
+## Bibliothèque d’invites de secteur
+
+Pour faciliter la prise en main des invites et des sujets, Adobe a créé une bibliothèque d’invites du secteur développée grâce à des recherches approfondies menées avec des experts du secteur et à l’analyse du comportement de recherche de l’IA auprès de plus de 6 000 clients. Cette bibliothèque identifie les rubriques et les invites les plus pertinentes en fonction des tendances spécifiques au secteur, des objectifs commerciaux validés et des modèles de recherche de clients réels.
+
+Pour utiliser la bibliothèque d&#39;invites de secteur :
+
+1. Téléchargez le fichier de bibliothèque d’invites à partir de LLM Optimizer en accédant au tableau de bord **Configuration du client**.
+2. Examinez les suggestions **Sujets** et **Invites** pour le secteur de votre marque dans l’onglet correspondant, puis sélectionnez les options les plus pertinentes.
+3. Consultez la **colonne Étape du Parcours client** pour afficher les options d’invite tout au long du cycle de vie du client (par exemple, découverte, conversion, rétention). Les invites de funnel à un stade précoce/en haut sont prioritaires, mais elles prennent également en compte les options d’étape ultérieure pour favoriser la rétention, activer le service clientèle, etc.
+4. Modifiez les rubriques ou les invites selon les besoins pour mieux prendre en charge vos objectifs avant le chargement vers Adobe LLM Optimizer (par exemple, ajouter le nom de votre marque ou de votre produit, ajouter la terminologie propre à la marque). Les invites peuvent être ajoutées à l&#39;LLMO manuellement ou téléchargées en masse à l&#39;aide du modèle *.csv* fourni.
+
+>[!TIP]
+>
+> Utilisez une combinaison d’invites spécifiques au domaine recommandées par LLM Optimizer lors de la configuration initiale et la bibliothèque d’invites du secteur pour traiter votre stratégie d’invites.
+
+### Prompt Library Research Foundation (en anglais seulement)
+
+La bibliothèque de l&#39;invitation à l&#39;industrie a été élaborée dans le cadre d&#39;une initiative de recherche exhaustive combinant :
+
+* **Intelligence client : analyse** comportement et des préférences de recherche de l’IA sur plus de 6 000 clients
+* **Expertise de l’industrie :** points de vue d’experts des secteurs de l’automobile, des services financiers, des soins de santé, des télécommunications et des voyages.
+* **Informations axées sur les données :** identification des rubriques à fort impact et des modèles de requête qui stimulent l’engagement et la conversion des clients.
+
+Principales rubriques recherchées par les clients de tous les secteurs d’activité :
+
+* **Auto :** Résolution des problèmes automobiles, Comparaison des véhicules et Financement/Crédit-bail
+* **Services financiers :** Recherche de produits financiers
+* **Soins de santé :** recherche de symptômes ou de problèmes de santé, comparaison des options de traitement, compréhension des résultats de laboratoire ou des termes médicaux
+* **Télécom :** Comparaison des plans, des conditions contractuelles et des promotions, Vérification du service dans la région locale
+* **Voyage :** Se préparer pour un voyage, Rechercher et réserver un voyage
+
+Tendances client sur la recherche d’IA et le comportement d’invite dans les outils LLM :
+
+* Les clients préfèrent poser des questions plutôt que d’utiliser des mots-clés lors de l’utilisation des outils de recherche LLM.
+* Ils utilisent principalement des outils de recherche LLM pour les premiers stades de la recherche et de la découverte.
+* Les clients ont tendance à mentionner une marque ou un nom de produit spécifique dans leurs invites.
 
 ## Bonnes pratiques pour les catégories
 
@@ -52,7 +89,7 @@ La manière de décider de la configuration des catégories repose sur une quest
 >
 > * Choisissez une approche et respectez-la.
 > * Vous ne pouvez avoir qu’un seul modèle de catégorie **one** par compte/marque. Ne mélangez pas **SBU** et **URL_DIR** en même temps.
->   <!--Can you mix Product/Service with these?-->
+<!--Can you mix Product/Service with these?-->
 
 Exemple :
 
