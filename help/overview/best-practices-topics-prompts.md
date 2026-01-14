@@ -2,9 +2,9 @@
 title: Bonnes pratiques relatives aux catégories, rubriques, invites et autres
 description: Optimisez les informations LLM en configurant des catégories, des rubriques, des invites et d'autres marques pour effectuer le suivi, y compris les concurrents, pour une surveillance de marque personnalisée et une analyse de contenu stratégique.
 feature: Best Practices, Customer Configuration
-source-git-commit: a4dd9b1aece2936fb95a2e831ec8b41946bc5f46
+source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -28,16 +28,18 @@ Pour faciliter la prise en main des invites et des sujets, Adobe a créé une bi
 
 Pour utiliser la bibliothèque d&#39;invites de secteur :
 
-1. Téléchargez le fichier de bibliothèque d’invites à partir de LLM Optimizer en accédant au tableau de bord **Configuration du client**.
-2. Examinez les suggestions **Sujets** et **Invites** pour le secteur de votre marque dans l’onglet correspondant, puis sélectionnez les options les plus pertinentes.
-3. Consultez la **colonne Étape du Parcours client** pour afficher les options d’invite tout au long du cycle de vie du client (par exemple, découverte, conversion, rétention). Les invites de funnel à un stade précoce/en haut sont prioritaires, mais elles prennent également en compte les options d’étape ultérieure pour favoriser la rétention, activer le service clientèle, etc.
-4. Modifiez les rubriques ou les invites selon les besoins pour mieux prendre en charge vos objectifs avant le chargement vers Adobe LLM Optimizer (par exemple, ajouter le nom de votre marque ou de votre produit, ajouter la terminologie propre à la marque). Les invites peuvent être ajoutées à l&#39;LLMO manuellement ou téléchargées en masse à l&#39;aide du modèle *.csv* fourni.
+1. Accédez au tableau de bord **Configuration du client**.
+1. Sélectionnez **Télécharger la bibliothèque d’invites** pour télécharger le fichier de bibliothèque à partir de LLM Optimizer.
+   ![Téléchargement de bibliothèque d’invite du secteur](/help/assets/best-practices/customer-configuration-prompts-library.png)
+1. Examinez les **rubriques** et **invites** suggérées pour le secteur de votre marque dans l’onglet correspondant et choisissez les options les plus pertinentes.
+1. Consultez la **colonne Étape du Parcours client** pour afficher les options d’invite tout au long du cycle de vie du client (par exemple, découverte, conversion, rétention). Les invites de funnel à un stade précoce/en haut sont prioritaires, mais elles prennent également en compte les options d’étape ultérieure pour favoriser la rétention, activer le service clientèle, etc.
+1. Modifiez les rubriques ou les invites selon les besoins pour mieux prendre en charge vos objectifs avant de charger vos rubriques et invites dans Adobe LLM Optimizer (par exemple, ajouter votre marque/nom de produit, ajouter la terminologie propre à la marque). Les invites peuvent être ajoutées à LLM Optimizer manuellement ou par chargement en masse à l&#39;aide du modèle *.csv* fourni.
 
 >[!TIP]
 >
 > Utilisez une combinaison d’invites spécifiques au domaine recommandées par LLM Optimizer lors de la configuration initiale et la bibliothèque d’invites du secteur pour traiter votre stratégie d’invites.
 
-### Prompt Library Research Foundation (en anglais seulement)
+### Fondation de recherche de la bibliothèque Prompt
 
 La bibliothèque de l&#39;invitation à l&#39;industrie a été élaborée dans le cadre d&#39;une initiative de recherche exhaustive combinant :
 
