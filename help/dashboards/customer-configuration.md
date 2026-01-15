@@ -2,9 +2,9 @@
 title: Configuration du client
 description: Utilisez la configuration client pour définir comment votre marque sera surveillée et analysée sur la plateforme de l’optimiseur LLM.
 feature: Customer Configuration
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
+source-git-commit: 5d8b59ea4281c88bb42dc48096c07a3faaeb2e88
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '832'
 ht-degree: 2%
 
 ---
@@ -18,15 +18,43 @@ Le tableau de bord de configuration du client est un outil puissant qui fournit 
 
 Pour configurer la manière dont LLM Optimizer surveille et analyse la présence de votre marque sur différents marchés et paysages concurrentiels, vous avez accès aux onglets suivants :
 
+* [Invites](#prompts-brand)
 * [Catégories](#categories)
-* [Suivi d’autres](#others-tracking)
+* [Autres Marques](#other-brands)
 * [Alias de marque](#brand-aliases)
-* [Data Insights](#data-insights)
 * [Configuration du réseau CDN](#agentic-cdn)
 
 >[!IMPORTANT]
 >
 > Pour plus d’informations sur la configuration des catégories, rubriques et invites, reportez-vous à la page [Bonnes pratiques pour la configuration des catégories, rubriques, invites](/help/overview/best-practices-topics-prompts.md).
+
+## Invites {#prompts-brand}
+
+Dans cet onglet, vous pouvez vérifier, gérer et personnaliser les invites. Vous pouvez charger une [analyse de la présence des marques](/help/dashboards/brand-presence.md) .csv et la liste sera remplie avec les invites et les rubriques de cette analyse ou [Télécharger une bibliothèque d&#39;invites](/help/overview/best-practices-topics-prompts.md) créée par Adobe. Vous pouvez également supprimer, modifier et ajouter des rubriques et leurs invites associées selon vos besoins.
+
+Pour importer un fichier .csv d’informations sur les données, vous devez d’abord exporter un fichier à partir du tableau de bord de la présence de la marque. Consultez la section [informations sur les données](/help/dashboards/brand-presence.md#data-insights) pour savoir comment procéder. Une fois que vous disposez du fichier :
+
+1. Dans le tableau de bord, cliquez sur **Télécharger CSV**.
+2. Dans la fenêtre Importer des statistiques sur les données , effectuez un glisser-déposer ou choisissez manuellement le fichier.
+3. Cliquez sur **Charger les données**.
+
+Vous pouvez également créer un fichier CSV en téléchargeant le modèle depuis la fenêtre **Importer des informations sur les données**. Une fois que vous disposez du modèle, ouvrez-le et saisissez vos rubriques ainsi que les invites, catégories et régions associées dans une nouvelle ligne.
+
+Pour savoir comment télécharger et utiliser la bibliothèque d’invites du secteur créée par Adobe, consultez la section Bibliothèque d’invites du secteur sur [cette page](/help/overview/best-practices-topics-prompts.md)
+
+En outre, vous pouvez également ajouter des rubriques/invites à la liste indépendamment d&#39;un fichier CSV ou d&#39;une bibliothèque d&#39;invites. Pour ce faire, sur le tableau de bord, vous devez :
+
+1. Cliquez sur le bouton **Ajouter une rubrique**.
+2. Dans la nouvelle fenêtre de configuration, sélectionnez la **Catégorie**. Les catégories créées précédemment apparaîtront ici.
+3. Saisissez le nom de la rubrique.
+4. Ajoutez le texte d’invite.
+5. Sélectionnez la région.
+6. Cliquez sur **Ajouter une invite** et la rubrique contenant l’invite s’affiche dans la liste.
+
+>[!NOTE]
+>Les invites nouvellement ajoutées n&#39;apparaîtront pas dans Brand Presence tant que le traitement ne sera pas terminé.
+
+Sur la liste, vous pouvez cliquer sur chaque rubrique et la ou les invites associées apparaîtront. Pour supprimer la rubrique et ses invites associées, cliquez sur l&#39;icône de suppression de la liste.
 
 ## Catégories {#categories}
 
@@ -41,7 +69,7 @@ L’ajout de nouvelles catégories ne génère pas automatiquement de rubriques 
 
 Pour supprimer une catégorie, cliquez sur l’icône de suppression dans la liste des catégories. Attention, car **la suppression d’une catégorie supprimera également les éléments associés** comme les alias de marque liés à cette catégorie spécifique.
 
-## Suivi d’autres {#others-tracking}
+## Autres Marques {#others-tracking}
 
 En utilisant cet onglet, vous pouvez suivre la manière dont vos collègues sont mentionnés par rapport à votre marque dans différentes catégories et régions. Surveillez leur présence et leurs performances dans vos segments de marché. Pour personnaliser le tracking :
 
@@ -64,32 +92,6 @@ En utilisant les alias de marque, vous pouvez configurer d’autres noms et vari
 5. Cliquez sur **Enregistrer** et l’alias de la marque apparaît dans la liste.
 
 Pour supprimer un alias de marque, cliquez sur l’icône de suppression dans la liste des alias.
-
-## Data Insights {#data-insights}
-
-Dans cet onglet, vous pouvez vérifier, gérer et personnaliser les invites. Vous pouvez charger un fichier .csv [informations sur les données de présence de marque](/help/dashboards/brand-presence.md#data-insights) et la liste sera remplie avec des invites et des rubriques issues de cette analyse. Vous pouvez également supprimer, modifier et ajouter des rubriques et leurs invites associées selon vos besoins.
-
-Pour importer un fichier .csv d’informations sur les données, vous devez d’abord exporter un fichier à partir du tableau de bord de la présence de la marque. Consultez la section [informations sur les données](/help/dashboards/brand-presence.md#data-insights) pour savoir comment procéder. Une fois que vous disposez du fichier :
-
-1. Dans le tableau de bord, cliquez sur **Télécharger CSV**.
-2. Dans la fenêtre Importer des statistiques sur les données , effectuez un glisser-déposer ou choisissez manuellement le fichier.
-3. Cliquez sur **Charger les données**.
-
-Vous pouvez également créer un fichier CSV en téléchargeant le modèle depuis la fenêtre **Importer des informations sur les données**. Une fois que vous disposez du modèle, ouvrez-le et saisissez vos rubriques ainsi que les invites, catégories et régions associées dans une nouvelle ligne.
-
-De plus, vous pouvez également ajouter des rubriques/invites à la liste indépendamment d&#39;un fichier CSV. Pour ce faire, sur le tableau de bord, vous devez :
-
-1. Cliquez sur le bouton **Ajouter une rubrique**.
-2. Dans la nouvelle fenêtre de configuration, sélectionnez la **Catégorie**. Les catégories créées précédemment apparaîtront ici.
-3. Saisissez le nom de la rubrique.
-4. Ajoutez le texte d’invite.
-5. Sélectionnez la région.
-6. Cliquez sur **Ajouter une invite** et la rubrique contenant l’invite s’affiche dans la liste.
-
->[!NOTE]
->Les invites nouvellement ajoutées n&#39;apparaîtront pas dans Brand Presence tant que le traitement ne sera pas terminé.
-
-Sur la liste, vous pouvez cliquer sur chaque rubrique et la ou les invites associées apparaîtront. Pour supprimer la rubrique et ses invites associées, cliquez sur l&#39;icône de suppression de la liste.
 
 ## Configuration du réseau CDN {#cdn-configuration}
 
