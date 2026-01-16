@@ -2,9 +2,9 @@
 title: Trafic d’agent
 description: Découvrez comment utiliser le tableau de bord du trafic d’agents afin de voir comment les agents d’IA interagissent avec votre site.
 feature: Agentic Traffic
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
+source-git-commit: 2993f840c7451adeccf4f11a0132b91a9bc81803
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1302'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,18 @@ Dans la fenêtre **Fournisseur de réseau CDN intégré** :
 Si vous sélectionnez **Autre**, vous devrez contacter llmo-now@adobe.com pour obtenir de l’aide.
 
 Une fois activés, les journaux sont ingérés et le tableau de bord est renseigné avec des mesures telles que le nombre total d’interactions de l’agent, le taux de succès, les accès par marché, l’analyse des agents utilisateur et les performances au niveau de l’URL.
+
+LLM Optimizer ingère et traite uniquement un sous-ensemble de champs des journaux CDN. Bien que les noms des champs de journal bruts varient selon le fournisseur de réseau CDN, ils sont normalisés et présentés comme suit :
+
+* URL (chemin uniquement)
+* user_agent
+* status
+* référent
+* host
+* Ttfb (time to first byte)
+* cdn_provider
+
+Ces champs normalisés sont exposés via la vue agentique. Sur le tableau de bord [Trafic de référence](/help/dashboards/referral-traffic.md), les journaux CDN sont utilisés pour afficher les mesures d’accès à la page. Aucune information d’identification personnelle (PII) n’est traitée ou stockée à quelque étape que ce soit de l’ingestion des journaux du réseau CDN ou de la gestion des données ultérieure.
 
 ## Filtres {#filters}
 
