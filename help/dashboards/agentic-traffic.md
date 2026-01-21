@@ -2,9 +2,9 @@
 title: Trafic d’agent
 description: Découvrez comment utiliser le tableau de bord du trafic d’agents afin de voir comment les agents d’IA interagissent avec votre site.
 feature: Agentic Traffic
-source-git-commit: a75ce71dc0ab9ffe7956a3dbd09dca23ea5f7096
+source-git-commit: 26926f3ed4df3a408b74b0208f0d1eb064b97d28
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Utilisez le graphique Tendances du trafic d’agent pour effectuer le suivi des 
 
 ## Déplacements en haut et en bas {#top-bottom-movers}
 
-La vue des déménageurs en haut et en bas met en évidence les URL présentant les plus grands changements de trafic d’agent d’une semaine à l’autre, à savoir les visites ou les accès des systèmes d’IA accédant à votre contenu. Le tableau **Principaux déménageurs** montre les pages qui gagnent en visibilité ou en engagement, tandis que le tableau **Principaux déménageurs** révèle les URL qui connaissent les déclins les plus importants. Cela vous permet d’identifier rapidement le contenu à la hausse, ceux qui peuvent nécessiter une attention particulière et les endroits où les modèles de découverte pilotés par l’IA se modifient.
+La vue des déménageurs en haut et en bas met en évidence les URL présentant les plus grands changements de trafic d’agent d’une semaine à l’autre, à savoir les visites ou les accès des systèmes d’IA accédant à votre contenu. Le tableau **Principaux déménageurs** montre les pages qui gagnent en visibilité ou en engagement, tandis que le tableau **Principaux déménageurs** révèle les URL qui connaissent les déclins les plus importants. Cela vous permet d’identifier rapidement le contenu à la hausse, celui qui peut nécessiter une attention particulière et les endroits où les modèles de découverte pilotés par l’IA se modifient.
 
 ![Déplacements haut et bas](/help/dashboards/assets/movers.png)
 
@@ -140,4 +140,4 @@ La vue Détails de l’URL offre une compréhension holistique des performances 
 
 >[!ENDTABS]
 
-Sur les deux tableaux, vous pouvez utiliser l’option **Exporter** pour télécharger le tableau .csv et partager les informations avec votre équipe ou inclure les tableaux dans les rapports d’exécution.
+Sur les deux tableaux, vous pouvez utiliser l’option **Exporter** pour télécharger le `.csv` du tableau et partager les informations avec votre équipe ou inclure les tableaux dans les rapports d’exécution.
