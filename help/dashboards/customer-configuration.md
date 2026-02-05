@@ -30,7 +30,7 @@ Pour configurer la manière dont LLM Optimizer surveille et analyse votre prése
 
 ## Prompts {#prompts-brand}
 
-Dans cet onglet, vous pouvez vérifier, gérer et personnaliser les invites. Vous pouvez charger une [analyse de Présence des marques ](/help/dashboards/brand-presence.md) .csv et la liste sera remplie avec les invites et les rubriques de cette analyse ou [Téléchargez une bibliothèque d&#39;invites](/help/overview/best-practices-topics-prompts.md) créée par Adobe. Vous pouvez également supprimer, modifier et ajouter des rubriques et leurs invites associées selon vos besoins.
+Dans cet onglet, vous pouvez vérifier, gérer et personnaliser les invites. Vous pouvez charger une [analyse de Présence des marques &#x200B;](/help/dashboards/brand-presence.md) .csv et la liste sera remplie avec les invites et les rubriques de cette analyse ou [Téléchargez une bibliothèque d&#39;invites](/help/overview/best-practices-topics-prompts.md) créée par Adobe. Vous pouvez également supprimer, modifier et ajouter des rubriques et leurs invites associées selon vos besoins.
 
 Pour importer un fichier .csv de statistiques sur les données, vous devez d’abord exporter un fichier à partir du tableau de bord Présence des marques. Consultez la section [informations sur les données](/help/dashboards/brand-presence.md#data-insights) pour savoir comment procéder. Une fois que vous disposez du fichier :
 

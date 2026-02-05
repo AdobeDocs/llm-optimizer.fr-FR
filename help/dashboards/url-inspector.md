@@ -14,7 +14,7 @@ ht-degree: 1%
 
 L’Inspecteur d’URL vous permet d’analyser les performances de pages spécifiques de votre domaine dans les recherches par IA. Il combine la visibilité, le trafic des agents et les données de référence au niveau de l’URL pour vous donner une vue granulaire des URL citées et de leur fréquence d’apparition dans les réponses.
 
-![ Inspecteur d’URL ](/help/dashboards/assets/url-insp.png)
+![&#x200B; Inspecteur d’URL &#x200B;](/help/dashboards/assets/url-insp.png)
 
 ## Filtres
 

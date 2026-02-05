@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Le tableau de bord de la Présence des marques fournit un aperçu détaillé de la manière dont votre marque est perçue au niveau des réponses générées par l’IA. Il indique où, à quelle fréquence et dans quel contexte votre marque est mentionnée. Vous pouvez utiliser le tableau de bord pour mesurer la visibilité, suivre les citations et explorer les évolutions du sentiment. Le tableau de bord est divisé en plusieurs sections, chacune fournissant des informations différentes. Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
 
-![Présence des marques ](/help/dashboards/assets/brand-main.png)
+![Présence des marques &#x200B;](/help/dashboards/assets/brand-main.png)
 
 Cette page présente les éléments suivants :
 
@@ -70,7 +70,7 @@ Les autres marques sont sélectionnées dans la liste déroulante et les graphiq
 
 Dans la section analyse de l&#39;évolution du sentiment , vous pouvez suivre la manière dont votre marque est perçue dans les réponses de l’IA échantillonnée. La mesure d’évolution du sentiment peut être positive, neutre ou négative. Par exemple, il peut être positif si les réponses mettent en évidence la qualité du produit ou négatif si elles mentionnent un mauvais service. Le graphique de tendance montre les changements dans la perception de la marque d&#39;une semaine à l&#39;autre. Cette section n’est renseignée qu’une fois votre marque mentionnée.
 
-![Évolution du sentiment ](/help/dashboards/assets/sentiment-trend.png)
+![Évolution du sentiment &#x200B;](/help/dashboards/assets/sentiment-trend.png)
 
 ## Informations sur les données et Part de voix {#data-insights}
 

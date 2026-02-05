@@ -194,7 +194,7 @@ La configuration comprend les étapes suivantes :
 
 **4. Règles de mise en cache**
 
-![ Règles de mise en cache ](/help/assets/optimize-at-edge/akamai-step4-rules.png)
+![&#x200B; Règles de mise en cache &#x200B;](/help/assets/optimize-at-edge/akamai-step4-rules.png)
 
 **5. Modifiez Les En-Têtes Des Requêtes Entrantes**
 
@@ -214,7 +214,7 @@ La configuration comprend les étapes suivantes :
 
 ![Comportements de basculement](/help/assets/optimize-at-edge/akamai-step8-failover-behaviors.png)
 
-![ Règles de basculement ](/help/assets/optimize-at-edge/akamai-step8-failover-rules.png)
+![&#x200B; Règles de basculement &#x200B;](/help/assets/optimize-at-edge/akamai-step8-failover-rules.png)
 
 ![Réponse des comportements](/help/assets/optimize-at-edge/akamai-step8-behaviors-response.png)
 

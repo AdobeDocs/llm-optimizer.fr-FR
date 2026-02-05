@@ -59,7 +59,7 @@ LLM Optimizer traite un sous-ensemble de champs des journaux du réseau CDN. Bie
 * Date et heure
 * Type de contenu
 
-Ces champs normalisés sont exposés via la vue agentique. Sur le tableau de bord [Trafic de recommandation ](/help/dashboards/referral-traffic.md), les journaux CDN sont utilisés pour afficher les mesures d’accès à la page. Aucune information d’identification personnelle (PII) n’est traitée ou stockée à quelque étape que ce soit de l’ingestion des journaux du réseau CDN ou de la gestion des données ultérieure.
+Ces champs normalisés sont exposés via la vue agentique. Sur le tableau de bord [Trafic de recommandation &#x200B;](/help/dashboards/referral-traffic.md), les journaux CDN sont utilisés pour afficher les mesures d’accès à la page. Aucune information d’identification personnelle (PII) n’est traitée ou stockée à quelque étape que ce soit de l’ingestion des journaux du réseau CDN ou de la gestion des données ultérieure.
 
 ## Filtres {#filters}
 

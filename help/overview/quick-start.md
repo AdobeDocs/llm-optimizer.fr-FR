@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Démarrage rapide
 
-Pour commencer à utiliser l’optimiseur LLM, vous devez terminer le processus d’intégration comme décrit dans les étapes présentées ci-dessous. Une fois le processus terminé[ vous disposerez d’un accès complet aux tableaux de bord de LLM Optimizer ](/help/dashboards/dashboards-overview.md)et à d’autres fonctionnalités.
+Pour commencer à utiliser l’optimiseur LLM, vous devez terminer le processus d’intégration comme décrit dans les étapes présentées ci-dessous. Une fois le processus terminé[&#x200B; vous disposerez d’un accès complet aux tableaux de bord de LLM Optimizer &#x200B;](/help/dashboards/dashboards-overview.md)et à d’autres fonctionnalités.
 
 ## Présentation de l’intégration
 
@@ -47,7 +47,7 @@ Consultez la section ci-dessous pour plus d’informations sur l’activation de
 Si vous êtes un client AEM Cloud, vous avez la possibilité d’essayer LLM Optimizer à l’aide de la carte Annonce de produit dans [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
->Les invites nouvellement ajoutées n&#39;apparaîtront pas dans le tableau de bord de la Présence des marques [](/help/dashboards/brand-presence.md) tant que le traitement ne sera pas terminé. Les clients AEM Cloud peuvent utiliser la version d’évaluation gratuite de LLM Optimizer. L’utilisation de plus de 200 invites nécessite un contrat de licence séparé. L’accès est fourni « en l’état » et « selon disponibilité », et peut être modifié, limité ou supprimé par Adobe à tout moment. Veuillez contacter votre représentant de compte pour plus d’informations.
+>Les invites nouvellement ajoutées n&#39;apparaîtront pas dans le tableau de bord de la Présence des marques [&#128279;](/help/dashboards/brand-presence.md) tant que le traitement ne sera pas terminé. Les clients AEM Cloud peuvent utiliser la version d’évaluation gratuite de LLM Optimizer. L’utilisation de plus de 200 invites nécessite un contrat de licence séparé. L’accès est fourni « en l’état » et « selon disponibilité », et peut être modifié, limité ou supprimé par Adobe à tout moment. Veuillez contacter votre représentant de compte pour plus d’informations.
 
 ![Version d&#39;évaluation de LLM Optimizer](/help/overview/assets/llm-trial.png)
 
@@ -108,8 +108,8 @@ Si aucun fournisseur de réseau CDN n’a été ajouté au préalable (comme dé
 
 Après avoir fourni des informations pour le transfert du journal CDN, vous pouvez :
 
-* Affichez le tableau de bord de la [Présence des marques ](/help/dashboards/brand-presence.md) et visualisez votre score de visibilité et suivez vos performances par rapport aux autres marques.
-* Explorez les tableaux de bord [Agentic](/help/dashboards/agentic-traffic.md) et [Trafic de recommandation ](/help/dashboards/referral-traffic.md), si le transfert de journal CDN a été configuré.
+* Affichez le tableau de bord de la [Présence des marques &#x200B;](/help/dashboards/brand-presence.md) et visualisez votre score de visibilité et suivez vos performances par rapport aux autres marques.
+* Explorez les tableaux de bord [Agentic](/help/dashboards/agentic-traffic.md) et [Trafic de recommandation &#x200B;](/help/dashboards/referral-traffic.md), si le transfert de journal CDN a été configuré.
 * Utilisez [Opportunités](/help/dashboards/opportunities.md) pour identifier les améliorations de contenu et techniques.
 * Exportez des données et collaborez avec votre équipe ou invitez votre collègue à utiliser le produit.
 

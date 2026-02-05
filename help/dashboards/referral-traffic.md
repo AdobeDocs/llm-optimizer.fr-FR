@@ -72,7 +72,7 @@ The Top Referral URLs list surfaces your site's most visited pages from referral
 
 Les tableaux Détails des sources de référence et Analyse des performances des URL vous permettent d’évaluer à la fois le volume et la qualité du trafic. Cliquez sur chaque onglet ci-dessous pour plus de détails :
 
-![Détails du Trafic de recommandation ](/help/dashboards/assets/traffic-details.png)
+![Détails du Trafic de recommandation &#x200B;](/help/dashboards/assets/traffic-details.png)
 
 >[!BEGINTABS]
 
