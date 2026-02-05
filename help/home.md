@@ -1,17 +1,17 @@
 ---
-title: Adobe LLM Optimizer
-description: 'Dynamisez votre marque avec Adobe LLM Optimizer. Effectuez le suivi des mentions, découvrez des informations et dominez les recherches pilotées par l’IA. Prenez le contrôle de votre visibilité : commencez à optimiser dès maintenant !'
+title: Adobe LLM Optimizer
+description: 'Dynamisez votre marque avec Adobe LLM Optimizer. Effectuez le suivi des mentions, obtenez de nouvelles informations et dominez la recherche basée sur l’IA. Prenez le contrôle de votre visibilité : commencez votre optimisation dès maintenant.'
 source-git-commit: 0714b6c83e384ff21ddceafa941e3fe8c7305467
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 3%
+ht-degree: 12%
 
 ---
 
 
-# Adobe LLM Optimizer
+# Adobe LLM Optimizer
 
-Adobe LLM Optimizer est une application IA dédiée à l’optimisation du moteur de génération, conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche pilotés par l’IA. Il fournit des informations sur la présence de la marque dans les réponses générées par l’IA, propose des recommandations de contenu prescriptives et automatise les correctifs d’optimisation.
+Adobe LLM Optimizer est une application IA dédiée à l’optimisation du moteur de génération, conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche pilotés par l’IA. Il fournit des informations sur la présence des marques dans les réponses générées par l’IA, propose des recommandations de contenu normatives et automatise les correctifs d’optimisation.
 
 ## Prise en main de LLM Optimizer
 
@@ -53,7 +53,7 @@ Adobe LLM Optimizer est une application IA dédiée à l’optimisation du moteu
                     <p class="headline is-size-6 has-text-weight-bold">
                         Présentation de <a href="./overview/overview.md" target="_blank" rel="referrer" title="Présentation de LLM Optimizer">LLM Optimizer</a>
                     </p>
-                    <p class="is-size-6">Découvrez comment Adobe LLM Optimizer améliore la visibilité de la marque dans les recherches pilotées par l’IA.</p>
+                    <p class="is-size-6">Découvrez comment Adobe LLM Optimizer améliore la visibilité des marques dans les recherches pilotées par l’IA.</p>
                 </div>
                 <a href="./overview/overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
@@ -126,7 +126,7 @@ Adobe LLM Optimizer est une application IA dédiée à l’optimisation du moteu
   {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
   {target=_blank}
   {cta=Learn more}
-* https://business.adobe.com/fr/products/llm-optimizer.html
+* https://business.adobe.com/products/llm-optimizer.html
   {title = Explore the capabilities of the Adobe LLM Optimizer}
   {image = /help/assets/overview/business-adobe.png}
   {target=_blank}
@@ -173,7 +173,7 @@ Adobe LLM Optimizer est une application IA dédiée à l’optimisation du moteu
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./tutorials/best-practices.md" target="_blank" rel="referrer" title="Bonnes pratiques relatives à l’optimisation de LLM à l’aide de Adobe LLM Optimizer">Bonnes pratiques relatives à l’optimisation de LLM à l’aide de Adobe LLM Optimizer</a>
                     </p>
-                    <p class="is-size-6">Découvrez comment LLM Optimizer peut vous aider à renforcer l’autorité de la marque dans la recherche et la découverte d’IA.</p>
+                    <p class="is-size-6">Découvrez comment LLM Optimizer peut vous aider à renforcer l’autorité de la marque dans Recherche optimisée par l'IA et la détection.</p>
                 </div>
                 <a href="./tutorials/best-practices.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
@@ -185,7 +185,7 @@ Adobe LLM Optimizer est une application IA dédiée à l’optimisation du moteu
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://business.adobe.com/fr/products/llm-optimizer.html" title="Explorer les fonctionnalités du Adobe LLM Optimizer" target="_blank" rel="referrer">
+                    <a href="https://business.adobe.com/products/llm-optimizer.html" title="Explorer les fonctionnalités du Adobe LLM Optimizer" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="/help/assets/overview/business-adobe.png" alt="Explorer les fonctionnalités du Adobe LLM Optimizer"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -194,11 +194,11 @@ Adobe LLM Optimizer est une application IA dédiée à l’optimisation du moteu
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://business.adobe.com/fr/products/llm-optimizer.html" target="_blank" rel="referrer" title="Explorer les fonctionnalités du Adobe LLM Optimizer">Explorer les fonctionnalités du Adobe LLM Optimizer</a>
+                        <a href="https://business.adobe.com/products/llm-optimizer.html" target="_blank" rel="referrer" title="Explorer les fonctionnalités du Adobe LLM Optimizer">Explorer les fonctionnalités du Adobe LLM Optimizer</a>
                     </p>
-                    <p class="is-size-6">Façonnez la présence de votre marque dans les résultats de recherche de l’IA avec Adobe LLM Optimizer. Obtenez des informations géographiques, améliorez la visibilité sur les LLM et stimulez une croissance mesurable du trafic.</p>
+                    <p class="is-size-6">Formez la présence de votre marque dans les résultats Recherche optimisée par l'IA avec Adobe LLM Optimizer. Obtenez des informations géographiques, améliorez la visibilité sur les LLM et stimulez une croissance mesurable du trafic.</p>
                 </div>
-                <a href="https://business.adobe.com/fr/products/llm-optimizer.html" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://business.adobe.com/products/llm-optimizer.html" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
 </a>
             </div>

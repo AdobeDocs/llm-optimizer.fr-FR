@@ -5,7 +5,7 @@ feature: URL Inspector
 source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
 source-wordcount: '681'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 L’Inspecteur d’URL vous permet d’analyser les performances de pages spécifiques de votre domaine dans les recherches par IA. Il combine la visibilité, le trafic des agents et les données de référence au niveau de l’URL pour vous donner une vue granulaire des URL citées et de leur fréquence d’apparition dans les réponses.
 
-![&#x200B; Inspecteur d’URL &#x200B;](/help/dashboards/assets/url-insp.png)
+![ Inspecteur d’URL ](/help/dashboards/assets/url-insp.png)
 
 ## Filtres
 
@@ -32,7 +32,7 @@ Après avoir sélectionné le filtre souhaité, cliquez sur **Appliquer les filt
 
 L’Inspecteur d’URL fournit plusieurs mesures d’aperçu afin que vous puissiez évaluer rapidement les performances de vos pages dans les recherches par IA. Les mesures suivantes sont fournies :
 
-* **Invites uniques avec citations détenues** - Nombre total d’invites d’IA uniques avec citations détenues.
+* **Invites uniques avec citations de propriété** - Nombre total d’invites d’IA uniques avec citations de propriété.
 * **Nombre total d’invites uniques** - Nombre total d’invites uniques de l’IA.
 * **URL citées uniques** - Nombre d’URL détenues uniques qui ont été citées.
 * **Nombre total de fois citées** - Nombre total de fois où une URL détenue a été citée dans les réponses générées par l’IA.
@@ -41,7 +41,7 @@ L’Inspecteur d’URL fournit plusieurs mesures d’aperçu afin que vous puiss
 
 Les indicateurs de tendance pour chaque mesure d’aperçu montrent l’évolution de ces valeurs au fil du temps par rapport à la période précédente.
 
-## Les URL citées
+## Vos URL citées
 
 La vue des URL citées répertorie toutes les URL de votre marque qui ont été citées dans les réponses générées par l’IA, avec des mesures annexes. Les deux tableaux comportent un champ de recherche pour un accès rapide aux rubriques et vous pouvez personnaliser les mesures affichées en cliquant sur le bouton **Configurer les colonnes**. Vous pouvez également utiliser l’option **Exporter** pour télécharger le fichier csv de la table et partager les informations avec votre équipe ou inclure la table dans les rapports d’exécution.
 
@@ -57,7 +57,7 @@ Les mesures suivantes sont fournies :
 * **Accès aux agents** - Nombre total d’accès provenant des agents AI sur les URL.
 * **Accès aux références** - Nombre d’accès dirigés depuis les réponses générées par l’IA vers les URL.
 
-## Tendance des URL en concurrence pour les citations
+## URL de tendance en concurrence pour les citations
 
 Les URL de tendance en concurrence pour la vue des citations mettent en évidence les URL externes qui sont actuellement citées dans les réponses pertinentes pour votre marque, mesurant qui gagne des citations dans votre espace perso. Le tableau de données comporte un champ de recherche pour un accès rapide à des URL spécifiques. Vous pouvez également utiliser l’option **Exporter** pour télécharger le fichier csv de la table et partager les informations avec votre équipe ou inclure la table dans les rapports d’exécution.
 
@@ -74,6 +74,6 @@ Les mesures suivantes sont fournies :
 
 ### Fenêtre Détails
 
-Pour les vues citées et de tendance, les URL comportent un bouton **Détails** à la fin de chaque ligne. Cliquez sur le bouton pour afficher une fenêtre distincte avec des détails supplémentaires. La fenêtre de détails indique la fréquence à laquelle l’URL est citée, <!--the sentiment of AI responses where it is mentioned,--> les rubriques et les invites dans lesquelles elle apparaît et les tendances du trafic d’agents et de référents au fil du temps (pour les URL détenues).
+Pour les vues citées et de tendance, les URL comportent un bouton **Détails** à la fin de chaque ligne. Cliquez sur le bouton pour afficher une fenêtre distincte avec des détails supplémentaires. La fenêtre de détails indique la fréquence à laquelle l’URL est citée, <!--the sentiment of AI responses where it is mentioned,--> les rubriques et les invites dans lesquelles elle apparaît et les tendances en matière d’agentic et de trafic de recommandation au fil du temps (pour les URL détenues).
 
 ![Fenêtre Détails](/help/dashboards/assets/details-url.png)

@@ -1,20 +1,20 @@
 ---
 title: Opportunités d’optimisation
-description: Découvrez comment utiliser le tableau de bord des opportunités pour détecter automatiquement comment votre site peut être amélioré afin d’augmenter la visibilité de la marque.
+description: Découvrez comment utiliser le tableau de bord des opportunités pour détecter automatiquement comment votre site peut être amélioré afin d’augmenter la visibilité des marques.
 feature: Opportunities
 source-git-commit: 39658a057fd4d67f74dc286e1687e384133ac653
 workflow-type: tm+mt
 source-wordcount: '624'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Opportunités d’optimisation
 
-Les opportunités d’optimisation sont des informations automatiquement détectées qui montrent où votre site et votre présence externe peuvent être améliorés pour accroître la visibilité de la marque dans la recherche IA.
+Les opportunités d’optimisation sont des informations automatiquement détectées qui montrent où votre site et votre présence externe peuvent être améliorés afin d’augmenter la visibilité des marques dans Recherche optimisée par l&#39;IA.
 
-Ces optimisations incluent des correctifs sur la page (ajout de contenu structuré, de canoniques ou de résumés), des ajustements techniques (déblocage des robots d’IA ou résolution d’erreurs) et l’influence sur le contenu des sites tiers faisant autorité. La résolution de ces opportunités d’optimisation permet à votre marque d’être représentée avec précision et plus susceptible d’être citée dans les réponses génératives.
+Ces optimisations incluent des correctifs sur la page (ajout de contenu structuré, de canoniques ou de résumés), des ajustements techniques (déblocage des robots d&#39;exploration d’IA ou résolution d’erreurs) et l’influence sur le contenu des sites tiers faisant autorité. La résolution de ces opportunités d’optimisation permet à votre marque d’être représentée avec précision et plus susceptible d’être citée dans les réponses génératives.
 
 ![Opportunités d’optimisation](/help/dashboards/assets/oport.png)
 
@@ -36,9 +36,9 @@ Vous trouverez ci-dessous un tableau des opportunités actuellement prises en ch
 | Détecter les canoniques manquants | Contenu (sur site) | Recherche les pages sans balises canoniques ou dont les balises sont en conflit. Répertorie les URL concernées et les doublons. | Ajoutez des balises canoniques pointant vers la version préférée de chaque page. Assurer une utilisation cohérente entre les variantes. |
 | Détecter les en-têtes vides | Contenu (sur site) | Indique les pages contenant des balises d’en-tête, mais pas de texte. Affiche l’URL et l’emplacement des balises vides. | Ajoutez un texte descriptif aux en-têtes qui reflètent le contenu sous ceux-ci. |
 | Détecter les en-têtes en double | Contenu (sur site) | Analyse les en-têtes HTML et marque les en-têtes répétés. Affiche les URL concernées et les fragments de texte dupliqués. | Modifier les en-têtes pour qu’ils soient uniques et maintenir la hiérarchie (H1 → H2 → H3). Fusionner ou renommer les sections en double. |
-| Détecter le trafic d’agent bloqué | GÉOLOCALISATION TECHNIQUE | Analyse les journaux du réseau CDN pour les requêtes bloquées provenant d’agents d’IA connus (par exemple, GPTBot, PerplexityBot). Indique les URL et les agents affectés. | Mettez à jour robots.txt ou les configurations de serveur pour autoriser l’accès aux robots d’exploration AI pris en charge, le cas échéant. |
-| Détection des problèmes liés aux écrans 404/403/5xx | GÉOLOCALISATION TECHNIQUE | Surveille les journaux CDN pour les réponses d’erreur. Fréquence des rapports, URL affectées et estimation des accès perdus. | Correction de liens rompus, mise à jour des autorisations et résolution des problèmes côté serveur afin que le contenu clé renvoie 200 réponses. |
-| Récupérer la visibilité du contenu (accès anticipé) | GÉOLOCALISATION TECHNIQUE | Indique les pages où le contenu critique est masqué aux agents d’IA. Affiche les URL affectées et le contenu attendu qui peut être récupéré. | pré-effectuer le rendu des pages afin que davantage de contenu soit disponible pour les agents d’IA sans exécution de JavaScript. |
+| Détecter le trafic d’agent bloqué | Géolocalisation technique | Analyse les journaux du réseau CDN pour les requêtes bloquées provenant d’agents d’IA connus (par exemple, GPTBot, PerplexityBot). Indique les URL et les agents affectés. | Mettez à jour robots.txt ou les configurations de serveur pour autoriser l’accès aux robots d&#39;exploration d’IA pris en charge, le cas échéant. |
+| Détection des problèmes liés aux écrans 404/403/5xx | Géolocalisation technique | Surveille les journaux CDN pour les réponses d’erreur. Fréquence des rapports, URL affectées et estimation des accès perdus. | Correction de liens rompus, mise à jour des autorisations et résolution des problèmes côté serveur afin que le contenu clé renvoie 200 réponses. |
+| Visibilité du contenu de la récupération (accès anticipé) | Géolocalisation technique | Indique les pages où le contenu critique est masqué aux agents d’IA. Affiche les URL affectées et le contenu attendu qui peut être récupéré. | pré-effectuer le rendu des pages afin que davantage de contenu soit disponible pour les agents d’IA sans exécution de JavaScript. |
 
 ## Optimisation automatique {#auto-optimization}
 

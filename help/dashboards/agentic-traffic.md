@@ -1,18 +1,18 @@
 ---
-title: Trafic d’agent
+title: Trafic généré par l’IA agentique
 description: Découvrez comment utiliser le tableau de bord du trafic d’agents afin de voir comment les agents d’IA interagissent avec votre site.
 feature: Agentic Traffic
 source-git-commit: 26926f3ed4df3a408b74b0208f0d1eb064b97d28
 workflow-type: tm+mt
 source-wordcount: '1307'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Trafic d’agent {#agentic-traffic}
+# Trafic généré par l’IA agentique {#agentic-traffic}
 
-Le tableau de bord du trafic d’agents montre comment les agents d’IA (robots d’exploration et chatbots) interagissent avec votre site. Cette vue vous permet de suivre le nombre total de requêtes et les mesures générales liées aux performances. Vous pouvez également afficher la distribution du trafic sur les marchés, les catégories, les pages et les agents. Les données utilisées par ce tableau de bord proviennent des journaux CDN. Vous devez donc configurer le **transfert des journaux CDN** pour afficher les mesures. Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
+Le tableau de bord du trafic d’agents montre comment les agents d’IA (robots d&#39;exploration et chatbots) interagissent avec votre site. Cette vue vous permet de suivre le nombre total de requêtes et les mesures générales liées aux performances. Vous pouvez également afficher la distribution du trafic sur les marchés, les catégories, les pages et les agents. Les données utilisées par ce tableau de bord proviennent des journaux CDN. Vous devez donc configurer le **transfert des journaux CDN** pour afficher les mesures. Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
 
 ![Distribution du trafic](/help/dashboards/assets/ag-main.png)
 
@@ -21,7 +21,7 @@ Cette page présente les éléments suivants :
 * [Filtres](#filters)
 * [Configuration du réseau CDN](#cdn-setup)
 * [Répartition du trafic](#traffic-distribution)
-* [Tendances du trafic des agences](#agentic-trends)
+* [Tendances du trafic généré par l’IA agentique](#agentic-trends)
 * [Déplacements en haut et en bas](#top-bottom-movers)
 * [Analyse des performances de l’agent utilisateur et de l’URL](#user-url-performance)
 
@@ -59,7 +59,7 @@ LLM Optimizer traite un sous-ensemble de champs des journaux du réseau CDN. Bie
 * Date et heure
 * Type de contenu
 
-Ces champs normalisés sont exposés via la vue agentique. Sur le tableau de bord [Trafic de référence](/help/dashboards/referral-traffic.md), les journaux CDN sont utilisés pour afficher les mesures d’accès à la page. Aucune information d’identification personnelle (PII) n’est traitée ou stockée à quelque étape que ce soit de l’ingestion des journaux du réseau CDN ou de la gestion des données ultérieure.
+Ces champs normalisés sont exposés via la vue agentique. Sur le tableau de bord [Trafic de recommandation ](/help/dashboards/referral-traffic.md), les journaux CDN sont utilisés pour afficher les mesures d’accès à la page. Aucune information d’identification personnelle (PII) n’est traitée ou stockée à quelque étape que ce soit de l’ingestion des journaux du réseau CDN ou de la gestion des données ultérieure.
 
 ## Filtres {#filters}
 
@@ -68,7 +68,7 @@ En haut de la page, vous pouvez appliquer des filtres pour affiner votre vue. Le
 * **Période** - Sélectionnez la période pour les données affichées. Par exemple, les 4 dernières semaines. Vous avez également la possibilité de personnaliser la période en sélectionnant l’option **Semaines personnalisées**.
 * **Catégorie** - Filtrez les résultats affichés par catégories prédéfinies ou catégories personnalisées.
 * **Platform** - Choisissez le moteur d’IA à analyser.
-* **Type d’agent** - Filtrez par le type d’agent d’IA qui a interagi avec votre site. Vous pouvez filtrer entre les robots d’exploration, les chatbots ou tous les agents.
+* **Type d’agent** - Filtrez par le type d’agent d’IA qui a interagi avec votre site. Vous pouvez filtrer entre les robots d&#39;exploration, les chatbots ou tous les agents.
 * **Taux de succès** - Filtrez par la qualité de l’interaction (élevée, moyenne ou faible). Cette mesure représente le pourcentage de requêtes HTTP réussies, y compris les réponses directes réussies (codes d’état 2xx) et les redirections (codes d’état 3xx).
 * **Type de contenu** - Affichez l’interaction agent pour différents types de contenu, tels qu’HTML, PDF, etc.
 
@@ -88,7 +88,7 @@ En haut de la page, il y a trois mesures clés que vous devez connaître :
 
 Les indicateurs de tendance pour chaque mesure clé montrent l’évolution de ces valeurs au fil du temps par rapport à la période précédente.
 
-## Tendances du trafic des agences {#agentic-trends}
+## Tendances du trafic généré par l’IA agentique {#agentic-trends}
 
 Utilisez le graphique Tendances du trafic d’agent pour effectuer le suivi des totaux hebdomadaires des accès réussis, en échec et globaux. Ainsi, vous pouvez surveiller les modifications de l’activité et des performances des agents au fil du temps. Vous pouvez également placer le pointeur de la souris sur le graphique pour voir l’évolution des données sur la période hebdomadaire.
 
@@ -102,7 +102,7 @@ La vue des déménageurs en haut et en bas met en évidence les URL présentant 
 
 ## Analyse des performances de l’agent utilisateur et de l’URL {#user-url-performance}
 
-Les vues Agent utilisateur et Analyse des performances des URL fournissent d’autres répartitions de données sur la manière dont les robots d’exploration et les chatbots interagissent avec votre site. Cliquez sur les onglets ci-dessous pour obtenir une description détaillée.
+Les vues Agent utilisateur et Analyse des performances des URL fournissent d’autres répartitions de données sur la manière dont les robots d&#39;exploration et les chatbots interagissent avec votre site. Cliquez sur les onglets ci-dessous pour obtenir une description détaillée.
 
 ![Analyse des performances de l’agent utilisateur et des URL](/help/dashboards/assets/user-agent.png)
 
@@ -110,17 +110,17 @@ Les vues Agent utilisateur et Analyse des performances des URL fournissent d’a
 
 >[!TAB User Agent Analysis]
 
-Le tableau Analyse de l’agent utilisateur fournit une répartition du trafic par type de page et type d’agent (par exemple, robots d’exploration ou chatbots). De cette manière, il est facile de comprendre quels agents d’IA analysent quelles parties de votre site. Il contient les catégories suivantes :
+Le tableau Analyse de l’agent utilisateur fournit une répartition du trafic par type de page et type d’agent (par exemple, robots d&#39;exploration ou chatbots). Ainsi, il est facile de savoir quels agents d’IA explorent à quelles parties de votre site. Il contient les catégories suivantes :
 
 * **Type de page** - Type de page.
-* **Type d’agent** - L’agent d’IA qui analyse la page, soit un robot d’exploration, soit un chatbot.
+* **Type d’agent** - L’agent d’IA qui explore à la page, soit un robot d&#39;exploration, soit un bot conversationnel.
 * **Accès** - Nombre total de requêtes effectuées par les agents d’IA pour ce type de page spécifique.
 
 Vous pouvez personnaliser les mesures affichées en cliquant sur le bouton **Configurer les colonnes**.
 
 >[!TAB Analyse des performances des URL]
 
-Le tableau Analyse des performances des URL affiche une vue détaillée des URL individuelles. Cela inclut les accès, les agents uniques, les principaux agents, les taux de succès et les catégories. Vous pouvez ainsi identifier les pages à forte valeur ajoutée, détecter les écarts d’analyse et optimiser le contenu pour les moteurs d’IA. Les URL sont classées par volume de trafic. Le tableau contient les catégories suivantes :
+Le tableau Analyse des performances des URL affiche une vue détaillée des URL individuelles. Cela inclut les accès, les agents uniques, les principaux agents, les taux de succès et les catégories. Vous pouvez ainsi identifier les pages à forte valeur ajoutée, détecter les lacunes en matière d’explore et optimiser le contenu pour les moteurs d’IA. Les URL sont classées par volume de trafic. Le tableau contient les catégories suivantes :
 
 * **URL** - URL examinée.
 * **Nombre total d’accès** - Nombre total de requêtes effectuées par des agents AI sur l’URL.
@@ -136,7 +136,7 @@ Le tableau Performances des URL comporte un champ de recherche pour un accès ra
 
 ![détails de l’URL](/help/dashboards/assets/details.png)
 
-La vue Détails de l’URL offre une compréhension holistique des performances d’une page, montrant la fréquence à laquelle elle est citée, le sentiment des réponses de l’IA où elle est mentionnée, les sujets et les invites dans lesquels elle apparaît et les tendances du trafic d’agents et de recommandations au fil du temps.
+La vue Détails de l’URL offre une compréhension holistique des performances d’une page, indiquant la fréquence à laquelle elle est citée, le sentiment de réponses de l’IA où elle est mentionnée, les sujets et les invites dans lesquels elle apparaît et les tendances de l’activité et du trafic de recommandation au fil du temps.
 
 >[!ENDTABS]
 

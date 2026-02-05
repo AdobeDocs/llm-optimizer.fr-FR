@@ -12,9 +12,9 @@ ht-degree: 5%
 
 # Présentation des tableaux de bord
 
-Bienvenue dans la présentation des tableaux de bord. Les tableaux de bord de LLM-Optimizer aident les spécialistes du marketing à suivre la visibilité et les sentiments de la marque sur les plateformes de recherche d’IA, à identifier les opportunités d’optimisation et à implémenter des modifications normatives pour améliorer les citations et les performances.
+Bienvenue dans la présentation des tableaux de bord. Les tableaux de bord de LLM-Optimizer aident les marketeurs à effectuer le suivi de la visibilité des marques et du sentiment sur les plateformes Recherche optimisée par l&#39;IA, à identifier les opportunités d’optimisation et à implémenter des modifications normatives afin d’améliorer les citations et les performances.
 
-Les principaux affichages comprennent la présence de la marque, le trafic des agents et des références, l’inspecteur d’URL, l’identification des opportunités, Collaboration et la configuration du client.
+Les principales vues incluent Présence des marques, Agent et Trafic de recommandation, Inspecteur d’URL, Identification d’opportunité, Collaboration et Configuration client.
 
 <!-- CARDS
 
@@ -68,8 +68,8 @@ Les principaux affichages comprennent la présence de la marque, le trafic des a
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./brand-presence.md" title="Tableau de bord de la présence de la marque" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Tableau de bord de la présence de la marque"
+                    <a href="./brand-presence.md" title="Tableau de bord de présence des marques" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Tableau de bord de présence des marques"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -77,9 +77,9 @@ Les principaux affichages comprennent la présence de la marque, le trafic des a
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="Tableau de bord de la présence de la marque">Tableau de bord de la présence de la marque</a>
+                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="Tableau de bord de présence des marques">Tableau de bord de Présence des marques </a>
                     </p>
-                    <p class="is-size-6">Effectue le suivi de l’apparence de votre marque sur les plateformes de recherche LLM, y compris l’analyse des sentiments et le benchmarking d’autres marques.</p>
+                    <p class="is-size-6">Effectue le suivi de l’apparence de votre marque sur les plateformes de recherche LLM, y compris l’analyse de sentiment et le benchmarking d’autres marques.</p>
                 </div>
                 <a href="./brand-presence.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
@@ -114,8 +114,8 @@ Les principaux affichages comprennent la présence de la marque, le trafic des a
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./referral-traffic.md" title="Tableau de bord du trafic de référence" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="Tableau de bord du trafic de référence"
+                    <a href="./referral-traffic.md" title="Tableau de bord du trafic de recommandation" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="Tableau de bord du trafic de recommandation"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -123,7 +123,7 @@ Les principaux affichages comprennent la présence de la marque, le trafic des a
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="Tableau de bord du trafic de référence">Tableau de bord du trafic de référence</a>
+                        Tableau de bord de Trafic de recommandation <a href="./referral-traffic.md" target="_blank" rel="referrer" title="Tableau de bord du trafic de recommandation"></a>
                     </p>
                     <p class="is-size-6">Mesure les visites humaines provenant de citations générées par l’IA qui vous permettent de découvrir l’interaction réelle des utilisateurs et utilisatrices avec l’IA</p>
                 </div>
@@ -171,7 +171,7 @@ Les principaux affichages comprennent la présence de la marque, le trafic des a
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./opportunities.md" target="_blank" rel="referrer" title="Tableau de bord des opportunités"> Tableau de bord des opportunités </a>
                     </p>
-                    <p class="is-size-6">Affiche et hiérarchise les informations exploitables qui améliorent la visibilité de la marque et les performances de citation sur les plateformes de recherche basées sur l’IA</p>
+                    <p class="is-size-6">Affiche et hiérarchise les informations exploitables qui améliorent les performances de visibilité des marques et de citation sur les plateformes de recherche basées sur l’IA</p>
                 </div>
                 <a href="./opportunities.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>

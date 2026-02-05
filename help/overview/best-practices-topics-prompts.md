@@ -5,7 +5,7 @@ feature: Best Practices, Customer Configuration
 source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
 workflow-type: tm+mt
 source-wordcount: '1417'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -22,9 +22,9 @@ Dans le tableau de bord [[!UICONTROL Configuration du client]](/help/dashboards/
 
 Dans le tableau de bord [!UICONTROL Configuration du client], vous pouvez personnaliser des catégories (telles que des unités commerciales ou des lignes de produits), effectuer le suivi d’autres marques et ajouter des alias de mention de marque pour capturer toutes les variations de votre marque dans les invites. Cette configuration garantit que la plateforme adapte les informations à votre contexte commercial, ce qui permet une visibilité, un trafic et une analyse des opportunités précis.
 
-## Bibliothèque d’invites de secteur
+## Bibliothèque de prompts sectoriels
 
-Pour faciliter la prise en main des invites et des sujets, Adobe a créé une bibliothèque d’invites du secteur développée grâce à des recherches approfondies menées avec des experts du secteur et à l’analyse du comportement de recherche de l’IA auprès de plus de 6 000 clients. Cette bibliothèque identifie les rubriques et les invites les plus pertinentes en fonction des tendances spécifiques au secteur, des objectifs commerciaux validés et des modèles de recherche de clients réels.
+Pour faciliter la prise en main des invites et des rubriques, Adobe a créé une bibliothèque d’invites du secteur développée à l’issue de recherches approfondies avec des experts du secteur et d’une analyse du comportement de Recherche optimisée par l&#39;IA auprès de plus de 6 000 clients. Cette bibliothèque identifie les sujets et les prompts les plus pertinents en fonction des tendances spécifiques au secteur, des objectifs commerciaux validés et des modèles concrets de recherche de clientèle.
 
 Pour utiliser la bibliothèque d&#39;invites de secteur :
 
@@ -43,7 +43,7 @@ Pour utiliser la bibliothèque d&#39;invites de secteur :
 
 La bibliothèque de l&#39;invitation à l&#39;industrie a été élaborée dans le cadre d&#39;une initiative de recherche exhaustive combinant :
 
-* **Intelligence client : analyse** comportement et des préférences de recherche de l’IA sur plus de 6 000 clients
+* **Intelligence client :** analyse du comportement et des préférences Recherche optimisée par l&#39;IA sur plus de 6 000 clients
 * **Expertise de l’industrie :** points de vue d’experts des secteurs de l’automobile, des services financiers, des soins de santé, des télécommunications et des voyages.
 * **Informations axées sur les données :** identification des rubriques à fort impact et des modèles de requête qui stimulent l’engagement et la conversion des clients.
 
@@ -55,7 +55,7 @@ Principales rubriques recherchées par les clients de tous les secteurs d’acti
 * **Télécom :** Comparaison des plans, des conditions contractuelles et des promotions, Vérification du service dans la région locale
 * **Voyage :** Se préparer pour un voyage, Rechercher et réserver un voyage
 
-Tendances client sur la recherche d’IA et le comportement d’invite dans les outils LLM :
+Tendances client sur Recherche optimisée par l&#39;IA et comportement d’invite dans les outils LLM :
 
 * Les clients préfèrent poser des questions plutôt que d’utiliser des mots-clés lors de l’utilisation des outils de recherche LLM.
 * Ils utilisent principalement des outils de recherche LLM pour les premiers stades de la recherche et de la découverte.

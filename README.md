@@ -2,16 +2,16 @@
 source-git-commit: 9a086ec3124af1bf234e42287c8b4ef08eae6bcd
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 36%
+ht-degree: 0%
 
 ---
-# Article relatif aux contributions
+# Article de contribution
 
-Nous accueillons avec plaisir les contributions de notre communauté ainsi que celles des employés d’Adobe qui ne font pas partie des équipes de documentation.
+Nous acceptons les contributions de notre communauté ainsi que celles des employés d’Adobe qui ne font pas partie des équipes de documentation.
 
-## Code de conduite Open Source d’Adobe
+## Code de conduite d’Adobe Open Source
 
-Ce projet a adopté le [Code de conduite Open Source d’Adobe](code-of-conduct.md) ou le [Code de conduite .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Pour plus d’informations, voir l’article [Contribution](contributing.md).
+Ce projet a adopté le [Code de conduite d’Adobe Open Source](code-of-conduct.md) ou le Code de conduite de la Fondation [.NET](https://dotnetfoundation.org/code-of-conduct). Pour plus d’informations, consultez l’article [Contribution](contributing.md).
 
 ## Comment contribuer au contenu d’Adobe
 
@@ -29,9 +29,9 @@ Si vous contribuez à une mise à jour mineure :
 1. Dans la rubrique « Ce contenu a-t-il été utile ? » La bannière qui s’affiche en bas de la fenêtre du navigateur, cliquez sur **Options détaillées relatives aux commentaires**.
 1. Cliquez sur **Suggérer une modification** et envoyez une requête de tirage (PR) avec vos modifications dans l’interface utilisateur GitHub.
 
-   Voir le [Guide du contributeur de la documentation Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr) pour plus d’informations.
+   Pour plus d’informations[ consultez le guide du contributeur aux ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)documents Adobe .
 
-Les corrections mineures ou les clarifications que vous soumettez pour la documentation et les exemples de code dans ce référentiel sont couverts par les conditions d’utilisation d’Adobe.
+Les modifications ou précisions mineures que vous apportez aux documents et aux exemples de code dans ce référentiel sont soumises aux conditions d’utilisation d’Adobe.
 
 ### Changements majeurs ou nouveaux sujets de la communauté
 
@@ -41,9 +41,9 @@ Si vous faites partie de la communauté Adobe et que vous souhaitez créer une r
 
 ### Outils
 
-Les contributeurs de la communauté peuvent utiliser l’interface utilisateur de GitHub pour les modifications de base ou dupliquer (fork) le référentiel pour apporter des contributions majeures.
+Les contributeurs de la communauté peuvent utiliser l’interface utilisateur de GitHub pour apporter des modifications mineures, ou dupliquer le référentiel pour apporter des contributions majeures.
 
-Pour plus d’informations, voir le [Guide du contributeur de la documentation Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
+Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Contributeurs internes
 
@@ -53,12 +53,12 @@ Si vous êtes rédacteur technique, chef de programme ou développeur de l’éq
 
 Tous les articles de ce référentiel utilisent Markdown adapté à GitHub. Si vous ne connaissez pas Markdown, reportez-vous à :
 
-* [Notions de base du langage Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Aide-mémoire du langage Markdown à imprimer](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Principes de base de Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [Aide-mémoire imprimable Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Étiquettes
 
-Dans le référentiel public, des étiquettes automatisées sont attribuées aux demandes d’extraction afin de nous aider à gérer le processus de demande d’extraction et de vous informer du statut de votre demande d’extraction :
+Dans le référentiel public, des libellés automatisés sont affectés aux demandes d’extraction afin de nous aider à gérer le workflow de demande d’extraction et de vous permettre de savoir où en est votre demande d’extraction :
 
-* **Modification envoyée à l’auteur** : l’auteur a été informé de la demande d’extraction en attente.
-* **prêt à fusionner** : prêt à être examiné par notre équipe de vérification des demandes d’extraction.
+* **Modification envoyée à l’auteur** : l’auteur a été informé de la demande d’extraction en attente.
+* **ready-to-merge** : prêt à être examiné par notre équipe d’examen des demandes d’extraction.
