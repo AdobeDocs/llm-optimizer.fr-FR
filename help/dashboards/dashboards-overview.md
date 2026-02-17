@@ -1,20 +1,20 @@
 ---
-title: Présentation des tableaux de bord
-description: Voici la présentation de l’article.
+title: Vue d’ensemble des tableaux de bord
+description: Voici la vue d’ensemble de l’article.
 feature: Onboarding
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 5%
+source-wordcount: '262'
+ht-degree: 93%
 
 ---
 
 
-# Présentation des tableaux de bord
+# Vue d’ensemble des tableaux de bord
 
-Bienvenue dans la présentation des tableaux de bord. Les tableaux de bord de LLM-Optimizer aident les marketeurs à effectuer le suivi de la visibilité des marques et du sentiment sur les plateformes Recherche optimisée par l&#39;IA, à identifier les opportunités d’optimisation et à implémenter des modifications normatives afin d’améliorer les citations et les performances.
+Bienvenue dans la vue d’ensemble des tableaux de bord. Les tableaux de bord de LLM Optimizer aident les responsables marketing à effectuer le suivi de la visibilité de la marque et du sentiment sur les plateformes de recherche optimisée par l’IA, à identifier les opportunités d’optimisation et à implémenter des modifications normatives afin d’améliorer les références et les performances.
 
-Les principales vues incluent Présence des marques, Agent et Trafic de recommandation, Inspecteur d’URL, Identification d’opportunité, Collaboration et Configuration client.
+Les vues principales incluent la présentation, la Présence des marques, l’agent et le Trafic de recommandation, l’inspecteur d’URL, les opportunités, Collaboration et la configuration client.
 
 <!-- CARDS
 
@@ -68,8 +68,8 @@ Les principales vues incluent Présence des marques, Agent et Trafic de recomman
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./brand-presence.md" title="Tableau de bord de présence des marques" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Tableau de bord de présence des marques"
+                    <a href="./brand-presence.md" title="Tableau de bord de présence de la marque" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Tableau de bord de présence de la marque"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -77,9 +77,9 @@ Les principales vues incluent Présence des marques, Agent et Trafic de recomman
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="Tableau de bord de présence des marques">Tableau de bord de Présence des marques </a>
+                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="Tableau de bord de présence de la marque">Tableau de bord de présence de la marque</a>
                     </p>
-                    <p class="is-size-6">Effectue le suivi de l’apparence de votre marque sur les plateformes de recherche LLM, y compris l’analyse de sentiment et le benchmarking d’autres marques.</p>
+                    <p class="is-size-6">Effectue le suivi de l’apparence de votre marque sur les plateformes de recherche LLM, y compris l’analyse des sentiments et l’évaluation des autres marques.</p>
                 </div>
                 <a href="./brand-presence.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
@@ -91,8 +91,8 @@ Les principales vues incluent Présence des marques, Agent et Trafic de recomman
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./agentic-traffic.md" title="Tableau de bord du trafic agent" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/agentic-traffic-card.png" alt="Tableau de bord du trafic agent"
+                    <a href="./agentic-traffic.md" title="Tableau de bord Trafic généré par l’IA agentique" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/agentic-traffic-card.png" alt="Tableau de bord Trafic généré par l’IA agentique"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -100,9 +100,9 @@ Les principales vues incluent Présence des marques, Agent et Trafic de recomman
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./agentic-traffic.md" target="_blank" rel="referrer" title="Tableau de bord du trafic agent">Tableau de bord du trafic dynamique</a>
+                        <a href="./agentic-traffic.md" target="_blank" rel="referrer" title="Tableau de bord Trafic généré par l’IA agentique">Tableau de bord Trafic généré par l’IA agentique</a>
                     </p>
-                    <p class="is-size-6">Surfaces le trafic provenant des LLM qui échappent aux analyses traditionnelles, ce qui vous permet de connecter la découverte assistée par IA à l’engagement et au chiffre d’affaires.</p>
+                    <p class="is-size-6">Met en évidence le trafic provenant des LLM qui échappent aux analyses traditionnelles, ce qui vous permet de connecter la découverte assistée par IA à l’engagement et au chiffre d’affaires.</p>
                 </div>
                 <a href="./agentic-traffic.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
@@ -123,9 +123,9 @@ Les principales vues incluent Présence des marques, Agent et Trafic de recomman
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        Tableau de bord de Trafic de recommandation <a href="./referral-traffic.md" target="_blank" rel="referrer" title="Tableau de bord du trafic de recommandation"></a>
+                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="Tableau de bord du trafic de recommandation">Tableau de bord du trafic de recommandation</a>
                     </p>
-                    <p class="is-size-6">Mesure les visites humaines provenant de citations générées par l’IA qui vous permettent de découvrir l’interaction réelle des utilisateurs et utilisatrices avec l’IA</p>
+                    <p class="is-size-6">Mesure les visites humaines provenant de références générées par l’IA qui vous permettent de découvrir l’interaction réelle des utilisateurs et des utilisatrices avec l’IA.</p>
                 </div>
                 <a href="./referral-traffic.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
@@ -137,8 +137,8 @@ Les principales vues incluent Présence des marques, Agent et Trafic de recomman
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./collaboration.md" title="Tableau de bord Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/collaboration-card.png" alt="Tableau de bord Collaboration"
+                    <a href="./collaboration.md" title="Tableau de bord de la collaboration" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/collaboration-card.png" alt="Tableau de bord de la collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -146,9 +146,9 @@ Les principales vues incluent Présence des marques, Agent et Trafic de recomman
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./collaboration.md" target="_blank" rel="referrer" title="Tableau de bord Collaboration">Tableau de bord Collaboration</a>
+                        <a href="./collaboration.md" target="_blank" rel="referrer" title="Tableau de bord de la collaboration">Tableau de bord de la collaboration</a>
                     </p>
-                    <p class="is-size-6">Permet d’activer le travail d’équipe interfonctionnel en vous permettant d’inviter des collègues dans un espace de travail partagé.</p>
+                    <p class="is-size-6">Vous permet d’activer le travail d’équipe interfonctionnel en vous permettant d’inviter des collègues dans un espace de travail partagé.</p>
                 </div>
                 <a href="./collaboration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
@@ -169,9 +169,9 @@ Les principales vues incluent Présence des marques, Agent et Trafic de recomman
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./opportunities.md" target="_blank" rel="referrer" title="Tableau de bord des opportunités"> Tableau de bord des opportunités </a>
+                        <a href="./opportunities.md" target="_blank" rel="referrer" title="Tableau de bord des opportunités">Tableau de bord des opportunités</a>
                     </p>
-                    <p class="is-size-6">Affiche et hiérarchise les informations exploitables qui améliorent les performances de visibilité des marques et de citation sur les plateformes de recherche basées sur l’IA</p>
+                    <p class="is-size-6">Met en évidence et détermine la priorité des informations exploitables qui améliorent les performances de visibilité de la marque et des citations, sur les plateformes de recherche optimisées par l’IA.</p>
                 </div>
                 <a href="./opportunities.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
@@ -194,7 +194,7 @@ Les principales vues incluent Présence des marques, Agent et Trafic de recomman
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./url-inspector.md" target="_blank" rel="referrer" title="Tableau de bord de l’inspecteur d’URL">Tableau de bord de l’inspecteur d’URL</a>
                     </p>
-                    <p class="is-size-6">Vous donne une visibilité sur les performances de vos propres URL dans les environnements de recherche pilotés par l’IA.</p>
+                    <p class="is-size-6">Vous donne de la visibilité sur les performances de vos URL dans les environnements de recherche optimisés par l’IA.</p>
                 </div>
                 <a href="./url-inspector.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
@@ -206,8 +206,8 @@ Les principales vues incluent Présence des marques, Agent et Trafic de recomman
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./customer-configuration.md" title="Tableau de bord de configuration du client" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Tableau de bord de configuration du client"
+                    <a href="./customer-configuration.md" title="Tableau de bord de la configuration cliente" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Tableau de bord de la configuration cliente"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -215,9 +215,9 @@ Les principales vues incluent Présence des marques, Agent et Trafic de recomman
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./customer-configuration.md" target="_blank" rel="referrer" title="Tableau de bord de configuration du client">Tableau de bord de configuration du client</a>
+                        <a href="./customer-configuration.md" target="_blank" rel="referrer" title="Tableau de bord de la configuration cliente">Tableau de bord de la configuration cliente</a>
                     </p>
-                    <p class="is-size-6">Permet aux entreprises de contrôler le fonctionnement de Adobe LLM Optimizer en fonction de leurs besoins spécifiques.</p>
+                    <p class="is-size-6">Permet aux entreprises de contrôler le fonctionnement d’Adobe LLM Optimizer en fonction de leurs besoins spécifiques.</p>
                 </div>
                 <a href="./customer-configuration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
