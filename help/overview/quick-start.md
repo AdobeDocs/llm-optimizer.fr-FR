@@ -12,7 +12,7 @@ ht-degree: 93%
 
 # Démarrage rapide
 
-Pour commencer à utiliser LLM Optimizer, vous devez terminer le processus d’intégration comme décrit dans les étapes présentées ci-dessous. Une fois le processus terminé, vous disposerez d’un accès complet aux ](/help/dashboards/dashboards-overview.md)tableaux de bord de LLM Optimizer[ et à d’autres fonctionnalités.
+Pour commencer à utiliser LLM Optimizer, vous devez terminer le processus d’intégration comme décrit dans les étapes présentées ci-dessous. Une fois le processus terminé, vous disposerez d’un accès complet aux [&#128279;](/help/dashboards/dashboards-overview.md)tableaux de bord de LLM Optimizer et à d’autres fonctionnalités.
 
 ## Vue d’ensemble de l’intégration
 
