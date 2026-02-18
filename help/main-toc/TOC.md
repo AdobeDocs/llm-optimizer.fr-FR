@@ -1,11 +1,11 @@
 ---
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
-user-guide-description: 'Boostez votre marque avec Adobe LLM Optimizer.Suivez des mentions, découvrez des informations et imposez-vous dans la recherche optimisée par l’IA.Prenez le contrôle de votre visibilité : commencez à l’optimiser dès maintenant !'
-source-git-commit: 8f914fb60036058870b63addae690c945127f349
-workflow-type: ht
-source-wordcount: '71'
-ht-degree: 100%
+user-guide-description: 'Boostez votre marque avec Adobe LLM Optimizer. Suivez des mentions, découvrez des informations et imposez-vous dans la recherche optimisée par l’IA. Prenez le contrôle de votre visibilité : commencez à l’optimiser dès maintenant !'
+source-git-commit: 26ee5a2412bccb955fee1c3aecf45ac918465e55
+workflow-type: tm+mt
+source-wordcount: '84'
+ht-degree: 85%
 
 ---
 
@@ -28,4 +28,9 @@ ht-degree: 100%
    + [Configuration cliente](/help/dashboards/customer-configuration.md)
    + [Collaboration](/help/dashboards/collaboration.md)
 + Ressources supplémentaires{#resources}
-   + [Optimize at Edge](/help/dashboards/optimize-at-edge.md)
+   + Optimize at Edge{#optimize-at-edge}
+      + [Présentation](/help/dashboards/optimize-at-edge.md)
+      + [Réseau CDN géré par AEM Cloud Service (Fastly)](/help/dashboards/optimize-at-edge-aem-managed-cdn.md)
+      + [Fastly (BYOCDN)](/help/dashboards/optimize-at-edge-fastly-byocdn.md)
+      + [Akamai (BYOCDN)](/help/dashboards/optimize-at-edge-akamai-byocdn.md)
+      + [Cloudflare (BYOCDN)](/help/dashboards/optimize-at-edge-cloudflare-byocdn.md)
