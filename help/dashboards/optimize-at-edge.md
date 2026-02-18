@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: Découvrez comment diffuser des optimisations dans LLM Optimizer à la périphérie du réseau CDN sans apporter de modifications.
 feature: Opportunities
-source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
+source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
 workflow-type: tm+mt
-source-wordcount: '4843'
-ht-degree: 45%
+source-wordcount: '4708'
+ht-degree: 44%
 
 ---
 
@@ -800,7 +800,6 @@ Le tableau suivant présente les opportunités qui peuvent améliorer l’expér
 | Opportunité | Type | Identification automatique | Suggestion automatique | Optimisation automatiquement |
 |---------|----------|----------|----------|----------|
 | Restauration de la visibilité du contenu | Géolocalisation technique | Détecte les pages où le contenu critique est masqué aux agents d’IA. Affiche les URL affectées et le contenu attendu qui peut être récupéré. | Met en évidence le contenu qui peut être rendu disponible pour les agents d’IA et recommande d’activer le pré-rendu pour ces pages. | Fournit un instantané d’HTML complet et convivial pour le trafic généré par l’IA agentique qui récupère le contenu précédemment masqué. |
-| Optimiser les en-têtes pour les LLM | Optimisation du contenu | Analyse les en-têtes pour détecter les en-têtes vides, en double, manquants ou ambigus qui peuvent réduire la lisibilité de la machine. | Propose une hiérarchie d’en-têtes plus épurée et des libellés améliorés, et affiche un aperçu de la structure mise à jour pour chaque page. | Injecte la structure d’en-tête améliorée pour les agents d’IA, préservant votre conception visuelle tout en rendant la page plus lisible pour les LLM. |
 | Ajouter des résumés compatibles avec les LLM | Optimisation du contenu | Identifie les pages longues ou complexes qui ne disposent pas de résumés concis au niveau de la page ou de la section, ce qui les rend plus difficiles à analyser et à comprendre rapidement par l’IA. | Recommande des résumés courts générés par l’IA au niveau des pages et des sections qui capturent le contenu clé. | Insère les résumés dans les sections HTML appropriées, améliorant la façon dont les modèles interprètent et décrivent le contenu de la page. |
 | Ajouter des FAQ pertinentes | Optimisation du contenu | Détecte les écarts d’intention dans le contenu de page existant qui pourraient tirer parti des questions fréquentes. | Suggère le contenu des FAQ générées par l’IA en fonction des intentions de l’utilisateur ou de l’utilisatrice et des rubriques existantes. | Injecte le contenu des FAQ en HTML, ce qui rend les pages plus détectables et pertinentes dans les réponses pilotées par l’IA. |
 | Simplifier les contenus complexes | Optimisation du contenu | Indique les pages avec du texte complexe qui peut entraver la compréhension de l’IA. | Fournit des versions simplifiées de texte complexe générées par l’IA tout en préservant la signification d’origine. | Réécrit des sections complexes dans la page, améliorant ainsi la lisibilité de l’IA. |
@@ -809,7 +808,7 @@ Le tableau suivant présente les opportunités qui peuvent améliorer l’expér
 
 [Adobe LLM Optimizer : votre page web est-elle accessible ?](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) L’extension Chrome indique la proportion de contenu de page web auquel les LLM peuvent accéder et ce qui reste masqué. Conçue comme un outil de diagnostic autonome et gratuit, elle ne nécessite aucune licence de produit ni configuration.
 
-En un seul clic, vous pouvez évaluer la lisibilité de n’importe quel site. Vous pouvez comparer côte à côte ce que voient les agents d’IA et ce que voient les utilisateurs et utilisatrices, et estimer la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer. Consultez la page [L’IA peut-elle lire votre site web ?](https://business.adobe.com/fr/blog/introducing-the-llm-optimizer-chrome-extension) pour avoir plus d’informations.
+En un seul clic, vous pouvez évaluer la lisibilité de n’importe quel site. Vous pouvez comparer côte à côte ce que voient les agents d’IA et ce que voient les utilisateurs et utilisatrices, et estimer la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer. Consultez la page [L’IA peut-elle lire votre site web ?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) pour avoir plus d’informations.
 
 ## Opportunités détaillées
 
@@ -822,10 +821,6 @@ Cela permet de s’assurer que la page est d’abord entièrement visible par le
 
 >[!IMPORTANT]
 >Cette fonctionnalité de pré-rendu s’applique automatiquement à toutes les opportunités présentées ci-dessous lorsqu’elles sont déployées avec Optimize at Edge afin de s’assurer que la page est entièrement visible par les agents d’IA.
-
-### Optimiser les en-têtes pour les LLM
-
-Cette opportunité détecte les pages où la structure des en-têtes rend difficile, pour les agents d’IA, la compréhension de la page en raison de titres vides, en double, manquants ou ambigus. Pour chaque page affectée, l’opportunité fait apparaître les en-têtes sous-optimaux et recommande une hiérarchie plus claire. Lorsqu’ils sont déployés avec Optimize at Edge, les en-têtes améliorés sont appliqués au trafic généré par l’IA agentique en HTML. Cela permet une meilleure lisibilité de la machine tout en conservant la même disposition pour votre site.
 
 ### Ajouter des résumés compatibles avec les LLM
 
@@ -843,7 +838,7 @@ Cette opportunité trouve des pages avec des paragraphes longs et complexes qui 
 
 Pour chaque opportunité, vous pouvez prévisualiser, modifier, déployer, afficher en direct et restaurer les optimisations en périphérie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477986/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Prévisualiser
 
