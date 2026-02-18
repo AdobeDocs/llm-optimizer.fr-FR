@@ -118,4 +118,4 @@ De plus, si vous avez besoin d’aide pour les étapes ci-dessus, contactez votr
 
 ## Revenir à l’aperçu {#return-to-overview}
 
-Pour en savoir plus sur l’optimisation sur Edge, y compris sur les opportunités disponibles, les workflows d’optimisation automatique et les questions fréquentes, revenez à la [ Présentation de l’optimisation sur Edge ](/help/dashboards/optimize-at-edge.md).
+Pour en savoir plus sur l’optimisation sur Edge, y compris sur les opportunités disponibles, les workflows d’optimisation automatique et les questions fréquentes, revenez à la [&#x200B; Présentation de l’optimisation sur Edge &#x200B;](/help/dashboards/optimize-at-edge.md).
