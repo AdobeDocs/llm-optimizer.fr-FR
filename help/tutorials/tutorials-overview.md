@@ -1,62 +1,62 @@
 ---
-title: Présentation de LLM Optimizer
-description: Découvrez comment Adobe LLM Optimizer améliore la visibilité des marques dans les recherches pilotées par l’IA. Effectuez le suivi des mentions, des citations et des informations. Commencez dès aujourd’hui à optimiser votre engagement et votre influence.
+title: Vue d’ensemble de LLM Optimizer
+description: Découvrez comment Adobe LLM Optimizer améliore la visibilité de la marque dans la recherche optimisée par l’IA.Effectuez le suivi des mentions, des citations et des informations.Commencez dès aujourd’hui à optimiser votre engagement et votre influence.
 source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
-workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '499'
+ht-degree: 100%
 
 ---
 
 
-# Présentation de LLM Optimizer
+# Vue d’ensemble de LLM Optimizer
 
-Cette page présente les éléments suivants :
+Cette page contient les éléments suivants :
 
-* [Qu’est-ce que Adobe LLM Optimizer ?](#what-is-adobe-llm-optimizer)
-* [Que sont les fonctionnalités de LLM Optimizer ?](#what-are-llm-optimizer-capabilities)
-* [Importance de l’optimisation de la gestion du cycle de vie des informations pour votre marque](#why-llm-optimization-matters-for-your-brand)
-* [Qui doit utiliser Adobe LLM Optimizer](#who-should-use-adobe-llm-optimizer)
-* [Que faire avec Adobe LLM Optimizer](#what-can-i-do-with-adobe-llm-optimizer)
+* [Qu’est-ce qu’Adobe LLM Optimizer ?](#what-is-adobe-llm-optimizer)
+* [Quelles sont les fonctionnalités de LLM Optimizer ?](#what-are-llm-optimizer-capabilities)
+* [Quelle est l’importance de l’optimisation des LLM pour votre marque ?](#why-llm-optimization-matters-for-your-brand)
+* [Qui doit utiliser Adobe LLM Optimizer ?](#who-should-use-adobe-llm-optimizer)
+* [Que faire avec Adobe LLM Optimizer ?](#what-can-i-do-with-adobe-llm-optimizer)
 
-## Qu’est-ce que Adobe LLM Optimizer ?
+## Qu’est-ce qu’Adobe LLM Optimizer ?
 
-Adobe LLM Optimizer est une application IA dédiée à l’optimisation générative du moteur (également appelée Optimisation du moteur de réponse), conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche pilotés par l’IA. Il fournit des informations sur la présence des marques dans les réponses générées par l’IA, propose des recommandations de contenu normatives et automatise les correctifs d’optimisation.
+Adobe LLM Optimizer est une application axée sur l’IA générative, dédiée à la GEO (optimisation de moteurs génératifs) (également appelée optimisation de moteurs de réponses), conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche optimisée par l’IA.Elle fournit des informations sur la présence de la marque dans les réponses générées par l’IA, propose des recommandations de contenu normatives et automatise les correctifs d’optimisation.
 
-## Que sont les fonctionnalités de LLM Optimizer ?
+## Quelles sont les fonctionnalités de LLM Optimizer ?
 
-Adobe LLM Optimizer propose une suite d’outils conçus pour l’optimisation générative des moteurs :
+Adobe LLM Optimizer propose une suite d’outils conçus pour la GEO (optimisation des moteurs génératifs) :
 
-* Mesurer la Visibilité des marques : suivez quand, où et à quelle fréquence votre marque apparaît dans les résultats de recherche optimisés par l’IA, avec un score de visibilité clair pour l’évaluation comparative.
-* Compétiteurs de référence : Comparez la part de voix et la présence de votre marque par rapport à ses concurrents dans les moteurs génératifs.
-* Découvrez des opportunités exploitables : identifiez les améliorations de contenu et techniques (comme les FAQ, les résumés, les schémas, les explorabilités) pour augmenter les mentions et les citations.
-* Suivre l’impact du trafic : surveillez à la fois les propriétés agentiques (assistant d’IA) et les trafics de recommandation de vos propres propriétés, en établissant un lien entre la visibilité et l’engagement.
-* Activer Team Collaboration : partagez des tableaux de bord, attribuez des propriétaires et alignez les objectifs entre les équipes de marketing, d’optimisation pour les moteurs de recherche et de communication.
+* Mesurer la visibilité de la marque : suivez quand, où et à quelle fréquence votre marque apparaît dans les résultats de recherche optimisée par l’IA, avec un score de visibilité clair à des fins d’évaluation.
+* Évaluer vos concurrents : comparez la part de voix et la présence de votre marque par rapport à vos concurrents dans les moteurs génératifs.
+* Découvrir des opportunités exploitables : identifiez les améliorations de contenu et techniques (comme les questions fréquentes, les résumés, les schémas, l’explorabilité) pour augmenter les mentions et les citations.
+* Suivre l’impact du trafic : surveillez à la fois le trafic généré par l’IA agentique (assistant IA) et le trafic de recommandation vers vos propriétés, en établissant un lien entre la visibilité et l’engagement.
+* Favoriser la collaboration entre les équipes : partagez des tableaux de bord, attribuez des propriétaires et alignez les objectifs entre les équipes marketing et de communication.
 
-## Importance de l’optimisation de la gestion du cycle de vie des informations pour votre marque
+## Quelle est l’importance de l’optimisation des LLM pour votre marque ?
 
-* Les réponses générées par l&#39;IA remodèlent la découverte des consommateurs.
-* LLM Optimizer garantit la visibilité, la précision et l’influence de votre marque dans ces environnements.
-* Il associe la visibilité de l’IA à des résultats commerciaux réels tels que l’engagement et le chiffre d’affaires.
+* Les réponses générées par l’IA transforment la manière dont vos clientes et clients vous découvrent.
+* LLM Optimizer garantit la visibilité, la précision et l’influence de votre marque dans ces environnements.
+* Il associe la visibilité de l’IA à des résultats commerciaux concrets tels que l’engagement et le chiffre d’affaires.
 * Dans un monde de parcours zéro clic, cet outil est essentiel pour rester compétitif.
 
-## Qui doit utiliser Adobe LLM Optimizer ?
+## Qui doit utiliser Adobe LLM Optimizer ?
 
-L’optimisation générative du moteur est par nature transversale. LLM Optimizer est conçu avec cet objectif pour les différents rôles répertoriés ci-dessous :
+La GEO (optimisation des moteurs génératifs) est par nature transversale.LLM Optimizer est conçu dans cette optique pour les différents rôles répertoriés ci-dessous :
 
-* **Responsables marketing** mesurez la visibilité des marques et l’efficacité des campagnes dans Recherche optimisée par l&#39;IA.
-* **Les analystes SEO** effectuent le suivi des mentions de marque, des citations et d’autres informations pour éclairer la stratégie de contenu.
-* **PR &amp; Communications Managers** suivez la perception de la marque dans les LLM par les plateformes tierces et traitez la désinformation, gérez les sentiments et protégez la confiance de la marque.
+* Les **responsables marketing** mesurent la visibilité de la marque et l’efficacité des campagnes dans la recherche optimisée par l’IA.
+* Les **analystes SEO** effectuent le suivi des mentions de la marque, des citations et d’autres informations pour orienter la stratégie de contenu.
+* Les **responsables de relations publiques et de communication** suivent la perception de la marque dans les LLM par les plateformes tierces et traitent la désinformation, gèrent les sentiments et protègent la confiance accordée à la marque.
 
-## Que puis-je faire avec Adobe LLM Optimizer ?
+## Que faire avec Adobe LLM Optimizer ?
 
-Avec Adobe LLM Optimizer, vous pouvez :
+Avec Adobe LLM Optimizer, vous pouvez effectuer ce qui suit :
 
-**Mesurer la Visibilité des marques** - Suivez quand, où et à quelle fréquence votre marque est mentionnée dans les résultats de recherche optimisés par l’IA. Allez au-delà des conjectures avec un score de visibilité clair que vous pouvez comparer au fil du temps.
-**Compétiteurs de référence** - Découvrez comment votre marque se compare à ses concurrents dans les moteurs génératifs. Identifiez les lacunes en matière de parts de voix et découvrez les avantages concurrentiels.
-**Découvrir des opportunités exploitables** - Identifiez les opportunités de contenu (par exemple, FAQ, résumés, schémas) et les opportunités techniques (explorabilité, problèmes d’indexation) qui augmentent directement les mentions et les citations.
-**Suivi de l’impact du trafic depuis l’IA** - Surveillez le trafic des agences (provenant des assistants d’IA) et des trafics de recommandation (clics des utilisateurs dans les citations) vers vos propriétés. Liez la visibilité géographique à un engagement réel.
-**Activer Team Collaboration** - Partagez des tableaux de bord, attribuez des propriétaires pour les invites ou les catégories, et assurez-vous que les objectifs de visibilité sont suivis dans les fonctions marketing, SEO et communications.
+**Mesurer la visibilité de la marque** : suivez quand, où et à quelle fréquence votre marque est mentionnée dans les résultats de recherche optimisée par l’IA.Allez au-delà des suppositions avec un score de visibilité clair auquel vous pouvez vous référer au fil du temps.
+**Évaluer vos concurrents** : découvrez comment votre marque se positionne par rapport à vos concurrents dans les moteurs génératifs.Identifiez les lacunes en matière de part de voix et découvrez les avantages concurrentiels.
+**Découvrir les opportunités exploitables** : identifiez les opportunités de contenu (par exemple, les questions fréquentes, les résumés, les schémas) et les opportunités techniques (explorabilité, problèmes d’indexation) qui augmentent directement les mentions et les citations.
+**Suivre l’impact du trafic provenant de l’IA** : surveillez le trafic généré par l’IA agentique (provenant des assistants IA) et le trafic de recommandation (clics des utilisateurs et utilisatrices à partir des citations) vers vos propriétés.Reliez la visibilité GEO à un engagement réel.
+**Favoriser la collaboration entre équipes** : partagez des tableaux de bord, attribuez des propriétaires pour les prompts ou les catégories, et assurez le suivi des objectifs de visibilité au sein des équipes marketing, SEO et de communication.
 
 
 
