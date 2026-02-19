@@ -2,10 +2,10 @@
 title: Opportunités d’optimisation
 description: Découvrez comment utiliser le tableau de bord des opportunités pour détecter automatiquement comment votre site peut être amélioré afin d’augmenter la visibilité de la marque.
 feature: Opportunities
-source-git-commit: 33196139fef1cebd47b15aa964df2bac366ea12a
+source-git-commit: 3204d46106b4ae1645df19138cabd55bf153eb42
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 100%
+source-wordcount: '544'
+ht-degree: 97%
 
 ---
 
@@ -34,6 +34,7 @@ Vous trouverez ci-dessous un tableau des opportunités actuellement prises en ch
 | Recommander du contenu structuré (questions fréquentes) | Contenu (sur site) | Détecte les prompts très populaires sans correspondance avec les entrées de questions fréquentes. Affiche les prompts associés, les catégories et les URL concernées. | Ajoutez des blocs de schéma de questions fréquentes avec des réponses concises pour correspondre aux requêtes courantes. |
 | Détecter le trafic bloqué généré par l’IA agentique | Géolocalisation technique | Analyse les journaux CDN pour les requêtes bloquées provenant d’agents d’IA connus (par exemple, GPTBot, PerplexityBot). Indique les URL et les agents affectés. | Mettez à jour robots.txt ou les configurations de serveur pour autoriser l’accès aux robots d’exploration d’IA pris en charge, le cas échéant. |
 | Détecter les problèmes 404/403/5xx | Géolocalisation technique | Surveille les journaux CDN pour les réponses d’erreur. Indique la fréquence, les URL affectées et l’estimation des accès perdus. | Corrigez les liens rompus, mettez à jour des autorisations et résolvez les problèmes côté serveur afin que le contenu clé renvoie 200 réponses. |
+| Simplifier les contenus complexes | Contenu (sur site) | Identifie les paragraphes longs et complexes dépassant les seuils de lisibilité qui peuvent réduire la compréhension de l’IA. | Effectuez un pré-rendu des pages afin que davantage de contenu soit disponible pour les agents d’IA sans exécution de JavaScript. |
 | Récupérer la visibilité du contenu (accès anticipé) | Géolocalisation technique | Indique les pages où le contenu critique est masqué aux agents d’IA. Affiche les URL affectées et le contenu attendu qui peut être récupéré. | Effectuez un pré-rendu des pages afin que davantage de contenu soit disponible pour les agents d’IA sans exécution de JavaScript. |
 
 ## Optimisation automatique {#auto-optimization}
