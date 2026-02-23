@@ -2,10 +2,10 @@
 title: Configuration cliente
 description: Utilisez la configuration cliente pour définir comment votre marque sera surveillée et analysée sur la plateforme LLM Optimizer.
 feature: Customer Configuration
-source-git-commit: 5d8b59ea4281c88bb42dc48096c07a3faaeb2e88
-workflow-type: ht
-source-wordcount: '836'
-ht-degree: 100%
+source-git-commit: 3fab5f21311a741e51e7a31cd3a26de79fcbff95
+workflow-type: tm+mt
+source-wordcount: '2100'
+ht-degree: 40%
 
 ---
 
@@ -23,6 +23,7 @@ Pour configurer la manière dont LLM Optimizer surveille et analyse la présenc
 * [Autres marques](#other-brands)
 * [Alias de marque](#brand-aliases)
 * [Configuration du CDN](#agentic-cdn)
+* [Google Search Console](#google-console)
 
 >[!IMPORTANT]
 >
@@ -91,7 +92,7 @@ L’utilisation d’alias de marque vous permet de configurer d’autres noms et
 4. Ajoutez l’alias de la marque.
 5. Cliquez sur **Enregistrer** et l’alias de la marque apparaît dans la liste.
 
-Pour supprimer un alias de marque, cliquez sur l’icône de suppression dans la liste des alias.
+Pour supprimer un alias de marque, cliquez sur l’icône **Supprimer** dans la liste des alias.
 
 ## Configuration du CDN {#cdn-configuration}
 
@@ -105,3 +106,132 @@ Dans la fenêtre **Intégrer le fournisseur du CDN** :
 2. Cliquez sur **Intégration** pour activer le transfert des journaux.
 
 Si vous sélectionnez **Autre**, vous devrez contacter llmo-now@adobe.com pour obtenir de l’aide.
+
+## Google Search Console {#google-console}
+
+Adobe LLM Optimizer vous permet d’intégrer votre compte Google Search Console pour importer des requêtes de recherche réelles directement dans l’interface. En affichant les requêtes réelles de la Search Console Google, vous pouvez créer des jeux d’invites basés sur le comportement réel de la recherche et les modèles de découverte à haute intention. Cela vous permet de hiérarchiser les invites en fonction de la demande éprouvée et d&#39;aligner les efforts d&#39;optimisation LLM sur la manière dont les utilisateurs effectuent actuellement des recherches. De plus, vous conservez le contrôle total, car les requêtes ne sont jamais ajoutées automatiquement et doivent être explicitement sélectionnées avant de devenir des invites actives.
+
+### Fonctionnement {#how-it-works}
+
+La principale chose à retenir à propos de l’intégration entre LLM Optimizer et la Search Console Google est la suivante : au lieu de deviner manuellement ce que les clients pourraient demander à un assistant d’IA, nous regardons ce qu’ils **recherchent déjà** et transformons ces requêtes réelles en invites conversationnelles naturelles. Ce processus de déplacement des requêtes de recherche vers les invites d’IA est illustré dans le diagramme ci-dessous.
+
+![Flux de processus](/help/dashboards/assets/diagram-flow.png)
+
+En général, le processus comporte cinq étapes :
+
+#### Étape 1 — Collecter vos données de recherche réelles {#gsc-one}
+
+Le processus commence par les mots-clés que votre audience utilise réellement lorsqu’elle trouve votre site web via Google. Ce jeu de données brut (souvent des milliers de requêtes uniques) est la base de tout ce qui suit.
+
+#### Étape 2 — Analyser la signification et filtrer pour la sécurité {#gsc-two}
+
+Chaque requête est analysée pour sa signification sémantique (ce sur quoi l’utilisateur interroge réellement) et filtrée à l’aide d’un filtre de sécurité qui supprime le contenu inapproprié ou hors marque. Cela permet de s’assurer que seuls les mots-clés propres et pertinents avancent.
+
+#### Étape 3 — Regrouper en catégories et sujets {#gsc-three}
+
+Les requêtes associées sont automatiquement regroupées en **catégories** (thèmes commerciaux généraux) et **sujets** (sous-sujets ciblés dans chaque catégorie). Le système donne la priorité aux catégories déjà configurées dans votre configuration de LLM Optimizer. En outre, il peut également faire apparaître de nouvelles catégories que vos données de recherche révèlent, mais qui ne sont pas encore surveillées. Le diagramme suivant est un exemple de catégories et de sujets pour une marque de meubles :
+
+![Marque de meubles](/help/dashboards/assets/diagram-example.png)
+
+#### Étape 4 — Générer des invites ancrées dans des mots-clés réels {#gsc-four}
+
+Pour chaque sujet, le système génère des invites similaires à la façon dont les vraies personnes parlent avec les assistants d&#39;IA. Chaque invite est directement influencée par des mots-clés de recherche réels de votre console de recherche Google, transformant l’intention du mot-clé en questions conversationnelles naturelles.
+
+Cette approche (fondée sur des mots-clés) signifie :
+
+* Les invites reflètent une demande réelle, pas des questions hypothétiques.
+* La langue reflète la manière dont vos clients formulent les choses.
+* La couverture couvre tout ce que les gens recherchent sur votre site.
+
+La génération d’invites prend également en compte votre profil de marque (y compris les produits, les concurrents, le positionnement du secteur et le public cible) pour s’assurer que les invites sont adaptées au contexte.
+
+#### Etape 5 - Assurance qualité et diffusion {#gsc-five}
+
+Avant la diffusion, chaque invite fait l’objet de plusieurs contrôles qualité automatisés :
+
+* Déduplication : les invites quasi identiques sont supprimées.
+* Équilibrage du ratio de marque — assure un mélange réaliste (~75 % sans marque, ~25 % avec marque).
+* Qualité de la langue — supprime les phrases robotisées pour que le son soit naturel.
+* Contrôles de cohérence — valide les dates, supprime les phrases de remplissage, assure une longueur concise.
+
+En outre, chaque invite est balisée avec sa catégorie, son sujet, son type d’intention et sa classification de marque/sans marque, prête pour que LLM Optimizer puisse commencer la surveillance.
+
+#### Invite Anatomy {#prompt-anatomy}
+
+Une fois le processus ci-dessus terminé, chaque invite transmise à LLM Optimizer possède les attributs suivants :
+
+| Champ | Description |
+|---------|----------|
+| Texte | L’invite, semblable à la façon dont un utilisateur la saisirait dans un assistant d’IA |
+| Catégorie | Thème commercial général affecté à cette invite. |
+| Rubrique | Sous-rubrique spécifique dans la catégorie. |
+| Zone géographique | Le marché cible (par exemple, États-Unis, Royaume-Uni, etc.). |
+| Intention | État d’esprit de l’utilisateur : informationnel, comparatif, transactionnel, didactique, planification ou délégation. |
+| Type | Le type peut être de marque (mentionne la marque/les produits) ou sans marque (question générique du secteur). |
+
+### Utilisation {#how-to-use}
+
+Suivez les étapes présentées ci-dessous pour intégrer et utiliser les requêtes de la console de recherche Google avec LLM Optimizer.
+
+#### Connexion à la console de recherche Google {#connect-console}
+
+Avant d’utiliser cette fonctionnalité, vous devez intégrer votre compte Google Search Console à l’optimiseur LLM.
+
+1. Ouvrez le tableau de bord de configuration du client.
+1. Accédez à l’onglet Search Console de Google et cliquez sur **Connect Account**.
+   ![Console de recherche Google](/help/dashboards/assets/google-console.png)
+1. Connectez-vous avec un compte Google ayant accès à la propriété de Search Console souhaitée.
+   ![Compte Google](/help/dashboards/assets/google-account.png)
+1. Sélectionnez la propriété à connecter.
+   ![Propriété de console](/help/dashboards/assets/console-property.png)
+1. Une fois la connexion établie, LLM Optimizer commence à récupérer les requêtes de recherche pertinentes.
+   ![Récupération des données](/help/dashboards/assets/console-complete.png)
+
+#### Requêtes de révision et de recherche {#search-query}
+
+Après avoir intégré le compte de la console de recherche Google à l’optimiseur LLM, vous pouvez consulter la liste des rubriques et des invites provenant de la console de recherche et ajouter les invites de la liste.
+
+1. Dans l’onglet Search Console de Google, passez en revue la liste des rubriques et des invites provenant de la Search Console.
+   ![Liste des invites](/help/dashboards/assets/prompts-list.png)
+1. Cliquez sur la catégorie de rubrique/invite de votre choix pour développer la liste.
+1. Utilisez le bouton **Ajouter** pour ajouter des invites de la liste. Vous pouvez également ajouter des invites et des catégories en bloc à l&#39;aide de **Ajouter tout**.
+   ![Ajouter des invites](/help/dashboards/assets/add-prompts.png)
+1. Une fois la sélection effectuée, cliquez sur **Enregistrer** dans le message de notification.
+
+#### Afficher les requêtes ajoutées à la liste des invites {#prompts-list}
+
+Une fois une requête ajoutée, elle apparaît dans l’onglet [Invites](#prompts-brand) du tableau de bord de la configuration client. Les invites provenant de la Search Console Google sont marquées d&#39;une icône de la Search Console Google dans la colonne **Origin**. L’icône vous permet de distinguer les invites basées sur le comportement réel de la recherche utilisateur de celles ajoutées manuellement ou d’autres sources.
+
+### Questions fréquentes {#gsc-faq}
+
+Q : À quelle fréquence les invites sont-elles mises à jour dans le tableau de bord de la console de recherche Google ?
+
+Les invites provenant de la Search Console Google sont généralement actualisées une fois par mois. Chaque actualisation extrait les dernières données de requête de recherche de votre console de recherche Google, réexécute le pipeline de génération et met à jour votre ensemble d’invites. Cela garantit que vos invites restent alignées sur les tendances de recherche actuelles et les changements saisonniers du comportement des utilisateurs.
+
+Q : Combien d’invites sont généralement sourcées depuis la console de recherche de Google ?
+
+Le nombre dépend de la taille de votre déploiement et du nombre de catégories suivies. Par exemple :
+
+| Catégories | Total des rubriques | Invites diffusées |
+|---------|----------|----------|
+| 1-2 | 3-8 | ~65-180 |
+| 4-5 | 12-20 | ~270-450 |
+| 10 | 30-40 | ~675-900 |
+
+Notre objectif est de fournir des ensembles d’invites qui répondent aux objectifs de qualité communiqués lors de l’évaluation et de l’intégration : au moins 20 invites par sujet, avec 3 à 4 sujets par catégorie, et un équilibre sain entre les marques et les marques.
+
+Q : Dans combien de temps les invites provenant de la Search Console Google apparaîtront-elles après ma connexion à la Search Console Google ?
+
+Les invites sont généralement disponibles **en quelques heures** une fois la connexion à la console de recherche Google établie. Le pipeline extrait automatiquement vos données de recherche, les traite par le biais des étapes de génération et d’assurance qualité et diffuse l’invite finale définie sur LLM Optimizer.
+
+Q : Qui peut se connecter à la console de recherche de Google ?
+
+Toute personne disposant des droits **Propriétaire** ou **Autorisation complète** sur la propriété de la console de recherche Google peut autoriser la connexion. Il s’agit des niveaux d’autorisation qui accordent l’accès en lecture aux données de requête de recherche. Si vous n’êtes pas sûr de votre niveau d’autorisation, vous pouvez le vérifier sous **Paramètres>Utilisateurs** et autorisations dans votre console de recherche Google.
+
+Q : Puis-je marquer les invites comme ignorées ou ignorées afin de ne pas les voir dans la liste des invites de la console de recherche Google ?
+
+Oui, vous pouvez supprimer toute invite que vous ne souhaitez pas surveiller. Les invites supprimées sont supprimées de votre liste d&#39;invites active et n&#39;apparaîtront pas dans les rapports futurs. Si une invite supprimée est régénérée lors d’une actualisation mensuelle ultérieure, vous pouvez la supprimer à nouveau.
+
+Q : Une fois que j’ajoute des invites de la console de recherche Google à ma liste d’invites, combien de temps vais-je voir les données de Présence des marques pour ces invites ?
+
+Les données de présence des marques des nouvelles invites ajoutées apparaîtront lors de la prochaine actualisation planifiée des données, qui s&#39;exécute généralement au début de chaque semaine. Selon le moment où vous ajoutez les invites, vous pouvez voir les résultats sous quelques jours.
