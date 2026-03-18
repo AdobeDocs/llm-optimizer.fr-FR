@@ -49,10 +49,10 @@ Pour créer un point d’entrée S3, sur le **Panneau de Contrôle Fastly** :
 | **Emplacement** | Par défaut |
 | **Format du journal** | Utilisez la chaîne de format du journal indiquée dans la section **Chaîne de format du journal** ci-dessous. |
 | **Format de l’horodatage** | `%Y-%m-%dT%H:%M:%S.000` |
-| **Nom du compartiment** | Copiez le **nom du compartiment** de la page de configuration de LLM Optimizer. ![Nom du compartiment ](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
-| **Domaine** | Copiez le **Nom de domaine** de la page de configuration de LLM Optimizer. ![Nom de domaine ](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
+| **Nom du compartiment** | Copiez le **nom du compartiment** de la page de configuration de LLM Optimizer. ![Nom du compartiment &#x200B;](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
+| **Domaine** | Copiez le **Nom de domaine** de la page de configuration de LLM Optimizer. ![Nom de domaine &#x200B;](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
 | **Méthode d’accès** | **Informations d’identification de l’utilisateur** |
-| **Informations d’identification de l’utilisateur** | Copiez la **clé d’accès** et la **clé secrète** de la page de configuration de LLM Optimizer. ![Clés d’accès ](/help/overview/assets/log-forwarding/common/access-keys.png) |
+| **Informations d’identification de l’utilisateur** | Copiez la **clé d’accès** et la **clé secrète** de la page de configuration de LLM Optimizer. ![Clés d’accès &#x200B;](/help/overview/assets/log-forwarding/common/access-keys.png) |
 | **Période** | `300` |
 
 **Chaîne de format du journal:**
@@ -69,7 +69,7 @@ Une fois les étapes ci-dessus effectuées, cliquez sur **Options avancées** et
 
 | Champ | Description |
 | --- | --- |
-| **Chemin** | Copiez **Chemin** à partir de la page de configuration de LLM Optimizer. ![Chemin ](/help/overview/assets/log-forwarding/fastly/fastly-path.png) |
+| **Chemin** | Copiez **Chemin** à partir de la page de configuration de LLM Optimizer. ![Chemin &#x200B;](/help/overview/assets/log-forwarding/fastly/fastly-path.png) |
 | **Sélectionner un format de ligne de journal** | Vide |
 | **Compression** | Gzip |
 | **Niveau de redondance** | Standard |

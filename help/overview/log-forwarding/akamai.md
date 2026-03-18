@@ -127,4 +127,4 @@ Après avoir créé les flux de données et choisi les paramètres, vous devez c
 
 Avant la validation finale, la configuration doit ressembler à cet exemple :
 
-![ Validation de la configuration ](/help/overview/assets/log-forwarding/akamai/akamai-validation.png)
+![&#x200B; Validation de la configuration &#x200B;](/help/overview/assets/log-forwarding/akamai/akamai-validation.png)

@@ -53,7 +53,7 @@ Sur la console [Imperva](https://my.imperva.com) :
    | Champ | Description | Remarque |
    |---|---|---|
    | **Nom de la connexion** | Nom explicite de la connexion (par exemple, journaux S3 de production). Vous pouvez renommer la valeur par défaut. | |
-   | **Chemin** | Emplacement du dossier dans lequel les fichiers journaux seront stockés. Utilisez le format `<Amazon S3 bucket name>/<log folder>`. Par exemple : `MyBucket/MyImpervaLogFolder`. | `Amazon S3 bucket name` est le **nom du compartiment** de la page de configuration de LLM Optimizer. ![Nom du compartiment ](/help/overview/assets/log-forwarding/imperva/imperva-bucket-name.png) le dossier du journal est **Chemin** à partir de la page de configuration de LLM Optimizer. ![Chemin ](/help/overview/assets/log-forwarding/imperva/imperva-path.png) |
+   | **Chemin** | Emplacement du dossier dans lequel les fichiers journaux seront stockés. Utilisez le format `<Amazon S3 bucket name>/<log folder>`. Par exemple : `MyBucket/MyImpervaLogFolder`. | `Amazon S3 bucket name` est le **nom du compartiment** de la page de configuration de LLM Optimizer. ![Nom du compartiment &#x200B;](/help/overview/assets/log-forwarding/imperva/imperva-bucket-name.png) le dossier du journal est **Chemin** à partir de la page de configuration de LLM Optimizer. ![Chemin &#x200B;](/help/overview/assets/log-forwarding/imperva/imperva-path.png) |
 
 5. Cliquez sur **Tester la connexion**. Imperva exécute un test complet dans lequel un fichier de test (aucune donnée réelle) est envoyé au dossier désigné, puis supprimé une fois le transfert terminé.
 
