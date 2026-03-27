@@ -2,7 +2,7 @@
 title: Vue d’ensemble des tableaux de bord
 description: Voici la vue d’ensemble de l’article.
 feature: Onboarding
-source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
+source-git-commit: 945537c3139e5a2038858e6121172e1a1a10ddf4
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 93%
@@ -16,7 +16,8 @@ Bienvenue dans la vue d’ensemble des tableaux de bord. Les tableaux de bord de
 
 Les vues principales incluent la présentation, la Présence des marques, l’agent et le Trafic de recommandation, l’inspecteur d’URL, les opportunités, Collaboration et la configuration client.
 
-<!-- CARDS
+<!--
+CARDS
 
 * ./brand-presence.md
   {title= Brand presence dashboard}
