@@ -2,10 +2,10 @@
 title: Optimiser sur Edge - Akamai (BYOCDN)
 description: Découvrez comment configurer Akamai BYOCDN pour l’optimisation sur Edge dans LLM Optimizer.
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
+source-git-commit: 16a1142cb70d9bcd70406a3779a43fc8568c77d0
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 14%
+source-wordcount: '745'
+ht-degree: 11%
 
 ---
 
@@ -47,6 +47,10 @@ Définissez le routage pour les user-agents:image.png suivants
 **2. Définir l’origine et le comportement SSL**
 
 Définissez l’origine comme `live.edgeoptimize.net` et faites correspondre le SAN à `*.edgeoptimize.net`
+
+>[!NOTE]
+>
+>Si l’activation de la propriété échoue après l’ajout de la règle Optimiser sur Edge , vérifiez si la règle utilise un mode de vérification SSL du serveur d’origine différent de celui de la règle par défaut. Si tel est le cas, mettez à jour la règle Optimiser sous Edge pour qu’elle corresponde à la règle par défaut. Par exemple, si la règle par défaut utilise **Paramètres de la plateforme**, utilisez **Paramètres de la plateforme** ici également. Si vous ne pouvez pas utiliser le paramètre requis, contactez l’assistance Akamai.
 
 ![Définir l’origine et le comportement SSL](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
@@ -91,6 +95,10 @@ La configuration de basculement de site comporte deux parties : le comportement 
 
 Dans la règle de routage principale, configurez le comportement de basculement de site et le fragment de code XML avancé comme suit :
 
+>[!IMPORTANT]
+>
+>Le fragment de code XML de cette étape nécessite le comportement **Avancé**. Dans certains environnements Akamai, ce comportement n’est pas disponible pour la modification en libre-service. Si vous ne voyez pas l’option **Avancé**, contactez votre équipe de compte Akamai ou l’assistance Akamai pour activer la configuration requise.
+
 ![Basculement du site](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
 Ajoutez le `x-edgeoptimize-request` d’en-tête de requête avec la valeur `fo` via le code XML avancé :
@@ -120,6 +128,8 @@ Ajoutez le `x-edgeoptimize-request` d’en-tête de requête avec la valeur `fo`
 >```
 >
 >Cela permet de s’assurer que la règle d’en-tête du test de basculement évalue **toutes** les règles de routage, pas seulement une.
+>
+>Assurez-vous également que la règle **Optimiser au routage Edge** n’est pas remplacée par une règle de correspondance ultérieure qui modifie l’origine, le comportement de mise en cache ou l’identifiant de cache pour les mêmes requêtes. Si une autre règle correspondante réinitialise ces comportements, le routage ou la mise en cache de l’option Optimiser à Edge risque de ne pas fonctionner comme prévu.
 
 Si la valeur du `x-edgeoptimize-request` d’en-tête de requête est `fo`, définissez le `x-edgeoptimize-fo` d’en-tête de réponse sortante sur `true`.
 
