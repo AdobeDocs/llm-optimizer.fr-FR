@@ -2,10 +2,10 @@
 title: Trafic de recommandation
 description: Découvrez comment utiliser le tableau de bord du trafic de recommandation pour voir comment les visiteurs et visiteuses accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de recommandation.
 feature: Referral Traffic
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+source-git-commit: c0ef7710411a01410fddf87b0c4344eb782c264f
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 100%
+source-wordcount: '665'
+ht-degree: 90%
 
 ---
 
@@ -13,6 +13,9 @@ ht-degree: 100%
 # Trafic de recommandation
 
 Le trafic de recommandation montre comment les visiteurs et visiteuses accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de recommandation. Il suit et analyse les sources de trafic, les tendances de recommandation et les mesures de conversion des sites web et plateformes externes. Cela vous aidera à comprendre quelles sources, régions et pages génèrent le trafic le plus engagé. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
+
+>[!NOTE]
+>Par défaut, ce tableau de bord génère des informations sur le trafic à partir des **journaux CDN**. Si votre entreprise fait partie d’une offre payante, vous pouvez connecter **** afin d’ajouter des données qui mesurent la découverte pilotée par l’IA et l’engagement sur le site. Ces données sont disponibles dans l’onglet **Impact commercial**. Sans intégration à Adobe Analytics, l’onglet n’est pas renseigné. Voir [Intégration d’](/help/dashboards/adobe-analytics-integration.md) pour plus d’informations.
 
 ![Page de recommandation](/help/dashboards/assets/referral-traffic.png)
 
@@ -47,7 +50,7 @@ En haut de la page, vous pouvez appliquer des filtres pour affiner votre vue. Le
 * **Intention de la page** : filtrez le trafic de recommandation par intention utilisateur.
 * **Source du canal** : filtrez par source du canal. Les options incluent : LLM, canaux de recommandation gagnés, payants ou mixtes.
 * **Type d’appareil** : analysez le trafic par type d’appareil du visiteur ou de la visiteuse, que ce soit un ordinateur, un appareil mobile ou tous les appareils.
-  **Région** : affichez les tendances de recommandation dans différentes zones géographiques.
+* **Région** : affichez les tendances de recommandation dans différentes zones géographiques.
 
 Après avoir sélectionné le filtre souhaité, cliquez sur **Appliquer les filtres** pour appliquer la sélection au tableau de bord.
 
