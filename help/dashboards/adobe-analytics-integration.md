@@ -86,7 +86,7 @@ Lors de la configuration, vous définissez la suite de rapports et la dimension 
 
 ### Comment le trafic LLM est identifié
 
-Le trafic provenant de LLM est identifié à l’aide d’Adobe Analytics [Type de référent : outils d’IA dédiée à la conversation](https://experienceleague.adobe.com/en/docs/analytics/components/dimensions/referrer-type#conversational-ai-tools).
+Le trafic provenant de LLM est identifié à l’aide d’Adobe Analytics [Type de référent : outils d’IA dédiée à la conversation](https://experienceleague.adobe.com/fr/docs/analytics/components/dimensions/referrer-type#conversational-ai-tools).
 
 ### Données ingérées {#data-ingested}
 
