@@ -89,7 +89,7 @@ Intégrez votre nom de marque et votre domaine pour commencer à utiliser LLM Op
 
 Un petit ensemble de catégories, de rubriques et de prompts sera généré pendant la phase d’intégration. L’analyse de présence de la marque sur ces prompts sera disponible peu de temps après l’intégration de votre site.
 
-La possibilité de déployer des optimisations sur le serveur Edge est également disponible. Pour en savoir plus, consultez [Optimisation sur Edge - Questions fréquentes](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+La possibilité de déployer des optimisations sur le serveur Edge est également disponible. Pour en savoir plus, consultez [Optimisation sur Edge - Questions fréquentes](https://experienceleague.adobe.com/fr/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Configurez également le [transfert de journal CDN](#step-4) pour l’analyse du trafic. LLM Optimizer a besoin des données et des informations de Présence des marques des agences et du trafic de recommandation pour identifier les opportunités et fournir des recommandations prescriptives qui augmentent la visibilité de l&#39;IA.
 
