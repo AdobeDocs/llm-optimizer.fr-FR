@@ -30,9 +30,9 @@ Cette intégration permet de combler le fossé entre la mesure de visibilité de
 
 ## Connexion d’Adobe Analytics au tableau de bord du Trafic de recommandation {#connect}
 
-Le flux de connexion commence à partir du tableau de bord du Trafic de recommandation [](/help/dashboards/referral-traffic.md) comme suit :
+Le flux de connexion commence à partir du tableau de bord du Trafic de recommandation [&#128279;](/help/dashboards/referral-traffic.md) comme suit :
 
-1. Ouvrez le tableau de bord du Trafic de recommandation [](/help/dashboards/referral-traffic.md). La vue par défaut est **informations sur le trafic**.
+1. Ouvrez le tableau de bord du Trafic de recommandation [&#128279;](/help/dashboards/referral-traffic.md). La vue par défaut est **informations sur le trafic**.
 
    ![Tableau de bord de Trafic de recommandation, onglet Informations de trafic](/help/dashboards/assets/aa-integration-01-referral-traffic-traffic-insights.png)
 
