@@ -2,9 +2,9 @@
 title: Optimisation d’Edge - CloudFront (BYOCDN)
 description: Découvrez comment configurer CloudFront BYOCDN pour Optimiser sur Edge dans LLM Optimizer.
 feature: Opportunities
-source-git-commit: 1253d0f0a58f6523699c52fbfab23028dc469c82
+source-git-commit: da789100d814004687de2f46e18a295671dec4b8
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2265'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,11 @@ Avant de configurer CloudFront, vérifiez que vous disposez des éléments suiva
 * Fin du processus d’intégration de LLM Optimizer.
 * Transfert du journal CDN vers LLM Optimizer terminé.
 * Clé d’API Edge Optimize récupérée à partir de l’interface utilisateur de LLM Optimizer.
+* (Facultatif) Une clé API d’optimisation d’Edge intermédiaire si vous testez d’abord le routage sur un nom d’hôte intermédiaire.
 
 {{retrieve-byocdn-api-key}}
+
+{{retrieve-staging-edge-optimize-api-key}}
 
 **Étape 1 : Créer une origine Edge Optimize**
 
@@ -296,11 +299,20 @@ La réponse ne doit **pas** contenir l’en-tête `x-edgeoptimize-request-id`. L
 | `x-edgeoptimize-request-id` | Présent : contient un ID de requête unique | Absent |
 | `x-edgeoptimize-fo` | Présent uniquement en cas de basculement (valeur : `1`) | Absent |
 
-Le statut du routage du trafic peut également être vérifié dans l’interface utilisateur de LLM Optimizer. Accédez à **Configuration du client** et sélectionnez l’onglet **Configuration du réseau CDN**.
+**4. Domaine d’évaluation (facultatif)**
 
-![Statut du routage du trafic AI avec routage activé](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+Si vous utilisez un nom d’hôte d’évaluation et une clé d’API d’évaluation de LLM Optimizer, déployez la même configuration CloudFront sur votre distribution **d’évaluation** à l’aide de la clé d’API **d’évaluation**. Vérifiez ensuite le trafic des robots sur l’hôte d’évaluation :
 
-**4. Vérifiez que les journaux circulent correctement**
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+Remplacez `https://staging.example.com/page.html` par l’URL et le chemin d’accès d’évaluation réels. Une réponse réussie inclut l’en-tête `x-edgeoptimize-request-id`.
+
+{{verify-routing-status-in-ui}}
+
+**5. Vérifiez que les journaux circulent correctement**
 
 Après avoir exécuté les requêtes de test ci-dessus, vérifiez que les journaux sont écrits pour les fonctions CloudFront et Lambda@Edge.
 
@@ -350,7 +362,7 @@ La fonction Lambda@Edge (`edgeoptimize-origin`) est associée aux événements d
 
 **Comment détecter une panne de Lambda@Edge**
 
-* **Tableau de bord d’intégrité du service AWS** — Vérifiez le [Tableau de bord d’intégrité du service AWS](https://health.aws.amazon.com/health/status) pour tout incident actif affectant **Amazon CloudFront** ou **AWS Lambda**. Une panne globale ou régionale signalée ici est le moyen le plus rapide de confirmer le problème du côté de l’infrastructure AWS plutôt que dans votre configuration.
+* **Tableau de bord d’intégrité du service** — Vérifiez le [Tableau de bord d’intégrité du service AWS](https://health.aws.amazon.com/health/status) pour tout incident actif affectant **Amazon CloudFront** ou **AWS Lambda**. Une panne globale ou régionale signalée ici est le moyen le plus rapide de confirmer le problème du côté de l’infrastructure AWS plutôt que dans votre configuration.
 * **Lambda@Edge erreurs** — Accédez à **AWS Console > CloudFront > Surveillance > [Votre distribution]**. Ouvrez l’onglet **Lambda@Edge errors** et recherchez les erreurs d’exécution dans le graphique **Erreurs d’exécution**. S’ils sont élevés, Lambda@Edge est peut-être en panne.
 
 **Désolidarisation de la fonction Lambda@Edge**

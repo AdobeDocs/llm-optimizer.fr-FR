@@ -2,9 +2,9 @@
 title: Optimisation d’Edge - Fastly (BYOCDN)
 description: Découvrez comment configurer Fastly BYOCDN pour optimiser sur Edge dans LLM Optimizer.
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
+source-git-commit: da789100d814004687de2f46e18a295671dec4b8
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '407'
 ht-degree: 5%
 
 ---
@@ -22,8 +22,11 @@ Avant de configurer les règles Fastly VCL, vérifiez que vous disposez des él�
 * Fin du processus d’intégration de LLM Optimizer.
 * Transfert du journal CDN vers LLM Optimizer terminé.
 * Clé d’API Edge Optimize récupérée à partir de l’interface utilisateur de LLM Optimizer.
+* (Facultatif) Une clé API d’optimisation d’Edge intermédiaire si vous testez d’abord le routage sur un nom d’hôte intermédiaire.
 
 {{retrieve-byocdn-api-key}}
+
+{{retrieve-staging-edge-optimize-api-key}}
 
 **Configuration**
 
@@ -121,8 +124,17 @@ La réponse ne doit **pas** contenir l’en-tête `x-edgeoptimize-request-id`. L
 | `x-edgeoptimize-request-id` | Présent : contient un ID de requête unique | Absent |
 | `x-edgeoptimize-fo` | Présent uniquement en cas de basculement (valeur : `1`) | Absent |
 
-Le statut du routage du trafic peut également être vérifié dans l’interface utilisateur de LLM Optimizer. Accédez à **Configuration du client** et sélectionnez l’onglet **Configuration du réseau CDN**.
+**4. Domaine d’évaluation (facultatif)**
 
-![Statut du routage du trafic AI avec routage activé](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+Si vous utilisez un nom d’hôte d’évaluation et une clé d’API d’évaluation de LLM Optimizer, ajoutez les mêmes fragments de code VCL à votre service Fastly **staging** à l’aide de la clé d’API **staging**. Vérifiez ensuite le trafic des robots sur l’hôte d’évaluation :
+
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+Remplacez `https://staging.example.com/page.html` par l’URL et le chemin d’accès d’évaluation réels. Une réponse réussie inclut l’en-tête `x-edgeoptimize-request-id`.
+
+{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}

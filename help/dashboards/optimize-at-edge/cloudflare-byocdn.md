@@ -2,9 +2,9 @@
 title: Optimiser sur Edge - Cloudflare (BYOCDN)
 description: Découvrez comment configurer le BYOCDN de Cloudflare pour l’optimisation sur Edge dans LLM Optimizer.
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
+source-git-commit: da789100d814004687de2f46e18a295671dec4b8
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1439'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,11 @@ Avant de configurer les règles de routage de CloudFlare Worker, vérifiez que v
 * Fin du processus d’intégration de LLM Optimizer.
 * Transfert du journal CDN vers LLM Optimizer terminé.
 * Clé d’API Edge Optimize récupérée à partir de l’interface utilisateur de LLM Optimizer.
+* (Facultatif) Une clé API d’optimisation d’Edge intermédiaire si vous testez d’abord le routage sur un nom d’hôte intermédiaire.
 
 {{retrieve-byocdn-api-key}}
+
+{{retrieve-staging-edge-optimize-api-key}}
 
 **Fonctionnement du routage**
 
@@ -422,8 +425,17 @@ La réponse ne doit **pas** contenir l’en-tête `x-edgeoptimize-request-id`. L
 | `x-edgeoptimize-request-id` | Présent : contient un ID de requête unique | Absent |
 | `x-edgeoptimize-fo` | Présent uniquement en cas de basculement (valeur : `1`) | Absent |
 
-Le statut du routage du trafic peut également être vérifié dans l’interface utilisateur de LLM Optimizer. Accédez à **Configuration du client** et sélectionnez l’onglet **Configuration du réseau CDN**.
+**4. Domaine d’évaluation (facultatif)**
 
-![Statut du routage du trafic AI avec routage activé](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+Si vous utilisez un nom d’hôte d’évaluation et une clé d’API d’évaluation de LLM Optimizer, déployez la même logique de programme de travail sur votre zone **d’évaluation** à l’aide de la clé d’API **d’évaluation**. Vérifiez ensuite le trafic des robots sur l’hôte d’évaluation :
+
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+Remplacez `https://staging.example.com/page.html` par l’URL et le chemin d’accès d’évaluation réels. Une réponse réussie inclut l’en-tête `x-edgeoptimize-request-id`.
+
+{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}

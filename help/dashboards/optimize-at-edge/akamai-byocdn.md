@@ -2,10 +2,10 @@
 title: Optimiser sur Edge - Akamai (BYOCDN)
 description: Découvrez comment configurer Akamai BYOCDN pour l’optimisation sur Edge dans LLM Optimizer.
 feature: Opportunities
-source-git-commit: 16a1142cb70d9bcd70406a3779a43fc8568c77d0
+source-git-commit: f2a652761acbea7ca5b8e8740c1dbd0132e42f7f
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 11%
+source-wordcount: '849'
+ht-degree: 9%
 
 ---
 
@@ -22,25 +22,32 @@ Avant de configurer les règles du gestionnaire de propriétés Akamai, vérifie
 * Fin du processus d’intégration de LLM Optimizer.
 * Transfert du journal CDN vers LLM Optimizer terminé.
 * Clé d’API Edge Optimize récupérée à partir de l’interface utilisateur de LLM Optimizer.
+* (Facultatif) Une clé API d’optimisation d’Edge intermédiaire si vous testez d’abord le routage sur un nom d’hôte intermédiaire.
 
 {{retrieve-byocdn-api-key}}
 
+{{retrieve-staging-edge-optimize-api-key}}
+
 **Configuration**
 
-La règle Akamai Property Manager suivante achemine les agents utilisateur LLM vers Edge Optimize. La configuration contient les étapes suivantes :
+La règle Akamai Property Manager suivante achemine le trafic des pages HTML authentiques vers Edge Optimize. La configuration contient les étapes suivantes :
 
-**1. Définir les critères de routage (correspondance Utilisateur-Agent)**
+**1. Définissez des critères de routage (correspondance de trafic Agent-utilisateur et HTML)**
 
-Définissez le routage pour les user-agents:image.png suivants
+Définissez le routage pour les agents utilisateurs suivants :
 
 ```
- *AdobeEdgeOptimize-AI*,
- *ChatGPT-User*,
- *GPTBot*,
- *OAI-SearchBot*,
- *PerplexityBot*,
+ *AdobeEdgeOptimize-AI*
+ *ChatGPT-User*
+ *GPTBot*
+ *OAI-SearchBot*
+ *PerplexityBot*
  *Perplexity-User*
 ```
+
+>[!NOTE]
+>
+>Appliquez la règle de routage Optimiser au niveau d’Edge uniquement au trafic de pages d’HTML authentiques. Une configuration courante consiste à utiliser des critères côté requête tels que **Extension de fichier** pour faire correspondre les `html` et les `EMPTY_STRING` pour les URL de page sans extension. Si votre site diffuse HTML à partir d’autres modèles d’URL ou inclut des itinéraires sans extension hors page, tels que des points d’entrée d’API, affinez la règle avec des critères supplémentaires basés sur un chemin d’accès.
 
 ![Définir les critères de routage](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
@@ -68,7 +75,7 @@ Définissez la variable de cache `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` sur `LLMCLIENT
 
 Définissez les en-têtes de requête entrante suivants :
 `x-edgeoptimize-api-key` à la clé API extraite de LLMO
-`x-edgeoptimize-config` à `LLMCLIENT=TRUE;`
+`x-edgeoptimize-config` vers `LLMCLIENT=TRUE;`
 `x-edgeoptimize-url` à `{{builtin.AK_URL}}`
 
 ![Modifier les en-têtes des requêtes entrantes](/help/assets/optimize-at-edge/akamai-step5-request.png)
@@ -180,8 +187,17 @@ La réponse ne doit **pas** contenir l’en-tête `x-edgeoptimize-request-id`. L
 | `x-edgeoptimize-request-id` | Présent : contient un ID de requête unique | Absent |
 | `x-edgeoptimize-fo` | Présent uniquement en cas de basculement (valeur : `1`) | Absent |
 
-Le statut du routage du trafic peut également être vérifié dans l’interface utilisateur de LLM Optimizer. Accédez à **Configuration du client** et sélectionnez l’onglet **Configuration du réseau CDN**.
+**4. Domaine d’évaluation (facultatif)**
 
-![Statut du routage du trafic AI avec routage activé](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+Si vous utilisez un nom d’hôte d’évaluation et une clé d’API d’évaluation à partir de LLM Optimizer, déployez le même modèle de routage sur votre propriété Akamai **staging** à l’aide de la clé **staging** dans vos règles. Vérifiez ensuite le trafic des robots sur l’hôte d’évaluation :
+
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+Remplacez `https://staging.example.com/page.html` par l’URL et le chemin d’accès d’évaluation réels. Une réponse réussie inclut l’en-tête `x-edgeoptimize-request-id`.
+
+{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}
