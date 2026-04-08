@@ -49,7 +49,7 @@ Utilisez un nom d’hôte d’évaluation lorsque vous souhaitez tester l’opti
 
 3. Dans la boîte de dialogue **Domaine d’évaluation**, saisissez l’URL d’évaluation complète, y compris `https://`, puis sélectionnez **Définir le domaine**.
 
-   ![ Boîte de dialogue d’entrée du domaine d’évaluation ](/help/assets/optimize-at-edge/byocdn-staging-domain-input.png)
+   ![&#x200B; Boîte de dialogue d’entrée du domaine d’évaluation &#x200B;](/help/assets/optimize-at-edge/byocdn-staging-domain-input.png)
 
 4. Confirmez le domaine dans l’invite suivante. Une fois le workflow terminé, la boîte de dialogue **Domaines d’évaluation** affiche le domaine configuré et sa clé **API**. Sélectionnez **Copier** pour copier la clé API intermédiaire.
 
@@ -65,4 +65,4 @@ Le statut du routage du trafic peut également être vérifié dans l’interfac
 
 ## Revenir à l’aperçu {#return-to-overview}
 
-Pour en savoir plus sur l’optimisation sur Edge, y compris sur les opportunités disponibles, les workflows d’optimisation automatique et les questions fréquentes, revenez à la [ Présentation de l’optimisation sur Edge ](/help/dashboards/optimize-at-edge/overview.md).
+Pour en savoir plus sur l’optimisation sur Edge, y compris sur les opportunités disponibles, les workflows d’optimisation automatique et les questions fréquentes, revenez à la [&#x200B; Présentation de l’optimisation sur Edge &#x200B;](/help/dashboards/optimize-at-edge/overview.md).
