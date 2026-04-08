@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: Découvrez comment diffuser des optimisations dans LLM Optimizer à la périphérie du réseau CDN sans apporter de modifications.
 feature: Opportunities
-source-git-commit: 23a4b06e2492d9692d37eb0e52208bdc49328b2a
+source-git-commit: b56c2a355c794c8461dda15bf7c733983fd95740
 workflow-type: tm+mt
-source-wordcount: '2240'
-ht-degree: 77%
+source-wordcount: '2348'
+ht-degree: 73%
 
 ---
 
@@ -40,7 +40,7 @@ Les opportunités qui peuvent améliorer l’expérience web agentique sont pris
 
 Démarrez le processus d’intégration dans votre compte LLM Optimizer :
 
-1. Sur le tableau de bord **Configuration du client** n, sélectionnez l’onglet **Configuration du réseau CDN**.
+1. Dans le tableau de bord **Configuration du client**, sélectionnez l’onglet **Configuration du réseau de diffusion de contenu**.
 1. Cliquez sur **Intégrer le réseau CDN**.
    ![Onglet Configuration du réseau CDN](/help/overview/assets/cc-cdn.png)
 1. Pour les clients AEM Fastly , Adobe peut vous aider à terminer le processus d’intégration. Pour les clients qui utilisent d’autres fournisseurs de réseau CDN, votre équipe informatique/réseau CDN doit effectuer la configuration requise et remplir les conditions préalables. Vous pouvez également vous reporter aux exemples de guides de réseau CDN fournis ci-dessous pour obtenir des conseils supplémentaires.
@@ -60,7 +60,14 @@ Conditions requises pour votre équipe informatique/réseau CDN :
 * Ajoutez les règles de routage d’Optimize at Edge dans le réseau CDN.
 * Confirmez le routage d’Optimize at Edge dans l’interface LLM Optimizer.
 
+>[!IMPORTANT]
+>Le routage doit être configuré sur le réseau CDN externe (le réseau CDN le plus proche du client). Si vous disposez de plusieurs réseaux de diffusion de contenu, le routage ne peut être effectué qu’au niveau du réseau CDN externe.
+
 Pour guider le processus de configuration, sélectionnez votre fournisseur de réseau CDN ci-dessous et suivez le guide de configuration correspondant. Gardez à l’esprit que ces exemples doivent être adaptés à votre configuration active réelle. Nous vous recommandons d’appliquer d’abord les modifications dans les environnements inférieurs.
+
+### Clés API du domaine d’évaluation (facultatif)
+
+Si vous effectuez des tests sur un nom d’hôte d’évaluation avant la production, utilisez LLM Optimizer pour enregistrer **un** domaine d’évaluation et copier sa clé d’API **évaluation** Edge Optimize à partir de **Configuration du client** → **Configuration du réseau CDN** → **Déployer les optimisations sur les agents d’IA** → **Ajouter le domaine d’évaluation** (ou **Domaine d’évaluation**). Le nom d’hôte d’évaluation doit partager le même domaine enregistrable que votre site de production. **Apportez votre propre réseau CDN** les guides comprennent les étapes complètes pour récupérer la clé d’évaluation et vérifier le routage sur votre URL d’évaluation.
 
 ### Guides de configuration du réseau CDN
 
@@ -93,7 +100,7 @@ Le tableau suivant présente les opportunités qui peuvent améliorer l’expér
 
 L’extension de navigateur [AI Visibilité du contenu Checker](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc) indique à quelle proportion du contenu de votre page web les LLM peuvent accéder et ce qui reste masqué. Conçue comme un outil de diagnostic autonome et gratuit, elle ne nécessite aucune licence de produit ni configuration.
 
-En un seul clic, vous pouvez évaluer la lisibilité de n’importe quel site. Vous pouvez comparer côte à côte ce que voient les agents d’IA et ce que voient les utilisateurs et utilisatrices, et estimer la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer. Consultez la page [L’IA peut-elle lire votre site web ?](https://business.adobe.com/fr/blog/introducing-the-llm-optimizer-chrome-extension) pour avoir plus d’informations.
+En un seul clic, vous pouvez évaluer la lisibilité de n’importe quel site. Vous pouvez comparer côte à côte ce que voient les agents d’IA et ce que voient les utilisateurs et utilisatrices, et estimer la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer. Consultez la page [L’IA peut-elle lire votre site web ?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) pour avoir plus d’informations.
 
 ## Opportunités détaillées
 
@@ -123,7 +130,7 @@ Cette opportunité trouve des pages avec des paragraphes longs et complexes qui 
 
 Pour chaque opportunité, vous pouvez prévisualiser, modifier, déployer, afficher en direct et restaurer les optimisations en périphérie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477986/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Prévisualiser
 
