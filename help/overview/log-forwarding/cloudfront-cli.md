@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Transfert de journal : CloudFront (interface de ligne de commande AWS) {#log-forwarding-cloudfront-cli}
 
-Cette page explique comment transférer les journaux CDN de CloudFront vers le compartiment S3 d’Adobe pour la collecte de données de trafic agentic. Vous utiliserez la page de configuration du réseau CDN de LLM Optimizer pour vous intégrer à LLM Optimizer. Une fois le processus d’intégration terminé, suivez les étapes fournies sur cette page pour configurer le transfert des journaux à l’aide de l’interface de ligne de commande [](https://aws.amazon.com/cli/) à l’[étape 2](#step-2-cli).
+Cette page explique comment transférer les journaux CDN de CloudFront vers le compartiment S3 d’Adobe pour la collecte de données de trafic agentic. Vous utiliserez la page de configuration du réseau CDN de LLM Optimizer pour vous intégrer à LLM Optimizer. Une fois le processus d’intégration terminé, suivez les étapes fournies sur cette page pour configurer le transfert des journaux à l’aide de l’interface de ligne de commande [&#128279;](https://aws.amazon.com/cli/) à l’[étape 2](#step-2-cli).
 
 >[!NOTE]
 >
-> Ce guide explique comment configurer le transfert de journal à l’aide de l’[interface de ligne de commande ](https://aws.amazon.com/cli/). Si vous souhaitez configurer le transfert de journal à l’aide de l’interface utilisateur **CloudFront**, voir [Transfert de journal : CloudFront](/help/overview/log-forwarding/cloudfront.md).
+> Ce guide explique comment configurer le transfert de journal à l’aide de l’[interface de ligne de commande &#x200B;](https://aws.amazon.com/cli/). Si vous souhaitez configurer le transfert de journal à l’aide de l’interface utilisateur **CloudFront**, voir [Transfert de journal : CloudFront](/help/overview/log-forwarding/cloudfront.md).
 
 ## Étape 1 : intégration dans LLM Optimizer {#step-1}
 
@@ -40,7 +40,7 @@ Sur la page LLM Optimizer [https://llmo.now/](https://llmo.now/) :
 
 1. Saisissez votre **ID de compte**.
 
-   ![Identifiant de compte ](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)
+   ![Identifiant de compte &#x200B;](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)
 
 1. Sélectionnez **CloudFront (BYOCDN)**.
 
