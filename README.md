@@ -1,7 +1,7 @@
 ---
 source-git-commit: 9a086ec3124af1bf234e42287c8b4ef08eae6bcd
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Si vous contribuez à une mise à jour mineure :
 1. Dans la rubrique « Ce contenu a-t-il été utile ? » La bannière qui s’affiche en bas de la fenêtre du navigateur, cliquez sur **Options détaillées relatives aux commentaires**.
 1. Cliquez sur **Suggérer une modification** et envoyez une requête de tirage (PR) avec vos modifications dans l’interface utilisateur GitHub.
 
-   Pour plus d’informations[&#x200B; consultez le guide du contributeur aux &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr)documents Adobe .
+   Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr) consultez le guide du contributeur aux documents Adobe .
 
 Les modifications ou précisions mineures que vous apportez aux documents et aux exemples de code dans ce référentiel sont soumises aux conditions d’utilisation d’Adobe.
 
@@ -53,8 +53,8 @@ Si vous êtes rédacteur technique, chef de programme ou développeur de l’éq
 
 Tous les articles de ce référentiel utilisent Markdown adapté à GitHub. Si vous ne connaissez pas Markdown, reportez-vous à :
 
-* [Principes de base de Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Aide-mémoire imprimable Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Concepts de base de Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [Aide-mémoire markdown imprimable](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Étiquettes
 
