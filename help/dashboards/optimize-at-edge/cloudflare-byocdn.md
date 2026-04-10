@@ -2,9 +2,9 @@
 title: Optimiser sur Edge - Cloudflare (BYOCDN)
 description: Découvrez comment configurer le BYOCDN de Cloudflare pour l’optimisation sur Edge dans LLM Optimizer.
 feature: Opportunities
-source-git-commit: da789100d814004687de2f46e18a295671dec4b8
+source-git-commit: 14dbee36f39b0d993d448edccb63fb8a519704a1
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1922'
 ht-degree: 1%
 
 ---
@@ -55,6 +55,53 @@ Les en-têtes suivants doivent être définis sur les requêtes du serveur princ
 | `x-edgeoptimize-url` | Le chemin d’URL d’origine et la chaîne de requête de la requête. | `/page.html` ou `/products?id=123` |
 | `x-edgeoptimize-api-key` | Clé API fournie par Adobe pour votre domaine. | `your-api-key-here` |
 | `x-edgeoptimize-config` | Chaîne de configuration pour la différenciation des clés de cache. | `LLMCLIENT=TRUE;` |
+
+## Options de configuration
+
+Il existe deux manières de configurer le programme de travail Cloudflare pour Edge Optimize :
+
+* [**Option 1 : Déployer sur Cloudflare (recommandé)**](#option-1-deploy-to-cloudflare) — Crée automatiquement un nouveau programme de travail et vous invite à saisir les variables d’environnement et les secrets requis. Utilisez cette option si vous ne disposez pas d’un programme de travail de Cloudflare existant pour ce domaine.
+* [**Option 2 : installation manuelle**](#option-2-manual-setup) — Instructions détaillées pour la création et la configuration du programme de travail vous-même. Utilisez cette option si vous disposez déjà d’un programme de travail de Cloudflare que vous souhaitez étendre, ou si vous préférez un contrôle total sur le déploiement.
+
+Quelle que soit l’option choisie, vous devez lier manuellement le programme de travail à votre domaine — voir [Étape : ajouter un itinéraire à votre domaine](#add-a-route-to-your-domain).
+
+## Option 1 : déploiement sur Cloudflare
+
+Cette option utilise le bouton **Déployer sur Cloudflare** pour créer automatiquement le programme de travail et configurer les variables d’environnement et les secrets requis dans votre compte Cloudflare. Il s’agit de la manière la plus rapide de commencer si vous configurez un nouveau programme de travail.
+
+>[!IMPORTANT]
+>
+>N’utilisez cette option que si vous **ne disposez pas** d’un programme de travail Cloudflare existant sur votre domaine. Si vous disposez déjà d’un programme de travail, utilisez [Option 2 : Configuration manuelle](#option-2-manual-setup) pour ajouter la logique de routage Optimisation d’Edge à votre programme de travail existant.
+
+**Étape 1 : déployer le programme de travail**
+
+Cliquez sur le bouton ci-dessous pour déployer le programme de travail d’Edge Optimize sur votre compte Cloudflare :
+
+[![Déploiement sur Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/adobe/llmo-code-samples/tree/main/optimize-at-edge/cloudflare/automation)
+
+**Étape 2 : remplissez le formulaire de déploiement**
+
+Cliquez sur le bouton pour ouvrir la page Configuration des programmes de travail. Remplissez le formulaire comme suit :
+
+![Page de configuration de Cloudflare Workers](/help/assets/optimize-at-edge/cloudflare-deploy-form.png)
+
+1. **Compte Git** — Sélectionnez votre compte GitHub ou GitLab dans la liste déroulante. Cloudflare transforme le code du programme de travail en un référentiel dans votre compte. Si aucun compte n’est répertorié, vous pouvez ajouter une nouvelle connexion directement à partir de la liste déroulante en sélectionnant **+ Nouvelle connexion GitHub** ou **+ Nouvelle connexion GitLab**. Pour plus d’informations, consultez le [Guide d’intégration Git de Cloudflare](https://developers.cloudflare.com/workers/ci-cd/builds/git-integration/github-integration/).
+
+   ![Liste déroulante Compte Git affichant les options Nouvelle connexion GitHub et Nouvelle connexion GitLab ](/help/assets/optimize-at-edge/cloudflare-git-connection.png)
+2. **Créer un référentiel Git privé** — Gardez cette case cochée (par défaut).
+3. **Nom du projet** — Laissez-le `edge-optimize-router` ou entrez le nom de votre choix.
+4. **EDGE_OPTIMIZE_API_KEY** — Collez votre clé API Edge Optimize fournie par Adobe. Cette valeur est stockée en tant que secret chiffré.
+5. **EDGE_OPTIMIZE_TARGET_HOST** — Entrez le domaine de votre site sans le protocole (par exemple, `www.example.com`).
+6. **Commande de build** — Laisser vide.
+7. **Commande de déploiement** — Laisser comme `npm run deploy` (pré-rempli).
+8. **Versions pour les branches hors production** — Ne pas cocher. Il s’agit d’une fonctionnalité de workflow de développement qui n’est pas nécessaire pour ce déploiement.
+9. Cliquez sur **Créer et déployer**.
+
+Une fois le programme de travail déployé, passez à [Ajouter une route à votre domaine](#add-a-route-to-your-domain) pour lier le programme de travail à votre domaine. Le routage n&#39;est pas configuré automatiquement et doit être effectué manuellement.
+
+## Option 2 : configuration manuelle
+
+Pour créer et configurer manuellement le programme de travail, procédez comme suit.
 
 **Étape 1 : créer le programme de travail Cloudflare**
 
@@ -239,7 +286,7 @@ Cliquez sur **Enregistrer et déployer** pour publier le programme de travail.
 
 ![Éditeur de code de Cloudflare Worker](/help/assets/optimize-at-edge/cloudflare-worker-editor.png)
 
-**Étape 3 : Configurer les variables d’environnement**
+**Étape 3 : Configurer les variables d’environnement et les secrets**
 
 Les variables d’environnement stockent en toute sécurité une configuration sensible telle que votre clé API.
 
@@ -257,9 +304,9 @@ Les variables d’environnement stockent en toute sécurité une configuration s
 
 ![Variables d’environnement Cloudflare](/help/assets/optimize-at-edge/cloudflare-env-variables.png)
 
-**Étape 4 : ajouter un itinéraire à votre domaine**
+## Ajouter un itinéraire à votre domaine {#add-a-route-to-your-domain}
 
-Pour activer le programme de travail sur votre domaine :
+Quelle que soit l’option de configuration utilisée, vous devez lier manuellement le programme de travail à votre domaine. Cette étape active le programme de travail sur votre trafic.
 
 1. Accédez au **Paramètres** > **Triggers** de votre programme de travail.
 2. Sous **Itinéraires**, cliquez sur **Ajouter un itinéraire**.
@@ -377,7 +424,7 @@ const FAILOVER_ON_5XX = false;
 | Problème | Cause possible | Solution |
 |-------|----------------|----------|
 | Aucun en-tête de `x-edgeoptimize-request-id` dans la réponse | Itinéraire de collaborateur non apparié ou agent utilisateur non présent dans la liste des robots d&#39;agent. | Vérifiez que votre modèle d’itinéraire correspond à l’URL de requête. Vérifiez que l’agent utilisateur se trouve dans le tableau `AGENTIC_BOTS`. |
-| Erreurs 401 ou 403 d’Edge Optimize | Clé API non valide ou manquante. | Vérifiez que `EDGE_OPTIMIZE_API_KEY` est correctement défini dans les variables d’environnement. Contactez Adobe pour confirmer que votre clé API est active. |
+| Erreurs 401 ou 403 d’Edge Optimize | Clé API non valide ou manquante. | Vérifiez que `EDGE_OPTIMIZE_API_KEY` est correctement défini dans les variables d’environnement et les secrets. Contactez Adobe pour confirmer que votre clé API est active. |
 | Redirections infinies ou boucles | L’en-tête de protection contre les boucles n’est pas défini ou vérifié correctement. | Assurez-vous que la vérification de l’en-tête `x-edgeoptimize-request` est en place. |
 | Trafic humain affecté | La logique de routage des collaborateurs est trop large. | Vérifiez que la logique de correspondance de l’agent utilisateur est correcte et ne respecte pas la casse. Vérifiez que `TARGETED_PATHS` est correctement configuré. |
 | Temps de réponse lents | Latence réseau vers le serveur principal d’Edge Optimize. | Cela est prévu pour la première requête ; les requêtes suivantes sont mises en cache dans Edge Optimize. |
