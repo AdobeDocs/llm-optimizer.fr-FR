@@ -1,7 +1,7 @@
 ---
-source-git-commit: da789100d814004687de2f46e18a295671dec4b8
+source-git-commit: e9309dc8f8d1d81b953483f17dcb424e46d5cd3b
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -32,28 +32,31 @@ ht-degree: 0%
 
 De plus, si vous avez besoin d’aide pour les étapes ci-dessus, contactez votre équipe de compte Adobe ou votre `llmo-at-edge@adobe.com`.
 
-## Clé API du domaine d’évaluation (facultatif) {#retrieve-staging-edge-optimize-api-key}
+## Facultatif : test du routage sur un nom d’hôte d’évaluation {#retrieve-staging-edge-optimize-api-key}
 
-Utilisez un nom d’hôte d’évaluation lorsque vous souhaitez tester l’optimisation sur Edge dans un environnement inférieur avant que le trafic de production n’utilise les règles de routage.
+**Facultatif : test du routage sur un nom d’hôte d’évaluation**
 
-**Conditions préalables**
+Si vous souhaitez valider le routage dans un environnement inférieur avant d’activer le routage de production, vous pouvez configurer un nom d’hôte d’évaluation.
 
-* Le nom d’hôte d’évaluation doit appartenir au **même domaine enregistrable** que votre site de production (par exemple, `https://staging.example.com` lorsque la production est `https://www.example.com`).
-* Un seul domaine d **évaluation** peut être configuré pour le site. Une fois enregistré, il ne peut pas être modifié sans assistance.
+**Conditions requises**
 
-**Étapes**
+* Le nom d’hôte d’évaluation doit se trouver sur le **même domaine enregistrable** que la production (par exemple, `https://staging.example.com` lorsque la production est `https://www.example.com`).
+* Un seul domaine **’évaluation** par site. Une fois enregistré, il ne peut pas être modifié sans contacter Adobe.
 
-1. Dans LLM Optimizer, ouvrez **Configuration du client** et sélectionnez l’onglet **Configuration du réseau de diffusion de contenu**.
+**Obtention de votre clé API intermédiaire**
 
-2. Dans la section **Déployer les optimisations sur les agents d’IA** , sélectionnez **Ajouter un domaine d’évaluation** (ou **Domaine d’évaluation** si un domaine d’évaluation est déjà configuré).
+1. Ouvrez **Configuration du client** et sélectionnez **Configuration du réseau CDN**.
+2. Sous **Déployer les optimisations sur les agents d’IA**, sélectionnez **Ajouter un domaine intermédiaire** (ou **Domaine d’évaluation** si un domaine d’évaluation est déjà configuré).
+3. Saisissez l’URL d’évaluation complète, y compris `https://`, puis sélectionnez **Définir le domaine**.
+4. Copiez la clé API **staging** à partir de la boîte de dialogue de confirmation.
 
-3. Dans la boîte de dialogue **Domaine d’évaluation**, saisissez l’URL d’évaluation complète, y compris `https://`, puis sélectionnez **Définir le domaine**.
+![Clé API du domaine d’évaluation](/help/assets/optimize-at-edge/byocdn-staging-domain-api-key.png)
 
-   ![&#x200B; Boîte de dialogue d’entrée du domaine d’évaluation &#x200B;](/help/assets/optimize-at-edge/byocdn-staging-domain-input.png)
+Déployez les mêmes règles de routage sur votre environnement d’évaluation à l’aide de la clé API d’évaluation.
 
-4. Confirmez le domaine dans l’invite suivante. Une fois le workflow terminé, la boîte de dialogue **Domaines d’évaluation** affiche le domaine configuré et sa clé **API**. Sélectionnez **Copier** pour copier la clé API intermédiaire.
+**Test du trafic de robots d’évaluation**
 
-   ![Clé API du domaine d’évaluation](/help/assets/optimize-at-edge/byocdn-staging-domain-api-key.png)
+Remplacez `https://staging.example.com/page.html` par l’URL et le chemin d’accès d’évaluation réels. **Succès :** la réponse inclut l’en-tête `x-edgeoptimize-request-id`.
 
 Si vous avez besoin d&#39;aide, contactez `llmo-at-edge@adobe.com`.
 
@@ -62,6 +65,16 @@ Si vous avez besoin d&#39;aide, contactez `llmo-at-edge@adobe.com`.
 Le statut du routage du trafic peut également être vérifié dans l’interface utilisateur de LLM Optimizer. Accédez à **Configuration du client** et sélectionnez l’onglet **Configuration du réseau CDN**.
 
 ![Déploiement des optimisations sur les agents d’IA - terminé](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+
+## Autorisation de l’optimisation sur Edge via des règles de pare-feu (facultatif) {#waf-allowlist-setup}
+
+Si votre réseau CDN utilise un WAF ou un gestionnaire de robots :
+
+* Placez sur la liste autorisée l’agent utilisateur `*AdobeEdgeOptimize/1.0*` dans votre WAF ou Gestionnaire de robots afin que le service Optimize at Edge puisse récupérer votre contenu d’origine.
+* Si votre pare-feu nécessite une vérification supplémentaire au-delà de l’agent utilisateur, générez un secret (par exemple, `openssl rand -hex 32`) et :
+   * Ajoutez des `x-edgeoptimize-fetcher-key` avec le secret dans vos règles de routage à côté des autres en-têtes `x-edgeoptimize-*`.
+   * Ajoutez une règle WAF ou Gestionnaire de robots pour autoriser les requêtes où `x-edgeoptimize-fetcher-key` correspond au même secret.
+* Optimiser dans Edge transmet cet en-tête en l’état : vous êtes propriétaire du cycle de vie complet des clés.
 
 ## Revenir à l’aperçu {#return-to-overview}
 

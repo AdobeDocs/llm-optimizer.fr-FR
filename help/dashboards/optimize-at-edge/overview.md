@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: Découvrez comment diffuser des optimisations dans LLM Optimizer à la périphérie du réseau CDN sans apporter de modifications.
 feature: Opportunities
-source-git-commit: b56c2a355c794c8461dda15bf7c733983fd95740
+source-git-commit: 338baae83b63d2e09450bf508c65c6f97240a7dc
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 73%
+source-wordcount: '2312'
+ht-degree: 75%
 
 ---
 
@@ -58,16 +58,13 @@ Conditions requises pour votre équipe informatique/réseau CDN :
 * Ajoutez `*AdobeEdgeOptimize/1.0*` user-agent à la Liste autorisée dans le fichier robots.txt de votre site ou dans les règles de gestion du trafic de robots.
 * Assurez-vous que les pages ne sont pas bloquées au niveau du domaine ou du réseau CDN.
 * Ajoutez les règles de routage d’Optimize at Edge dans le réseau CDN.
+* Si votre réseau de diffusion de contenu comporte des règles WAF ou Bot Manager, placez sur la liste autorisée l’agent utilisateur `*AdobeEdgeOptimize/1.0*`. Si une vérification supplémentaire est requise, configurez l’en-tête `x-edgeoptimize-fetcher-key`. Chaque guide BYOCDN ci-dessous comprend les étapes suivantes.
 * Confirmez le routage d’Optimize at Edge dans l’interface LLM Optimizer.
 
 >[!IMPORTANT]
 >Le routage doit être configuré sur le réseau CDN externe (le réseau CDN le plus proche du client). Si vous disposez de plusieurs réseaux de diffusion de contenu, le routage ne peut être effectué qu’au niveau du réseau CDN externe.
 
-Pour guider le processus de configuration, sélectionnez votre fournisseur de réseau CDN ci-dessous et suivez le guide de configuration correspondant. Gardez à l’esprit que ces exemples doivent être adaptés à votre configuration active réelle. Nous vous recommandons d’appliquer d’abord les modifications dans les environnements inférieurs.
-
-### Clés API du domaine d’évaluation (facultatif)
-
-Si vous effectuez des tests sur un nom d’hôte d’évaluation avant la production, utilisez LLM Optimizer pour enregistrer **un** domaine d’évaluation et copier sa clé d’API **évaluation** Edge Optimize à partir de **Configuration du client** → **Configuration du réseau CDN** → **Déployer les optimisations sur les agents d’IA** → **Ajouter le domaine d’évaluation** (ou **Domaine d’évaluation**). Le nom d’hôte d’évaluation doit partager le même domaine enregistrable que votre site de production. **Apportez votre propre réseau CDN** les guides comprennent les étapes complètes pour récupérer la clé d’évaluation et vérifier le routage sur votre URL d’évaluation.
+Pour guider le processus de configuration, sélectionnez votre fournisseur de réseau CDN ci-dessous et suivez le guide de configuration correspondant. Gardez à l’esprit que ces exemples doivent être adaptés à votre configuration active réelle. Nous vous recommandons d’appliquer d’abord les modifications dans les environnements inférieurs. **Apportez votre propre réseau CDN** les guides comprennent des tests facultatifs de nom d’hôte d’évaluation à la fin de chaque page.
 
 ### Guides de configuration du réseau CDN
 
