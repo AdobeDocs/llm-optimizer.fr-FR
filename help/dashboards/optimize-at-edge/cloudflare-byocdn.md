@@ -2,9 +2,9 @@
 title: Optimiser sur Edge - Cloudflare (BYOCDN)
 description: Découvrez comment configurer le BYOCDN de Cloudflare pour l’optimisation sur Edge dans LLM Optimizer.
 feature: Opportunities
-source-git-commit: 66b058734597c378040e77a23a4023bed9273427
+source-git-commit: 38ea32e27b1c5c129b019155cb7b717c7ca4f179
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1922'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Les en-têtes suivants doivent être définis sur les requêtes du serveur princ
 Il existe deux manières de configurer le programme de travail Cloudflare pour Edge Optimize :
 
 * [**Option 1 : Déployer sur Cloudflare (recommandé)**](#option-1-deploy-to-cloudflare) — Crée automatiquement un nouveau programme de travail et vous invite à saisir les variables d’environnement et les secrets requis. Utilisez cette option si vous ne disposez pas d’un programme de travail de Cloudflare existant pour ce domaine.
-* [**Option 2 : installation manuelle**](#option-2-manual-setup) — Instructions détaillées pour la création et la configuration du programme de travail vous-même. Utilisez cette option si vous disposez déjà d’un programme de travail de Cloudflare que vous souhaitez étendre, ou si vous préférez un contrôle total sur le déploiement.
+* [**Option 2 : installation manuelle**](#option-2-manual-setup) — Instructions détaillées pour la création et la configuration du programme de travail vous-même. Utilisez cette option si un programme de travail Cloudflare existant est déjà configuré sur votre domaine — vous devrez fusionner le code Edge Optimize dans votre programme de travail existant (voir [Étape 2 : Ajouter le code du programme de travail](#option-2-manual-setup)), ou si vous préférez un contrôle total sur le déploiement.
 
 Quelle que soit l’option choisie, vous devez lier manuellement le programme de travail à votre domaine — voir [Étape : ajouter un itinéraire à votre domaine](#add-a-route-to-your-domain).
 
@@ -85,7 +85,7 @@ Cliquez sur le bouton pour ouvrir la page Configuration des programmes de travai
 
 1. **Compte Git** — Sélectionnez votre compte GitHub ou GitLab dans la liste déroulante. Cloudflare transforme le code du programme de travail en un référentiel dans votre compte. Si aucun compte n’est répertorié, vous pouvez ajouter une nouvelle connexion directement à partir de la liste déroulante en sélectionnant **+ Nouvelle connexion GitHub** ou **+ Nouvelle connexion GitLab**. Pour plus d’informations, consultez le [Guide d’intégration Git de Cloudflare](https://developers.cloudflare.com/workers/ci-cd/builds/git-integration/github-integration/).
 
-   ![Liste déroulante Compte Git affichant les options Nouvelle connexion GitHub et Nouvelle connexion GitLab &#x200B;](/help/assets/optimize-at-edge/cloudflare-git-connection.png)
+   ![Liste déroulante Compte Git affichant les options Nouvelle connexion GitHub et Nouvelle connexion GitLab ](/help/assets/optimize-at-edge/cloudflare-git-connection.png)
 2. **Créer un référentiel Git privé** — Gardez cette case cochée (par défaut).
 3. **Nom du projet** — Laissez-le `edge-optimize-router` ou entrez le nom de votre choix.
 4. **EDGE_OPTIMIZE_API_KEY** — Collez votre clé API Edge Optimize fournie par Adobe. Cette valeur est stockée en tant que secret chiffré.
@@ -113,7 +113,7 @@ Pour créer et configurer manuellement le programme de travail, procédez comme 
 
 **Étape 2 : ajouter le code de programme de travail**
 
-Après avoir créé le programme de travail, cliquez sur **Modifier le code** et remplacez le code par défaut par le suivant :
+Après avoir créé le programme de travail, cliquez sur **Modifier le code** et remplacez le code par défaut par ce qui suit. Si vous disposez déjà d’un programme de travail de Cloudflare, fusionnez le code ci-dessous avec votre code de programme de travail existant au lieu de le remplacer entièrement.
 
 ```javascript
 /**
