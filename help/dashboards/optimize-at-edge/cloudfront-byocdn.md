@@ -2,9 +2,9 @@
 title: Optimisation d’Edge - CloudFront (BYOCDN)
 description: Découvrez comment configurer CloudFront BYOCDN pour Optimiser sur Edge dans LLM Optimizer.
 feature: Opportunities
-source-git-commit: da789100d814004687de2f46e18a295671dec4b8
+source-git-commit: 001ed59e25975c718367f543b2e35fedbce686f5
 workflow-type: tm+mt
-source-wordcount: '2265'
+source-wordcount: '2223'
 ht-degree: 1%
 
 ---
@@ -23,11 +23,9 @@ Avant de configurer CloudFront, vérifiez que vous disposez des éléments suiva
 * Fin du processus d’intégration de LLM Optimizer.
 * Transfert du journal CDN vers LLM Optimizer terminé.
 * Clé d’API Edge Optimize récupérée à partir de l’interface utilisateur de LLM Optimizer.
-* (Facultatif) Une clé API d’optimisation d’Edge intermédiaire si vous testez d’abord le routage sur un nom d’hôte intermédiaire.
+* (Facultatif) Pour tester le routage d’évaluation, reportez-vous à la section **Facultatif : tester le routage sur un nom d’hôte d’évaluation** à la fin de cette page.
 
 {{retrieve-byocdn-api-key}}
-
-{{retrieve-staging-edge-optimize-api-key}}
 
 **Étape 1 : Créer une origine Edge Optimize**
 
@@ -261,6 +259,10 @@ Le rôle créé automatiquement est fourni avec une politique `AWSLambdaBasicExe
 
 4. Cliquez sur **Enregistrer les modifications**.
 
+**Autoriser l’optimisation sur Edge via des règles de pare-feu (facultatif)**
+
+{{waf-allowlist-setup}}
+
 **Étape 6 : tester la configuration**
 
 **1. Tester le trafic de robots (doit être optimisé)**
@@ -299,20 +301,9 @@ La réponse ne doit **pas** contenir l’en-tête `x-edgeoptimize-request-id`. L
 | `x-edgeoptimize-request-id` | Présent : contient un ID de requête unique | Absent |
 | `x-edgeoptimize-fo` | Présent uniquement en cas de basculement (valeur : `1`) | Absent |
 
-**4. Domaine d’évaluation (facultatif)**
-
-Si vous utilisez un nom d’hôte d’évaluation et une clé d’API d’évaluation de LLM Optimizer, déployez la même configuration CloudFront sur votre distribution **d’évaluation** à l’aide de la clé d’API **d’évaluation**. Vérifiez ensuite le trafic des robots sur l’hôte d’évaluation :
-
-```
-curl -svo /dev/null https://staging.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
-
-Remplacez `https://staging.example.com/page.html` par l’URL et le chemin d’accès d’évaluation réels. Une réponse réussie inclut l’en-tête `x-edgeoptimize-request-id`.
-
 {{verify-routing-status-in-ui}}
 
-**5. Vérifiez que les journaux circulent correctement**
+**4. Vérifiez que les journaux circulent correctement**
 
 Après avoir exécuté les requêtes de test ci-dessus, vérifiez que les journaux sont écrits pour les fonctions CloudFront et Lambda@Edge.
 
@@ -412,5 +403,12 @@ Une fois déployé, tous les itinéraires de trafic rejoignent directement votre
 4. Cliquez sur **Enregistrer les modifications**.
 
 5. Attendez que le déploiement de la distribution soit terminé, puis vérifiez que les requêtes agentiques renvoient l’en-tête `x-edgeoptimize-request-id` comme décrit à l’étape 6.
+
+{{retrieve-staging-edge-optimize-api-key}}
+
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
 
 {{return-to-overview}}

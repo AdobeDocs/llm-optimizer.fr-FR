@@ -2,9 +2,9 @@
 title: Optimiser sur Edge - Akamai (BYOCDN)
 description: Découvrez comment configurer Akamai BYOCDN pour l’optimisation sur Edge dans LLM Optimizer.
 feature: Opportunities
-source-git-commit: f2a652761acbea7ca5b8e8740c1dbd0132e42f7f
+source-git-commit: 66b058734597c378040e77a23a4023bed9273427
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '825'
 ht-degree: 9%
 
 ---
@@ -22,11 +22,9 @@ Avant de configurer les règles du gestionnaire de propriétés Akamai, vérifie
 * Fin du processus d’intégration de LLM Optimizer.
 * Transfert du journal CDN vers LLM Optimizer terminé.
 * Clé d’API Edge Optimize récupérée à partir de l’interface utilisateur de LLM Optimizer.
-* (Facultatif) Une clé API d’optimisation d’Edge intermédiaire si vous testez d’abord le routage sur un nom d’hôte intermédiaire.
+* (Facultatif) Pour tester le routage d’évaluation, reportez-vous à la section **Facultatif : tester le routage sur un nom d’hôte d’évaluation** à la fin de cette page.
 
 {{retrieve-byocdn-api-key}}
-
-{{retrieve-staging-edge-optimize-api-key}}
 
 **Configuration**
 
@@ -79,6 +77,16 @@ Définissez les en-têtes de requête entrante suivants :
 `x-edgeoptimize-url` à `{{builtin.AK_URL}}`
 
 ![Modifier les en-têtes des requêtes entrantes](/help/assets/optimize-at-edge/akamai-step5-request.png)
+
+**Autoriser l’optimisation sur Edge via des règles de pare-feu (facultatif)**
+
+{{waf-allowlist-setup}}
+
+![Définissez l’en-tête x-edgeoptimizer-fetcher-key dans le Gestionnaire de propriétés](/help/assets/optimize-at-edge/akamai-step10-fetcher-key.png)
+
+>[!NOTE]
+>
+>Placez sur la liste autorisée également l’agent utilisateur `*AdobeEdgeOptimize/1.0*` et l’en-tête `x-edgeoptimize-fetcher-key` dans Akamai Bot Manager.
 
 **6. Modifier les en-têtes de réponse entrante**
 
@@ -187,17 +195,13 @@ La réponse ne doit **pas** contenir l’en-tête `x-edgeoptimize-request-id`. L
 | `x-edgeoptimize-request-id` | Présent : contient un ID de requête unique | Absent |
 | `x-edgeoptimize-fo` | Présent uniquement en cas de basculement (valeur : `1`) | Absent |
 
-**4. Domaine d’évaluation (facultatif)**
+{{verify-routing-status-in-ui}}
 
-Si vous utilisez un nom d’hôte d’évaluation et une clé d’API d’évaluation à partir de LLM Optimizer, déployez le même modèle de routage sur votre propriété Akamai **staging** à l’aide de la clé **staging** dans vos règles. Vérifiez ensuite le trafic des robots sur l’hôte d’évaluation :
+{{retrieve-staging-edge-optimize-api-key}}
 
 ```
 curl -svo /dev/null https://staging.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
-
-Remplacez `https://staging.example.com/page.html` par l’URL et le chemin d’accès d’évaluation réels. Une réponse réussie inclut l’en-tête `x-edgeoptimize-request-id`.
-
-{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}
