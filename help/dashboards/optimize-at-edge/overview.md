@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: Découvrez comment diffuser des optimisations dans LLM Optimizer à la périphérie du réseau CDN sans apporter de modifications.
 feature: Opportunities
-source-git-commit: 338baae83b63d2e09450bf508c65c6f97240a7dc
+source-git-commit: 050a4eaa510df7195c5208978ba56d4413916808
 workflow-type: tm+mt
-source-wordcount: '2312'
-ht-degree: 75%
+source-wordcount: '2323'
+ht-degree: 74%
 
 ---
 
@@ -43,7 +43,7 @@ Démarrez le processus d’intégration dans votre compte LLM Optimizer :
 1. Dans le tableau de bord **Configuration du client**, sélectionnez l’onglet **Configuration du réseau de diffusion de contenu**.
 1. Cliquez sur **Intégrer le réseau CDN**.
    ![Onglet Configuration du réseau CDN](/help/overview/assets/cc-cdn.png)
-1. Pour les clients AEM Fastly , Adobe peut vous aider à terminer le processus d’intégration. Pour les clients qui utilisent d’autres fournisseurs de réseau CDN, votre équipe informatique/réseau CDN doit effectuer la configuration requise et remplir les conditions préalables. Vous pouvez également vous reporter aux exemples de guides de réseau CDN fournis ci-dessous pour obtenir des conseils supplémentaires.
+1. Pour les clients Fastly gérés par AEM Cloud Service, la configuration du routage est en libre-service et peut être effectuée directement dans l’interface utilisateur de LLM Optimizer. Pour les clients qui utilisent d’autres fournisseurs de réseau CDN, votre équipe informatique/réseau CDN doit effectuer la configuration requise et remplir les conditions préalables. Vous pouvez également vous reporter aux exemples de guides de réseau CDN fournis ci-dessous pour obtenir des conseils supplémentaires.
 
 >[!NOTE]
 >Reportez-vous aux guides détaillés ci-dessous qui couvrent l’ensemble du flux d’intégration. Pour les problèmes non résolus par les guides, vous pouvez contacter `llmo-at-edge@adobe.com`.
@@ -97,7 +97,7 @@ Le tableau suivant présente les opportunités qui peuvent améliorer l’expér
 
 L’extension de navigateur [AI Visibilité du contenu Checker](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc) indique à quelle proportion du contenu de votre page web les LLM peuvent accéder et ce qui reste masqué. Conçue comme un outil de diagnostic autonome et gratuit, elle ne nécessite aucune licence de produit ni configuration.
 
-En un seul clic, vous pouvez évaluer la lisibilité de n’importe quel site. Vous pouvez comparer côte à côte ce que voient les agents d’IA et ce que voient les utilisateurs et utilisatrices, et estimer la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer. Consultez la page [L’IA peut-elle lire votre site web ?](https://business.adobe.com/fr/blog/introducing-the-llm-optimizer-chrome-extension) pour avoir plus d’informations.
+En un seul clic, vous pouvez évaluer la lisibilité de n’importe quel site. Vous pouvez comparer côte à côte ce que voient les agents d’IA et ce que voient les utilisateurs et utilisatrices, et estimer la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer. Consultez la page [L’IA peut-elle lire votre site web ?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) pour avoir plus d’informations.
 
 ## Opportunités détaillées
 
@@ -127,7 +127,7 @@ Cette opportunité trouve des pages avec des paragraphes longs et complexes qui 
 
 Pour chaque opportunité, vous pouvez prévisualiser, modifier, déployer, afficher en direct et restaurer les optimisations en périphérie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477986/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Prévisualiser
 
