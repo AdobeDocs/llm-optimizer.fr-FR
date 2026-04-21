@@ -2,9 +2,9 @@
 title: Optimiser sur Edge - Cloudflare (BYOCDN)
 description: Découvrez comment configurer le BYOCDN de Cloudflare pour l’optimisation sur Edge dans LLM Optimizer.
 feature: Opportunities
-source-git-commit: 38ea32e27b1c5c129b019155cb7b717c7ca4f179
+source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1906'
 ht-degree: 1%
 
 ---
@@ -20,12 +20,8 @@ Avant de configurer les règles de routage de CloudFlare Worker, vérifiez que v
 
 * Un compte Cloudflare avec Workers activé sur votre domaine.
 * Accès aux paramètres DNS de votre domaine dans Cloudflare.
-* Fin du processus d’intégration de LLM Optimizer.
-* Transfert du journal CDN vers LLM Optimizer terminé.
-* Clé d’API Edge Optimize récupérée à partir de l’interface utilisateur de LLM Optimizer.
-* (Facultatif) Pour tester le routage d’évaluation, reportez-vous à la section **Facultatif : tester le routage sur un nom d’hôte d’évaluation** à la fin de cette page.
-
-{{retrieve-byocdn-api-key}}
+* Clé d’API Edge Optimize récupérée à partir de l’interface utilisateur de LLM Optimizer. Pour connaître les étapes, voir [Récupération de vos clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Facultatif) Pour tester le routage d’évaluation, consultez [Clé API d’évaluation](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Fonctionnement du routage**
 
@@ -85,7 +81,7 @@ Cliquez sur le bouton pour ouvrir la page Configuration des programmes de travai
 
 1. **Compte Git** — Sélectionnez votre compte GitHub ou GitLab dans la liste déroulante. Cloudflare transforme le code du programme de travail en un référentiel dans votre compte. Si aucun compte n’est répertorié, vous pouvez ajouter une nouvelle connexion directement à partir de la liste déroulante en sélectionnant **+ Nouvelle connexion GitHub** ou **+ Nouvelle connexion GitLab**. Pour plus d’informations, consultez le [Guide d’intégration Git de Cloudflare](https://developers.cloudflare.com/workers/ci-cd/builds/git-integration/github-integration/).
 
-   ![Liste déroulante Compte Git affichant les options Nouvelle connexion GitHub et Nouvelle connexion GitLab &#x200B;](/help/assets/optimize-at-edge/cloudflare-git-connection.png)
+   ![Liste déroulante Compte Git affichant les options Nouvelle connexion GitHub et Nouvelle connexion GitLab ](/help/assets/optimize-at-edge/cloudflare-git-connection.png)
 2. **Créer un référentiel Git privé** — Gardez cette case cochée (par défaut).
 3. **Nom du projet** — Laissez-le `edge-optimize-router` ou entrez le nom de votre choix.
 4. **EDGE_OPTIMIZE_API_KEY** — Collez votre clé API Edge Optimize fournie par Adobe. Cette valeur est stockée en tant que secret chiffré.
@@ -478,12 +474,5 @@ La réponse ne doit **pas** contenir l’en-tête `x-edgeoptimize-request-id`. L
 | `x-edgeoptimize-fo` | Présent uniquement en cas de basculement (valeur : `1`) | Absent |
 
 {{verify-routing-status-in-ui}}
-
-{{retrieve-staging-edge-optimize-api-key}}
-
-```
-curl -svo /dev/null https://staging.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
 
 {{return-to-overview}}
