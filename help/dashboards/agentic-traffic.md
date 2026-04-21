@@ -2,10 +2,10 @@
 title: Trafic généré par l’IA agentique
 description: Découvrez comment utiliser le tableau de bord du trafic généré par l’IA agentique afin de voir comment les agents d’IA interagissent avec votre site.
 feature: Agentic Traffic
-source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
+source-git-commit: 21c14895ea9c1978332af3d742baacbe53079e88
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 98%
+source-wordcount: '1335'
+ht-degree: 94%
 
 ---
 
@@ -52,7 +52,7 @@ Une fois activés, les journaux sont ingérés et le tableau de bord est renseig
 
 LLM Optimizer traite un sous-ensemble de champs des journaux du réseau CDN. Bien que les noms des champs de journaux bruts varient selon le fournisseur de réseau CDN, ils sont normalisés et présentés comme suit :
 
-* URL (chemin uniquement)
+* URL (chemin et paramètres de requête)
 * Agent utilisateur
 * Code d’état
 * En-tête du référent
@@ -99,7 +99,7 @@ Utilisez le graphique Tendances du trafic généré par l’IA agentique pour ef
 
 ## Meilleures et pires performances {#top-bottom-movers}
 
-La vue Meilleures et pires performances met en évidence les URL présentant les plus grands changements de trafic généré par l’IA agentique d’une semaine à l’autre, à savoir les visites ou les accès provenant des systèmes d’IA qui accèdent à votre contenu.**La section Meilleures performances** affiche les pages qui gagnent en visibilité ou en engagement, tandis que la section **Pires performances** révèle les URL qui connaissent les baisses les plus importantes. Cela vous permet d’identifier rapidement le contenu dont les tendances sont à la hausse, celui qui peut nécessiter une attention particulière et les emplacements où les modèles de découverte basés sur l’IA changent.
+La vue des déménageurs en haut et en bas met en évidence les URL présentant les plus grands changements de trafic d’agent d’une semaine à l’autre, à savoir les visites ou les accès des systèmes d’IA accédant à votre contenu. Le tableau **Principaux déménageurs** montre les pages qui gagnent en visibilité ou en engagement, tandis que le tableau **Principaux déménageurs** révèle les URL qui connaissent les déclins les plus importants. Cela vous permet d’identifier rapidement le contenu dont les tendances sont à la hausse, celui qui peut nécessiter une attention particulière et les emplacements où les modèles de découverte basés sur l’IA changent.
 
 ![Meilleures et pires performances](/help/dashboards/assets/movers.png)
 
