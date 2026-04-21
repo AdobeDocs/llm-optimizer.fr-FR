@@ -2,9 +2,9 @@
 title: Optimisation d’Edge - CloudFront (BYOCDN)
 description: Découvrez comment configurer CloudFront BYOCDN pour Optimiser sur Edge dans LLM Optimizer.
 feature: Opportunities
-source-git-commit: 001ed59e25975c718367f543b2e35fedbce686f5
+source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
-source-wordcount: '2223'
+source-wordcount: '2207'
 ht-degree: 1%
 
 ---
@@ -20,12 +20,8 @@ Avant de configurer CloudFront, vérifiez que vous disposez des éléments suiva
 
 * Une distribution CloudFront existante desservant votre site web.
 * Les autorisations IAM d’AWS pour créer des fonctions Lambda, des rôles IAM, des distributions CloudFront et des politiques de cache.
-* Fin du processus d’intégration de LLM Optimizer.
-* Transfert du journal CDN vers LLM Optimizer terminé.
-* Clé d’API Edge Optimize récupérée à partir de l’interface utilisateur de LLM Optimizer.
-* (Facultatif) Pour tester le routage d’évaluation, reportez-vous à la section **Facultatif : tester le routage sur un nom d’hôte d’évaluation** à la fin de cette page.
-
-{{retrieve-byocdn-api-key}}
+* Clé d’API Edge Optimize récupérée à partir de l’interface utilisateur de LLM Optimizer. Pour connaître les étapes, voir [Récupération de vos clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Facultatif) Pour tester le routage d’évaluation, consultez [Clé API d’évaluation](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Étape 1 : Créer une origine Edge Optimize**
 
@@ -403,12 +399,5 @@ Une fois déployé, tous les itinéraires de trafic rejoignent directement votre
 4. Cliquez sur **Enregistrer les modifications**.
 
 5. Attendez que le déploiement de la distribution soit terminé, puis vérifiez que les requêtes agentiques renvoient l’en-tête `x-edgeoptimize-request-id` comme décrit à l’étape 6.
-
-{{retrieve-staging-edge-optimize-api-key}}
-
-```
-curl -svo /dev/null https://staging.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
 
 {{return-to-overview}}

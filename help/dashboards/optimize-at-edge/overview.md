@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: Découvrez comment diffuser des optimisations dans LLM Optimizer à la périphérie du réseau CDN sans apporter de modifications.
 feature: Opportunities
-source-git-commit: 050a4eaa510df7195c5208978ba56d4413916808
+source-git-commit: e9eab92835e555f7267f58eea7faa0302c2f1cd0
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 74%
+source-wordcount: '2283'
+ht-degree: 75%
 
 ---
 
@@ -48,11 +48,6 @@ Démarrez le processus d’intégration dans votre compte LLM Optimizer :
 >[!NOTE]
 >Reportez-vous aux guides détaillés ci-dessous qui couvrent l’ensemble du flux d’intégration. Pour les problèmes non résolus par les guides, vous pouvez contacter `llmo-at-edge@adobe.com`.
 
-Conditions préalables à l’intégration d’Optimize at Edge :
-
-* Terminez le processus d’intégration de LLM Optimizer.
-* Terminez le processus de transfert des journaux pour vos journaux CDN.
-
 Conditions requises pour votre équipe informatique/réseau CDN :
 
 * Ajoutez `*AdobeEdgeOptimize/1.0*` user-agent à la Liste autorisée dans le fichier robots.txt de votre site ou dans les règles de gestion du trafic de robots.
@@ -64,7 +59,7 @@ Conditions requises pour votre équipe informatique/réseau CDN :
 >[!IMPORTANT]
 >Le routage doit être configuré sur le réseau CDN externe (le réseau CDN le plus proche du client). Si vous disposez de plusieurs réseaux de diffusion de contenu, le routage ne peut être effectué qu’au niveau du réseau CDN externe.
 
-Pour guider le processus de configuration, sélectionnez votre fournisseur de réseau CDN ci-dessous et suivez le guide de configuration correspondant. Gardez à l’esprit que ces exemples doivent être adaptés à votre configuration active réelle. Nous vous recommandons d’appliquer d’abord les modifications dans les environnements inférieurs. **Apportez votre propre réseau CDN** les guides comprennent des tests facultatifs de nom d’hôte d’évaluation à la fin de chaque page.
+Pour guider le processus de configuration, sélectionnez votre fournisseur de réseau CDN ci-dessous et suivez le guide de configuration correspondant. Gardez à l’esprit que ces exemples doivent être adaptés à votre configuration active réelle. Nous vous recommandons d’appliquer d’abord les modifications dans les environnements inférieurs.
 
 ### Guides de configuration du réseau CDN
 
