@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: Découvrez comment diffuser des optimisations dans LLM Optimizer à la périphérie du réseau CDN sans apporter de modifications.
 feature: Opportunities
-source-git-commit: e9eab92835e555f7267f58eea7faa0302c2f1cd0
+source-git-commit: 6395ea8bdaae419d931ecd67f719a524caa66d0f
 workflow-type: tm+mt
-source-wordcount: '2283'
-ht-degree: 75%
+source-wordcount: '2301'
+ht-degree: 74%
 
 ---
 
@@ -56,6 +56,10 @@ Conditions requises pour votre équipe informatique/réseau CDN :
 * Si votre réseau de diffusion de contenu comporte des règles WAF ou Bot Manager, placez sur la liste autorisée l’agent utilisateur `*AdobeEdgeOptimize/1.0*`. Si une vérification supplémentaire est requise, configurez l’en-tête `x-edgeoptimize-fetcher-key`. Chaque guide BYOCDN ci-dessous comprend les étapes suivantes.
 * Confirmez le routage d’Optimize at Edge dans l’interface LLM Optimizer.
 
+Le diagramme suivant illustre le flux des requêtes dans une configuration BYOCDN avec Optimize sur Edge :
+
+![Flux de requête BYOCDN](/help/assets/optimize-at-edge/byocdn-request-flow.png)
+
 >[!IMPORTANT]
 >Le routage doit être configuré sur le réseau CDN externe (le réseau CDN le plus proche du client). Si vous disposez de plusieurs réseaux de diffusion de contenu, le routage ne peut être effectué qu’au niveau du réseau CDN externe.
 
@@ -92,7 +96,7 @@ Le tableau suivant présente les opportunités qui peuvent améliorer l’expér
 
 L’extension de navigateur [AI Visibilité du contenu Checker](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc) indique à quelle proportion du contenu de votre page web les LLM peuvent accéder et ce qui reste masqué. Conçue comme un outil de diagnostic autonome et gratuit, elle ne nécessite aucune licence de produit ni configuration.
 
-En un seul clic, vous pouvez évaluer la lisibilité de n’importe quel site. Vous pouvez comparer côte à côte ce que voient les agents d’IA et ce que voient les utilisateurs et utilisatrices, et estimer la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer. Consultez la page [L’IA peut-elle lire votre site web ?](https://business.adobe.com/fr/blog/introducing-the-llm-optimizer-chrome-extension) pour avoir plus d’informations.
+En un seul clic, vous pouvez évaluer la lisibilité de n’importe quel site. Vous pouvez comparer côte à côte ce que voient les agents d’IA et ce que voient les utilisateurs et utilisatrices, et estimer la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer. Consultez la page [L’IA peut-elle lire votre site web ?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) pour avoir plus d’informations.
 
 ## Opportunités détaillées
 
@@ -122,7 +126,7 @@ Cette opportunité trouve des pages avec des paragraphes longs et complexes qui 
 
 Pour chaque opportunité, vous pouvez prévisualiser, modifier, déployer, afficher en direct et restaurer les optimisations en périphérie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477986/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Prévisualiser
 
