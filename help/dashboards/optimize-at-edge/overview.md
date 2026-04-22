@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: Découvrez comment diffuser des optimisations dans LLM Optimizer à la périphérie du réseau CDN sans apporter de modifications.
 feature: Opportunities
-source-git-commit: e9eab92835e555f7267f58eea7faa0302c2f1cd0
+source-git-commit: 6395ea8bdaae419d931ecd67f719a524caa66d0f
 workflow-type: tm+mt
-source-wordcount: '2283'
-ht-degree: 75%
+source-wordcount: '2301'
+ht-degree: 74%
 
 ---
 
@@ -55,6 +55,10 @@ Conditions requises pour votre équipe informatique/réseau CDN :
 * Ajoutez les règles de routage d’Optimize at Edge dans le réseau CDN.
 * Si votre réseau de diffusion de contenu comporte des règles WAF ou Bot Manager, placez sur la liste autorisée l’agent utilisateur `*AdobeEdgeOptimize/1.0*`. Si une vérification supplémentaire est requise, configurez l’en-tête `x-edgeoptimize-fetcher-key`. Chaque guide BYOCDN ci-dessous comprend les étapes suivantes.
 * Confirmez le routage d’Optimize at Edge dans l’interface LLM Optimizer.
+
+Le diagramme suivant illustre le flux des requêtes dans une configuration BYOCDN avec Optimize sur Edge :
+
+![Flux de requête BYOCDN](/help/assets/optimize-at-edge/byocdn-request-flow.png)
 
 >[!IMPORTANT]
 >Le routage doit être configuré sur le réseau CDN externe (le réseau CDN le plus proche du client). Si vous disposez de plusieurs réseaux de diffusion de contenu, le routage ne peut être effectué qu’au niveau du réseau CDN externe.
