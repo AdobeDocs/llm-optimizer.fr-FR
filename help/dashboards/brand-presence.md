@@ -24,7 +24,7 @@ Cette page contient les éléments suivants :
 * [Évolution du sentiment](#sentiment-trend)
 * [Informations sur les données](#data-insights)
 
-Si vous utilisez l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), accédez à la Présence des marques ****. Dans la liste déroulante des marques, sélectionnez la marque à analyser ou choisissez **Toutes les marques** pour examiner la visibilité sur l’ensemble de vos marques.
+Si vous utilisez l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), accédez à la Présence des marques **&#x200B;**. Dans la liste déroulante des marques, sélectionnez la marque à analyser ou choisissez **Toutes les marques** pour examiner la visibilité sur l’ensemble de vos marques.
 
 ![Présence des marques avec le sélecteur de marque (expérience orientée marque)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 

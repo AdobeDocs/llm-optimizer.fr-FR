@@ -191,9 +191,9 @@ Avant d’utiliser cette fonctionnalité, vous devez intégrer votre compte Goog
 
 1. Ouvrez le tableau de bord **Configuration du client** (navigation classique) ou **Gestion des marques** (expérience orientée marque), puis accédez à l’intégration de la console de recherche Google (balise GSC dans l’expérience orientée marque).
 1. Accédez à l’onglet Search Console de Google et cliquez sur **Connect Account**.
-   ![Console de recherche ](/help/dashboards/assets/google-console.png)
+   ![Console de recherche &#x200B;](/help/dashboards/assets/google-console.png)
 1. Connectez-vous avec un compte Google ayant accès à la propriété de Search Console souhaitée.
-   ![Compte ](/help/dashboards/assets/google-account.png)
+   ![Compte &#x200B;](/help/dashboards/assets/google-account.png)
 1. Sélectionnez la propriété à connecter.
    ![Propriété de console](/help/dashboards/assets/console-property.png)
 1. Une fois la connexion établie, LLM Optimizer commence à récupérer les requêtes de recherche pertinentes.
