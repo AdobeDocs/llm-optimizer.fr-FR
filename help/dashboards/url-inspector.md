@@ -2,7 +2,7 @@
 title: Inspecteur d’URL
 description: Découvrez comment utiliser l’Inspecteur d’URL pour analyser les performances de pages spécifiques de votre domaine dans les recherches optimisées par l’IA.
 feature: URL Inspector
-source-git-commit: 7ba417a568d21c1e56de218e023df243b73f6357
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 95%
@@ -16,7 +16,7 @@ L’Inspecteur d’URL vous permet d’analyser les performances de pages spéci
 
 ![Inspecteur d’URL](/help/dashboards/assets/url-insp.png)
 
-Si vous bénéficiez d’une expérience axée sur la marque, accédez à **Inspecteur d’URL** et sélectionnez le site pour lequel vous souhaitez afficher les informations.
+Si vous utilisez l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), accédez à **Inspecteur d’URL** et sélectionnez le site pour lequel vous souhaitez afficher les informations.
 
 ![Inspecteur d’URL — sélecteur de site (expérience orientée marque)](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
 

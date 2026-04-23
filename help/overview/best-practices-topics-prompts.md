@@ -2,7 +2,7 @@
 title: Bonnes pratiques relatives aux catégories, rubriques, prompts et autres
 description: Optimisez les informations des LLM en configurant des catégories, des rubriques, des prompts et d’autres marques pour effectuer le suivi, y compris de la concurrence, pour une surveillance de marque personnalisée et une analyse de contenu stratégique.
 feature: Best Practices, Customer Configuration
-source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 93%
@@ -26,7 +26,7 @@ Dans le tableau de bord [!UICONTROL Configuration cliente], vous pouvez personna
 
 Par défaut, les nouveaux clients commencent par une interface ciblée et axée sur la marque, avec une configuration axée sur l’intégration. Dans cette nouvelle interface, chaque organisation commence par une marque active et d’autres marques suggérées parmi lesquelles choisir. Les clients LLM Optimizer existants passeront progressivement à cette expérience orientée marque.
 
-Si vous bénéficiez d’une expérience axée sur la marque, **Brands Management** vous permet de définir la manière dont votre marque est surveillée et analysée.
+Si vous bénéficiez d’une expérience orientée marque, **Gestion des marques** vous permet de définir comment votre marque est surveillée et analysée.
 
 ![Brand Management : navigation dans l’application (expérience orientée marque)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 

@@ -2,9 +2,9 @@
 title: Trafic de recommandation
 description: Découvrez comment utiliser le tableau de bord du trafic de recommandation pour voir comment les visiteurs et visiteuses accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de recommandation.
 feature: Referral Traffic
-source-git-commit: ea4cf80dc5f789f7938c800354bc8d8d3246704c
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '740'
 ht-degree: 79%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 79%
 Le trafic de recommandation montre comment les visiteurs et visiteuses accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de recommandation. Il suit et analyse les sources de trafic, les tendances de recommandation et les mesures de conversion des sites web et plateformes externes. Cela vous aidera à comprendre quelles sources, régions et pages génèrent le trafic le plus engagé. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
 
 >[!NOTE]
->Par défaut, ce tableau de bord génère des informations sur le trafic à partir des **journaux CDN**. Si votre entreprise fait partie d’une offre payante, vous pouvez connecter **&#x200B;**&#x200B;afin d’ajouter des données qui mesurent la découverte pilotée par l’IA et l’engagement sur le site. Ces données sont disponibles dans l’onglet **Impact commercial**. Sans intégration à Adobe Analytics, l’onglet n’est pas renseigné. Voir [Intégration d’](/help/dashboards/adobe-analytics-integration.md) pour plus d’informations.
+>Par défaut, ce tableau de bord génère des informations sur le trafic à partir des **journaux CDN**. Si votre entreprise fait partie d’une offre payante, vous pouvez connecter **** afin d’ajouter des données qui mesurent la découverte pilotée par l’IA et l’engagement sur le site. Ces données sont disponibles dans l’onglet **Impact commercial**. Sans intégration à Adobe Analytics, l’onglet n’est pas renseigné. Voir [Intégration d’](/help/dashboards/adobe-analytics-integration.md) pour plus d’informations.
 
 ![Page de recommandation](/help/dashboards/assets/referral-traffic.png)
 
@@ -27,7 +27,7 @@ Cette page contient les éléments suivants :
 * [Principales URL de recommandation](#top-referrals)
 * [Détails du trafic de recommandation](#traffic-details)
 
-Si vous utilisez une expérience axée sur la marque, accédez à **Trafic de recommandation** et sélectionnez le site pour lequel vous souhaitez afficher les informations sur le Trafic de recommandation LLM.
+Si vous utilisez l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), accédez à **Trafic de recommandation** et sélectionnez le site pour lequel vous souhaitez afficher les informations sur le Trafic de recommandation LLM.
 
 ![Trafic de recommandation — sélecteur de site (expérience centrée sur la marque)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
 
@@ -35,7 +35,7 @@ Si vous utilisez une expérience axée sur la marque, accédez à **Trafic de re
 
 Lors de la première connexion, le tableau de bord du trafic de recommandation peut apparaître vide. Pour afficher vos données, vous devez configurer le transfert du journal du réseau CDN.
 
-Pour les clients qui privilégient une expérience axée sur la marque, voici comment ajouter des informations sur le transfert de journal sur le réseau CDN. Accédez à **Brands Management** et cliquez sur le libellé **CDN**. Voir aussi [Trafic dynamique — Configuration du réseau CDN](/help/dashboards/agentic-traffic.md#cdn-setup).
+Pour les clients qui utilisent l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), vous pouvez ajouter des informations sur le transfert de journal CDN en accédant à **Gestion des marques** et en cliquant sur le libellé **CDN**. Voir aussi [Trafic dynamique — Configuration du réseau CDN](/help/dashboards/agentic-traffic.md#cdn-setup).
 
 **Configuration du client (expérience classique) :** configurer [transfert du journal CDN](/help/dashboards/customer-configuration.md#cdn-configuration) en sélectionnant **Accéder à la configuration**.
 

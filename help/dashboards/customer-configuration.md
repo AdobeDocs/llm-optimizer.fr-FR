@@ -2,7 +2,7 @@
 title: Configuration cliente
 description: Utilisez la configuration cliente pour définir comment votre marque sera surveillée et analysée sur la plateforme LLM Optimizer.
 feature: Customer Configuration
-source-git-commit: ef6b4ec9dcb3b5234add6e82cbc54ab29d363509
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
 source-wordcount: '2249'
 ht-degree: 37%
@@ -27,7 +27,7 @@ Pour configurer la manière dont LLM Optimizer surveille et analyse la présenc
 * [Configuration du CDN](#agentic-cdn)
 * [Google Search Console](#google-console)
 
-Si vous bénéficiez d’une expérience axée sur la marque, accédez à **Gestion des marques** pour configurer les marques, les alias de marque et définir les concurrents avec lesquels effectuer un suivi. **Brands Management** est également utilisé pour configurer des intégrations telles que la console de recherche Google, Adobe Analytics et le transfert de journal CDN, liées aux URL associées aux marques. Vous pouvez le faire en cliquant sur les onglets correspondants : GSC, CDN, etc.
+If you are on the [Brand Centric experience](/help/overview/quick-start.md#brand-centric-experience), navigate to **Brands Management** to setup and configure brands, brand aliases and define competitors to track against. **Brands Management** est également utilisé pour configurer des intégrations telles que la console de recherche Google, Adobe Analytics et le transfert de journal CDN, liées aux URL associées aux marques. Vous pouvez le faire en cliquant sur les onglets correspondants : GSC, CDN, etc.
 
 ![Brand Management : navigation dans l’application (expérience orientée marque)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
@@ -60,7 +60,7 @@ En outre, vous pouvez également ajouter des rubriques/prompts à la liste, sans
 5. Sélectionnez la région.
 6. Cliquez sur **Ajouter un prompt** et la rubrique contenant le prompt s’affiche dans la liste.
 
-Pour les clients qui utilisent une expérience axée sur la marque, accédez à **Gestion des invites** pour ajouter des rubriques et des invites.
+For customers that are on the [Brand Centric experience](/help/overview/quick-start.md#brand-centric-experience), to add Topics and Prompts, navigate to **Prompts Management**.
 
 ![Gestion des invites (expérience orientée marque)](/help/assets/brand-centric-experience/prompts-management.png)
 
@@ -191,9 +191,9 @@ Avant d’utiliser cette fonctionnalité, vous devez intégrer votre compte Goog
 
 1. Ouvrez le tableau de bord **Configuration du client** (navigation classique) ou **Gestion des marques** (expérience orientée marque), puis accédez à l’intégration de la console de recherche Google (balise GSC dans l’expérience orientée marque).
 1. Accédez à l’onglet Search Console de Google et cliquez sur **Connect Account**.
-   ![Console de recherche &#x200B;](/help/dashboards/assets/google-console.png)
+   ![Console de recherche ](/help/dashboards/assets/google-console.png)
 1. Connectez-vous avec un compte Google ayant accès à la propriété de Search Console souhaitée.
-   ![Compte &#x200B;](/help/dashboards/assets/google-account.png)
+   ![Compte ](/help/dashboards/assets/google-account.png)
 1. Sélectionnez la propriété à connecter.
    ![Propriété de console](/help/dashboards/assets/console-property.png)
 1. Une fois la connexion établie, LLM Optimizer commence à récupérer les requêtes de recherche pertinentes.
@@ -212,7 +212,7 @@ Après avoir intégré le compte de la console de recherche Google à l’optimi
 
 #### Afficher les requêtes ajoutées à la liste des invites {#prompts-list}
 
-Une fois une requête ajoutée, elle apparaît dans l’onglet [Invites](#prompts-brand) du tableau de bord Configuration du client (expérience classique) ou dans **Gestion des invites** (expérience orientée marque). Les invites provenant de la Search Console Google sont marquées d&#39;une icône de la Search Console Google dans la colonne **Origin**. L’icône vous permet de distinguer les invites basées sur le comportement réel de la recherche utilisateur de celles ajoutées manuellement ou d’autres sources.
+Une fois une requête ajoutée, elle apparaît dans l’onglet [Invites](#prompts-brand) du tableau de bord Configuration du client (navigation classique) ou dans **Gestion des invites** (expérience orientée marque). Les invites provenant de la Search Console Google sont marquées d&#39;une icône de la Search Console Google dans la colonne **Origin**. L’icône vous permet de distinguer les invites basées sur le comportement réel de la recherche utilisateur de celles ajoutées manuellement ou d’autres sources.
 
 ### Questions fréquentes {#gsc-faq}
 

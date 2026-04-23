@@ -2,9 +2,9 @@
 title: Démarrage rapide
 description: Découvrez comment intégrer votre nom de marque et votre domaine, activer votre version d’essai à partir d’Experience Hub ou d’Experience Cloud et terminer la configuration pour Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: d38cf066ca1e3785032b7beca1c257e3a42f532b
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1459'
 ht-degree: 37%
 
 ---
@@ -12,11 +12,13 @@ ht-degree: 37%
 
 # Démarrage rapide
 
-Pour commencer à utiliser LLM Optimizer, terminez l’intégration. Ensuite, personnalisez les catégories, les rubriques et les invites, configurez le transfert du journal de réseau CDN et ouvrez les [tableaux de bord](/help/dashboards/dashboards-overview.md) pour obtenir des informations plus complètes.
-
-**Expérience axée sur la marque :** par défaut, les nouveaux clients commencent par une interface ciblée et axée sur la marque, avec une configuration axée sur l’intégration. Dans cette nouvelle interface, chaque organisation commence par une marque active et d’autres marques suggérées parmi lesquelles choisir. Les clients LLM Optimizer existants passeront progressivement à cette expérience orientée marque.
+Pour commencer à utiliser LLM Optimizer, suivez le processus d’intégration. Ensuite, personnalisez les catégories, les rubriques et les invites, configurez le transfert du journal de réseau CDN et ouvrez les [tableaux de bord](/help/dashboards/dashboards-overview.md) pour obtenir des informations plus complètes.
 
 <!--Where steps differ by layout, use **Customer Configuration (classic experience)** or **Brands Management** / **Prompts Management**, whichever matches your current interface.-->
+
+## Expérience axée sur la marque {#brand-centric-experience}
+
+Par défaut, les nouveaux clients commencent par une interface ciblée et axée sur la marque, avec une configuration axée sur l’intégration. Dans cette nouvelle interface, chaque organisation commence par une marque active et d’autres marques suggérées parmi lesquelles choisir. Les clients LLM Optimizer existants passeront progressivement à cette expérience orientée marque.
 
 ## Vue d’ensemble de l’intégration
 
@@ -45,8 +47,8 @@ Le flux d’activation diffère en fonction de votre produit Adobe.
 
 Pour activer votre version d’évaluation, en tant que client AEM Cloud, vous pouvez effectuer l’une des opérations suivantes :
 
-* Accédez à [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) et utilisez la carte Annonce de produit pour activer LLM Optimizer. Après avoir sélectionné **Essayer LLM Optimizer**, vous êtes redirigé vers [https://llmo.now](https://llmo.now). Connectez-vous via IMS, puis saisissez un domaine et un nom de marque pour démarrer le processus d’intégration.
-* Ou accédez directement à [&#128279;](https://llmo.now) et connectez-vous.
+* Accédez à [](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) et utilisez la carte Annonce de produit pour activer LLM Optimizer. Après avoir sélectionné **Essayer LLM Optimizer**, vous êtes redirigé vers [https://llmo.now](https://llmo.now). Connectez-vous via IMS, puis saisissez un domaine et un nom de marque pour démarrer le processus d’intégration.
+* Ou accédez directement à [](https://llmo.now) et connectez-vous.
 
 ![Version d’évaluation de LLM Optimizer](/help/overview/assets/llm-trial.png)
 
@@ -54,12 +56,12 @@ Pour activer votre version d’évaluation, en tant que client AEM Cloud, vous p
 
 Si vous êtes client Adobe Analytics, une bannière s’affiche sur la page d’accueil d’Experience Cloud.
 
-![Page d’accueil d’Experience Cloud avec la bannière Démarrer la version d’évaluation de Adobe LLM Optimizer &#x200B;](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
+![Page d’accueil d’Experience Cloud avec la bannière Démarrer la version d’évaluation de Adobe LLM Optimizer ](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
 
 Vous pouvez activer votre version d’évaluation de l’une des façons suivantes :
 
 * Sélectionnez **Démarrer la version d’évaluation de Adobe LLM Optimizer** dans la bannière.
-* Accédez directement à [&#128279;](https://llmo.now) et connectez-vous.
+* Accédez directement à [](https://llmo.now) et connectez-vous.
 
 Une fois l’essai actif, continuez à intégrer votre nom de marque et votre domaine.
 
@@ -93,13 +95,13 @@ Intégrez votre nom de marque et votre domaine pour commencer à utiliser LLM Op
 
 Un petit ensemble de catégories, de rubriques et de prompts sera généré pendant la phase d’intégration. L’analyse de présence de la marque sur ces prompts sera disponible peu de temps après l’intégration de votre site.
 
-La possibilité de déployer des optimisations sur le serveur Edge est également disponible. Pour en savoir plus, consultez [Optimisation sur Edge - Questions fréquentes](https://experienceleague.adobe.com/fr/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+La possibilité de déployer des optimisations sur le serveur Edge est également disponible. Pour en savoir plus, consultez [Optimisation sur Edge - Questions fréquentes](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Configurez également le [transfert de journal CDN](#step-4) pour l’analyse du trafic. LLM Optimizer a besoin des données et des informations de Présence des marques des agences et du trafic de recommandation pour identifier les opportunités et fournir des recommandations prescriptives qui augmentent la visibilité de l&#39;IA.
 
 ### Clients cloud non AEM
 
-Une fois que votre organisation a finalisé l’accord commercial, vous êtes intégré à LLM Optimizer avec le domaine sélectionné par votre organisation. Une fois l’intégration terminée, connectez-vous à [&#128279;](https://llmo.now).
+Une fois que votre organisation a finalisé l’accord commercial, vous êtes intégré à LLM Optimizer avec le domaine sélectionné par votre organisation. Une fois l’intégration terminée, connectez-vous à [](https://llmo.now).
 
 ## Étape 2 : personnalisation des catégories, des rubriques et des prompts {#step-2-customize-categories-topics-and-prompts}
 
@@ -128,7 +130,7 @@ Si vous utilisez la navigation classique (et non l’expérience centrée sur la
 
 ### Expérience axée sur la marque
 
-Pour les clients qui utilisent une expérience orientée marque, vous pouvez ajouter des catégories, des rubriques et des invites comme suit :
+Pour les clients qui utilisent l’expérience orientée marque, vous pouvez ajouter des catégories, des rubriques et des invites comme suit :
 
 * **Catégories** — Accédez à **Gestion des marques** et cliquez sur **Catégories**. Les catégories sont définies au niveau mondial et s’appliquent à toutes les marques sous Brands Management.
 
@@ -144,7 +146,7 @@ Une fois votre domaine intégré, des informations initiales s’affichent dans 
 
 >[!NOTE]
 >
-> Pour les clients qui utilisent une expérience axée sur la marque, accédez à **Présence des marques** et sélectionnez une marque pour laquelle vous souhaitez afficher la Présence des marques à l’aide de la liste déroulante de marque. Vous pouvez également afficher la visibilité des marques au niveau **Toutes les marques** avec cette expérience.
+> Pour les clients qui utilisent l’expérience orientée marque, accédez à **Présence des marques** et sélectionnez une marque pour laquelle vous souhaitez afficher la Présence des marques à l’aide de la liste déroulante marque. Vous pouvez également afficher la visibilité des marques au niveau **Toutes les marques** avec cette expérience.
 
 ## Étape 4 : fournir des informations pour le transfert du journal CDN {#step-4}
 
@@ -164,9 +166,9 @@ Si aucun fournisseur de réseau CDN n’a été ajouté au préalable (comme dé
 >[!NOTE]
 >Pour plus d’informations sur le transfert de journal lors de l’utilisation d’un réseau CDN géré par le client (BYOCDN), consultez [Présentation du transfert de journal BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
-### Expérience axée sur la marque
+### Transfert de journal CDN d’expérience basé sur l’utilisation de Brand Portal
 
-Pour les clients qui utilisent une expérience axée sur la marque, vous pouvez ajouter des informations de transfert de journal CDN à partir de **Brands Management** comme suit : ouvrez **Brands Management** et cliquez sur le libellé **CDN**.
+Pour les clients disposant d’une expérience orientée marque, vous pouvez ajouter des informations de transfert de journal CDN depuis **Brands Management** comme suit : ouvrez **Brands Management** et cliquez sur le libellé **CDN**.
 
 ![Gestion des marques — Transfert des journaux CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
@@ -175,7 +177,7 @@ Pour les clients qui utilisent une expérience axée sur la marque, vous pouvez 
 Après avoir fourni des informations pour le transfert du journal CDN, vous pouvez :
 
 * afficher le tableau de bord de la [présence de la marque](/help/dashboards/brand-presence.md), visualiser votre score de visibilité et suivre vos performances par rapport aux autres marques ;
-* Explorez les tableaux de bord [Agentic](/help/dashboards/agentic-traffic.md) et [Trafic de recommandation &#x200B;](/help/dashboards/referral-traffic.md), si le transfert du journal CDN a été configuré.
+* Explorez les tableaux de bord [Agentic](/help/dashboards/agentic-traffic.md) et [Trafic de recommandation ](/help/dashboards/referral-traffic.md), si le transfert du journal CDN a été configuré.
 * Utiliser les [opportunités](/help/dashboards/opportunities.md) pour identifier les améliorations de contenu et techniques ;
 * exporter des données et collaborer avec votre équipe ou inviter vos collègues à utiliser le produit.
 
