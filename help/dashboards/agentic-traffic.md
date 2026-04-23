@@ -2,7 +2,7 @@
 title: Trafic généré par l’IA agentique
 description: Découvrez comment utiliser le tableau de bord du trafic généré par l’IA agentique afin de voir comment les agents d’IA interagissent avec votre site.
 feature: Agentic Traffic
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 90%
@@ -33,7 +33,7 @@ Si vous utilisez l’[expérience centrée sur les marques](/help/overview/quick
 
 Sans **transfert des journaux CDN**, le tableau de bord du trafic généré par l’IA agentique est vide. Pour afficher les interactions agentiques, vous devez configurer le **transfert des journaux CDN**.
 
-### Configuration client (navigation classique) :
+### Configuration du client (navigation classique)
 
 Lors de la première connexion, un message s’affiche, comme illustré dans l’image ci-dessous.
 
