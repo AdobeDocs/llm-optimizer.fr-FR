@@ -2,7 +2,7 @@
 title: Présence de la marque
 description: Découvrez comment utiliser le tableau de bord de présence de la marque pour comprendre comment votre marque est perçue au niveau des réponses générées par l’IA.
 feature: Brand Presence
-source-git-commit: be88e6a5fbabbc9c1ceb75b49b883cde92ab98b2
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 96%
@@ -24,7 +24,7 @@ Cette page contient les éléments suivants :
 * [Évolution du sentiment](#sentiment-trend)
 * [Informations sur les données](#data-insights)
 
-Si vous utilisez l’expérience orientée marque, accédez à la Présence des marques **&#x200B;**. Dans la liste déroulante des marques, sélectionnez la marque à analyser ou choisissez **Toutes les marques** pour examiner la visibilité sur l’ensemble de vos marques.
+Si vous utilisez l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), accédez à la Présence des marques **&#x200B;**. Dans la liste déroulante des marques, sélectionnez la marque à analyser ou choisissez **Toutes les marques** pour examiner la visibilité sur l’ensemble de vos marques.
 
 ![Présence des marques avec le sélecteur de marque (expérience orientée marque)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 

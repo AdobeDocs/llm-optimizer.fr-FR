@@ -2,9 +2,9 @@
 title: Démarrage rapide
 description: Découvrez comment intégrer votre nom de marque et votre domaine, activer votre version d’essai à partir d’Experience Hub ou d’Experience Cloud et terminer la configuration pour Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: d38cf066ca1e3785032b7beca1c257e3a42f532b
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1459'
 ht-degree: 37%
 
 ---
@@ -12,11 +12,13 @@ ht-degree: 37%
 
 # Démarrage rapide
 
-Pour commencer à utiliser LLM Optimizer, terminez l’intégration. Ensuite, personnalisez les catégories, les rubriques et les invites, configurez le transfert du journal de réseau CDN et ouvrez les [tableaux de bord](/help/dashboards/dashboards-overview.md) pour obtenir des informations plus complètes.
-
-**Expérience axée sur la marque :** par défaut, les nouveaux clients commencent par une interface ciblée et axée sur la marque, avec une configuration axée sur l’intégration. Dans cette nouvelle interface, chaque organisation commence par une marque active et d’autres marques suggérées parmi lesquelles choisir. Les clients LLM Optimizer existants passeront progressivement à cette expérience orientée marque.
+Pour commencer à utiliser LLM Optimizer, suivez le processus d’intégration. Ensuite, personnalisez les catégories, les rubriques et les invites, configurez le transfert du journal de réseau CDN et ouvrez les [tableaux de bord](/help/dashboards/dashboards-overview.md) pour obtenir des informations plus complètes.
 
 <!--Where steps differ by layout, use **Customer Configuration (classic experience)** or **Brands Management** / **Prompts Management**, whichever matches your current interface.-->
+
+## Expérience axée sur la marque {#brand-centric-experience}
+
+Par défaut, les nouveaux clients commencent par une interface ciblée et axée sur la marque, avec une configuration axée sur l’intégration. Dans cette nouvelle interface, chaque organisation commence par une marque active et d’autres marques suggérées parmi lesquelles choisir. Les clients LLM Optimizer existants passeront progressivement à cette expérience orientée marque.
 
 ## Vue d’ensemble de l’intégration
 
@@ -128,7 +130,7 @@ Si vous utilisez la navigation classique (et non l’expérience centrée sur la
 
 ### Expérience axée sur la marque
 
-Pour les clients qui utilisent une expérience orientée marque, vous pouvez ajouter des catégories, des rubriques et des invites comme suit :
+Pour les clients qui utilisent l’expérience orientée marque, vous pouvez ajouter des catégories, des rubriques et des invites comme suit :
 
 * **Catégories** — Accédez à **Gestion des marques** et cliquez sur **Catégories**. Les catégories sont définies au niveau mondial et s’appliquent à toutes les marques sous Brands Management.
 
@@ -144,7 +146,7 @@ Une fois votre domaine intégré, des informations initiales s’affichent dans 
 
 >[!NOTE]
 >
-> Pour les clients qui utilisent une expérience axée sur la marque, accédez à **Présence des marques** et sélectionnez une marque pour laquelle vous souhaitez afficher la Présence des marques à l’aide de la liste déroulante de marque. Vous pouvez également afficher la visibilité des marques au niveau **Toutes les marques** avec cette expérience.
+> Pour les clients qui utilisent l’expérience orientée marque, accédez à **Présence des marques** et sélectionnez une marque pour laquelle vous souhaitez afficher la Présence des marques à l’aide de la liste déroulante marque. Vous pouvez également afficher la visibilité des marques au niveau **Toutes les marques** avec cette expérience.
 
 ## Étape 4 : fournir des informations pour le transfert du journal CDN {#step-4}
 
@@ -164,9 +166,9 @@ Si aucun fournisseur de réseau CDN n’a été ajouté au préalable (comme dé
 >[!NOTE]
 >Pour plus d’informations sur le transfert de journal lors de l’utilisation d’un réseau CDN géré par le client (BYOCDN), consultez [Présentation du transfert de journal BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
-### Expérience axée sur la marque
+### Transfert de journal CDN d’expérience basé sur l’utilisation de Brand Portal
 
-Pour les clients qui utilisent une expérience axée sur la marque, vous pouvez ajouter des informations de transfert de journal CDN à partir de **Brands Management** comme suit : ouvrez **Brands Management** et cliquez sur le libellé **CDN**.
+Pour les clients disposant d’une expérience orientée marque, vous pouvez ajouter des informations de transfert de journal CDN depuis **Brands Management** comme suit : ouvrez **Brands Management** et cliquez sur le libellé **CDN**.
 
 ![Gestion des marques — Transfert des journaux CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
