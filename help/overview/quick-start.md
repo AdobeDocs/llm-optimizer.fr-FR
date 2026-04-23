@@ -45,8 +45,8 @@ Le flux d’activation diffère en fonction de votre produit Adobe.
 
 Pour activer votre version d’évaluation, en tant que client AEM Cloud, vous pouvez effectuer l’une des opérations suivantes :
 
-* Accédez à [](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) et utilisez la carte Annonce de produit pour activer LLM Optimizer. Après avoir sélectionné **Essayer LLM Optimizer**, vous êtes redirigé vers [https://llmo.now](https://llmo.now). Connectez-vous via IMS, puis saisissez un domaine et un nom de marque pour démarrer le processus d’intégration.
-* Ou accédez directement à [](https://llmo.now) et connectez-vous.
+* Accédez à [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) et utilisez la carte Annonce de produit pour activer LLM Optimizer. Après avoir sélectionné **Essayer LLM Optimizer**, vous êtes redirigé vers [https://llmo.now](https://llmo.now). Connectez-vous via IMS, puis saisissez un domaine et un nom de marque pour démarrer le processus d’intégration.
+* Ou accédez directement à [&#128279;](https://llmo.now) et connectez-vous.
 
 ![Version d’évaluation de LLM Optimizer](/help/overview/assets/llm-trial.png)
 
@@ -54,12 +54,12 @@ Pour activer votre version d’évaluation, en tant que client AEM Cloud, vous p
 
 Si vous êtes client Adobe Analytics, une bannière s’affiche sur la page d’accueil d’Experience Cloud.
 
-![Page d’accueil d’Experience Cloud avec la bannière Démarrer la version d’évaluation de Adobe LLM Optimizer ](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
+![Page d’accueil d’Experience Cloud avec la bannière Démarrer la version d’évaluation de Adobe LLM Optimizer &#x200B;](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
 
 Vous pouvez activer votre version d’évaluation de l’une des façons suivantes :
 
 * Sélectionnez **Démarrer la version d’évaluation de Adobe LLM Optimizer** dans la bannière.
-* Accédez directement à [](https://llmo.now) et connectez-vous.
+* Accédez directement à [&#128279;](https://llmo.now) et connectez-vous.
 
 Une fois l’essai actif, continuez à intégrer votre nom de marque et votre domaine.
 
@@ -99,7 +99,7 @@ Configurez également le [transfert de journal CDN](#step-4) pour l’analyse du
 
 ### Clients cloud non AEM
 
-Une fois que votre organisation a finalisé l’accord commercial, vous êtes intégré à LLM Optimizer avec le domaine sélectionné par votre organisation. Une fois l’intégration terminée, connectez-vous à [](https://llmo.now).
+Une fois que votre organisation a finalisé l’accord commercial, vous êtes intégré à LLM Optimizer avec le domaine sélectionné par votre organisation. Une fois l’intégration terminée, connectez-vous à [&#128279;](https://llmo.now).
 
 ## Étape 2 : personnalisation des catégories, des rubriques et des prompts {#step-2-customize-categories-topics-and-prompts}
 
@@ -175,7 +175,7 @@ Pour les clients qui utilisent une expérience axée sur la marque, vous pouvez 
 Après avoir fourni des informations pour le transfert du journal CDN, vous pouvez :
 
 * afficher le tableau de bord de la [présence de la marque](/help/dashboards/brand-presence.md), visualiser votre score de visibilité et suivre vos performances par rapport aux autres marques ;
-* Explorez les tableaux de bord [Agentic](/help/dashboards/agentic-traffic.md) et [Trafic de recommandation ](/help/dashboards/referral-traffic.md), si le transfert du journal CDN a été configuré.
+* Explorez les tableaux de bord [Agentic](/help/dashboards/agentic-traffic.md) et [Trafic de recommandation &#x200B;](/help/dashboards/referral-traffic.md), si le transfert du journal CDN a été configuré.
 * Utiliser les [opportunités](/help/dashboards/opportunities.md) pour identifier les améliorations de contenu et techniques ;
 * exporter des données et collaborer avec votre équipe ou inviter vos collègues à utiliser le produit.
 
