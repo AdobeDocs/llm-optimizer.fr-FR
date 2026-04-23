@@ -2,10 +2,10 @@
 title: Bonnes pratiques relatives aux catégories, rubriques, prompts et autres
 description: Optimisez les informations des LLM en configurant des catégories, des rubriques, des prompts et d’autres marques pour effectuer le suivi, y compris de la concurrence, pour une surveillance de marque personnalisée et une analyse de contenu stratégique.
 feature: Best Practices, Customer Configuration
-source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
-workflow-type: ht
-source-wordcount: '1435'
-ht-degree: 100%
+source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
+workflow-type: tm+mt
+source-wordcount: '1530'
+ht-degree: 93%
 
 ---
 
@@ -21,6 +21,20 @@ Dans le tableau de bord [[!UICONTROL Configuration cliente]](/help/dashboards/cu
 ![Fenêtre de configuration cliente](/help/assets/best-practices/customer-configuration-best-practices.png)
 
 Dans le tableau de bord [!UICONTROL Configuration cliente], vous pouvez personnaliser des catégories (telles que des unités commerciales ou des lignes de produits), effectuer le suivi d’autres marques et ajouter des alias de mention de marque pour capturer toutes les variations de votre marque dans les prompts. Cette configuration garantit que la plateforme adapte les informations à votre contexte commercial, ce qui permet une visibilité, un trafic et une analyse des opportunités précis.
+
+## Expérience axée sur la marque
+
+Par défaut, les nouveaux clients commencent par une interface ciblée et axée sur la marque, avec une configuration axée sur l’intégration. Dans cette nouvelle interface, chaque organisation commence par une marque active et d’autres marques suggérées parmi lesquelles choisir. Les clients LLM Optimizer existants passeront progressivement à cette expérience orientée marque.
+
+Si vous bénéficiez d’une expérience axée sur la marque, **Brands Management** vous permet de définir la manière dont votre marque est surveillée et analysée.
+
+![Brand Management : navigation dans l’application (expérience orientée marque)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+
+![Gestion des marques — Présentation de la configuration](/help/assets/brand-centric-experience/brands-management-configuration.png)
+
+Pour configurer des rubriques et des invites pour une marque spécifique, utilisez **Gestion des invites**.
+
+![Gestion des invites](/help/assets/brand-centric-experience/prompts-management.png)
 
 ## Bibliothèque de prompts sectoriels
 

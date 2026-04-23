@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 'Boostez votre marque avec Adobe LLM Optimizer. Suivez des mentions, découvrez des informations et imposez-vous dans la recherche optimisée par l’IA. Prenez le contrôle de votre visibilité : commencez à l’optimiser dès maintenant !'
-source-git-commit: e9eab92835e555f7267f58eea7faa0302c2f1cd0
+source-git-commit: 5e033e9cef05efaf96a6c71ebeae71c533ddd605
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 70%
+source-wordcount: '113'
+ht-degree: 68%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 70%
    + [Autre (Chargement Manuel)](/help/overview/log-forwarding/other.md)
 + Ressources supplémentaires{#resources}
    + Optimize at Edge{#optimize-at-edge}
-      + [Présentation](/help/dashboards/optimize-at-edge/overview.md)
+      + [Présentation de l’optimisation dans Edge](/help/dashboards/optimize-at-edge/overview.md)
       + [Récupération des clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md)
       + [Réseau CDN géré par AEM Cloud Service (Fastly)](/help/dashboards/optimize-at-edge/aemcs-managed-cdn.md)
       + [Fastly (BYOCDN)](/help/dashboards/optimize-at-edge/fastly-byocdn.md)
