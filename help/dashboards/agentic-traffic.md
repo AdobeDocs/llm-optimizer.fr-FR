@@ -2,10 +2,10 @@
 title: Trafic généré par l’IA agentique
 description: Découvrez comment utiliser le tableau de bord du trafic généré par l’IA agentique afin de voir comment les agents d’IA interagissent avec votre site.
 feature: Agentic Traffic
-source-git-commit: 21c14895ea9c1978332af3d742baacbe53079e88
+source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 94%
+source-wordcount: '1404'
+ht-degree: 89%
 
 ---
 
@@ -25,9 +25,19 @@ Cette page contient les éléments suivants :
 * [Meilleures et pires performances](#top-bottom-movers)
 * [Analyse des performances des URL et des agents utilisateurs](#user-url-performance)
 
+Si vous bénéficiez d’une expérience axée sur la marque, accédez à **Trafic agent** et sélectionnez le site pour lequel vous souhaitez afficher les informations sur le trafic agent.
+
+![Trafic d’agent — sélecteur de site (expérience orientée marque)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+
 ## Transfert de journaux CDN {#cdn-setup}
 
-Sans **transfert des journaux CDN**, le tableau de bord du trafic généré par l’IA agentique est vide. Pour afficher les interactions agentiques, vous devez configurer le **transfert des journaux CDN**.  Lors de la première connexion, un message s’affiche, comme illustré dans l’image ci-dessous.
+Sans **transfert des journaux CDN**, le tableau de bord du trafic généré par l’IA agentique est vide. Pour afficher les interactions agentiques, vous devez configurer le **transfert des journaux CDN**.
+
+Si vous bénéficiez d’une expérience axée sur la marque, vous pouvez ajouter des informations sur le transfert de journal CDN en accédant à **Brands Management** et en cliquant sur le libellé **CDN**.
+
+![Gestion des marques — Transfert des journaux CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
+
+**Configuration du client (navigation classique) :** lors de la première connexion, un message s’affiche, comme illustré dans l’image ci-dessous.
 
 ![Configuration du réseau CDN](/help/dashboards/assets/ag-log-forward1.png)
 

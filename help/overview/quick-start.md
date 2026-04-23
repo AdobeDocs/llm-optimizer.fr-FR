@@ -2,17 +2,21 @@
 title: Démarrage rapide
 description: Découvrez comment intégrer votre nom de marque et votre domaine, activer votre version d’essai à partir d’Experience Hub ou d’Experience Cloud et terminer la configuration pour Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: dcbeb1c61dd9dcefd83908f65f8303d36c0fb78e
+source-git-commit: d38cf066ca1e3785032b7beca1c257e3a42f532b
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 47%
+source-wordcount: '1454'
+ht-degree: 37%
 
 ---
 
 
 # Démarrage rapide
 
-Pour commencer à utiliser LLM Optimizer, vous devez terminer le processus d’intégration. Après l’intégration, vous pourrez personnaliser les catégories, les rubriques, les invites et configurer le transfert du journal pour obtenir des informations plus précises et un accès complet aux [tableaux de bord de &#x200B;](/help/dashboards/dashboards-overview.md) ainsi qu’à d’autres fonctionnalités.
+Pour commencer à utiliser LLM Optimizer, terminez l’intégration. Ensuite, personnalisez les catégories, les rubriques et les invites, configurez le transfert du journal de réseau CDN et ouvrez les [tableaux de bord](/help/dashboards/dashboards-overview.md) pour obtenir des informations plus complètes.
+
+**Expérience axée sur la marque :** par défaut, les nouveaux clients commencent par une interface ciblée et axée sur la marque, avec une configuration axée sur l’intégration. Dans cette nouvelle interface, chaque organisation commence par une marque active et d’autres marques suggérées parmi lesquelles choisir. Les clients LLM Optimizer existants passeront progressivement à cette expérience orientée marque.
+
+<!--Where steps differ by layout, use **Customer Configuration (classic experience)** or **Brands Management** / **Prompts Management**, whichever matches your current interface.-->
 
 ## Vue d’ensemble de l’intégration
 
@@ -97,13 +101,17 @@ Configurez également le [transfert de journal CDN](#step-4) pour l’analyse du
 
 Une fois que votre organisation a finalisé l’accord commercial, vous êtes intégré à LLM Optimizer avec le domaine sélectionné par votre organisation. Une fois l’intégration terminée, connectez-vous à [&#128279;](https://llmo.now).
 
-## Étape 2 : personnalisation des catégories, des rubriques et des prompts
+## Étape 2 : personnalisation des catégories, des rubriques et des prompts {#step-2-customize-categories-topics-and-prompts}
 
-Une fois votre site intégré, vous pouvez afficher l’analyse de présence de la marque en fonction du petit ensemble de propts qui ont été générés automatiquement pendant la phase d’intégration. À l’avenir, vous pourrez personnaliser les catégories, les rubriques et les pompts de votre marque. Cette configuration est créée dans le [tableau de bord de configuration cliente](/help/dashboards/customer-configuration.md).
+Une fois votre site intégré, vous pouvez afficher l’analyse de présence de la marque en fonction du petit ensemble de propts qui ont été générés automatiquement pendant la phase d’intégration. À l’avenir, vous pourrez personnaliser les catégories, les rubriques et les invites de votre marque.
+
+### Configuration du client (navigation classique)
+
+Si vous utilisez la navigation classique (et non l’expérience centrée sur la marque), vous pouvez personnaliser les catégories, les rubriques et les invites de votre marque à partir du [tableau de bord de configuration du client](/help/dashboards/customer-configuration.md).
 
 ![Tableau de bord de configuration cliente](/help/overview/assets/prompt-creation.png)
 
-À partir de ce tableau de bord, vous pouvez :
+À partir du tableau de bord de configuration du client, vous pouvez :
 
 * ajouter de **nouvelles catégories** qui correspondent aux priorités de votre entreprise ; Les catégories peuvent être de larges zones de contenu pertinentes pour votre domaine.
 * saisir des **rubriques ou sous-rubriques personnalisées** dont vous souhaitez effectuer le suivi ; Les rubriques peuvent être des thèmes spécifiques liés à un volume élevé de mots-clés sans marque associés à votre domaine.
@@ -118,13 +126,33 @@ Une fois votre site intégré, vous pouvez afficher l’analyse de présence de 
 >
 > Pour plus d’informations sur la configuration des catégories, rubriques et prompts, reportez-vous à la page [Bonnes pratiques pour la configuration des catégories, rubriques, prompts](/help/overview/best-practices-topics-prompts.md).
 
+### Expérience axée sur la marque
+
+Pour les clients qui utilisent une expérience orientée marque, vous pouvez ajouter des catégories, des rubriques et des invites comme suit :
+
+* **Catégories** — Accédez à **Gestion des marques** et cliquez sur **Catégories**. Les catégories sont définies au niveau mondial et s’appliquent à toutes les marques sous Brands Management.
+
+  ![Gestion des marques avec les catégories dans la navigation](/help/assets/brand-centric-experience/llmo-app-shell.png)
+
+* **Rubriques et invites** — Accédez à **Gestion des invites** pour créer des rubriques et des invites, y compris des invites pour une marque spécifique.
+
+  ![Gestion des invites](/help/assets/brand-centric-experience/prompts-management.png)
+
 ## Étape 3 : informations sur la présence de la marque
 
 Une fois votre domaine intégré, des informations initiales s’affichent dans la vue Présence de la marque en fonction des prompts qui ont été générés automatiquement lors de l’intégration. Une fois que vous avez personnalisé vos propres catégories, rubriques et prompts, LLM Optimizer déclenche automatiquement l’analyse de présence de la marque sur les prompts que vous avez fournis et les résultats seront disponibles sous 24 heures.
 
+>[!NOTE]
+>
+> Pour les clients qui utilisent une expérience axée sur la marque, accédez à **Présence des marques** et sélectionnez une marque pour laquelle vous souhaitez afficher la Présence des marques à l’aide de la liste déroulante de marque. Vous pouvez également afficher la visibilité des marques au niveau **Toutes les marques** avec cette expérience.
+
 ## Étape 4 : fournir des informations pour le transfert du journal CDN {#step-4}
 
-Pour déverrouiller les informations sur le trafic et le Trafic de recommandation Agentic, ajoutez les informations de transfert de journal CDN depuis le tableau de bord [configuration du client](/help/dashboards/customer-configuration.md#cdn-configuration). Ouvrez l’onglet **Configuration du réseau CDN** et sélectionnez **Réseau CDN intégré**.
+Pour déverrouiller les informations sur le trafic et le Trafic de recommandation Agentic, enregistrez le transfert des journaux CDN afin que LLM Optimizer puisse lire vos journaux d’accès.
+
+### Configuration du client (navigation classique)
+
+Si vous utilisez la navigation classique, vous pouvez ajouter des informations de transfert de journal CDN à partir du [tableau de bord de configuration du client](/help/dashboards/customer-configuration.md#cdn-configuration). Ouvrez l’onglet **Configuration du réseau CDN** et sélectionnez **Réseau CDN intégré**.
 
 ![Configuration cliente du CDN](/help/overview/assets/cc-cdn.png)
 
@@ -136,6 +164,12 @@ Si aucun fournisseur de réseau CDN n’a été ajouté au préalable (comme dé
 >[!NOTE]
 >Pour plus d’informations sur le transfert de journal lors de l’utilisation d’un réseau CDN géré par le client (BYOCDN), consultez [Présentation du transfert de journal BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
+### Expérience axée sur la marque
+
+Pour les clients qui utilisent une expérience axée sur la marque, vous pouvez ajouter des informations de transfert de journal CDN à partir de **Brands Management** comme suit : ouvrez **Brands Management** et cliquez sur le libellé **CDN**.
+
+![Gestion des marques — Transfert des journaux CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
+
 ## Étape 5 : explorer les tableaux de bord et prendre des mesures
 
 Après avoir fourni des informations pour le transfert du journal CDN, vous pouvez :
@@ -144,5 +178,8 @@ Après avoir fourni des informations pour le transfert du journal CDN, vous pouv
 * Explorez les tableaux de bord [Agentic](/help/dashboards/agentic-traffic.md) et [Trafic de recommandation &#x200B;](/help/dashboards/referral-traffic.md), si le transfert du journal CDN a été configuré.
 * Utiliser les [opportunités](/help/dashboards/opportunities.md) pour identifier les améliorations de contenu et techniques ;
 * exporter des données et collaborer avec votre équipe ou inviter vos collègues à utiliser le produit.
+
+>[!NOTE]
+> Dans l’expérience orientée marque , accédez à la vue souhaitée à partir de la section navigation à gauche.
 
 Enfin, pour comprendre pleinement les fonctionnalités de LLM Optimizer, vous devez explorer tous les [tableaux de bord](/help/dashboards/dashboards-overview.md) disponibles.

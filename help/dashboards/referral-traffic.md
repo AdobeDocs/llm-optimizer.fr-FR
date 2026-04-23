@@ -2,10 +2,10 @@
 title: Trafic de recommandation
 description: Découvrez comment utiliser le tableau de bord du trafic de recommandation pour voir comment les visiteurs et visiteuses accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de recommandation.
 feature: Referral Traffic
-source-git-commit: c0ef7710411a01410fddf87b0c4344eb782c264f
+source-git-commit: ea4cf80dc5f789f7938c800354bc8d8d3246704c
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 90%
+source-wordcount: '741'
+ht-degree: 79%
 
 ---
 
@@ -27,9 +27,17 @@ Cette page contient les éléments suivants :
 * [Principales URL de recommandation](#top-referrals)
 * [Détails du trafic de recommandation](#traffic-details)
 
+Si vous utilisez une expérience axée sur la marque, accédez à **Trafic de recommandation** et sélectionnez le site pour lequel vous souhaitez afficher les informations sur le Trafic de recommandation LLM.
+
+![Trafic de recommandation — sélecteur de site (expérience centrée sur la marque)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
+
 ## Configuration {#setup}
 
-Lors de la première connexion, le tableau de bord du trafic de recommandation peut apparaître vide. Pour afficher vos données, vous devez configurer le [transfert des journaux CDN](/help/dashboards/customer-configuration.md#cdn-configuration) en sélectionnant **Accéder à la configuration**.
+Lors de la première connexion, le tableau de bord du trafic de recommandation peut apparaître vide. Pour afficher vos données, vous devez configurer le transfert du journal du réseau CDN.
+
+Pour les clients qui privilégient une expérience axée sur la marque, voici comment ajouter des informations sur le transfert de journal sur le réseau CDN. Accédez à **Brands Management** et cliquez sur le libellé **CDN**. Voir aussi [Trafic dynamique — Configuration du réseau CDN](/help/dashboards/agentic-traffic.md#cdn-setup).
+
+**Configuration du client (expérience classique) :** configurer [transfert du journal CDN](/help/dashboards/customer-configuration.md#cdn-configuration) en sélectionnant **Accéder à la configuration**.
 
 ![Configuration du trafic de recommandation](/help/dashboards/assets/referral-setup1.png)
 
