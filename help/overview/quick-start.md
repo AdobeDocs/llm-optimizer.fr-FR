@@ -2,9 +2,9 @@
 title: Démarrage rapide
 description: Découvrez comment intégrer votre nom de marque et votre domaine, activer votre version d’essai à partir d’Experience Hub ou d’Experience Cloud et terminer la configuration pour Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1463'
 ht-degree: 37%
 
 ---
@@ -128,7 +128,7 @@ Si vous utilisez la navigation classique (et non l’expérience centrée sur la
 >
 > Pour plus d’informations sur la configuration des catégories, rubriques et prompts, reportez-vous à la page [Bonnes pratiques pour la configuration des catégories, rubriques, prompts](/help/overview/best-practices-topics-prompts.md).
 
-### Expérience axée sur la marque
+### Catégories d’expériences, rubriques et invites axées sur la marque
 
 Pour les clients qui utilisent l’expérience orientée marque, vous pouvez ajouter des catégories, des rubriques et des invites comme suit :
 

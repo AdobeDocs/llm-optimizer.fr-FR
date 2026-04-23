@@ -2,10 +2,10 @@
 title: Trafic de recommandation
 description: Découvrez comment utiliser le tableau de bord du trafic de recommandation pour voir comment les visiteurs et visiteuses accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de recommandation.
 feature: Referral Traffic
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 79%
+source-wordcount: '734'
+ht-degree: 80%
 
 ---
 
@@ -35,7 +35,7 @@ Si vous utilisez l’[expérience orientée marque](/help/overview/quick-start.m
 
 Lors de la première connexion, le tableau de bord du trafic de recommandation peut apparaître vide. Pour afficher vos données, vous devez configurer le transfert du journal du réseau CDN.
 
-Pour les clients qui utilisent l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), vous pouvez ajouter des informations sur le transfert de journal CDN en accédant à **Gestion des marques** et en cliquant sur le libellé **CDN**. Voir aussi [Trafic dynamique — Configuration du réseau CDN](/help/dashboards/agentic-traffic.md#cdn-setup).
+Pour les clients qui utilisent l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), vous pouvez ajouter des informations sur le transfert de journal CDN en accédant à **Gestion des marques** et en cliquant sur le libellé **CDN**.
 
 **Configuration du client (expérience classique) :** configurer [transfert du journal CDN](/help/dashboards/customer-configuration.md#cdn-configuration) en sélectionnant **Accéder à la configuration**.
 
