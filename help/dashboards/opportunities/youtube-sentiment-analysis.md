@@ -2,9 +2,9 @@
 title: Analyse du Sentiment YouTube
 description: Découvrez comment LLM Optimizer analyse les vidéos et les commentaires de YouTube pour faire apparaître des recommandations qui améliorent la perception et la visibilité de votre marque dans les résultats Recherche optimisée par l'IA.
 feature: Opportunities
-source-git-commit: 101a0582a5112c7fdf1871a938b773b7159a9d4c
+source-git-commit: 91fcd44f97e996fa7eb712928aba5dda250ea55b
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1255'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ Il montre :
 
 Effectue le suivi de la perception de la marque sur le contenu analysé avec un graphique de **répartition du Sentiment** indiquant la répartition en pourcentage du sentiment favorable, neutre et défavorable pour les vidéos et les commentaires.
 
-![Analyse de Sentiment &#x200B;](/help/dashboards/opportunities/assets/youtube-sentiment-distribution.png)
+![Analyse de Sentiment ](/help/dashboards/opportunities/assets/youtube-sentiment-distribution.png)
 
 ### Vidéos
 
@@ -119,7 +119,7 @@ Un tableau des rubriques récurrentes identifiées dans le contenu analysé, pr�
 - **Mentions de marque** — Nombre de mentions de marque associées à la rubrique.
 - **Sentiment** — sentiment global associé à la rubrique.
 
-Le tableau **Rubriques** s’affiche dans la même vue Performances que le tableau Vidéos ; consultez la figure de la section [Vidéos](#videos) ci-dessus.
+Le tableau **Rubriques** apparaît dans la même vue Performances que le tableau Vidéos ; reportez-vous à la figure de la section [Vidéos](#videos) ci-dessus.
 
 ## Faites un essai dans la démonstration
 
