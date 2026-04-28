@@ -2,7 +2,7 @@
 title: Optimize at Edge
 description: Découvrez comment diffuser des optimisations dans LLM Optimizer à la périphérie du réseau CDN sans apporter de modifications.
 feature: Opportunities
-source-git-commit: 96bb7d73c8cdd2151df12030bbf28723857c78e1
+source-git-commit: 34e90bc95aa1d2ffabe8fd06c2c548491dd5c5b7
 workflow-type: tm+mt
 source-wordcount: '2315'
 ht-degree: 73%
@@ -32,7 +32,7 @@ Optimize at Edge est conçu pour les utilisateurs et les utilisatrices des équi
 
 ### Quelles sont les opportunités prises en charge avec Optimize at Edge ?
 
-Les opportunités qui peuvent améliorer l’expérience web agentique sont prises en charge avec Optimize at Edge. Pour en savoir plus sur chaque opportunité, consultez la page [Tableau de bord des opportunités](/help/dashboards/opportunities.md) et la section des opportunités de la page active.
+Les opportunités qui peuvent améliorer l’expérience web agentique sont prises en charge avec Optimize at Edge. Pour en savoir plus sur chaque opportunité, consultez la page [Tableau de bord des opportunités](/help/dashboards/opportunities-overview.md) et la section des opportunités de la page active.
 
 ## Intégration
 

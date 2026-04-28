@@ -2,7 +2,7 @@
 title: Opportunités d’optimisation
 description: Découvrez comment utiliser le tableau de bord des opportunités pour détecter automatiquement comment votre site peut être amélioré afin d’augmenter la visibilité de la marque.
 feature: Opportunities
-source-git-commit: 96bb7d73c8cdd2151df12030bbf28723857c78e1
+source-git-commit: 34e90bc95aa1d2ffabe8fd06c2c548491dd5c5b7
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 58%
