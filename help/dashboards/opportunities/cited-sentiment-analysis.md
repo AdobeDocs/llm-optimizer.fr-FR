@@ -71,9 +71,9 @@ Il montre :
 
 ### Analyse des sentiments
 
-Effectue le suivi de la perception de la marque sur les pages analysées avec un graphique de répartition des Sentiments **** indiquant la répartition en pourcentage des sentiments favorables, neutres et défavorables sur plusieurs pages.
+Effectue le suivi de la perception de la marque sur les pages analysées avec un graphique de répartition des Sentiments **&#x200B;**&#x200B;indiquant la répartition en pourcentage des sentiments favorables, neutres et défavorables sur plusieurs pages.
 
-![Analyse de Sentiment ](/help/dashboards/opportunities/assets/cited-sentiment-distribution.png)
+![Analyse de Sentiment &#x200B;](/help/dashboards/opportunities/assets/cited-sentiment-distribution.png)
 
 ### Pages
 

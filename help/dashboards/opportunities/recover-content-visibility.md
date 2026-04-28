@@ -22,9 +22,9 @@ Il présente trois mesures clés en un coup d’œil :
 - **Gain de contenu estimé** — Multiplicateur estimé de contenu qui peut être récupéré en appliquant l’optimisation.
 - **Visibilité du contenu moyenne** : pourcentage moyen de contenu actuellement visible par les agents d’IA sur les pages affectées.
 
-![Récupérer le tableau de bord des Visibilités du contenu ](/help/dashboards/opportunities/assets/recover-content-visibility-overview.png)
+![Récupérer le tableau de bord des Visibilités du contenu &#x200B;](/help/dashboards/opportunities/assets/recover-content-visibility-overview.png)
 
-Pour un aperçu vidéo de cette opportunité, vous pouvez regarder [Récupérer la Visibilité du contenu ](https://www.youtube.com/watch?v=BigPyJssFCw).
+Pour un aperçu vidéo de cette opportunité, vous pouvez regarder [Récupérer la Visibilité du contenu &#x200B;](https://www.youtube.com/watch?v=BigPyJssFCw).
 
 Cette opportunité peut être optimisée à l’aide de [Optimiser sur Edge](/help/dashboards/optimize-at-edge/overview.md). Les optimisations sont diffusées exclusivement aux agents d’IA sans impact sur les visiteurs humains (diffusion en robots uniquement). Les optimisations sont ensuite appliquées à la couche CDN sans modifications de CMS requises et peuvent prendre effet en quelques minutes sans intervention des développeurs, ce qui en fait un déploiement rapide et à faible risque.
 
@@ -64,7 +64,7 @@ Une fois que vous avez examiné les suggestions et sélectionné les URL à opti
 >
 >Le déploiement des optimisations nécessite l’achèvement du processus d’intégration Optimizer at Edge. Si vous n’avez pas encore intégré, cliquez sur **Déployer les optimisations** pour être redirigé(e) vers le processus d’intégration. Pour plus d’informations sur le fonctionnement d’Optimize at Edge, les fournisseurs de réseau CDN pris en charge et le processus d’intégration, consultez la page [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md).
 
-![ Boîte de dialogue Déployer sur Edge ](/help/dashboards/opportunities/assets/recover-content-visibility-deploy.png)
+![&#x200B; Boîte de dialogue Déployer sur Edge &#x200B;](/help/dashboards/opportunities/assets/recover-content-visibility-deploy.png)
 
 ## Faites un essai dans la démonstration
 

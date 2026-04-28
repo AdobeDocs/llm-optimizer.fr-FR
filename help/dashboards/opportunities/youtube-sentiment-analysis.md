@@ -88,7 +88,7 @@ Il montre :
 
 Effectue le suivi de la perception de la marque sur le contenu analysé avec un graphique de **répartition du Sentiment** indiquant la répartition en pourcentage du sentiment favorable, neutre et défavorable pour les vidéos et les commentaires.
 
-![Analyse de Sentiment ](/help/dashboards/opportunities/assets/youtube-sentiment-distribution.png)
+![Analyse de Sentiment &#x200B;](/help/dashboards/opportunities/assets/youtube-sentiment-distribution.png)
 
 ### Vidéos
 

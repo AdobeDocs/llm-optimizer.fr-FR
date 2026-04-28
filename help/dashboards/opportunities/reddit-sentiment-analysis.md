@@ -85,7 +85,7 @@ Il montre :
 
 Effectue le suivi de la perception de la marque sur les threads analysés avec un graphique de **distribution des Sentiments** indiquant la répartition en pourcentage des sentiments favorables, neutres et défavorables sur les threads.
 
-![Analyse de Sentiment ](/help/dashboards/opportunities/assets/reddit-sentiment-distribution.png)
+![Analyse de Sentiment &#x200B;](/help/dashboards/opportunities/assets/reddit-sentiment-distribution.png)
 
 ### Threads
 
