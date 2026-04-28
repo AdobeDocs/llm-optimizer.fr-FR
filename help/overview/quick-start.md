@@ -56,7 +56,7 @@ Pour activer votre version d’évaluation, en tant que client AEM Cloud, vous p
 
 Si vous êtes client Adobe Analytics, une bannière s’affiche sur la page d’accueil d’Experience Cloud.
 
-![Page d’accueil d’Experience Cloud avec la bannière Démarrer la version d’évaluation de Adobe LLM Optimizer ](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
+![Page d’accueil d’Experience Cloud avec la bannière Démarrer la version d’évaluation de Adobe LLM Optimizer &#x200B;](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
 
 Vous pouvez activer votre version d’évaluation de l’une des façons suivantes :
 
@@ -177,7 +177,7 @@ Pour les clients disposant d’une expérience orientée marque, vous pouvez ajo
 Après avoir fourni des informations pour le transfert du journal CDN, vous pouvez :
 
 * afficher le tableau de bord de la [présence de la marque](/help/dashboards/brand-presence.md), visualiser votre score de visibilité et suivre vos performances par rapport aux autres marques ;
-* Explorez les tableaux de bord [Agentic](/help/dashboards/agentic-traffic.md) et [Trafic de recommandation ](/help/dashboards/referral-traffic.md), si le transfert du journal CDN a été configuré.
+* Explorez les tableaux de bord [Agentic](/help/dashboards/agentic-traffic.md) et [Trafic de recommandation &#x200B;](/help/dashboards/referral-traffic.md), si le transfert du journal CDN a été configuré.
 * Utiliser les [opportunités](/help/dashboards/opportunities-overview.md) pour identifier les améliorations de contenu et techniques ;
 * exporter des données et collaborer avec votre équipe ou inviter vos collègues à utiliser le produit.
 
