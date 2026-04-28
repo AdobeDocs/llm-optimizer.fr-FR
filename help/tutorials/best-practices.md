@@ -2,7 +2,7 @@
 title: Bonnes pratiques relatives à LLM Optimizer
 description: Découvrez les bonnes pratiques relatives à l’optimisation des LLM pour stimuler la visibilité de la marque dans la recherche optimisée par l’IA. Informations pour l’évaluation et l’optimisation du contenu.
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 100%
@@ -86,7 +86,7 @@ L’optimisation sur site améliore votre propre contenu pour une visibilité de
 
 >[!TIP]
 >
->LLM Optimizer vous suggère des opportunités d’optimisation sur site et hors site dans le tableau de bord [Opportunités](/help/dashboards/opportunities.md). Ces opportunités sont spécifiques à votre site. La plupart de ces suggestions peuvent être directement déployées sur votre site à l’aide de LLM Optimizer.
+>LLM Optimizer vous suggère des opportunités d’optimisation sur site et hors site dans le tableau de bord [Opportunités](/help/dashboards/opportunities-overview.md). Ces opportunités sont spécifiques à votre site. La plupart de ces suggestions peuvent être directement déployées sur votre site à l’aide de LLM Optimizer.
 
 Voici quelques bonnes pratiques d’optimisation :
 
@@ -108,7 +108,7 @@ Voici quelques bonnes pratiques d’optimisation :
 
 4. Surveiller et itérer
 
-   * Utilisez le [tableau de bord des opportunités](/help/dashboards/opportunities.md) pour identifier les recommandations et agir en conséquence.
+   * Utilisez le [tableau de bord des opportunités](/help/dashboards/opportunities-overview.md) pour identifier les recommandations et agir en conséquence.
    * Suivez le score de visibilité, le sentiment et la fréquence de citation.
    * Ajustez vos données en fonction de l’activité des autres marques (y compris la concurrence) et des tendances des prompts.
 
@@ -118,7 +118,7 @@ L’optimisation hors site se concentre sur l’amélioration de la visibilité 
 
 >[!TIP]
 >
->LLM Optimizer vous suggère des opportunités d’optimisation sur site et hors site dans le tableau de bord [Opportunités](/help/dashboards/opportunities.md). Ces opportunités sont spécifiques à votre site. La plupart de ces suggestions peuvent être directement déployées sur votre site à l’aide de LLM Optimizer.
+>LLM Optimizer vous suggère des opportunités d’optimisation sur site et hors site dans le tableau de bord [Opportunités](/help/dashboards/opportunities-overview.md). Ces opportunités sont spécifiques à votre site. La plupart de ces suggestions peuvent être directement déployées sur votre site à l’aide de LLM Optimizer.
 
 
 Principaux canaux hors site :
@@ -170,7 +170,7 @@ Pour suivre la progression, procédez comme suit :
    * Utilisez les fonctionnalités d’attribution pour associer les améliorations de visibilité au trafic, à l’engagement et aux conversions. Les fonctionnalités d’attribution d’Adobe LLM Optimizer vous permettent de connecter les améliorations des mesures de visibilité (mentions, citations, sentiment) à des résultats commerciaux réels tels que le trafic sur le site, l’interaction client et les conversions. Cela prouve le retour sur investissement de vos efforts d’optimisation.
    * Suivez les modifications apportées au trafic généré par l&#39;IA agentique et au trafic de recommandation pour valider le retour sur investissement de l’optimisation.
 1. Améliorer votre contenu
-   * Utilisez le [tableau de bord des opportunités](/help/dashboards/opportunities.md) de LLM Optimizer pour identifier et apporter immédiatement des modifications spécifiquement recommandées à votre site. Référez-vous aux [Opportunités ](/help/dashboards/opportunities.md) (puis mesurez les résultats). Passez régulièrement en revue la section sur les opportunités et donnez suite aux recommandations.
+   * Utilisez le [tableau de bord des opportunités](/help/dashboards/opportunities-overview.md) de LLM Optimizer pour identifier et apporter immédiatement des modifications spécifiquement recommandées à votre site. Référez-vous aux [Opportunités ](/help/dashboards/opportunities-overview.md) (puis mesurez les résultats). Passez régulièrement en revue la section sur les opportunités et donnez suite aux recommandations.
    * Donnez la priorité aux pages dont la visibilité diminue.
    * Mettez à jour votre site web et d’autres contenus pour le rendre plus pertinent par rapport aux prompts que vous souhaitez cibler.
    * Ajoutez des FAQ à vos pages pour répondre aux questions des utilisateurs et des utilisatrices.

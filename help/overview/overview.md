@@ -1,11 +1,11 @@
 ---
 title: Vue d’ensemble de LLM Optimizer
-description: Découvrez comment Adobe LLM Optimizer améliore la visibilité de la marque dans la recherche optimisée par l’IA.Effectuez le suivi des mentions, des citations et des informations.Commencez dès aujourd’hui à optimiser votre engagement et votre influence.
+description: Découvrez comment Adobe LLM Optimizer améliore la visibilité de la marque dans la recherche optimisée par l’IA. Effectuez le suivi des mentions, des citations et des informations. Commencez dès aujourd’hui à optimiser votre engagement et votre influence.
 feature: Onboarding
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
-workflow-type: ht
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
+workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -24,7 +24,7 @@ Cette page présente tout ce que vous devez savoir sur Adobe LLM Optimizer avant
 
 ## Qu’est-ce qu’Adobe LLM Optimizer ?
 
-Adobe LLM Optimizer est une application axée sur l’IA générative, dédiée à la GEO (optimisation de moteurs génératifs) (également appelée optimisation de moteurs de réponses), conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche optimisée par l’IA.Elle fournit des informations sur la présence de la marque dans les réponses générées par l’IA, propose des recommandations de contenu normatives et automatise les correctifs d’optimisation.
+Adobe LLM Optimizer est une application axée sur l’IA générative, dédiée à la GEO (optimisation de moteurs génératifs) (également appelée optimisation de moteurs de réponses), conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche optimisée par l’IA. Elle fournit des informations sur la présence de la marque dans les réponses générées par l’IA, propose des recommandations de contenu normatives et automatise les correctifs d’optimisation.
 
 ## Quelles sont les fonctionnalités de LLM Optimizer ?
 
@@ -47,7 +47,7 @@ L’optimisation des LLM devient de plus en plus importante :
 
 ## Qui doit utiliser Adobe LLM Optimizer ?
 
-La GEO (optimisation des moteurs génératifs) est par nature transversale.LLM Optimizer est conçu avec cet objectif pour les différents personas répertoriés ci-après :
+La GEO (optimisation des moteurs génératifs) est par nature transversale. LLM Optimizer est conçu avec cet objectif pour les différents personas répertoriés ci-après :
 
 * Les **responsables marketing** mesurent la visibilité de la marque et l’efficacité des campagnes dans la recherche optimisée par l’IA.
 * Les **analystes SEO** effectuent le suivi des mentions de la marque, des références et d’autres informations pour orienter la stratégie de contenu.
@@ -57,8 +57,11 @@ La GEO (optimisation des moteurs génératifs) est par nature transversale.LLM O
 
 Avec Adobe LLM Optimizer, vous pouvez effectuer ce qui suit :
 
-**Mesurer la visibilité de la marque** : suivez quand, où et à quelle fréquence votre marque est mentionnée dans les résultats de recherche optimisée par l’IA.Allez au-delà des conjonctures grâce à un score de visibilité clair que vous pouvez utiliser comme base d’évaluation sur la durée.Référez-vous au [tableau de bord de la présence de la marque](/help/dashboards/brand-presence.md).**Évaluer les autres marques** - Observez les performances de votre marque par rapport aux autres dans les moteurs génératifs.Identifiez les lacunes en matière de part de voix et découvrez les avantages concurrentiels.Référez-vous au [tableau de bord de la présence de la marque](/help/dashboards/brand-presence.md).**Découvrir les opportunités exploitables** - Identifiez les opportunités de contenu (par exemple, les FAQ, les résumés, les schémas) et les opportunités techniques (explorabilité, problèmes d’indexation) qui augmentent directement les mentions et les références.Référez-vous au [tableau de bord des opportunités](/help/dashboards/opportunities.md).**Suivre l’impact du trafic provenant de l’IA** : surveillez le trafic généré par l’IA agentique (provenant des assistants IA) et le trafic de recommandation (clics des utilisateurs et des utilisatrices à partir des références) vers vos propriétés.Reliez la visibilité GEO à un engagement réel.Référez-vous au [tableau de bord du trafic généré par l’IA agentique](/help/dashboards/agentic-traffic.md) et au [tableau de bord du trafic de recommandation](/help/dashboards/referral-traffic.md).
-**Favoriser la collaboration entre équipes** : partagez des tableaux de bord, attribuez des propriétaires pour les prompts ou les catégories, et assurez le suivi des objectifs de visibilité au sein des équipes marketing, d’optimisation pour les moteurs de recherche, et de communication.Référez-vous au [tableau de bord de collaboration](/help/dashboards/collaboration.md).
+**Mesurer la visibilité de la marque** : suivez quand, où et à quelle fréquence votre marque est mentionnée dans les résultats de recherche optimisée par l’IA. Allez au-delà des conjonctures grâce à un score de visibilité clair que vous pouvez utiliser comme base d’évaluation sur la durée. Référez-vous au [tableau de bord de la présence de la marque](/help/dashboards/brand-presence.md).
+**Comparer les autres** - Voyez comment votre marque se compare aux autres, y compris aux concurrents dans les moteurs génératifs. Identifiez les lacunes en matière de part de voix et découvrez les avantages concurrentiels. Référez-vous au [tableau de bord de la présence de la marque](/help/dashboards/brand-presence.md).
+**Découvrir des opportunités exploitables** - Identifiez les opportunités de contenu (par exemple, FAQ, résumés, schémas) et les opportunités techniques (explorabilité, problèmes d’indexation) qui augmentent directement les mentions et les citations. Voir [Tableau de bord des opportunités](/help/dashboards/opportunities-overview.md).
+**Suivi de l’impact du trafic depuis l’IA** - Surveillez le trafic des agences (provenant des assistants d’IA) et des trafics de recommandation (clics des utilisateurs dans les citations) vers vos propriétés. Reliez la visibilité GEO à un engagement réel. Voir [Tableau de bord du trafic dynamique](/help/dashboards/agentic-traffic.md) et [Tableau de bord du Trafic de recommandation ](/help/dashboards/referral-traffic.md).
+**Activer Team Collaboration** - Partagez des tableaux de bord, attribuez des propriétaires pour les invites ou les catégories, et assurez-vous que les objectifs de visibilité sont suivis dans les fonctions de marketing, d&#39;optimisation du moteur de recherche (SEO) et de communication. Référez-vous au [tableau de bord de collaboration](/help/dashboards/collaboration.md).
 
 ## En savoir plus
 
