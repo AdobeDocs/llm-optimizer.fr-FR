@@ -2,10 +2,15 @@
 title: Optimize at Edge
 description: Découvrez comment diffuser des optimisations dans LLM Optimizer à la périphérie du réseau CDN sans apporter de modifications.
 feature: Opportunities
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-subfeature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e9001ce2-5245-4a8e-8601-dd958009072f
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+subfeature_v2:
+  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e9001ce2-5245-4a8e-8601-dd958009072f
 autotag-review: '2026-04-30T18:15:36.189Z'
 source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
 workflow-type: tm+mt
@@ -92,7 +97,7 @@ Le tableau suivant présente les opportunités qui peuvent améliorer l’expér
 
 | Opportunité | Type | Identification automatique | Suggestion automatique | Optimisation automatiquement |
 |---------|----------|----------|----------|----------|
-| [Récupérer la Visibilité du contenu ](/help/dashboards/opportunities/recover-content-visibility.md) | Géolocalisation technique | Détecte les pages où le contenu critique est masqué aux agents d’IA. Affiche les URL affectées et le contenu attendu qui peut être récupéré. | Met en évidence le contenu qui peut être rendu disponible pour les agents d’IA et recommande d’activer le pré-rendu pour ces pages. | Fournit un instantané d’HTML complet et convivial pour le trafic généré par l’IA agentique qui récupère le contenu précédemment masqué. |
+| [Récupérer la Visibilité du contenu &#x200B;](/help/dashboards/opportunities/recover-content-visibility.md) | Géolocalisation technique | Détecte les pages où le contenu critique est masqué aux agents d’IA. Affiche les URL affectées et le contenu attendu qui peut être récupéré. | Met en évidence le contenu qui peut être rendu disponible pour les agents d’IA et recommande d’activer le pré-rendu pour ces pages. | Fournit un instantané d’HTML complet et convivial pour le trafic généré par l’IA agentique qui récupère le contenu précédemment masqué. |
 | [Enrichir les pages de détails du produit](/help/dashboards/opportunities/enrich-product-detail-pages.md) | Géolocalisation technique | Pour les storefronts Adobe Commerce, compare les données de catalogue complètes aux données auxquelles les agents d’IA peuvent accéder sur chaque page de détails du produit. Aperçoit les PDP où les variantes, les spécifications, les attributs et les champs de catalogue associés sont absents de l’HTML visible par l’agent, avec la priorité du trafic de l’agent. | Met en évidence les informations de catalogue récupérables manquantes dans la vue de l’agent et pourquoi elles sont importantes pour la découverte de produits pilotée par LLM. | Diffuse un instantané d’HTML entièrement prégénéré et convivial vers le trafic d’agents à la périphérie du réseau CDN afin que les agents reçoivent un contexte de produit riche de votre catalogue sans CMS ni modifications de catalogue. |
 | [Ajout de résumés compatibles avec LLM](/help/dashboards/opportunities/add-llm-friendly-summaries.md) | Optimisation du contenu | identifie les pages à trafic élevé qui ne disposent pas de résumés concis et de points clés structurés au niveau de la page ou de la section, ce qui les rend plus difficiles à analyser et à interpréter par les agents d’IA. | Recommande des résumés courts et générés par l’IA ainsi que des points clés fondés sur le contenu existant. | insère des résumés et des points clés dans les sections HTML appropriées, améliorant la façon dont les modèles interprètent et décrivent le contenu de la page. |
 | [Ajout de questions fréquentes pertinentes](/help/dashboards/opportunities/add-relevant-faqs.md) | Optimisation du contenu | Identifie les pages à trafic élevé qui n’ont pas de contenu de questions/réponses structuré aligné sur votre jeu d’invites, ce qui rend plus difficile pour les agents d’IA de faire correspondre les questions des utilisateurs à votre page. | Suggère le contenu des FAQ générées par l’IA en fonction de l’intention des utilisateurs et des rubriques de page existantes. | Injecte le contenu des FAQ en HTML, ce qui rend les pages plus détectables et pertinentes dans les réponses pilotées par l’IA. |
@@ -118,7 +123,7 @@ Cela permet de s’assurer que la page est d’abord entièrement visible par le
 >[!IMPORTANT]
 >Cette fonctionnalité de pré-rendu s’applique automatiquement à toutes les opportunités présentées ci-dessous lorsqu’elles sont déployées avec Optimize at Edge afin de s’assurer que la page est entièrement visible par les agents d’IA.
 
-Consultez la section [Récupérer la Visibilité du contenu ](/help/dashboards/opportunities/recover-content-visibility.md) pour obtenir une présentation du tableau de bord, les étapes de déploiement et les questions fréquentes.
+Consultez la section [Récupérer la Visibilité du contenu &#x200B;](/help/dashboards/opportunities/recover-content-visibility.md) pour obtenir une présentation du tableau de bord, les étapes de déploiement et les questions fréquentes.
 
 ### Enrichissement des pages de détails du produit
 
