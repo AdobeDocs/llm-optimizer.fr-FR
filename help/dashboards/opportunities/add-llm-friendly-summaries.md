@@ -51,7 +51,7 @@ Lorsque vous êtes prêt à publier, cochez les cases pour sélectionner les él
 
 Lorsque vous êtes prêt à publier en périphérie, cliquez sur **Déployer les optimisations**. Une boîte de dialogue **Déployer vers Edge** répertorie les URL sélectionnées et les détails d’optimisation. Vérifiez la liste, puis choisissez **Déployer** ou **Annuler**.
 
-![ Boîte de dialogue Déployer sur Edge ](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-deploy-dialog.png)
+![&#x200B; Boîte de dialogue Déployer sur Edge &#x200B;](/help/dashboards/opportunities/assets/add-llm-friendly-summaries-deploy-dialog.png)
 
 Après un déploiement réussi, le **Déploiement terminé** confirme le nombre d’optimisations activées et note que les agents d’IA peuvent prendre du temps pour indexer la mise à jour. Fermez la boîte de dialogue et ouvrez **Suggestions fixes** pour vérifier le statut.
 

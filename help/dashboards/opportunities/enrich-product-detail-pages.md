@@ -61,7 +61,7 @@ Si votre instance Commerce n’est pas encore connectée à LLM Optimizer, vous 
 
 Si vous n’avez pas encore intégré, cliquez sur **Déployer les optimisations** pour être redirigé(e) vers le processus d’intégration. Pour plus d’informations sur le fonctionnement d’Optimize at Edge, les fournisseurs de réseau CDN pris en charge et le processus d’intégration, consultez la page [Optimize at Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge).
 
-![ Boîte de dialogue Déployer sur Edge ](/help/dashboards/opportunities/assets/enrich-product-detail-pages-deploy.png)
+![&#x200B; Boîte de dialogue Déployer sur Edge &#x200B;](/help/dashboards/opportunities/assets/enrich-product-detail-pages-deploy.png)
 
 ## Faites un essai dans la démonstration
 
