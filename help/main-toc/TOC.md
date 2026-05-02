@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 'Boostez votre marque avec Adobe LLM Optimizer. Suivez des mentions, découvrez des informations et imposez-vous dans la recherche optimisée par l’IA. Prenez le contrôle de votre visibilité : commencez à l’optimiser dès maintenant !'
-source-git-commit: 5504c3b7fe6880a4ea2d8334137d949f87f4e1cf
+source-git-commit: b9e18081cd364b35a5375975cad949b7037bfaaf
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 60%
+source-wordcount: '161'
+ht-degree: 62%
 
 ---
 
@@ -29,10 +29,17 @@ ht-degree: 60%
       + [Erreurs de trafic d’agent](/help/dashboards/opportunities/agentic-traffic-errors.md)
       + [Trafic bloqué par robots.txt](/help/dashboards/opportunities/traffic-blocked-by-robots.md)
       + [Restauration de la visibilité du contenu](/help/dashboards/opportunities/recover-content-visibility.md)
+      + [Ajouter des résumés compatibles avec LLM](/help/dashboards/opportunities/add-llm-friendly-summaries.md)
+      + [Ajouter des FAQ pertinentes](/help/dashboards/opportunities/add-relevant-faqs.md)
+      + [Ajouter des résumés de transcription multimédia](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md)
+      + [Ajouter une table des matières](/help/dashboards/opportunities/add-table-of-contents.md)
+      + [Simplifier les contenus complexes](/help/dashboards/opportunities/simplify-complex-content.md)
       + [Analyse Wikipédia](/help/dashboards/opportunities/wikipedia-analysis.md)
       + [Analyse du Sentiment YouTube](/help/dashboards/opportunities/youtube-sentiment-analysis.md)
       + [Analyse du Sentiment Reddit](/help/dashboards/opportunities/reddit-sentiment-analysis.md)
       + [Analyse du Sentiment cité](/help/dashboards/opportunities/cited-sentiment-analysis.md)
+      + [Enrichissement du catalogue de produits](/help/dashboards/opportunities/enrich-product-catalog.md)
+      + [Enrichissement des pages de détails du produit](/help/dashboards/opportunities/enrich-product-detail-pages.md)
    + [Configuration cliente](/help/dashboards/customer-configuration.md)
    + [Collaboration](/help/dashboards/collaboration.md)
 + Transfert du journal BYOCDN{#log-forwarding}
