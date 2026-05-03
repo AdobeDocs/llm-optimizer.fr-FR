@@ -5,7 +5,7 @@ feature: Onboarding
 source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 87%
+ht-degree: 94%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 87%
 
 Bienvenue dans la vue d’ensemble des tableaux de bord. Les tableaux de bord de LLM Optimizer aident les responsables marketing à effectuer le suivi de la visibilité de la marque et du sentiment sur les plateformes de recherche optimisée par l’IA, à identifier les opportunités d’optimisation et à implémenter des modifications normatives afin d’améliorer les références et les performances.
 
-Les vues principales incluent la présentation, la Présence des marques, l’agent et le Trafic de recommandation, l’inspecteur d’URL, les opportunités, Collaboration et la configuration client.
+Les principales vues incluent Vue d’ensemble, Présence de la marque, Trafic généré par l’IA agentique, Trafic de recommandation, Inspecteur d’URL, Opportunités, Collaboration et Configuration cliente.
 
 <!--
 CARDS
