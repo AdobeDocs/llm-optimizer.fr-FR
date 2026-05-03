@@ -1,35 +1,35 @@
 ---
-title: Optimiser sur Edge - Cloudflare (BYOCDN)
-description: Découvrez comment configurer le BYOCDN de Cloudflare pour l’optimisation sur Edge dans LLM Optimizer.
+title: Optimize at Edge - Cloudflare (BYOCDN)
+description: Découvrez comment configurer Cloudflare BYOCDN pour Optimize at Edge dans LLM Optimizer.
 feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '1906'
-ht-degree: 1%
+ht-degree: 68%
 
 ---
 
 
 # Cloudflare (BYOCDN)
 
-Cette configuration achemine le trafic dynamique (requêtes provenant de robots d’IA et d’agents utilisateurs LLM) vers le service principal Edge Optimize (`live.edgeoptimize.net`). Les visiteurs humains et les robots d&#39;optimisation du moteur de recherche continuent d&#39;être servis depuis votre origine comme d&#39;habitude. Pour tester la configuration, une fois la configuration terminée, recherchez l’en-tête `x-edgeoptimize-request-id` dans la réponse.
+Cette configuration achemine le trafic généré par l’IA agentique (demandes provenant de robots d’IA et d’agents utilisateurs LLM) vers le service principal Edge Optimize (`live.edgeoptimize.net`). Les personnes humaines et les robots d’optimisation du moteur de recherche continuent d’être servis depuis votre origine comme d’habitude. Pour tester la configuration, une fois celle-ci terminée, recherchez l’en-tête `x-edgeoptimize-request-id` dans la réponse.
 
 **Conditions préalables**
 
-Avant de configurer les règles de routage de CloudFlare Worker, vérifiez que vous disposez des éléments suivants :
+Avant de configurer les règles de routage du CloudFlare Worker, vérifiez que vous disposez des éléments suivants :
 
-* Un compte Cloudflare avec Workers activé sur votre domaine.
+* Compte Cloudflare avec Workers activé sur votre domaine.
 * Accès aux paramètres DNS de votre domaine dans Cloudflare.
-* Clé d’API Edge Optimize récupérée à partir de l’interface utilisateur de LLM Optimizer. Pour connaître les étapes, voir [Récupération de vos clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* Clé d’API Edge Optimize récupérée à partir de l’interface d’utilisation de LLM Optimizer. Pour connaître les étapes, voir [Récupération de vos clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Facultatif) Pour tester le routage d’évaluation, consultez [Clé API d’évaluation](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Fonctionnement du routage**
 
-Lorsque la configuration est correcte, une requête vers votre domaine (par exemple, `www.example.com/page.html`) provenant d’un agent utilisateur agentic est interceptée par le programme de travail Cloudflare et acheminée vers le serveur principal d’Edge Optimize. La requête du serveur principal inclut les en-têtes requis.
+Lorsque la configuration est correcte, une requête vers votre domaine (par exemple, `www.example.com/page.html`) provenant d’un agent utilisateur agentique est interceptée par le Cloudflare Worker et acheminée vers le serveur principal d’Edge Optimize. La requête du back-end inclut les en-têtes requis.
 
-**Test de la requête du serveur principal**
+**Test de la requête du back-end**
 
-Vous pouvez vérifier le routage en adressant une requête directe au serveur principal d’Edge Optimize.
+Vous pouvez vérifier le routage en adressant une requête directe au back-end d’Edge Optimize.
 
 ```
 curl -svo /dev/null https://live.edgeoptimize.net/page.html \
@@ -41,13 +41,13 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 
 **En-têtes obligatoires**
 
-Les en-têtes suivants doivent être définis sur les requêtes du serveur principal d’Edge Optimize :
+Les en-têtes suivants doivent être définis sur les requêtes du serveur principal d’Edge Optimize :
 
 | En-tête | Description | Exemple |
 |--------|-------------|---------|
 | `x-forwarded-host` | Hôte d’origine de la requête. Obligatoire pour l’identification du domaine du site. | `www.example.com` |
 | `x-edgeoptimize-url` | Le chemin d’URL d’origine et la chaîne de requête de la requête. | `/page.html` ou `/products?id=123` |
-| `x-edgeoptimize-api-key` | Clé API fournie par Adobe pour votre domaine. | `your-api-key-here` |
+| `x-edgeoptimize-api-key` | La clé API fournie par Adobe pour votre domaine. | `your-api-key-here` |
 | `x-edgeoptimize-config` | Chaîne de configuration pour la différenciation des clés de cache. | `LLMCLIENT=TRUE;` |
 
 ## Options de configuration
@@ -97,17 +97,17 @@ Une fois le programme de travail déployé, passez à [Ajouter une route à votr
 
 Pour créer et configurer manuellement le programme de travail, procédez comme suit.
 
-**Étape 1 : créer le programme de travail Cloudflare**
+**Étape 1 : créer le Cloudflare Worker**
 
 1. Connectez-vous à votre tableau de bord Cloudflare.
-2. Accédez à **Programmes de travail et pages** dans la barre latérale.
-3. Cliquez sur **Créer une application** puis sur **Créer un programme de travail**.
-4. Nommez votre programme de travail (par exemple, `edge-optimize-router`).
-5. Cliquez sur **Déployer** pour créer le programme de travail avec le code par défaut.
+2. Accédez à **Workers et pages** dans la barre latérale.
+3. Cliquez sur **Créer l’application**, puis sur **Créer un worker**.
+4. Nommez votre worker (par exemple, `edge-optimize-router`).
+5. Cliquez sur **Déployer** pour créer le worker avec le code par défaut.
 
-![Tableau de bord Cloudflare Workers](/help/assets/optimize-at-edge/cloudflare-workers-dashboard.png)
+![Tableau de bord de Cloudflare Workers](/help/assets/optimize-at-edge/cloudflare-workers-dashboard.png)
 
-**Étape 2 : ajouter le code de programme de travail**
+**Étape 2 : ajouter le code du worker**
 
 Après avoir créé le programme de travail, cliquez sur **Modifier le code** et remplacez le code par défaut par ce qui suit. Si vous disposez déjà d’un programme de travail de Cloudflare, fusionnez le code ci-dessous avec votre code de programme de travail existant au lieu de le remplacer entièrement.
 
@@ -279,22 +279,22 @@ async function failoverToOrigin(request, env, url) {
 }
 ```
 
-Cliquez sur **Enregistrer et déployer** pour publier le programme de travail.
+Cliquez sur **Enregistrer et déployer** pour publier le worker.
 
-![Éditeur de code de Cloudflare Worker](/help/assets/optimize-at-edge/cloudflare-worker-editor.png)
+![Éditeur de code du Cloudflare Worker](/help/assets/optimize-at-edge/cloudflare-worker-editor.png)
 
 **Étape 3 : Configurer les variables d’environnement et les secrets**
 
-Les variables d’environnement stockent en toute sécurité une configuration sensible telle que votre clé API.
+Les variables d’environnement stockent en toute sécurité une configuration sensible, telle que votre clé API.
 
-1. Dans les paramètres de votre programme de travail, accédez à **Paramètres** > **Variables**.
+1. Dans les paramètres de votre worker, accédez à **Paramètres** > **Variables**.
 2. Sous **Variables d’environnement**, cliquez sur **Ajouter une variable**.
-3. Ajoutez les variables suivantes :
+3. Ajoutez les variables suivantes :
 
    | Nom de variable | Description | Nécessaires |
    |---------------|-------------|----------|
    | `EDGE_OPTIMIZE_API_KEY` | Votre clé API Edge Optimize fournie par Adobe. | Oui |
-   | `EDGE_OPTIMIZE_TARGET_HOST` | L’hôte cible des requêtes Edge Optimize (envoyées en tant qu’en-tête `x-forwarded-host`) et le domaine d’origine pour le basculement. Doit être le domaine uniquement sans protocole (par exemple, `www.example.com`, pas `https://www.example.com`). | Oui |
+   | `EDGE_OPTIMIZE_TARGET_HOST` | L’hôte cible des requêtes Edge Optimize (envoyées en tant qu’en-tête `x-forwarded-host`) et le domaine d’origine pour le basculement. Doit être le domaine uniquement sans protocole (par exemple, `www.example.com`, pas `https://www.example.com`). | Oui |
 
 4. Pour la clé API, cliquez sur **Chiffrer** pour la stocker en toute sécurité.
 5. Cliquez sur **Enregistrer et déployer**.
@@ -305,23 +305,23 @@ Les variables d’environnement stockent en toute sécurité une configuration s
 
 Quelle que soit l’option de configuration utilisée, vous devez lier manuellement le programme de travail à votre domaine. Cette étape active le programme de travail sur votre trafic.
 
-1. Accédez au **Paramètres** > **Triggers** de votre programme de travail.
+1. Accédez au **Paramètres** > **Triggers** de votre worker.
 2. Sous **Itinéraires**, cliquez sur **Ajouter un itinéraire**.
 3. Saisissez le modèle de votre domaine (par exemple, `www.example.com/*` ou `example.com/*`).
-4. Sélectionnez la zone dans la liste déroulante.
+4. Sélectionnez votre zone dans la liste déroulante.
 5. Cliquez sur **Enregistrer**.
 
-Vous pouvez également configurer des itinéraires au niveau de la zone :
+Vous pouvez également configurer des itinéraires au niveau de la zone :
 
 1. Accédez à votre domaine dans Cloudflare.
-2. Accédez à **Itinéraires de travail**.
-3. Cliquez sur **Ajouter un itinéraire** et spécifiez le modèle et le programme de travail.
+2. Accédez à **Itinéraires des workers**.
+3. Cliquez sur **Ajouter un itinéraire** et spécifiez le modèle et le worker.
 
-![Itinéraires du programme de travail de Cloudflare](/help/assets/optimize-at-edge/cloudflare-worker-routes.png)
+![Itinéraires de CloudFlare Worker](/help/assets/optimize-at-edge/cloudflare-worker-routes.png)
 
 **Vérification du comportement de basculement**
 
-Si Edge Optimize n’est pas disponible ou renvoie une erreur, le programme de travail bascule automatiquement sur votre origine. Les réponses de basculement incluent l’en-tête `x-edgeoptimize-fo` :
+Si Edge Optimize n’est pas disponible ou renvoie une erreur, le programme de travail bascule automatiquement sur votre origine. Les réponses de basculement incluent l’en-tête `x-edgeoptimize-fo` :
 
 ```
 < HTTP/2 200
@@ -330,35 +330,35 @@ Si Edge Optimize n’est pas disponible ou renvoie une erreur, le programme de t
 
 Vous pouvez surveiller les événements de basculement dans les journaux de Cloudflare Workers pour résoudre les problèmes.
 
-**Comprendre la logique du programme de travail**
+**Comprendre la logique du worker**
 
-Le programme de travail de Cloudflare met en œuvre la logique suivante :
+Le Cloudflare Worker met en œuvre la logique suivante :
 
-1. **Détection de l’agent utilisateur :** vérifie si l’agent utilisateur de la requête entrante correspond à l’un des robots agentic définis (non-respect de la casse).
+1. **Détection de l’agent utilisateur :** vérifie si l’agent utilisateur de la requête entrante correspond à l’un des robots agentic définis (non-respect de la casse).
 
-2. **Ciblage des chemins d’accès :** filtre éventuellement les requêtes en fonction des chemins d’accès ciblés. Par défaut, toutes les pages d’HTML (URL se terminant par `/`, sans extension ou `.html`) sont acheminées. Vous pouvez spécifier des chemins d’accès spécifiques à l’aide du tableau `TARGETED_PATHS` .
+2. **Ciblage des chemins d’accès :** filtre éventuellement les requêtes en fonction des chemins d’accès ciblés. Par défaut, toutes les pages d’HTML (URL se terminant par `/`, sans extension ou `.html`) sont acheminées. Vous pouvez spécifier des chemins d’accès spécifiques à l’aide du tableau `TARGETED_PATHS`.
 
-3. **Protection contre les boucles :** l’en-tête `x-edgeoptimize-request` empêche les boucles infinies. Lorsqu’Edge Optimize renvoie les requêtes à votre origine, cet en-tête est défini sur `"1"` et le programme de travail transmet la requête sans la renvoyer à Edge Optimize.
+3. **Protection contre les boucles :** l’en-tête `x-edgeoptimize-request` empêche les boucles infinies. Lorsqu’Edge Optimize renvoie les requêtes à votre origine, cet en-tête est défini sur `"1"` et le worker transmet la requête sans la renvoyer à Edge Optimize.
 
-4. **Sécurité des en-têtes :** avant de définir les en-têtes Edge Optimize, le programme de travail supprime tous les en-têtes `x-edgeoptimize-*` existants de la requête entrante pour empêcher les attaques par injection d’en-tête.
+4. **Sécurité des en-têtes :** avant de définir les en-têtes Edge Optimize, le programme de travail supprime tous les en-têtes `x-edgeoptimize-*` existants de la requête entrante pour empêcher les attaques par injection d’en-tête.
 
-5. **Mappage des en-têtes :** le programme de travail définit les en-têtes requis pour Edge Optimize :
-   * `x-forwarded-host` : identifie le domaine d’origine du site.
-   * `x-edgeoptimize-url` - Conserve le chemin d’accès de la requête d’origine et la chaîne de requête.
-   * `x-edgeoptimize-api-key` - Authentifie la requête avec Edge Optimize.
-   * `x-edgeoptimize-config` - Fournit la configuration de la clé de cache.
+5. **Mappage des en-têtes :** le worker définit les en-têtes requis pour Edge Optimize :
+   * `x-forwarded-host` : identifie le domaine d’origine du site.
+   * `x-edgeoptimize-url` : conserve le chemin d’accès de la requête d’origine et la chaîne de requête.
+   * `x-edgeoptimize-api-key` : authentifie la requête avec Edge Optimize.
+   * `x-edgeoptimize-config` : fournit la configuration de la clé de cache.
 
-6. **Logique de basculement :** si Edge Optimize renvoie un code d’état d’erreur (erreurs client 4XX ou erreurs serveur 5XX) ou si la requête échoue en raison d’une erreur réseau, le programme de travail bascule automatiquement sur votre origine à l’aide de `EDGE_OPTIMIZE_TARGET_HOST`. La réponse de basculement inclut l’en-tête `x-edgeoptimize-fo: 1` pour indiquer que le basculement s’est produit.
+6. **Logique de basculement :** si Edge Optimize renvoie un code d’état d’erreur (erreurs client 4XX ou erreurs serveur 5XX) ou si la requête échoue en raison d’une erreur réseau, le worker bascule automatiquement sur votre origine à l’aide de `EDGE_OPTIMIZE_TARGET_HOST`. La réponse de basculement inclut l’en-tête `x-edgeoptimize-fo: 1` pour indiquer que le basculement s’est produit.
 
-7. **Gestion des redirections :** l’option `redirect: "manual"` garantit que les réponses de redirection d’Edge Optimize sont transmises au client sans que le programme de travail ne les suive.
+7. **Gestion des redirections :** l’option `redirect: "manual"` garantit que les réponses de redirection d’Edge Optimize sont transmises à la clientèle sans que le programme de travail ne les suive.
 
 **Personnalisation de la configuration**
 
-Vous pouvez personnaliser le comportement du programme de travail en modifiant les constantes de configuration en haut du code :
+Vous pouvez personnaliser le comportement du worker en modifiant les constantes de configuration en haut du code :
 
 **Liste de robots agentiques**
 
-Modifiez le tableau `AGENTIC_BOTS` pour ajouter ou supprimer des agents utilisateur :
+Modifiez le tableau `AGENTIC_BOTS` pour ajouter ou supprimer des agents utilisateur :
 
 ```javascript
 const AGENTIC_BOTS = [
@@ -376,7 +376,7 @@ const AGENTIC_BOTS = [
 
 **Chemins ciblés**
 
-Par défaut, toutes les pages HTML sont acheminées vers Edge Optimize. Pour limiter le routage à des chemins spécifiques, modifiez le tableau `TARGETED_PATHS` :
+Par défaut, toutes les pages HTML sont acheminées vers Edge Optimize. Pour limiter le routage à des chemins spécifiques, modifiez le tableau `TARGETED_PATHS` :
 
 ```javascript
 // Route all HTML pages (default)
@@ -386,9 +386,9 @@ const TARGETED_PATHS = null;
 const TARGETED_PATHS = ['/', '/page.html', '/products', '/about-us'];
 ```
 
-**Configuration de basculement**
+**Comportements de configuration**
 
-Par défaut, le programme de travail bascule sur toute erreur 4XX ou 5XX d’Edge Optimize. Personnalisez ce comportement :
+Par défaut, le programme de travail bascule sur toute erreur 4XX ou 5XX d’Edge Optimize. Personnalisez ce comportement :
 
 ```javascript
 // Default: failover on any 4XX or 5XX error
@@ -406,28 +406,28 @@ const FAILOVER_ON_5XX = false;
 
 **Points importants à prendre en compte**
 
-* **Comportement de basculement :** le programme de travail bascule automatiquement sur votre origine si Edge Optimize renvoie une erreur (codes d’état 4XX ou 5XX) ou si la requête échoue en raison d’une erreur réseau. Le basculement utilise `EDGE_OPTIMIZE_TARGET_HOST` comme domaine d’origine (similaire au `F_Default_Origin` de Fastly ou au `Default_Origin` de CloudFront). Les réponses de basculement incluent l’en-tête `x-edgeoptimize-fo: 1`, que vous pouvez utiliser pour la surveillance et le débogage.
+* **Comportement de basculement :** le worker bascule automatiquement sur votre origine si Edge Optimize renvoie une erreur (codes d’état 4XX ou 5XX) ou si la requête échoue en raison d’une erreur réseau. Le basculement utilise `EDGE_OPTIMIZE_TARGET_HOST` comme domaine d’origine (similaire à `F_Default_Origin` pour Fastly ou à `Default_Origin` pour CloudFront). Les réponses de basculement incluent l’en-tête `x-edgeoptimize-fo: 1`, que vous pouvez utiliser pour la surveillance et le débogage.
 
-* **Mise en cache :** Cloudflare met en cache les réponses en fonction de l’URL par défaut. Le trafic des agents ne recevant pas le même contenu que le trafic humain, assurez-vous que la configuration du cache en tient compte. Envisagez d’utiliser l’API de cache ou les en-têtes de cache pour différencier le contenu mis en cache. L’en-tête `x-edgeoptimize-config` doit être inclus dans votre clé de cache.
+* **Mise en cache :** Cloudflare met en cache les réponses en fonction de l’URL par défaut. Le trafic généré par l’IA agentique ne recevant pas le même contenu que le trafic humain, assurez-vous que la configuration du cache en tient compte. Envisagez d’utiliser l’API de cache ou les en-têtes de cache pour différencier le contenu mis en cache. L’en-tête `x-edgeoptimize-config` doit être inclus dans votre clé de cache.
 
-* **Limitation de débit :** Surveillez l’utilisation d’Edge Optimizer et envisagez d’implémenter une limitation de débit pour le trafic agentic, si nécessaire.
+* **Limitation de débit :** Surveillez l’utilisation d’Edge Optimizer et envisagez d’implémenter une limitation de débit pour le trafic généré par l’IA agentique, si nécessaire.
 
-* **Tests :** testez toujours la configuration dans un environnement d’évaluation avant de la déployer en production. Vérifiez que le trafic d&#39;agents et de personnes se comporte comme prévu. Testez le comportement de basculement en simulant les erreurs Edge Optimize.
+* **Tests :** testez toujours la configuration dans un environnement d’évaluation avant de la déployer en production. Vérifiez que le trafic agentique et humain se comporte comme prévu. Testez le comportement de basculement en simulant les erreurs Edge Optimize.
 
-* **Journalisation :** activez la journalisation de Cloudflare Workers pour surveiller les requêtes et résoudre les problèmes. Accédez à **Collaborateurs** > **votre collaborateur** > **Journaux** pour afficher les journaux en temps réel. Le programme de travail consigne les événements de basculement à des fins de débogage.
+* **Journalisation :** activez la journalisation de Cloudflare Workers pour surveiller les requêtes et résoudre les problèmes. Accédez à **Workers** > **votre worker** > **Journaux** pour afficher les journaux en temps réel. Le worker consigne les événements de basculement à des fins de débogage.
 
 **Résolution des incidents**
 
 | Problème | Cause possible | Solution |
 |-------|----------------|----------|
-| Aucun en-tête de `x-edgeoptimize-request-id` dans la réponse | Itinéraire de collaborateur non apparié ou agent utilisateur non présent dans la liste des robots d&#39;agent. | Vérifiez que votre modèle d’itinéraire correspond à l’URL de requête. Vérifiez que l’agent utilisateur se trouve dans le tableau `AGENTIC_BOTS`. |
+| Aucun en-tête `x-edgeoptimize-request-id` dans la réponse | Itinéraire de worker non apparié ou agent utilisateur non présent dans la liste des robots agentique. | Vérifiez que votre modèle d’itinéraire correspond à l’URL de requête. Vérifiez que l’agent utilisateur se trouve dans le tableau `AGENTIC_BOTS`. |
 | Erreurs 401 ou 403 d’Edge Optimize | Clé API non valide ou manquante. | Vérifiez que `EDGE_OPTIMIZE_API_KEY` est correctement défini dans les variables d’environnement et les secrets. Contactez Adobe pour confirmer que votre clé API est active. |
 | Redirections infinies ou boucles | L’en-tête de protection contre les boucles n’est pas défini ou vérifié correctement. | Assurez-vous que la vérification de l’en-tête `x-edgeoptimize-request` est en place. |
 | Trafic humain affecté | La logique de routage des collaborateurs est trop large. | Vérifiez que la logique de correspondance de l’agent utilisateur est correcte et ne respecte pas la casse. Vérifiez que `TARGETED_PATHS` est correctement configuré. |
-| Temps de réponse lents | Latence réseau vers le serveur principal d’Edge Optimize. | Cela est prévu pour la première requête ; les requêtes suivantes sont mises en cache dans Edge Optimize. |
+| Temps de réponse lents | Latence réseau vers le back end d’Edge Optimize. | Cela est prévu pour la première requête ; les requêtes suivantes sont mises en cache dans Edge Optimize. |
 | En-tête `x-edgeoptimize-fo: 1` en réponse | Edge Optimize a renvoyé une erreur et le basculement vers l’origine s’est produit. | Vérifiez les journaux de Cloudflare Workers pour connaître le code d’erreur spécifique. Vérifiez l’état du service Edge Optimize avec Adobe. |
-| Le basculement ne fonctionne pas | Indicateurs de basculement désactivés ou erreur dans la logique de basculement. | Vérifiez que `FAILOVER_ON_4XX` et `FAILOVER_ON_5XX` sont définis sur `true`. Recherchez des messages d&#39;erreur dans les journaux des collaborateurs. |
-| Certains chemins ne sont pas optimisés. | Chemin ne correspondant pas aux chemins ciblés ou au modèle de page HTML. | Vérifiez que le chemin d’accès est en `TARGETED_PATHS` (s’il est spécifié) et correspond au modèle RegEx de page HTML. |
+| Le basculement ne fonctionne pas | Indicateurs de basculement désactivés ou erreur dans la logique de basculement. | Vérifiez que `FAILOVER_ON_4XX` et `FAILOVER_ON_5XX` sont définis sur `true`. Vérifiez les messages d’erreur éventuels dans les journaux du worker. |
+| Certains chemins ne sont pas optimisés | Chemin ne correspondant pas aux chemins ciblés ou au modèle de page HTML. | Vérifiez que le chemin d’accès est dans `TARGETED_PATHS` (s’il est spécifié) et correspond au modèle RegEx de page HTML. |
 | Échec des requêtes avec un hôte non valide | `EDGE_OPTIMIZE_TARGET_HOST` inclut le protocole (par exemple, `https://`). | Utilisez uniquement le nom de domaine sans protocole (par exemple, `example.com`, et non `https://example.com`). |
 | Erreur 530 lors du basculement | Cloudflare ne peut pas se connecter à l’origine ou la demande de basculement comporte des en-têtes non valides. | Assurez-vous que la fonction de basculement supprime les en-têtes Edge Optimize. Vérifiez que votre origine est accessible et que le DNS est correctement configuré. |
 
@@ -441,14 +441,14 @@ Une fois la configuration terminée, vérifiez que le trafic des robots est ache
 
 **1. Tester le trafic de robots (doit être optimisé)**
 
-Simulez une requête de robot d’IA à l’aide d’une chaîne agent-utilisateur :
+Simulez une requête de robot d’IA à l’aide d’une chaîne utilisateur-agent :
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
 
-Une réponse réussie inclut l’en-tête `x-edgeoptimize-request-id`, confirmant que la requête a été acheminée via Edge Optimize :
+Une réponse réussie inclut l’en-tête `x-edgeoptimize-request-id`, confirmant que la requête a été acheminée via Edge Optimize :
 
 ```
 < HTTP/2 200
@@ -457,21 +457,21 @@ Une réponse réussie inclut l’en-tête `x-edgeoptimize-request-id`, confirman
 
 **2. Tester le trafic humain (ne devrait PAS être affecté)**
 
-Simulez une requête régulière de navigateur humain :
+Simulez une requête régulière de navigateur humain :
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 ```
 
-La réponse ne doit **pas** contenir l’en-tête `x-edgeoptimize-request-id`. Le contenu de la page et le temps de réponse doivent rester identiques à avant l’activation de l’option Optimiser dans Edge.
+La réponse ne doit **pas** contenir l’en-tête `x-edgeoptimize-request-id`. Le contenu de la page et le temps de réponse doivent rester identiques à avant l’activation de l’option Optimize at Edge.
 
 **3. Comment différencier les deux scénarios**
 
 | En-tête | Trafic de robots (optimisé) | Trafic humain (non affecté) |
 |---|---|---|
-| `x-edgeoptimize-request-id` | Présent : contient un ID de requête unique | Absent |
-| `x-edgeoptimize-fo` | Présent uniquement en cas de basculement (valeur : `1`) | Absent |
+| `x-edgeoptimize-request-id` | Présent : contient un ID de requête unique | Absent |
+| `x-edgeoptimize-fo` | Présent uniquement en cas de basculement (valeur : `1`) | Absent |
 
 {{verify-routing-status-in-ui}}
 

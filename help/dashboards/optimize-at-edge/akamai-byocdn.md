@@ -1,25 +1,25 @@
 ---
-title: Optimiser sur Edge - Akamai (BYOCDN)
-description: Découvrez comment configurer Akamai BYOCDN pour l’optimisation sur Edge dans LLM Optimizer.
+title: Optimize at Edge - Akamai (BYOCDN)
+description: Découvrez comment configurer Akamai BYOCDN pour Optimize at Edge dans LLM Optimizer.
 feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 10%
+ht-degree: 62%
 
 ---
 
 
 # Akamai (BYOCDN)
 
-Cette configuration achemine le trafic dynamique (requêtes provenant de robots d’IA et d’agents utilisateurs LLM) vers le service principal Edge Optimize (`live.edgeoptimize.net`). Les visiteurs humains et les robots d&#39;optimisation du moteur de recherche continuent d&#39;être servis depuis votre origine comme d&#39;habitude. Pour tester la configuration, une fois la configuration terminée, recherchez l’en-tête `x-edgeoptimize-request-id` dans la réponse.
+Cette configuration achemine le trafic généré par l’IA agentique (demandes provenant de robots d’IA et d’agents utilisateurs LLM) vers le service principal Edge Optimize (`live.edgeoptimize.net`). Les personnes humaines et les robots d’optimisation du moteur de recherche continuent d’être servis depuis votre origine comme d’habitude. Pour tester la configuration, une fois celle-ci terminée, recherchez l’en-tête `x-edgeoptimize-request-id` dans la réponse.
 
 **Conditions préalables**
 
-Avant de configurer les règles du gestionnaire de propriétés Akamai, vérifiez que vous disposez des éléments suivants :
+Avant de configurer les règles du gestionnaire de propriétés Akamai, vérifiez que vous disposez des éléments suivants :
 
 * Accès au gestionnaire de propriétés Akamai pour votre domaine.
-* Clé d’API Edge Optimize récupérée à partir de l’interface utilisateur de LLM Optimizer. Pour connaître les étapes, voir [Récupération de vos clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* Clé d’API Edge Optimize récupérée à partir de l’interface d’utilisation de LLM Optimizer. Pour connaître les étapes, voir [Récupération de vos clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Facultatif) Pour tester le routage d’évaluation, consultez [Clé API d’évaluation](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Configuration**
@@ -47,7 +47,7 @@ Définissez le routage pour les agents utilisateurs suivants :
 
 **2. Définir l’origine et le comportement SSL**
 
-Définissez l’origine comme `live.edgeoptimize.net` et faites correspondre le SAN à `*.edgeoptimize.net`
+Définir l’origine comme `live.edgeoptimize.net` et faire correspondre le SAN à `*.edgeoptimize.net`
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Définissez l’origine comme `live.edgeoptimize.net` et faites correspondre le 
 
 **3. Définir la variable de clé de cache**
 
-Définissez la variable de cache `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` sur `LLMCLIENT=TRUE;X_FORWARDED_HOST={{builtin.AK_HOST}}`
+Définir la variable de clé de cache `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` sur `LLMCLIENT=TRUE;X_FORWARDED_HOST={{builtin.AK_HOST}}`
 
 ![Définir la variable de clé de cache](/help/assets/optimize-at-edge/akamai-step3-cachekey.png)
 
@@ -92,19 +92,19 @@ Définissez les en-têtes de requête entrante suivants :
 
 ![Modification de l’ID de cache](/help/assets/optimize-at-edge/akamai-step7-cacheid.png)
 
-**8. Modifiez Les En-Têtes Des Requêtes Sortantes**
+**8. Modifier les en-têtes des requêtes sortantes**
 
-Définir `x-forwarded-host`’en-tête sur `{{builtin.AK_HOST}}`
+Définir l’en-tête `x-forwarded-host` sur `{{builtin.AK_HOST}}`
 
-![Modifier les en-têtes de requête sortante](/help/assets/optimize-at-edge/akamai-step8-outgoing-request.png)
+![Modifier les en-têtes des requêtes entrantes](/help/assets/optimize-at-edge/akamai-step8-outgoing-request.png)
 
 **9. Basculement du site**
 
-La configuration de basculement de site comporte deux parties : le comportement de basculement (configuré dans la règle principale de routage Optimisation à la périphérie) et une règle d’en-tête de test de basculement distincte.
+La configuration de basculement de site comporte deux parties : le comportement de basculement (configuré dans la règle principale de routage Optimisation à la périphérie) et une règle d’en-tête de test de basculement distincte.
 
-**9 bis. Comportement de basculement de site (dans la règle principale de routage d’optimisation à la périphérie)**
+**9a. Comportement de basculement de site (dans la règle principale de routage d’optimisation à la périphérie)**
 
-Dans la règle de routage principale, configurez le comportement de basculement de site et le fragment de code XML avancé comme suit :
+Dans la règle de routage principale, configurez le comportement de basculement de site et le fragment de code XML avancé comme suit :
 
 >[!IMPORTANT]
 >
@@ -112,7 +112,7 @@ Dans la règle de routage principale, configurez le comportement de basculement 
 
 ![Basculement du site](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
-Ajoutez le `x-edgeoptimize-request` d’en-tête de requête avec la valeur `fo` via le code XML avancé :
+Ajoutez l’en-tête de requête `x-edgeoptimize-request` avec la valeur `fo` via le code XML avancé :
 
 ```
 <forward:availability.fail-action2>
@@ -126,11 +126,11 @@ Ajoutez le `x-edgeoptimize-request` d’en-tête de requête avec la valeur `fo`
 
 ![Comportements de basculement](/help/assets/optimize-at-edge/akamai-step9-failover-behaviors.png)
 
-9 ter **. Règle d’en-tête du test de basculement (règle sœur)**
+**9b. Règle d’en-tête du test de basculement (règle sœur)**
 
 >[!IMPORTANT]
 >
->Créez la règle **Basculement EdgeOptimize - En-tête de test** en tant que règle **sœur** (au même niveau) des règles de routage — **pas** imbriquée dans celles-ci. Dans l’arborescence des règles du Gestionnaire de propriétés Akamai, la hiérarchie doit se présenter comme suit :
+>Créez la règle **Basculement EdgeOptimize - En-tête de test** en tant que règle **sœur** (au même niveau) des règles de routage — **non** imbriquée dans celles-ci. Dans l’arborescence des règles du Gestionnaire de propriétés Akamai, la hiérarchie doit se présenter comme suit :
 >
 >```
 >▼ Parent Rule
@@ -138,11 +138,11 @@ Ajoutez le `x-edgeoptimize-request` d’en-tête de requête avec la valeur `fo`
 >       EdgeOptimize Failover - Test Header       ← sibling, same level
 >```
 >
->Cela permet de s’assurer que la règle d’en-tête du test de basculement évalue **toutes** les règles de routage, pas seulement une.
+>Cela permet de s’assurer que la règle d’en-tête du test de basculement évalue **toutes** les règles de routage, et pas seulement une.
 >
 >Assurez-vous également que la règle **Optimiser au routage Edge** n’est pas remplacée par une règle de correspondance ultérieure qui modifie l’origine, le comportement de mise en cache ou l’identifiant de cache pour les mêmes requêtes. Si une autre règle correspondante réinitialise ces comportements, le routage ou la mise en cache de l’option Optimiser à Edge risque de ne pas fonctionner comme prévu.
 
-Si la valeur du `x-edgeoptimize-request` d’en-tête de requête est `fo`, définissez le `x-edgeoptimize-fo` d’en-tête de réponse sortante sur `true`.
+Si la valeur `x-edgeoptimize-request` d’en-tête de requête est `fo`, définissez l’en-tête de réponse sortante `x-edgeoptimize-fo` sur `true`.
 
 ![Règles de basculement](/help/assets/optimize-at-edge/akamai-step9-failover-rules.png)
 
@@ -150,7 +150,7 @@ Le basculement de site garantit que si Edge Optimize renvoie une erreur `4XX` ou
 
 | Scénario | Comportement |
 | --- | --- |
-| Edge Optimize renvoie `2XX` | La réponse optimisée est transmise au client. |
+| Edge Optimize renvoie `2XX` | La réponse optimisée est transmise à la clientèle. |
 | Edge Optimize renvoie `4XX` ou `5XX` | La demande est routée vers l’origine par défaut. |
 
 **Vérifier la configuration**
@@ -159,14 +159,14 @@ Une fois la configuration terminée, vérifiez que le trafic des robots est ache
 
 **1. Tester le trafic de robots (doit être optimisé)**
 
-Simulez une requête de robot d’IA à l’aide d’une chaîne agent-utilisateur :
+Simulez une requête de robot d’IA à l’aide d’une chaîne utilisateur-agent :
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
 
-Une réponse réussie inclut l’en-tête `x-edgeoptimize-request-id`, confirmant que la requête a été acheminée via Edge Optimize :
+Une réponse réussie inclut l’en-tête `x-edgeoptimize-request-id`, confirmant que la requête a été acheminée via Edge Optimize :
 
 ```
 < HTTP/2 200
@@ -175,21 +175,21 @@ Une réponse réussie inclut l’en-tête `x-edgeoptimize-request-id`, confirman
 
 **2. Tester le trafic humain (ne devrait PAS être affecté)**
 
-Simulez une requête régulière de navigateur humain :
+Simulez une requête régulière de navigateur humain :
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 ```
 
-La réponse ne doit **pas** contenir l’en-tête `x-edgeoptimize-request-id`. Le contenu de la page et le temps de réponse doivent rester identiques à avant l’activation de l’option Optimiser dans Edge.
+La réponse ne doit **pas** contenir l’en-tête `x-edgeoptimize-request-id`. Le contenu de la page et le temps de réponse doivent rester identiques à avant l’activation de l’option Optimize at Edge.
 
 **3. Comment différencier les deux scénarios**
 
 | En-tête | Trafic de robots (optimisé) | Trafic humain (non affecté) |
 |---|---|---|
-| `x-edgeoptimize-request-id` | Présent : contient un ID de requête unique | Absent |
-| `x-edgeoptimize-fo` | Présent uniquement en cas de basculement (valeur : `1`) | Absent |
+| `x-edgeoptimize-request-id` | Présent : contient un ID de requête unique | Absent |
+| `x-edgeoptimize-fo` | Présent uniquement en cas de basculement (valeur : `1`) | Absent |
 
 {{verify-routing-status-in-ui}}
 

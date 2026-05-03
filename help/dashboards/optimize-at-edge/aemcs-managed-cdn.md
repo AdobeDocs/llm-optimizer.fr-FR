@@ -1,18 +1,18 @@
 ---
-title: Optimiser sur Edge - Réseau CDN géré par AEM Cloud Service (Fastly)
-description: Découvrez comment configurer le réseau CDN géré par AEM Cloud Service (rapidement) pour une optimisation sur Edge dans LLM Optimizer.
+title: Optimize at Edge - CDN géré d’AEM Cloud Service (Fastly)
+description: Découvrez comment configurer le CDN géré d’AEM Cloud Service (Fastly) pour Optimize at Edge dans LLM Optimizer.
 feature: Opportunities
 source-git-commit: 184d6008c2579014c6ff453e8bfff4bb898f4b82
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 0%
+ht-degree: 20%
 
 ---
 
 
 # Réseau CDN géré par AEM Cloud Service (Fastly)
 
-Cette configuration achemine le trafic dynamique (requêtes provenant de robots d’IA et d’agents utilisateurs LLM) vers le service principal Edge Optimize (`live.edgeoptimize.net`). Les visiteurs humains et les robots d&#39;optimisation du moteur de recherche continuent d&#39;être servis depuis votre origine comme d&#39;habitude. Pour tester la configuration, une fois l’installation terminée, recherchez l’en-tête `x-edgeoptimize-request-id` dans la réponse.
+Cette configuration achemine le trafic généré par l’IA agentique (demandes provenant de robots d’IA et d’agents utilisateurs LLM) vers le service principal Edge Optimize (`live.edgeoptimize.net`). Les personnes humaines et les robots d’optimisation du moteur de recherche continuent d’être servis depuis votre origine comme d’habitude. Pour tester la configuration, une fois l’installation terminée, recherchez l’en-tête `x-edgeoptimize-request-id` dans la réponse.
 
 ## Conditions préalables
 
@@ -28,11 +28,11 @@ Pour accéder à cette fonctionnalité :
 
 ## Étapes pour activer le routage
 
-Pour commencer à acheminer le trafic d’agent vers Edge Optimizer :
+Pour commencer à acheminer le trafic généré par l’IA agentique vers Edge Optimizer :
 
 1. Dans LLM Optimizer, ouvrez **Configuration du client** et sélectionnez l’onglet **Configuration du réseau de diffusion de contenu**.
 
-   ![Accéder à la configuration du client](/help/assets/optimize-at-edge/cs-fastly-prereq-customer-config-nav.png)
+   ![Accédez à Configuration cliente](/help/assets/optimize-at-edge/cs-fastly-prereq-customer-config-nav.png)
 
 2. Recherchez la section **Déployer des optimisations sur des agents d’IA**. Cliquez sur le bouton **Activer**.
 
@@ -52,7 +52,7 @@ Pour commencer à acheminer le trafic d’agent vers Edge Optimizer :
 
    Pour désactiver le routage à tout moment, revenez à la section **Déployer les optimisations sur les agents d’IA** de l’onglet **Configuration du réseau CDN** et cliquez sur **Désactiver**.
 
-De plus, si vous avez besoin d’aide pour les étapes ci-dessus, contactez votre équipe de compte Adobe ou votre `llmo-at-edge@adobe.com`.
+De plus, si vous avez besoin d’aide pour les étapes ci-dessus, contactez votre équipe de compte Adobe ou `llmo-at-edge@adobe.com`.
 
 ## Dépannage
 
@@ -106,14 +106,14 @@ Une fois la configuration du routage terminée, vous pouvez éventuellement vér
 
 1. **Tester le trafic de robots (doit être optimisé)**
 
-   Simulez une requête de robot d’IA à l’aide d’une chaîne agent-utilisateur :
+   Simulez une requête de robot d’IA à l’aide d’une chaîne utilisateur-agent :
 
    ```
    curl -svo /dev/null https://www.example.com/page.html \
      --header "user-agent: chatgpt-user"
    ```
 
-   Une réponse réussie inclut l’en-tête `x-edgeoptimize-request-id`, confirmant que la requête a été acheminée via Edge Optimize :
+   Une réponse réussie inclut l’en-tête `x-edgeoptimize-request-id`, confirmant que la requête a été acheminée via Edge Optimize :
 
    ```
    < HTTP/2 200
@@ -122,21 +122,21 @@ Une fois la configuration du routage terminée, vous pouvez éventuellement vér
 
 2. **Tester le trafic humain (ne doit PAS être affecté)**
 
-   Simulez une requête régulière de navigateur humain :
+   Simulez une requête régulière de navigateur humain :
 
    ```
    curl -svo /dev/null https://www.example.com/page.html \
      --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
    ```
 
-   La réponse ne doit pas contenir l’en-tête `x-edgeoptimize-request-id`. Le contenu de la page et le temps de réponse doivent rester identiques à avant l’activation de l’option Optimiser dans Edge.
+   La réponse ne doit pas contenir l’en-tête `x-edgeoptimize-request-id`. Le contenu de la page et le temps de réponse doivent rester identiques à avant l’activation de l’option Optimize at Edge.
 
 3. **Comment différencier les deux scénarios**
 
    | En-tête | Trafic de robots (optimisé) | Trafic humain (non affecté) |
    |---|---|---|
-   | `x-edgeoptimize-request-id` | Présent : contient un ID de requête unique | Absent |
-   | `x-edgeoptimize-fo` | Présent uniquement en cas de basculement (valeur : `1`) | Absent |
+   | `x-edgeoptimize-request-id` | Présent : contient un ID de requête unique | Absent |
+   | `x-edgeoptimize-fo` | Présent uniquement en cas de basculement (valeur : `1`) | Absent |
 
 4. **Vérifier le statut du routage dans LLM Optimizer**
 
