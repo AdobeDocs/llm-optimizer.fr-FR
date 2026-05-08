@@ -12,9 +12,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 autotag-review: '2026-04-30T18:12:24.085Z'
-source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
+source-git-commit: 9c8e5750410f0746d1777d2637d84561d15a7a64
 workflow-type: tm+mt
-source-wordcount: 1463
+source-wordcount: 1472
 ht-degree: 38%
 
 ---
@@ -62,9 +62,9 @@ Pour activer votre version d’évaluation, en tant que client AEM Cloud, vous p
 
 ![Version d’évaluation de LLM Optimizer](/help/overview/assets/llm-trial.png)
 
-#### clients Adobe Analytics
+#### Adobe Analytics et Adobe Customer Journey Analytics
 
-Si vous êtes client Adobe Analytics, une bannière s’affiche sur la page d’accueil d’Experience Cloud.
+Pour les clients Adobe Analytics et Adobe Customer Journey Analytics, une bannière s’affiche sur la page d’accueil d’Experience Cloud.
 
 ![Page d’accueil d’Experience Cloud avec la bannière Démarrer la version d’évaluation de Adobe LLM Optimizer &#x200B;](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
 
@@ -77,7 +77,7 @@ Une fois l’essai actif, continuez à intégrer votre nom de marque et votre do
 
 >[!NOTE]
 >
-> * **Version d’essai gratuite** les clients AEM Cloud et Adobe Analytics peuvent utiliser la version d’essai gratuite de LLM Optimizer.
+> * **Version d’essai gratuite :** les clients AEM Cloud et Adobe Analytics/Customer Journey Analytics peuvent utiliser la version d’essai gratuite de LLM Optimizer.
 > * **Les clients qui activent l’évaluation le ou après le 1er avril 2026** peuvent utiliser jusqu’à 100 invites, un domaine, et peuvent déployer des optimisations sur jusqu’à 10 URL pour un seul type d’opportunité.
 > * **Les clients qui ont activé l’évaluation avant le 1er avril 2026** continuent d’avoir accès à jusqu’à 200 invites en vertu de leurs conditions actuelles.
 >
