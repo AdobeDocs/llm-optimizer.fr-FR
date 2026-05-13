@@ -30,9 +30,9 @@ Il n’est **nécessaire** créer un projet Google Cloud, de générer un compte
 
 ## Connexion de GA4 au tableau de bord du Trafic de recommandation {#connect}
 
-Le flux de connexion commence à partir du tableau de bord du Trafic de recommandation [](/help/dashboards/referral-traffic.md) comme suit :
+Le flux de connexion commence à partir du tableau de bord du Trafic de recommandation [&#128279;](/help/dashboards/referral-traffic.md) comme suit :
 
-1. Ouvrez le Trafic de recommandation **** dans LLM Optimizer.
+1. Ouvrez le Trafic de recommandation **&#x200B;**&#x200B;dans LLM Optimizer.
 
 1. Ouvrez l’onglet **Impact commercial**.
 
