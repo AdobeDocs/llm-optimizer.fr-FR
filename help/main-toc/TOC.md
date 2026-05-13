@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 'Boostez votre marque avec Adobe LLM Optimizer. Suivez des mentions, découvrez des informations et imposez-vous dans la recherche optimisée par l’IA. Prenez le contrôle de votre visibilité : commencez à l’optimiser dès maintenant !'
-source-git-commit: b9e18081cd364b35a5375975cad949b7037bfaaf
+source-git-commit: ef3ef2c8f353047925c4fc99c73d9cf0399f24ca
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 62%
+source-wordcount: '164'
+ht-degree: 60%
 
 ---
 
@@ -62,3 +62,4 @@ ht-degree: 62%
       + [CloudFront (BYOCDN)](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md)
    + [Contrôle d’accès](/help/dashboards/access-control.md)
    + [Intégration d’Adobe Analytics](/help/dashboards/adobe-analytics-integration.md)
+   + [Intégration de Google Analytics](/help/dashboards/google-analytics-integration.md)
