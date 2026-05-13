@@ -2,9 +2,9 @@
 title: Intégration de Google Analytics
 description: Découvrez comment connecter Google Analytics 4 à LLM Optimizer pour mesurer les résultats commerciaux, l’engagement sur le site et les découvertes pilotées par l’IA dans le tableau de bord du Trafic de recommandation.
 feature: Referral Traffic
-source-git-commit: abf88fc3e141e12d6b5c826e35d4590ae6407c9b
+source-git-commit: 368b3c1ee79660ede0c4bf9824f299d2e801c8b2
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1169'
 ht-degree: 1%
 
 ---
@@ -13,8 +13,6 @@ ht-degree: 1%
 # Intégration de Google Analytics
 
 L’intégration de Google Analytics 4 (GA4) connecte LLM Optimizer aux données GA4 de votre entreprise afin que vous puissiez mesurer la manière dont la découverte pilotée par l’IA sur des plateformes telles que ChatGPT, Gemini, Copilot, Claude et Perplexity se traduit en engagement réel sur le site web et en résultats commerciaux. Après avoir connecté une propriété GA4, LLM Optimizer extrait les mesures de trafic de recommandation, d’engagement et de conversion que GA4 attribue à ces sources et les fait apparaître dans le tableau de bord **Trafic de recommandation** sous l’onglet **Impact commercial**.
-
-## Disponibilité {#availability}
 
 >[!IMPORTANT]
 >
@@ -32,19 +30,19 @@ Il n’est **nécessaire** créer un projet Google Cloud, de générer un compte
 
 ## Connexion de GA4 au tableau de bord du Trafic de recommandation {#connect}
 
-Le flux de connexion commence à partir du tableau de bord du Trafic de recommandation [&#128279;](/help/dashboards/referral-traffic.md) comme suit :
+Le flux de connexion commence à partir du tableau de bord du Trafic de recommandation [](/help/dashboards/referral-traffic.md) comme suit :
 
-1. Ouvrez le Trafic de recommandation **&#x200B;**&#x200B;dans LLM Optimizer.
+1. Ouvrez le Trafic de recommandation **** dans LLM Optimizer.
 
 1. Ouvrez l’onglet **Impact commercial**.
 
    Tableau de bord du Trafic de recommandation ![](/help/dashboards/assets/ga4-integration-01-business-impact-tab.png)
 
-1. Sélectionnez **Connexion à Analytics**. LLM Optimizer vous dirige vers **Configuration du client > Analytics**. Dans le sélecteur de fournisseur Analytics, sélectionnez **Google Analytics 4**.
+1. Sélectionnez **Connexion à Analytics**. LLM Optimizer vous dirige vers **Configuration du client > Analytics**. Dans le sélecteur de fournisseur Analytics, sélectionnez **Connecter Google Analytics 4**.
 
    ![Configuration du client, onglet Analytics avec GA4 sélectionné](/help/dashboards/assets/ga4-integration-02-analytics-ga4-picker.png)
 
-1. Sélectionnez **Connexion**. Un nouvel onglet du navigateur s’ouvre sur l’écran de connexion de Google.
+1. Sélectionnez **Connecter le compte**. Un nouvel onglet du navigateur s’ouvre sur l’écran de connexion de Google.
 
    ![Connexion à Google pour la connexion GA4](/help/dashboards/assets/ga4-integration-03-google-sign-in.png)
 
