@@ -2,9 +2,15 @@
 title: Restauration de la visibilité du contenu
 description: Découvrez comment LLM Optimizer identifie les pages où le contenu critique est masqué aux agents d’IA et comment récupérer cette visibilité à l’aide de l’optimisation basée sur les périphériques.
 feature: Opportunities
-source-git-commit: fd3c1b5ab75b54a93be06460ba15b382e74d8e3a
+autotag-review: '2026-05-15T17:56:37.098Z'
+TQID: 'https://experienceleague.adobe.com/rHqJL4RrJr1ghsy4fhXe-JLDrWruNSZgVhXQeRN-iyA'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: 928
 ht-degree: 1%
 
 ---
@@ -20,11 +26,11 @@ Il présente trois mesures clés en un coup d’œil :
 
 - **URLs** — Nombre de pages identifiées par un écart de visibilité du contenu.
 - **Gain de contenu estimé** — Multiplicateur estimé de contenu qui peut être récupéré en appliquant l’optimisation.
-- **Visibilité du contenu moyenne** : pourcentage moyen de contenu actuellement visible par les agents d’IA sur les pages affectées.
+- Visibilité du contenu moyenne **: pourcentage moyen de contenu actuellement visible par les agents d’IA sur les pages affectées.**
 
-![Récupérer le tableau de bord des Visibilités du contenu &#x200B;](/help/dashboards/opportunities/assets/recover-content-visibility-overview.png)
+![Récupérer le tableau de bord des Visibilités du contenu ](/help/dashboards/opportunities/assets/recover-content-visibility-overview.png)
 
-Pour un aperçu vidéo de cette opportunité, vous pouvez regarder [Récupérer la Visibilité du contenu &#x200B;](https://www.youtube.com/watch?v=BigPyJssFCw).
+Pour un aperçu vidéo de cette opportunité, vous pouvez regarder [Récupérer la Visibilité du contenu ](https://www.youtube.com/watch?v=BigPyJssFCw).
 
 Cette opportunité peut être optimisée à l’aide de [Optimiser sur Edge](/help/dashboards/optimize-at-edge/overview.md). Les optimisations sont diffusées exclusivement aux agents d’IA sans impact sur les visiteurs humains (diffusion en robots uniquement). Les optimisations sont ensuite appliquées à la couche CDN sans modifications de CMS requises et peuvent prendre effet en quelques minutes sans intervention des développeurs, ce qui en fait un déploiement rapide et à faible risque.
 
@@ -64,7 +70,7 @@ Une fois que vous avez examiné les suggestions et sélectionné les URL à opti
 >
 >Le déploiement des optimisations nécessite l’achèvement du processus d’intégration Optimizer at Edge. Si vous n’avez pas encore intégré, cliquez sur **Déployer les optimisations** pour être redirigé(e) vers le processus d’intégration. Pour plus d’informations sur le fonctionnement d’Optimize at Edge, les fournisseurs de réseau CDN pris en charge et le processus d’intégration, consultez la page [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md).
 
-![&#x200B; Boîte de dialogue Déployer sur Edge &#x200B;](/help/dashboards/opportunities/assets/recover-content-visibility-deploy.png)
+![ Boîte de dialogue Déployer sur Edge ](/help/dashboards/opportunities/assets/recover-content-visibility-deploy.png)
 
 ## Faites un essai dans la démonstration
 

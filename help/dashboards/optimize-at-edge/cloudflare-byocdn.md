@@ -2,9 +2,14 @@
 title: Optimize at Edge - Cloudflare (BYOCDN)
 description: Découvrez comment configurer Cloudflare BYOCDN pour Optimize at Edge dans LLM Optimizer.
 feature: Opportunities
-source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
+autotag-review: '2026-05-15T17:40:49.847Z'
+TQID: 'https://experienceleague.adobe.com/HkaDwdHRGZJnip-1Bp-4Z-ovwcBPxFUSDqeLUVNu0zo'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: 1906
 ht-degree: 68%
 
 ---
@@ -81,7 +86,7 @@ Cliquez sur le bouton pour ouvrir la page Configuration des programmes de travai
 
 1. **Compte Git** — Sélectionnez votre compte GitHub ou GitLab dans la liste déroulante. Cloudflare transforme le code du programme de travail en un référentiel dans votre compte. Si aucun compte n’est répertorié, vous pouvez ajouter une nouvelle connexion directement à partir de la liste déroulante en sélectionnant **+ Nouvelle connexion GitHub** ou **+ Nouvelle connexion GitLab**. Pour plus d’informations, consultez le [Guide d’intégration Git de Cloudflare](https://developers.cloudflare.com/workers/ci-cd/builds/git-integration/github-integration/).
 
-   ![Liste déroulante Compte Git affichant les options Nouvelle connexion GitHub et Nouvelle connexion GitLab &#x200B;](/help/assets/optimize-at-edge/cloudflare-git-connection.png)
+   ![Liste déroulante Compte Git affichant les options Nouvelle connexion GitHub et Nouvelle connexion GitLab ](/help/assets/optimize-at-edge/cloudflare-git-connection.png)
 2. **Créer un référentiel Git privé** — Gardez cette case cochée (par défaut).
 3. **Nom du projet** — Laissez-le `edge-optimize-router` ou entrez le nom de votre choix.
 4. **EDGE_OPTIMIZE_API_KEY** — Collez votre clé API Edge Optimize fournie par Adobe. Cette valeur est stockée en tant que secret chiffré.

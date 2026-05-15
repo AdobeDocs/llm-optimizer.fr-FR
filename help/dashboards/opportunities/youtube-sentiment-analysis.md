@@ -2,9 +2,15 @@
 title: Analyse du Sentiment YouTube
 description: Découvrez comment LLM Optimizer analyse les vidéos et les commentaires de YouTube pour faire apparaître des recommandations qui améliorent la perception et la visibilité de votre marque dans les résultats Recherche optimisée par l'IA.
 feature: Opportunities
-source-git-commit: 91fcd44f97e996fa7eb712928aba5dda250ea55b
+autotag-review: '2026-05-15T18:12:18.358Z'
+TQID: 'https://experienceleague.adobe.com/XevtwbOrmn6QTjMxnErSTI91WUv9m6GYWJ7LeLXdXXg'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: 1255
 ht-degree: 1%
 
 ---
@@ -22,8 +28,8 @@ Il analyse votre marque à travers six dimensions :
 - **Commentaires analysés** — Nombre de commentaires examinés dans les vidéos analysées.
 - **Mentions de marque (vidéos)** — Fréquence à laquelle votre marque est mentionnée dans le contenu vidéo.
 - **Mentions de marque (commentaires)** — Fréquence à laquelle votre marque est mentionnée dans les commentaires.
-- **sentiment global (vidéos)** — sentiment agrégé vers votre marque pour le contenu vidéo.
-- **sentiment global (commentaires)** — sentiment agrégé vers votre marque dans les commentaires.
+- sentiment global (vidéos)**— sentiment agrégé vers votre marque pour le contenu vidéo.**
+- sentiment global (commentaires)**— sentiment agrégé vers votre marque dans les commentaires.**
 
 >[!NOTE]
 >L’analyse du Sentiment YouTube est actuellement en version bêta. Les fonctionnalités et la disponibilité peuvent changer à mesure que la fonctionnalité continue de se développer.
@@ -88,7 +94,7 @@ Il montre :
 
 Effectue le suivi de la perception de la marque sur le contenu analysé avec un graphique de **répartition du Sentiment** indiquant la répartition en pourcentage du sentiment favorable, neutre et défavorable pour les vidéos et les commentaires.
 
-![Analyse de Sentiment &#x200B;](/help/dashboards/opportunities/assets/youtube-sentiment-distribution.png)
+![Analyse de Sentiment ](/help/dashboards/opportunities/assets/youtube-sentiment-distribution.png)
 
 ### Vidéos
 

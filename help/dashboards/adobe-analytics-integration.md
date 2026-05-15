@@ -2,20 +2,13 @@
 title: Intégration d’Adobe Analytics
 description: Découvrez comment connecter Adobe Analytics à LLM Optimizer pour mesurer les résultats commerciaux, l’engagement sur le site et les découvertes pilotées par l’IA dans le tableau de bord du Trafic de recommandation.
 feature: Referral Traffic
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-autotag-review: '2026-04-30T18:25:39.169Z'
-source-git-commit: 733c693f35c5b023681962cc5089492b95645b28
+autotag-review: '2026-05-15T17:29:50.263Z'
+TQID: 'https://experienceleague.adobe.com/Wo-7p-mNQRrpS3EhmnS38UF1-IcaKEJpUz5H3BwY8Yo'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c0713b97-4af8-4c41-b742-5afcc6ced468id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: e69d5a42-0217-4ca5-9396-a9a826a170da
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 879
 ht-degree: 4%
@@ -43,9 +36,9 @@ Cette intégration permet de combler le fossé entre la mesure de visibilité de
 
 ## Connexion d’Adobe Analytics au tableau de bord du Trafic de recommandation {#connect}
 
-Le flux de connexion commence à partir du tableau de bord du Trafic de recommandation [&#128279;](/help/dashboards/referral-traffic.md) comme suit :
+Le flux de connexion commence à partir du tableau de bord du Trafic de recommandation [](/help/dashboards/referral-traffic.md) comme suit :
 
-1. Ouvrez le tableau de bord du Trafic de recommandation [&#128279;](/help/dashboards/referral-traffic.md). La vue par défaut est **informations sur le trafic**.
+1. Ouvrez le tableau de bord du Trafic de recommandation [](/help/dashboards/referral-traffic.md). La vue par défaut est **informations sur le trafic**.
 
    ![Tableau de bord de Trafic de recommandation, onglet Informations de trafic](/help/dashboards/assets/aa-integration-01-referral-traffic-traffic-insights.png)
 
@@ -99,7 +92,7 @@ Lors de la configuration, vous définissez la suite de rapports et la dimension 
 
 ### Comment le trafic LLM est identifié
 
-Le trafic provenant de LLM est identifié à l’aide d’Adobe Analytics [Type de référent : outils d’IA dédiée à la conversation](https://experienceleague.adobe.com/fr/docs/analytics/components/dimensions/referrer-type#conversational-ai-tools).
+Le trafic provenant de LLM est identifié à l’aide d’Adobe Analytics [Type de référent : outils d’IA dédiée à la conversation](https://experienceleague.adobe.com/en/docs/analytics/components/dimensions/referrer-type#conversational-ai-tools).
 
 ### Données ingérées {#data-ingested}
 

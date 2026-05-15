@@ -2,9 +2,15 @@
 title: Trafic de recommandation
 description: Découvrez comment utiliser le tableau de bord du trafic de recommandation pour voir comment les visiteurs et visiteuses accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de recommandation.
 feature: Referral Traffic
-source-git-commit: ef3ef2c8f353047925c4fc99c73d9cf0399f24ca
+autotag-review: '2026-05-15T17:57:28.534Z'
+TQID: 'https://experienceleague.adobe.com/rMSltSJf-UH4FHoST9NhmeY-hGVNLXsFXbCLzZenW5w'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: e3c08d81-9e25-4503-9df5-8dd1f489aa99
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 09e228275cf84316ee2e8990636bb3b8865ac263
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: 750
 ht-degree: 78%
 
 ---
@@ -15,7 +21,7 @@ ht-degree: 78%
 Le trafic de recommandation montre comment les visiteurs et visiteuses accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de recommandation. Il suit et analyse les sources de trafic, les tendances de recommandation et les mesures de conversion des sites web et plateformes externes. Cela vous aidera à comprendre quelles sources, régions et pages génèrent le trafic le plus engagé. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
 
 >[!NOTE]
->Par défaut, ce tableau de bord génère des informations sur le trafic à partir des **journaux CDN**. Si votre entreprise fait partie d’une offre payante, vous pouvez connecter **&#x200B;**&#x200B;ou **Google Analytics 4**(GA4) afin d’ajouter des données qui mesurent l’engagement sur le site et la découverte pilotée par l’IA. Ces données sont disponibles dans l’onglet **Impact commercial**. Notez que sans intégration à Adobe Analytics ou GA4, l’onglet n’est pas renseigné. Pour plus d’informations[&#128279;](/help/dashboards/adobe-analytics-integration.md) consultez Intégration d’Adobe Analytics ou [Intégration de Google Analytics](/help/dashboards/google-analytics-integration.md).
+>Par défaut, ce tableau de bord génère des informations sur le trafic à partir des **journaux CDN**. Si votre entreprise fait partie d’une offre payante, vous pouvez connecter **** ou **Google Analytics 4**(GA4) afin d’ajouter des données qui mesurent l’engagement sur le site et la découverte pilotée par l’IA. Ces données sont disponibles dans l’onglet **Impact commercial**. Notez que sans intégration à Adobe Analytics ou GA4, l’onglet n’est pas renseigné. Pour plus d’informations](/help/dashboards/adobe-analytics-integration.md) consultez [Intégration d’Adobe Analytics ou [Intégration de Google Analytics](/help/dashboards/google-analytics-integration.md).
 
 ![Page de recommandation](/help/dashboards/assets/referral-traffic.png)
 

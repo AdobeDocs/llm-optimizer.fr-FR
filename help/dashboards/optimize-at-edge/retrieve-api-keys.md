@@ -2,10 +2,16 @@
 title: Récupération des clés API
 description: Comment récupérer vos clés API Edge Optimize de production et d’évaluation à partir de LLM Optimizer.
 feature: Opportunities
-source-git-commit: 3b6dc163f4488a22937916beb6778de4abc5a20c
+autotag-review: '2026-05-15T17:58:10.897Z'
+TQID: 'https://experienceleague.adobe.com/4R-cx6wv75Oowj9ZvEPGCzQbQBSoppgDuI5Ut1IbObA'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 0%
+source-wordcount: 337
+ht-degree: 1%
 
 ---
 
@@ -18,7 +24,7 @@ Avant de configurer votre réseau CDN, récupérez vos clés d’API Edge Optimi
 
 1. Dans LLM Optimizer, ouvrez **Configuration du client** et sélectionnez l’onglet **Configuration du réseau de diffusion de contenu**.
 
-   ![Accéder à la configuration du client](/help/assets/optimize-at-edge/prereq-customer-config-nav.png)
+   ![Accédez à Configuration cliente](/help/assets/optimize-at-edge/prereq-customer-config-nav.png)
 
 2. Recherchez la section **Déployer des optimisations sur des agents d’IA**. Cochez la case **Activer le moteur d’optimisation**.
 

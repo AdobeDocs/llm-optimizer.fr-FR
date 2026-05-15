@@ -2,9 +2,15 @@
 title: Transfert de journal - CloudFront (interface de ligne de commande AWS)
 description: Transférer les journaux CDN CloudFront vers le compartiment S3 d’Adobe à l’aide de l’interface de ligne de commande AWS pour la configuration et les opérations de diffusion.
 feature: Agentic Traffic
-source-git-commit: 3277e7f7f2e0c5e4693e40473d595b12d9e5f2e8
+autotag-review: '2026-05-15T17:42:44.992Z'
+TQID: 'https://experienceleague.adobe.com/NoVv3qv1RbtqAWGMPYC1Rz4wO-5Au1yL2e8tRKd9Hao'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e69d5a42-0217-4ca5-9396-a9a826a170da
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: 379
 ht-degree: 0%
 
 ---
@@ -12,11 +18,11 @@ ht-degree: 0%
 
 # Transfert de journal : CloudFront (interface de ligne de commande AWS) {#log-forwarding-cloudfront-cli}
 
-Cette page explique comment transférer les journaux CDN de CloudFront vers le compartiment S3 d’Adobe pour la collecte de données de trafic agentic. Vous utiliserez la page de configuration du réseau CDN de LLM Optimizer pour vous intégrer à LLM Optimizer. Une fois le processus d’intégration terminé, suivez les étapes fournies sur cette page pour configurer le transfert des journaux à l’aide de l’interface de ligne de commande [&#128279;](https://aws.amazon.com/cli/) à l’[étape 2](#step-2-cli).
+Cette page explique comment transférer les journaux CDN de CloudFront vers le compartiment S3 d’Adobe pour la collecte de données de trafic agentic. Vous utiliserez la page de configuration du réseau CDN de LLM Optimizer pour vous intégrer à LLM Optimizer. Une fois le processus d’intégration terminé, suivez les étapes fournies sur cette page pour configurer le transfert des journaux à l’aide de l’interface de ligne de commande [](https://aws.amazon.com/cli/) à l’[étape 2](#step-2-cli).
 
 >[!NOTE]
 >
-> Ce guide explique comment configurer le transfert de journal à l’aide de l’[interface de ligne de commande &#x200B;](https://aws.amazon.com/cli/). Si vous souhaitez configurer le transfert de journal à l’aide de l’interface utilisateur **CloudFront**, voir [Transfert de journal : CloudFront](/help/overview/log-forwarding/cloudfront.md).
+> Ce guide explique comment configurer le transfert de journal à l’aide de l’[interface de ligne de commande ](https://aws.amazon.com/cli/). Si vous souhaitez configurer le transfert de journal à l’aide de l’interface utilisateur **CloudFront**, voir [Transfert de journal : CloudFront](/help/overview/log-forwarding/cloudfront.md).
 
 ## Étape 1 : intégration dans LLM Optimizer {#step-1}
 
@@ -100,7 +106,7 @@ export REGION1=us-east-1
 export CUSTOMER=<CUSTOMER_NAME> ## No Space, user letters,numbers and dash
 export CDN_ID=<YOUR_CLOUDFRONT_DISTRIBUTION_ID>
 export ACCT1=<YOUR_AWS_ACCOUNT_NUMBER>
-export DELIVERY_DEST_ARN=arn:aws:logs:us-east-1:640168421876:delivery-destination:cdn-logs-<TRANSFORM_IMS_ID>-ams  ## Replace TRANSFORM_IMS_ID with the output of the command above 
+export DELIVERY_DEST_ARN=arn:aws:logs:us-east-1:640168421876:delivery-destination:cdn-logs-<TRANSFORM_IMS_ID>-ams  ## Replace TRANSFORM_IMS_ID with the output of the command above
 ```
 
 <!--Use the **Delivery destination ARN** and org values from the LLM Optimizer CDN configuration page if they differ from the pattern above.-->

@@ -2,9 +2,14 @@
 title: Analyse du Sentiment Reddit
 description: Découvrez comment LLM Optimizer analyse les threads Reddit pour afficher des recommandations qui améliorent la perception et la visibilité de votre marque dans les résultats Recherche optimisée par l'IA.
 feature: Opportunities
-source-git-commit: fa8b994aa55869cf7f2607e792acc4e8abc213e7
+autotag-review: '2026-05-15T17:56:59.489Z'
+TQID: 'https://experienceleague.adobe.com/LRC3nhHrAZoODy4gfsZiR7gc0i8n-IYqvZFj1TAUxsQ'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: 1163
 ht-degree: 1%
 
 ---
@@ -21,7 +26,7 @@ Il analyse votre marque à travers quatre dimensions :
 - **Publications analysées** — Nombre de publications Reddit examinées pour les mentions de marque et le sentiment.
 - **Commentaires analysés** — Nombre de commentaires examinés dans les publications analysées.
 - **Mentions de marque (threads)** — Fréquence à laquelle votre marque est mentionnée dans les threads analysés.
-- **sentiment global (threads)** - sentiment agrégé vers votre marque sur les threads analysés.
+- sentiment global (threads)**- sentiment agrégé vers votre marque sur les threads analysés.**
 
 >[!NOTE]
 >L&#39;analyse du Sentiment Reddit est actuellement en version bêta. Les fonctionnalités et la disponibilité peuvent changer à mesure que la fonctionnalité continue de se développer.
@@ -85,7 +90,7 @@ Il montre :
 
 Effectue le suivi de la perception de la marque sur les threads analysés avec un graphique de **distribution des Sentiments** indiquant la répartition en pourcentage des sentiments favorables, neutres et défavorables sur les threads.
 
-![Analyse de Sentiment &#x200B;](/help/dashboards/opportunities/assets/reddit-sentiment-distribution.png)
+![Analyse de Sentiment ](/help/dashboards/opportunities/assets/reddit-sentiment-distribution.png)
 
 ### Threads
 
