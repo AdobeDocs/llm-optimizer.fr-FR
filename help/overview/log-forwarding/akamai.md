@@ -4,10 +4,14 @@ description: Découvrez comment transférer les journaux CDN d’Akamai vers le 
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:35:22.816Z'
 TQID: 'https://experienceleague.adobe.com/cO-qqOveWFee1-QnVSlzmO-n383sptHl59Ni2qQcvAU'
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 595
@@ -50,7 +54,7 @@ Sur la page LLM Optimizer [https://llmo.now/](https://llmo.now/) :
 
 ## Étape 2 : créer un flux dans Akamai {#step-2}
 
-Sur le panneau de contrôle Akamai [](https://control.akamai.com/) suivez les étapes de la documentation officielle d’Akamai pour [créer un flux](https://techdocs.akamai.com/datastream2/docs/create-stream).
+Sur le panneau de contrôle Akamai [&#128279;](https://control.akamai.com/) suivez les étapes de la documentation officielle d’Akamai pour [créer un flux](https://techdocs.akamai.com/datastream2/docs/create-stream).
 
 ## Etape 3 : sélection des paramètres de données {#step-3}
 
@@ -133,4 +137,4 @@ Après avoir créé les flux de données et choisi les paramètres, vous devez c
 
 Avant la validation finale, la configuration doit ressembler à cet exemple :
 
-![ Validation de la configuration ](/help/overview/assets/log-forwarding/akamai/akamai-validation.png)
+![&#x200B; Validation de la configuration &#x200B;](/help/overview/assets/log-forwarding/akamai/akamai-validation.png)

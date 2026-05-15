@@ -4,10 +4,16 @@ description: Découvrez comment utiliser le tableau de bord des opportunités po
 feature: Opportunities
 autotag-review: '2026-05-15T17:53:48.623Z'
 TQID: 'https://experienceleague.adobe.com/FAbQhzuyT-kIitIaoVQ47dam-TpN-deU5Vbo1nmK5CA'
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2:
+  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 1227
@@ -42,7 +48,7 @@ Vous trouverez ci-dessous un tableau des opportunités actuellement prises en ch
 | [Trafic bloqué par robots.txt](/help/dashboards/opportunities/traffic-blocked-by-robots.md) | Géolocalisation technique | Analyse votre fichier robots.txt à la recherche de règles qui bloquent de manière sélective les agents d’IA à partir de contenu qui est autrement accessible au public. Indique les URL affectées et les agents bloqués. | Mettez à jour votre fichier robots.txt pour autoriser l’accès aux robots d&#39;exploration d’IA pris en charge, le cas échéant. |
 | [Erreurs de trafic agent](/help/dashboards/opportunities/agentic-traffic-errors.md) | Géolocalisation technique | Surveille les journaux CDN pour les réponses d’erreur 404, 403 et 5xx renvoyées aux agents d’IA. Rapports sur les URL affectées et le nombre total d’accès perdus. | Corrigez les liens rompus, mettez à jour des autorisations et résolvez les problèmes côté serveur afin que le contenu clé renvoie 200 réponses. |
 | [Simplifier les contenus complexes](/help/dashboards/opportunities/simplify-complex-content.md) | Contenu (sur site) | identifie les pages à trafic élevé où la copie dense ou complexe se trouve en dessous des seuils de lisibilité, ce qui rend plus difficile l’interprétation des informations clés par les agents d’IA. Affiche les URL concernées et l’endroit où un texte simplifié est recommandé. | Examinez le texte amélioré généré par l’IA qui repose sur le contenu de la page existante, puis déployez-le en périphérie du réseau CDN avec l’option Optimiser d’Edge afin que les agents reçoivent des passages plus clairs et plus faciles à analyser. |
-| [Récupérer la Visibilité du contenu ](/help/dashboards/opportunities/recover-content-visibility.md) | Géolocalisation technique | Indique les pages où le contenu critique est masqué aux agents d’IA. Affiche les URL affectées et le contenu attendu qui peut être récupéré. | Effectuez le pré-rendu des pages au niveau de la couche CDN à l’aide de l’option Optimiser sur Edge afin que davantage de contenu soit disponible pour les agents d’IA sans exécution JavaScript. |
+| [Récupérer la Visibilité du contenu &#x200B;](/help/dashboards/opportunities/recover-content-visibility.md) | Géolocalisation technique | Indique les pages où le contenu critique est masqué aux agents d’IA. Affiche les URL affectées et le contenu attendu qui peut être récupéré. | Effectuez le pré-rendu des pages au niveau de la couche CDN à l’aide de l’option Optimiser sur Edge afin que davantage de contenu soit disponible pour les agents d’IA sans exécution JavaScript. |
 | [Ajouter une table des matières](/help/dashboards/opportunities/add-table-of-contents.md) | Géolocalisation technique | Détecte les pages qui ne disposent pas d’une organisation structurelle claire ou de titres de navigation, ce qui rend difficile, pour les agents d’IA, l’analyse et le mappage du contenu aux requêtes des utilisateurs. Affiche les URL concernées et l’emplacement où une table des matières structurée est recommandée. | Consultez la table des matières structurée suggérée avec des en-têtes liés à une ancre qui reflètent les sections principales de la page, puis déployez-la à l’extrémité du réseau CDN avec Optimiser dans Edge afin qu’une table des matières soit injectée dans HTML, améliorant ainsi la structure de la page afin que les modèles puissent plus facilement extraire, mapper et citer les sections pertinentes. |
 | [Analyse Wikipédia](/help/dashboards/opportunities/wikipedia-analysis.md) | Hors site | Analyse la page Wikipédia de votre entreprise par rapport à ses concurrents du secteur en termes de références, de sections, de longueur du contenu, d’images et d’exhaustivité de la boîte de réception. Identifie les écarts spécifiques où votre page se situe en dessous des références du secteur. | Consultez les recommandations stratégiques générées par l’IA pour améliorer votre présence sur Wikipédia, y compris l’ajout de références, l’enrichissement de votre boîte de réception, le développement des sections et l’amélioration de la qualité des articles. |
 | [Analyse de Sentiment YouTube (Beta)](/help/dashboards/opportunities/youtube-sentiment-analysis.md) | Hors site, réseaux sociaux et communauté | Analyse les vidéos YouTube citées pour votre invite de Présence des marques définie pour les mentions de marque, le sentiment, la part de voix et les rubriques récurrentes. S’affiche uniquement lorsque des vidéos YouTube sont détectées comme citations pour votre ensemble d’invites. | Examinez les recommandations prioritaires pour améliorer la perception de la marque dans le contenu de YouTube, y compris les actions suggérées et les équipes responsables de leur mise en œuvre. |

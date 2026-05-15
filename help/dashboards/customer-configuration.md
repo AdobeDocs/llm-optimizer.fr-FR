@@ -4,10 +4,15 @@ description: Utilisez la configuration cliente pour définir comment votre marqu
 feature: Customer Configuration
 autotag-review: '2026-05-15T17:45:12.067Z'
 TQID: 'https://experienceleague.adobe.com/qa7zk54n9G19-Azz9f6mn7V1kAGvnJSOJjpxbTBeHgc'
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2: id: e69d5a42-0217-4ca5-9396-a9a826a170da
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 2249
@@ -197,9 +202,9 @@ Avant d’utiliser cette fonctionnalité, vous devez intégrer votre compte Goog
 
 1. Ouvrez le tableau de bord **Configuration du client** (navigation classique) ou **Gestion des marques** (expérience orientée marque), puis accédez à l’intégration de la console de recherche Google (balise GSC dans l’expérience orientée marque).
 1. Accédez à l’onglet Search Console de Google et cliquez sur **Connect Account**.
-   ![Console de recherche ](/help/dashboards/assets/google-console.png)
+   ![Console de recherche &#x200B;](/help/dashboards/assets/google-console.png)
 1. Connectez-vous avec un compte Google ayant accès à la propriété de Search Console souhaitée.
-   ![Compte ](/help/dashboards/assets/google-account.png)
+   ![Compte &#x200B;](/help/dashboards/assets/google-account.png)
 1. Sélectionnez la propriété à connecter.
    ![Propriété de console](/help/dashboards/assets/console-property.png)
 1. Une fois la connexion établie, LLM Optimizer commence à récupérer les requêtes de recherche pertinentes.

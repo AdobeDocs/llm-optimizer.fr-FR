@@ -4,10 +4,16 @@ description: Découvrez comment transférer les journaux CDN de CloudFront vers 
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:43:07.178Z'
 TQID: 'https://experienceleague.adobe.com/TXnY-eK1SUuKrlVoGWd2hZO5bjUqEspvyFmcyOuei3Q'
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e69d5a42-0217-4ca5-9396-a9a826a170da
-topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 466
@@ -42,7 +48,7 @@ Sur la page LLM Optimizer [https://llmo.now/](https://llmo.now/) :
 
 1. Saisissez votre **ID de compte**.
 
-   ![Identifiant de compte ](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)
+   ![Identifiant de compte &#x200B;](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)
 
 1. Sélectionnez **CloudFront (BYOCDN)**.
 
@@ -54,7 +60,7 @@ Sur la page LLM Optimizer [https://llmo.now/](https://llmo.now/) :
 
 ## Étape 2 : activer la journalisation standard (console CloudFront) {#step-2}
 
-Pour activer la journalisation standard, à partir de la console de gestion [](https://aws.amazon.com/console/) :
+Pour activer la journalisation standard, à partir de la console de gestion [&#128279;](https://aws.amazon.com/console/) :
 
 1. Accédez à la [console CloudFront](https://console.aws.amazon.com/cloudfront/v4/home) et [mettez à jour une distribution existante](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowToUpdateDistribution.html#HowToUpdateDistributionProcedure).
 
@@ -88,7 +94,7 @@ Pour activer la journalisation standard, à partir de la console de gestion [](h
 
 Le **compte source** (avec la distribution CloudFront) envoie les journaux d’accès au **compte de destination** (le compartiment S3 affiché dans la page de configuration du réseau CDN de LLM Optimizer). Les deux comptes doivent disposer des autorisations appropriées.
 
-Par exemple : le compte source envoie `111111111111` les journaux à un compartiment S3 dans le compte de destination `222222222222`. Vous pouvez utiliser l’interface de ligne de commande [](https://aws.amazon.com/cli/).
+Par exemple : le compte source envoie `111111111111` les journaux à un compartiment S3 dans le compte de destination `222222222222`. Vous pouvez utiliser l’interface de ligne de commande [&#128279;](https://aws.amazon.com/cli/).
 
 >[!NOTE]
 >

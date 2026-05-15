@@ -4,10 +4,14 @@ description: Découvrez les différences entre les utilisateurs affectés au pro
 feature: Customer Configuration
 autotag-review: '2026-05-15T17:26:43.837Z'
 TQID: 'https://experienceleague.adobe.com/hJpQQpuHBRMdKT5oKA9z0Y8H3d3p6To-n2hWKrXgZsQ'
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2: id: b704f6a0-b2fb-4df0-9177-9753751004f5
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: b704f6a0-b2fb-4df0-9177-9753751004f5
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 618
@@ -109,7 +113,7 @@ Pour ces pages :
 
 Un **administrateur système** de votre organisation peut utiliser [Adobe Admin Console](https://adminconsole.adobe.com/) pour affecter Adobe LLM Optimizer à un utilisateur ou à un groupe.
 
-1. Connectez-vous à [](https://adminconsole.adobe.com/) avec un compte disposant de droits d’administration pour votre organisation.
+1. Connectez-vous à [&#128279;](https://adminconsole.adobe.com/) avec un compte disposant de droits d’administration pour votre organisation.
 1. Attribuez le profil de produit Adobe LLM Optimizer (ou le droit de produit équivalent de votre organisation) à l’utilisateur ou au groupe qui doit recevoir les fonctionnalités attribuées au produit.
 
 Pour obtenir des instructions détaillées, voir [Gestion des produits dans Admin Console](https://helpx.adobe.com/enterprise/using/manage-products.html) et [Gestion des groupes d’utilisateurs](https://helpx.adobe.com/fr/enterprise/using/user-groups.html).

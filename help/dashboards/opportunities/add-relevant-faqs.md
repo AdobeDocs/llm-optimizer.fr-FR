@@ -4,10 +4,14 @@ description: Découvrez comment LLM Optimizer identifie les pages à trafic éle
 feature: Opportunities
 autotag-review: '2026-05-15T17:28:53.611Z'
 TQID: 'https://experienceleague.adobe.com/491jK6SRnc2yJ4Uw9UzK71W3nsTWDhxt3lW0Sy8-3NQ'
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2:
+  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 742
@@ -59,7 +63,7 @@ Cochez les cases des lignes pour indiquer les suggestions de questions fréquent
 
 Lorsque vous êtes prêt à publier en périphérie, cliquez sur **Déployer les optimisations**. Une boîte de dialogue **Déployer vers Edge** répertorie les URL, les questions et les réponses que vous êtes sur le point de transmettre. Vérifiez la liste, puis choisissez **Déployer** ou **Annuler**.
 
-![ Boîte de dialogue Déployer sur Edge ](/help/dashboards/opportunities/assets/add-relevant-faqs-ui-03.png)
+![&#x200B; Boîte de dialogue Déployer sur Edge &#x200B;](/help/dashboards/opportunities/assets/add-relevant-faqs-ui-03.png)
 
 Après un déploiement réussi, **Déploiement terminé** confirme le nombre d’optimisations exécutées. Fermez la boîte de dialogue et ouvrez **Suggestions fixes** pour vérifier le statut.
 
