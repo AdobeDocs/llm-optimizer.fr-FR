@@ -2,9 +2,20 @@
 title: Transfert de journal - Fastly
 description: Découvrez comment transférer les journaux CDN de Fastly vers le compartiment S3 Adobe pour la collecte de données de trafic agentic dans LLM Optimizer.
 feature: Agentic Traffic
-source-git-commit: d1f98770b39f550c36d93ece9b89933c0e90f189
+autotag-review: '2026-05-15T17:51:51.808Z'
+TQID: 'https://experienceleague.adobe.com/9SH1I6ajHKLFeEWXy-NpvPm-Ylk2xBKhQro3qobVEX8'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: 381
 ht-degree: 4%
 
 ---
@@ -37,7 +48,7 @@ Sur la page LLM Optimizer [https://llmo.now/](https://llmo.now/) :
 
 ## Étape 2 : créer un point d’entrée S3 dans Fastly {#step-2}
 
-Pour créer un point d’entrée S3, sur le **Panneau de Contrôle Fastly** :
+Pour créer un point d’entrée S3, sur le Panneau de Contrôle Fastly **:**
 
 1. Dans le tableau de bord Fastly, accédez à **Services CDN** (et non aux Services de calcul).
 1. Dans la zone **Amazon Web Services S3**, cliquez sur **Créer un point d’entrée**.
@@ -49,10 +60,10 @@ Pour créer un point d’entrée S3, sur le **Panneau de Contrôle Fastly** :
 | **Emplacement** | Par défaut |
 | **Format du journal** | Utilisez la chaîne de format du journal indiquée dans la section **Chaîne de format du journal** ci-dessous. |
 | **Format de l’horodatage** | `%Y-%m-%dT%H:%M:%S.000` |
-| **Nom du compartiment** | Copiez le **nom du compartiment** de la page de configuration de LLM Optimizer. ![Nom du compartiment &#x200B;](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
-| **Domaine** | Copiez le **Nom de domaine** de la page de configuration de LLM Optimizer. ![Nom de domaine &#x200B;](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
+| **Nom du compartiment** | Copiez le **nom du compartiment** de la page de configuration de LLM Optimizer. ![Nom du compartiment](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
+| **Domaine** | Copiez le **Nom de domaine** de la page de configuration de LLM Optimizer. ![Nom de domaine](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
 | **Méthode d’accès** | **Informations d’identification de l’utilisateur** |
-| **Informations d’identification de l’utilisateur** | Copiez la **clé d’accès** et la **clé secrète** de la page de configuration de LLM Optimizer. ![Clés d’accès &#x200B;](/help/overview/assets/log-forwarding/common/access-keys.png) |
+| **Informations d’identification de l’utilisateur** | Copiez la **clé d’accès** et la **clé secrète** de la page de configuration de LLM Optimizer. ![Clés d’accès](/help/overview/assets/log-forwarding/common/access-keys.png) |
 | **Période** | `300` |
 
 **Chaîne de format du journal:**
@@ -69,7 +80,7 @@ Une fois les étapes ci-dessus effectuées, cliquez sur **Options avancées** et
 
 | Champ | Description |
 | --- | --- |
-| **Chemin** | Copiez **Chemin** à partir de la page de configuration de LLM Optimizer. ![Chemin &#x200B;](/help/overview/assets/log-forwarding/fastly/fastly-path.png) |
+| **Chemin** | Copiez **Chemin** à partir de la page de configuration de LLM Optimizer. ![Chemin](/help/overview/assets/log-forwarding/fastly/fastly-path.png) |
 | **Sélectionner un format de ligne de journal** | Vide |
 | **Compression** | Gzip |
 | **Niveau de redondance** | Standard |

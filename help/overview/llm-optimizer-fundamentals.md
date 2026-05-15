@@ -1,10 +1,21 @@
 ---
 title: Principes de base de LLM Optimizer
 description: Découvrez comment Adobe LLM Optimizer améliore la visibilité de la marque dans la recherche optimisée par l’IA. Effectuez le suivi des mentions, des citations et des informations. Commencez dès aujourd’hui à optimiser votre engagement et votre influence.
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+autotag-review: '2026-05-15T17:53:03.904Z'
+TQID: 'https://experienceleague.adobe.com/AI6oPtSezIqw3TBl-mUYH1clgJ-TQ-4z4KSjbN2Qr50'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 100%
+source-wordcount: 508
+ht-degree: 84%
 
 ---
 
@@ -52,11 +63,11 @@ La GEO (optimisation des moteurs génératifs) est par nature transversale. LLM�
 
 Avec Adobe LLM Optimizer, vous pouvez effectuer ce qui suit :
 
-**Mesurer la visibilité de la marque** : suivez quand, où et à quelle fréquence votre marque est mentionnée dans les résultats de recherche optimisée par l’IA. Allez au-delà des suppositions avec un score de visibilité clair auquel vous pouvez vous référer au fil du temps.
-**Évaluer les autres marques** : voyez comment votre marque se compare aux autres dans les moteurs génératifs. Identifiez les lacunes en matière de part de voix et découvrez les avantages concurrentiels.
-**Découvrir les opportunités exploitables** : identifiez les opportunités de contenu (par exemple, les questions fréquentes, les résumés, les schémas) et les opportunités techniques (explorabilité, problèmes d’indexation) qui augmentent directement les mentions et les citations.
-**Suivre l’impact du trafic provenant de l’IA** : surveillez le trafic généré par l’IA agentique (provenant des assistants IA) et le trafic de recommandation (clics des utilisateurs et utilisatrices à partir des citations) vers vos propriétés. Reliez la visibilité GEO à un engagement réel.
-**Favoriser la collaboration entre équipes** : partagez des tableaux de bord, attribuez des propriétaires pour les prompts ou les catégories, et assurez le suivi des objectifs de visibilité au sein des équipes marketing, SEO et de communication.
+**Mesurer la visibilité de la marque** : suivez quand, où et à quelle fréquence votre marque est mentionnée dans les résultats de recherche optimisée par l’IA. Allez au-delà des conjonctures grâce à un score de visibilité clair que vous pouvez utiliser comme base d’évaluation sur la durée.
+**Benchmark Other** - Découvrez comment votre marque se compare aux autres dans les moteurs génératifs. Identifiez les lacunes en matière de part de voix et découvrez les avantages concurrentiels.
+**Découvrir des opportunités exploitables** - Identifiez les opportunités de contenu (par exemple, FAQ, résumés, schémas) et les opportunités techniques (explorabilité, problèmes d’indexation) qui augmentent directement les mentions et les citations.
+**Suivi de l’impact du trafic depuis l’IA** - Surveillez le trafic des agences (provenant des assistants d’IA) et des trafics de recommandation (clics des utilisateurs dans les citations) vers vos propriétés. Reliez la visibilité GEO à un engagement réel.
+**Activer Team Collaboration** - Partagez des tableaux de bord, attribuez des propriétaires pour les invites ou les catégories, et assurez-vous que les objectifs de visibilité sont suivis dans les fonctions marketing, SEO et communications.
 
 
 ## Références

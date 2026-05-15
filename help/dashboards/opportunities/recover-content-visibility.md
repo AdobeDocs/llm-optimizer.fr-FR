@@ -2,9 +2,20 @@
 title: Restauration de la visibilité du contenu
 description: Découvrez comment LLM Optimizer identifie les pages où le contenu critique est masqué aux agents d’IA et comment récupérer cette visibilité à l’aide de l’optimisation basée sur les périphériques.
 feature: Opportunities
-source-git-commit: fd3c1b5ab75b54a93be06460ba15b382e74d8e3a
+autotag-review: '2026-05-15T17:56:37.098Z'
+TQID: 'https://experienceleague.adobe.com/rHqJL4RrJr1ghsy4fhXe-JLDrWruNSZgVhXQeRN-iyA'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2:
+  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: 928
 ht-degree: 1%
 
 ---
@@ -20,7 +31,7 @@ Il présente trois mesures clés en un coup d’œil :
 
 - **URLs** — Nombre de pages identifiées par un écart de visibilité du contenu.
 - **Gain de contenu estimé** — Multiplicateur estimé de contenu qui peut être récupéré en appliquant l’optimisation.
-- **Visibilité du contenu moyenne** : pourcentage moyen de contenu actuellement visible par les agents d’IA sur les pages affectées.
+- Visibilité du contenu moyenne **: pourcentage moyen de contenu actuellement visible par les agents d’IA sur les pages affectées.**
 
 ![Récupérer le tableau de bord des Visibilités du contenu &#x200B;](/help/dashboards/opportunities/assets/recover-content-visibility-overview.png)
 
