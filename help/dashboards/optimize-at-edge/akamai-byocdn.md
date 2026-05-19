@@ -4,16 +4,13 @@ description: Découvrez comment configurer Akamai BYOCDN pour Optimize at Edge d
 feature: Opportunities
 autotag-review: '2026-05-15T17:34:47.891Z'
 TQID: 'https://experienceleague.adobe.com/oGtqsnvHYn0BSNLl40-KpVl0TjCZHESRgH1LcVmjOiY'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 809
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -27,16 +24,16 @@ Cette configuration achemine le trafic généré par l’IA agentique (demandes 
 Avant de configurer les règles du gestionnaire de propriétés Akamai, vérifiez que vous disposez des éléments suivants :
 
 * Accès au gestionnaire de propriétés Akamai pour votre domaine.
-* Clé d’API Edge Optimize récupérée à partir de l’interface d’utilisation de LLM Optimizer. Pour connaître les étapes, voir [Récupération de vos clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
-* (Facultatif) Pour tester le routage d’évaluation, consultez [Clé API d’évaluation](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
+* Clé d’API Edge Optimize récupérée à partir de l’interface d’utilisation de LLM Optimizer. Pour connaître les étapes, voir [Récupération de vos clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Facultatif) Pour tester le routage de préproduction, consultez [Clé API de préproduction](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Configuration**
 
-La règle Akamai Property Manager suivante achemine le trafic des pages HTML authentiques vers Edge Optimize. La configuration contient les étapes suivantes :
+La règle Akamai Property Manager suivante redirige le trafic des pages HTML agentiques vers Edge Optimize. La configuration contient les étapes suivantes :
 
-**1. Définissez des critères de routage (correspondance de trafic Agent-utilisateur et HTML)**
+**1. Définir les critères de routage (correspondance de l’agent utilisateur et du trafic HTML)**
 
-Définissez le routage pour les agents utilisateurs suivants :
+Définir le routage pour les agents utilisateurs suivants :
 
 ```
  *AdobeEdgeOptimize-AI*
@@ -49,7 +46,7 @@ Définissez le routage pour les agents utilisateurs suivants :
 
 >[!NOTE]
 >
->Appliquez la règle de routage Optimiser au niveau d’Edge uniquement au trafic de pages d’HTML authentiques. Une configuration courante consiste à utiliser des critères côté requête tels que **Extension de fichier** pour faire correspondre les `html` et les `EMPTY_STRING` pour les URL de page sans extension. Si votre site diffuse HTML à partir d’autres modèles d’URL ou inclut des itinéraires sans extension hors page, tels que des points d’entrée d’API, affinez la règle avec des critères supplémentaires basés sur un chemin d’accès.
+>Appliquez la règle de routage Optimize at Edge uniquement au trafic des pages HTML agentiques. Une configuration courante consiste à utiliser des critères côté requête tels que **Extension de fichier** pour faire correspondre `html` et `EMPTY_STRING` pour les URL de page sans extension. Si votre site diffuse HTML à partir d’autres modèles d’URL ou inclut des itinéraires sans extension hors page, tels que des points d’entrée d’API, affinez la règle avec des critères supplémentaires basés sur un chemin d’accès.
 
 ![Définir les critères de routage](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
@@ -59,7 +56,7 @@ Définir l’origine comme `live.edgeoptimize.net` et faire correspondre le SAN 
 
 >[!NOTE]
 >
->Si l’activation de la propriété échoue après l’ajout de la règle Optimiser sur Edge , vérifiez si la règle utilise un mode de vérification SSL du serveur d’origine différent de celui de la règle par défaut. Si tel est le cas, mettez à jour la règle Optimiser sous Edge pour qu’elle corresponde à la règle par défaut. Par exemple, si la règle par défaut utilise **Paramètres de la plateforme**, utilisez **Paramètres de la plateforme** ici également. Si vous ne pouvez pas utiliser le paramètre requis, contactez l’assistance Akamai.
+>Si l’activation de la propriété échoue après l’ajout de la règle Optimize at Edge, vérifiez si la règle utilise un mode de vérification SSL du serveur d’origine différent de celui de la règle par défaut. Si tel est le cas, mettez à jour la règle Optimize at Edge pour qu’elle corresponde à la règle par défaut. Par exemple, si la règle par défaut utilise **Paramètres de la plateforme**, utilisez **Paramètres de la plateforme** ici également. Si vous ne pouvez pas utiliser le paramètre requis, contactez l’assistance Akamai.
 
 ![Définir l’origine et le comportement SSL](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
@@ -75,22 +72,22 @@ Définir la variable de clé de cache `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` sur `LLMC
 
 **5. Modifier les en-têtes des requêtes entrantes**
 
-Définissez les en-têtes de requête entrante suivants :
-`x-edgeoptimize-api-key` à la clé API extraite de LLMO
+Définissez les en-têtes de requête entrante suivants :
+`x-edgeoptimize-api-key` à la clé API récupérée depuis LLMO
 `x-edgeoptimize-config` vers `LLMCLIENT=TRUE;`
 `x-edgeoptimize-url` à `{{builtin.AK_URL}}`
 
 ![Modifier les en-têtes des requêtes entrantes](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
-**Autoriser l’optimisation sur Edge via des règles de pare-feu (facultatif)**
+**Autoriser Optimize at Edge via des règles de pare-feu (facultatif)**
 
 {{waf-allowlist-setup}}
 
-![Définissez l’en-tête x-edgeoptimizer-fetcher-key dans le Gestionnaire de propriétés](/help/assets/optimize-at-edge/akamai-step10-fetcher-key.png)
+![Définir l’en-tête x-edgeoptimize-fetcher-key dans le Gestionnaire des propriétés](/help/assets/optimize-at-edge/akamai-step10-fetcher-key.png)
 
 >[!NOTE]
 >
->Placez sur la liste autorisée également l’agent utilisateur `*AdobeEdgeOptimize/1.0*` et l’en-tête `x-edgeoptimize-fetcher-key` dans Akamai Bot Manager.
+>Placez également sur la liste autorisée l’agent utilisateur `*AdobeEdgeOptimize/1.0*` et l’en-tête `x-edgeoptimize-fetcher-key` dans Akamai Bot Manager.
 
 **6. Modifier les en-têtes de réponse entrante**
 
@@ -148,7 +145,7 @@ Ajoutez l’en-tête de requête `x-edgeoptimize-request` avec la valeur `fo` vi
 >
 >Cela permet de s’assurer que la règle d’en-tête du test de basculement évalue **toutes** les règles de routage, et pas seulement une.
 >
->Assurez-vous également que la règle **Optimiser au routage Edge** n’est pas remplacée par une règle de correspondance ultérieure qui modifie l’origine, le comportement de mise en cache ou l’identifiant de cache pour les mêmes requêtes. Si une autre règle correspondante réinitialise ces comportements, le routage ou la mise en cache de l’option Optimiser à Edge risque de ne pas fonctionner comme prévu.
+>Assurez-vous également que la règle de **routage Optimize at Edge** n’est pas remplacée par une règle de correspondance ultérieure qui modifie l’origine, le comportement de mise en cache ou l’identifiant de cache pour les mêmes requêtes. Si une autre règle correspondante réinitialise ces comportements, le routage ou la mise en cache de l’option Optimiser à Edge risque de ne pas fonctionner comme prévu.
 
 Si la valeur `x-edgeoptimize-request` d’en-tête de requête est `fo`, définissez l’en-tête de réponse sortante `x-edgeoptimize-fo` sur `true`.
 

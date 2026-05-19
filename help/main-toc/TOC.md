@@ -5,7 +5,7 @@ user-guide-description: 'Boostez votre marque avec Adobe LLM Optimizer. Suivez
 source-git-commit: ef3ef2c8f353047925c4fc99c73d9cf0399f24ca
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 60%
+ht-degree: 86%
 
 ---
 
@@ -25,8 +25,8 @@ ht-degree: 60%
    + [Trafic de recommandation](/help/dashboards/referral-traffic.md)
    + [Inspecteur d’URL](/help/dashboards/url-inspector.md)
    + Opportunités{#opportunities}
-      + [Présentation des opportunités](/help/dashboards/opportunities-overview.md)
-      + [Erreurs de trafic d’agent](/help/dashboards/opportunities/agentic-traffic-errors.md)
+      + [Vue d’ensemble des opportunités](/help/dashboards/opportunities-overview.md)
+      + [Erreurs de trafic généré par l’IA agentique](/help/dashboards/opportunities/agentic-traffic-errors.md)
       + [Trafic bloqué par robots.txt](/help/dashboards/opportunities/traffic-blocked-by-robots.md)
       + [Restauration de la visibilité du contenu](/help/dashboards/opportunities/recover-content-visibility.md)
       + [Ajouter des résumés compatibles avec LLM](/help/dashboards/opportunities/add-llm-friendly-summaries.md)
@@ -35,26 +35,26 @@ ht-degree: 60%
       + [Ajouter une table des matières](/help/dashboards/opportunities/add-table-of-contents.md)
       + [Simplifier les contenus complexes](/help/dashboards/opportunities/simplify-complex-content.md)
       + [Analyse Wikipédia](/help/dashboards/opportunities/wikipedia-analysis.md)
-      + [Analyse du Sentiment YouTube](/help/dashboards/opportunities/youtube-sentiment-analysis.md)
-      + [Analyse du Sentiment Reddit](/help/dashboards/opportunities/reddit-sentiment-analysis.md)
-      + [Analyse du Sentiment cité](/help/dashboards/opportunities/cited-sentiment-analysis.md)
+      + [Analyse des sentiments des utilisateurs et utilisatrices sur Youtube](/help/dashboards/opportunities/youtube-sentiment-analysis.md)
+      + [Analyse des sentiments des utilisateurs sur Reddit](/help/dashboards/opportunities/reddit-sentiment-analysis.md)
+      + [Analyse des sentiments des utilisateurs cités](/help/dashboards/opportunities/cited-sentiment-analysis.md)
       + [Enrichissement du catalogue de produits](/help/dashboards/opportunities/enrich-product-catalog.md)
       + [Enrichissement des pages de détails du produit](/help/dashboards/opportunities/enrich-product-detail-pages.md)
    + [Configuration cliente](/help/dashboards/customer-configuration.md)
    + [Collaboration](/help/dashboards/collaboration.md)
-+ Transfert du journal BYOCDN{#log-forwarding}
++ Transfert de journaux BYOCDN{#log-forwarding}
    + [Présentation](/help/overview/log-forwarding/log-forwarding-overview.md)
    + [Akamai](/help/overview/log-forwarding/akamai.md)
    + [Cloudflare](/help/overview/log-forwarding/cloudflare.md)
    + [CloudFront](/help/overview/log-forwarding/cloudfront.md)
-   + [CloudFront (interface de ligne de commande AWS)](/help/overview/log-forwarding/cloudfront-cli.md)
+   + [CloudFront (AWS CLI)](/help/overview/log-forwarding/cloudfront-cli.md)
    + [Fastly](/help/overview/log-forwarding/fastly.md)
    + [Imperva](/help/overview/log-forwarding/imperva.md)
-   + [Autre (Chargement Manuel)](/help/overview/log-forwarding/other.md)
+   + [Autre (chargement manuel)](/help/overview/log-forwarding/other.md)
 + Ressources supplémentaires{#resources}
    + Optimize at Edge{#optimize-at-edge}
-      + [Présentation de l’optimisation dans Edge](/help/dashboards/optimize-at-edge/overview.md)
-      + [Récupération des clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md)
+      + [Vue d’ensemble d’Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md)
+      + [Récupérez vos clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md)
       + [Réseau CDN géré par AEM Cloud Service (Fastly)](/help/dashboards/optimize-at-edge/aemcs-managed-cdn.md)
       + [Fastly (BYOCDN)](/help/dashboards/optimize-at-edge/fastly-byocdn.md)
       + [Akamai (BYOCDN)](/help/dashboards/optimize-at-edge/akamai-byocdn.md)
