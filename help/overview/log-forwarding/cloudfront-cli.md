@@ -1,6 +1,6 @@
 ---
-title: Transfert de journal - CloudFront (interface de ligne de commande AWS)
-description: Transférer les journaux CDN CloudFront vers le compartiment S3 d’Adobe à l’aide de l’interface de ligne de commande AWS pour la configuration et les opérations de diffusion.
+title: Transfert de journaux - CloudFront (interface de ligne de commande AWS)
+description: Transférez les journaux du CDN CloudFront vers le compartiment S3 d’Adobe en utilisant l’interface de ligne de commande AWS pour la configuration et les opérations de diffusion.
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:42:44.992Z'
 TQID: 'https://experienceleague.adobe.com/NoVv3qv1RbtqAWGMPYC1Rz4wO-5Au1yL2e8tRKd9Hao'
@@ -17,40 +17,40 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 379
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Transfert de journal : CloudFront (interface de ligne de commande AWS) {#log-forwarding-cloudfront-cli}
+# Transfert de journaux : CloudFront (interface de ligne de commande AWS) {#log-forwarding-cloudfront-cli}
 
-Cette page explique comment transférer les journaux CDN de CloudFront vers le compartiment S3 d’Adobe pour la collecte de données de trafic agentic. Vous utiliserez la page de configuration du réseau CDN de LLM Optimizer pour vous intégrer à LLM Optimizer. Une fois le processus d’intégration terminé, suivez les étapes fournies sur cette page pour configurer le transfert des journaux à l’aide de l’interface de ligne de commande [&#128279;](https://aws.amazon.com/cli/) à l’[étape 2](#step-2-cli).
+Cette page explique comment transférer les journaux CDN de CloudFront vers le compartiment S3 d’Adobe pour la collecte de données du trafic généré par l’IA agentique. Vous utiliserez la page de configuration du réseau CDN de LLM Optimizer pour l’intégration à LLM Optimizer. Une fois le processus d’intégration terminé, suivez les étapes fournies sur cette page pour configurer le transfert des journaux à l’aide de l’[interface de ligne de commande AWS](https://aws.amazon.com/cli/) à l’[étape 2](#step-2-cli).
 
 >[!NOTE]
 >
-> Ce guide explique comment configurer le transfert de journal à l’aide de l’[interface de ligne de commande &#x200B;](https://aws.amazon.com/cli/). Si vous souhaitez configurer le transfert de journal à l’aide de l’interface utilisateur **CloudFront**, voir [Transfert de journal : CloudFront](/help/overview/log-forwarding/cloudfront.md).
+> Ce guide explique comment configurer le transfert de journaux à l’aide de l’[interface de ligne de commande AWS](https://aws.amazon.com/cli/). Si vous souhaitez configurer le transfert de journaux à l’aide de l’**interface d’utilisation de CloudFront**, consultez [Transfert de journaux : CloudFront](/help/overview/log-forwarding/cloudfront.md).
 
-## Étape 1 : intégration dans LLM Optimizer {#step-1}
+## Étape 1 : intégrer dans LLM Optimizer {#step-1}
 
-Sur la page LLM Optimizer [https://llmo.now/](https://llmo.now/) :
+Sur la page LLM Optimizer [https://llmo.now/](https://llmo.now/) :
 
-1. Accédez au **Tableau de bord de configuration du client**.
+1. Accédez au **tableau de bord de la configuration cliente**.
 
    ![Bouton Configuration](/help/overview/assets/log-forwarding/common/config-button.png)
 
-1. Cliquez sur l’onglet **Configuration du réseau CDN**.
+1. Cliquez sur l’onglet **Configuration du CDN**.
 
-   ![Onglet Configuration du réseau CDN](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
+   ![Onglet Configuration du CDN](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
 
-1. Cliquez sur **Commencer**.
+1. Cliquez sur **Prise en main**.
 
    <!-- ![Onboard CDN button](/help/overview/assets/log-forwarding/common/onboard-cdn-button.png)-->
 
-1. En regard de **Activer AI Traffic Insights**, cliquez sur **Configurer**.
+1. À côté de **Activer les informations sur le trafic généré par l’IA**, cliquez sur **Configurer**.
 
    ![Configurer](/help/overview/assets/log-forwarding/common/configure.png)
 
-1. Saisissez votre **ID de compte**.
+1. Saisissez votre identifiant de **compte AWS**.
 
 <!--  ![AWS Account ID](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)-->
 
@@ -62,13 +62,13 @@ Sur la page LLM Optimizer [https://llmo.now/](https://llmo.now/) :
 
 <!-- ![Onboard button](/help/overview/assets/log-forwarding/common/onboard-button.png)-->
 
-## Étape 2 : configurer le transfert du journal de réseau CDN avec l’interface de ligne de commande AWS {#step-2-cli}
+## Étape 2 : configurer le transfert de journaux du CDN avec l’interface de ligne de commande AWS {#step-2-cli}
 
-Configurez le transfert des journaux CDN avec l’interface de ligne de commande AWS comme suit :
+Configurez le transfert de journaux du CDN avec l’interface de ligne de commande AWS comme suit :
 
-### Configuration des informations d’identification de l’interface de ligne de commande AWS
+### Configurer les informations d’identification de l’interface de ligne de commande AWS
 
-Configurez le MAC des informations d’identification de l’interface de ligne de commande AWS. Ouvrez ~/.aws/credentials et saisissez les valeurs des variables ci-dessous :
+Configurez le MAC de l’interface de ligne de commande AWS. Ouvrez ~/.aws/credentials et saisissez les valeurs des variables ci-dessous :
 
 ```text
 [LLMO]
@@ -79,13 +79,13 @@ aws_session_token=<ONLY_IF_USING_SECURITY_TOKEN_SERVICE> ## Optional
 
 ### Tester la connexion
 
-Exécutez la commande ci-dessous pour tester la connexion :
+Exécutez la commande ci-dessous pour tester la connexion :
 
 ```bash
 aws sts get-caller-identity --profile LLMO
 ```
 
-Exemple de sortie réussie :
+Exemple de sortie correcte :
 
 ```bash
 aws sts get-caller-identity --profile LLMO
@@ -98,7 +98,7 @@ aws sts get-caller-identity --profile LLMO
 
 ### Initialiser les variables
 
-Remplacez `REPLACEME123@AdobeOrg` par l’ID d’organisation Adobe IMS de votre organisation et exécutez la commande ci-dessous. L’identifiant de sortie de cette commande est appelé `TRANSFORM_IMS_ID`.
+Remplacez `REPLACEME123@AdobeOrg` par votre identifiant d’organisation Adobe IMS et exécutez la commande ci-dessous. L’identifiant de sortie de cette commande est appelé `TRANSFORM_IMS_ID`.
 
 ```bash
 echo "REPLACEME123@AdobeOrg" | sed 's/@AdobeOrg$//' | tr '[:upper:]' '[:lower:]'
@@ -117,9 +117,9 @@ export DELIVERY_DEST_ARN=arn:aws:logs:us-east-1:640168421876:delivery-destinatio
 
 <!--Use the **Delivery destination ARN** and org values from the LLM Optimizer CDN configuration page if they differ from the pattern above.-->
 
-### Création de la source de diffusion
+### Créer la source de diffusion
 
-À partir du même terminal où l’étape 3 a été exécutée, exécutez la commande ci-dessous :
+À partir du même terminal que celui utilisé pour l’étape 3, exécutez la commande ci-dessous :
 
 ```bash
 aws logs put-delivery-source --name llmo-cf-${CUSTOMER}-${CDN_ID} \
@@ -130,9 +130,9 @@ aws logs put-delivery-source --name llmo-cf-${CUSTOMER}-${CDN_ID} \
 
 >[!IMPORTANT]
 >
->Si vous obtenez l’erreur suivante, recherchez la source de diffusion existante : *Une erreur s’est produite (ConflictException) lors de l’appel de l’opération PutDeliverySource : Cet ResourceId a déjà été utilisé dans un autre Source de diffusion de ce compte.*
+>Si vous obtenez l’erreur suivante, recherchez la source de diffusion existante : *Une erreur s’est produite (ConflictException) lors de l’appel de l’opération PutDeliverySource : ce ResourceId a déjà été utilisé dans une autre source de diffusion de ce compte.*
 >
->Pour rechercher la source de diffusion existante, exécutez la commande suivante :
+>Pour rechercher la source de diffusion existante, exécutez la commande suivante :
 >
 >```bash
 >aws logs describe-delivery-sources --region us-east-1 \
@@ -141,7 +141,7 @@ aws logs put-delivery-source --name llmo-cf-${CUSTOMER}-${CDN_ID} \
 >
 >Dans la commande suivante, utilisez le nom de la source de diffusion à partir des résultats de la commande ci-dessus.
 
-### Création de la configuration de diffusion
+### Créer la configuration de diffusion
 
 ```bash
 aws logs create-delivery \
@@ -152,4 +152,4 @@ aws logs create-delivery \
   --record-fields 'date' 'time' 'x-edge-location' 'cs-method' 'cs(Host)' 'cs-uri-stem' 'sc-status' 'cs(Referer)' 'cs(User-Agent)' 'time-to-first-byte' 'sc-content-type' 'x-host-header'
 ```
 
-&lt;!—Alignez `--record-fields` et `--s3-delivery-configuration` sur la liste de champs et le suffixe de chemin affichés sur votre page de configuration du réseau CDN LLM Optimizer si la documentation ou les valeurs du produit changent.—>
+&lt;!--Alignez `--record-fields` et `--s3-delivery-configuration` sur la liste des champs et le suffixe de chemin affichés sur votre page de configuration de CDN LLM Optimizer si la documentation ou les valeurs du produit changent.-->

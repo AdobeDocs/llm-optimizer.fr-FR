@@ -16,7 +16,7 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 718
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ L’Inspecteur d’URL vous permet d’analyser les performances de pages spéci
 
 Si vous utilisez l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), accédez à **Inspecteur d’URL** et sélectionnez le site pour lequel vous souhaitez afficher les informations.
 
-![Inspecteur d’URL — sélecteur de site (expérience orientée marque)](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
+![Inspecteur d’URL – Sélecteur de site (expérience orientée marque)](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
 
 ## Filtres
 

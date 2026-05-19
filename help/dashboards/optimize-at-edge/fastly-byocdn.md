@@ -13,7 +13,7 @@ subfeature_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 349
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -27,8 +27,8 @@ Cette configuration achemine le trafic généré par l’IA agentique (demandes 
 Avant de configurer les règles Fastly VCL, vérifiez que vous disposez des éléments suivants :
 
 * Accès à Fastly pour votre domaine.
-* Clé d’API Edge Optimize récupérée à partir de l’interface d’utilisation de LLM Optimizer. Pour connaître les étapes, voir [Récupération de vos clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
-* (Facultatif) Pour tester le routage d’évaluation, consultez [Clé API d’évaluation](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
+* Clé d’API Edge Optimize récupérée à partir de l’interface d’utilisation de LLM Optimizer. Pour connaître les étapes, voir [Récupération de vos clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Facultatif) Pour tester le routage de préproduction, consultez [Clé API de préproduction](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Configuration**
 
@@ -94,7 +94,7 @@ Le fragment de code `vcl_deliver` gère automatiquement le basculement. Si Edge 
 | Edge Optimize renvoie `4XX` ou `5XX` | La requête est redémarrée et diffusée à partir de l’origine par défaut. |
 | Réponse de basculement | Inclut l’en-tête `x-edgeoptimize-fo: 1`. |
 
-**Autoriser l’optimisation sur Edge via des règles de pare-feu (facultatif)**
+**Autoriser Optimize at Edge via des règles de pare-feu (facultatif)**
 
 {{waf-allowlist-setup}}
 

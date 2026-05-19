@@ -13,7 +13,7 @@ subfeature_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1906
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -28,8 +28,8 @@ Avant de configurer les règles de routage du CloudFlare Worker, vérifiez que v
 
 * Compte Cloudflare avec Workers activé sur votre domaine.
 * Accès aux paramètres DNS de votre domaine dans Cloudflare.
-* Clé d’API Edge Optimize récupérée à partir de l’interface d’utilisation de LLM Optimizer. Pour connaître les étapes, voir [Récupération de vos clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
-* (Facultatif) Pour tester le routage d’évaluation, consultez [Clé API d’évaluation](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
+* Clé d’API Edge Optimize récupérée à partir de l’interface d’utilisation de LLM Optimizer. Pour connaître les étapes, voir [Récupération de vos clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Facultatif) Pour tester le routage de préproduction, consultez [Clé API de préproduction](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Fonctionnement du routage**
 
@@ -60,50 +60,50 @@ Les en-têtes suivants doivent être définis sur les requêtes du serveur princ
 
 ## Options de configuration
 
-Il existe deux manières de configurer le programme de travail Cloudflare pour Edge Optimize :
+Il existe deux façons de configurer le Cloudflare Worker pour Edge Optimize :
 
-* [**Option 1 : Déployer sur Cloudflare (recommandé)**](#option-1-deploy-to-cloudflare) — Crée automatiquement un nouveau programme de travail et vous invite à saisir les variables d’environnement et les secrets requis. Utilisez cette option si vous ne disposez pas d’un programme de travail de Cloudflare existant pour ce domaine.
-* [**Option 2 : installation manuelle**](#option-2-manual-setup) — Instructions détaillées pour la création et la configuration du programme de travail vous-même. Utilisez cette option si un programme de travail Cloudflare existant est déjà configuré sur votre domaine — vous devrez fusionner le code Edge Optimize dans votre programme de travail existant (voir [Étape 2 : Ajouter le code du programme de travail](#option-2-manual-setup)), ou si vous préférez un contrôle total sur le déploiement.
+* [**Option 1 : Déployer sur Cloudflare (recommandé)**](#option-1-deploy-to-cloudflare) — Crée automatiquement un nouveau worker et vous invite à saisir les variables d’environnement et les secrets requis. Utilisez cette option si vous ne disposez pas d’un Cloudflare Worker existant pour ce domaine.
+* [**Option 2 : Configuration manuelle**](#option-2-manual-setup) — Instructions étape par étape pour créer et configurer vous-même le worker. Utilisez cette option si vous avez déjà un Cloudflare Worker configuré sur votre domaine — vous devrez fusionner le code Edge Optimize dans votre worker existant (voir [Étape 2 : Ajouter le code Worker](#option-2-manual-setup)), ou si vous préférez un contrôle total sur le déploiement.
 
-Quelle que soit l’option choisie, vous devez lier manuellement le programme de travail à votre domaine — voir [Étape : ajouter un itinéraire à votre domaine](#add-a-route-to-your-domain).
+Peu importe l’option que vous choisissez, vous devez lier manuellement le worker à votre domaine — voir [Étape : Ajouter un itinéraire à votre domaine](#add-a-route-to-your-domain).
 
-## Option 1 : déploiement sur Cloudflare
+## Option 1 : Déployer sur Cloudflare
 
-Cette option utilise le bouton **Déployer sur Cloudflare** pour créer automatiquement le programme de travail et configurer les variables d’environnement et les secrets requis dans votre compte Cloudflare. Il s’agit de la manière la plus rapide de commencer si vous configurez un nouveau programme de travail.
+Cette option utilise le bouton **Déployer sur Cloudflare** pour créer automatiquement le worker et configurer les variables d’environnement et les secrets requis dans votre compte Cloudflare. C’est la méthode la plus rapide pour démarrer si vous configurez un nouveau worker.
 
 >[!IMPORTANT]
 >
->N’utilisez cette option que si vous **ne disposez pas** d’un programme de travail Cloudflare existant sur votre domaine. Si vous disposez déjà d’un programme de travail, utilisez [Option 2 : Configuration manuelle](#option-2-manual-setup) pour ajouter la logique de routage Optimisation d’Edge à votre programme de travail existant.
+>Utilisez cette option uniquement si vous **n’avez pas** de Cloudflare Worker existant sur votre domaine. Si vous avez déjà un worker, utilisez [Option 2 : Configuration manuelle](#option-2-manual-setup) pour ajouter la logique de routage Edge Optimize à votre worker existant.
 
-**Étape 1 : déployer le programme de travail**
+**Étape 1 : Déployer le worker**
 
-Cliquez sur le bouton ci-dessous pour déployer le programme de travail d’Edge Optimize sur votre compte Cloudflare :
+Cliquez sur le bouton ci-dessous pour déployer le worker Edge Optimize sur votre compte Cloudflare :
 
-[![Déploiement sur Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/adobe/llmo-code-samples/tree/main/optimize-at-edge/cloudflare/automation)
+[![Déployer sur Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/adobe/llmo-code-samples/tree/main/optimize-at-edge/cloudflare/automation)
 
-**Étape 2 : remplissez le formulaire de déploiement**
+**Étape 2 : Remplir le formulaire de déploiement**
 
-Cliquez sur le bouton pour ouvrir la page Configuration des programmes de travail. Remplissez le formulaire comme suit :
+Cliquez sur le bouton pour ouvrir la page de configuration des workers. Renseignez le formulaire comme suit :
 
 ![Page de configuration de Cloudflare Workers](/help/assets/optimize-at-edge/cloudflare-deploy-form.png)
 
-1. **Compte Git** — Sélectionnez votre compte GitHub ou GitLab dans la liste déroulante. Cloudflare transforme le code du programme de travail en un référentiel dans votre compte. Si aucun compte n’est répertorié, vous pouvez ajouter une nouvelle connexion directement à partir de la liste déroulante en sélectionnant **+ Nouvelle connexion GitHub** ou **+ Nouvelle connexion GitLab**. Pour plus d’informations, consultez le [Guide d’intégration Git de Cloudflare](https://developers.cloudflare.com/workers/ci-cd/builds/git-integration/github-integration/).
+1. **Compte Git** — Sélectionnez votre compte GitHub ou GitLab dans la liste déroulante. Cloudflare duplique le code du worker dans un référentiel de votre compte. Si aucun compte n’est répertorié, vous pouvez ajouter une nouvelle connexion directement à partir de la liste déroulante en sélectionnant **+ Nouvelle connexion GitHub** ou **+ Nouvelle connexion GitLab**. Pour plus d’informations, voir le [guide d’intégration Cloudflare Git](https://developers.cloudflare.com/workers/ci-cd/builds/git-integration/github-integration/).
 
-   ![Liste déroulante Compte Git affichant les options Nouvelle connexion GitHub et Nouvelle connexion GitLab &#x200B;](/help/assets/optimize-at-edge/cloudflare-git-connection.png)
-2. **Créer un référentiel Git privé** — Gardez cette case cochée (par défaut).
-3. **Nom du projet** — Laissez-le `edge-optimize-router` ou entrez le nom de votre choix.
-4. **EDGE_OPTIMIZE_API_KEY** — Collez votre clé API Edge Optimize fournie par Adobe. Cette valeur est stockée en tant que secret chiffré.
+   ![Menu déroulant Compte Git affichant les options Nouvelle connexion GitHub et Nouvelle connexion GitLab](/help/assets/optimize-at-edge/cloudflare-git-connection.png)
+2. **Créer un dépôt Git privé** — Laissez cette case cochée (par défaut).
+3. **Nom du projet** — Laissez tel quel `edge-optimize-router` ou entrez un nom de votre choix.
+4. **EDGE_OPTIMIZE_API_KEY** — Collez votre clé API Edge Optimize fournie par Adobe. Cette valeur est stockée sous forme de secret chiffré.
 5. **EDGE_OPTIMIZE_TARGET_HOST** — Entrez le domaine de votre site sans le protocole (par exemple, `www.example.com`).
-6. **Commande de build** — Laisser vide.
-7. **Commande de déploiement** — Laisser comme `npm run deploy` (pré-rempli).
-8. **Versions pour les branches hors production** — Ne pas cocher. Il s’agit d’une fonctionnalité de workflow de développement qui n’est pas nécessaire pour ce déploiement.
+6. **Commande de construction** — Laissez vide.
+7. **Commande de déploiement** — Laissez tel quel`npm run deploy` (pré-rempli).
+8. **Builds pour les branches hors production** — Laissez décoché. Il s’agit d’une fonctionnalité du flux de travail de développement. Elle n’est pas nécessaire pour ce déploiement.
 9. Cliquez sur **Créer et déployer**.
 
-Une fois le programme de travail déployé, passez à [Ajouter une route à votre domaine](#add-a-route-to-your-domain) pour lier le programme de travail à votre domaine. Le routage n&#39;est pas configuré automatiquement et doit être effectué manuellement.
+Une fois le worker déployé, passez à l’étape [Ajouter un itinéraire à votre domaine](#add-a-route-to-your-domain) pour lier le worker à votre domaine. Le routage n’est pas configuré automatiquement et doit être effectué manuellement.
 
-## Option 2 : configuration manuelle
+## Option 2 : Configuration manuelle
 
-Pour créer et configurer manuellement le programme de travail, procédez comme suit.
+Suivez ces étapes pour créer et configurer manuellement le worker.
 
 **Étape 1 : créer le Cloudflare Worker**
 
@@ -117,7 +117,7 @@ Pour créer et configurer manuellement le programme de travail, procédez comme 
 
 **Étape 2 : ajouter le code du worker**
 
-Après avoir créé le programme de travail, cliquez sur **Modifier le code** et remplacez le code par défaut par ce qui suit. Si vous disposez déjà d’un programme de travail de Cloudflare, fusionnez le code ci-dessous avec votre code de programme de travail existant au lieu de le remplacer entièrement.
+Après avoir créé le worker, cliquez sur **Modifier le code** et remplacez le code par défaut par le suivant : Si vous avez déjà un Cloudflare Worker existant, fusionnez le code ci-dessous avec votre code de worker existant au lieu de le remplacer entièrement.
 
 ```javascript
 /**
@@ -291,7 +291,7 @@ Cliquez sur **Enregistrer et déployer** pour publier le worker.
 
 ![Éditeur de code du Cloudflare Worker](/help/assets/optimize-at-edge/cloudflare-worker-editor.png)
 
-**Étape 3 : Configurer les variables d’environnement et les secrets**
+**Étape 3 : Configurer les variables d’environnement et les secrets**
 
 Les variables d’environnement stockent en toute sécurité une configuration sensible, telle que votre clé API.
 
@@ -311,7 +311,7 @@ Les variables d’environnement stockent en toute sécurité une configuration s
 
 ## Ajouter un itinéraire à votre domaine {#add-a-route-to-your-domain}
 
-Quelle que soit l’option de configuration utilisée, vous devez lier manuellement le programme de travail à votre domaine. Cette étape active le programme de travail sur votre trafic.
+Quelle que soit l’option de configuration utilisée, vous devez lier manuellement le worker à votre domaine. Cette étape active le worker sur votre trafic.
 
 1. Accédez au **Paramètres** > **Triggers** de votre worker.
 2. Sous **Itinéraires**, cliquez sur **Ajouter un itinéraire**.
@@ -439,7 +439,7 @@ const FAILOVER_ON_5XX = false;
 | Échec des requêtes avec un hôte non valide | `EDGE_OPTIMIZE_TARGET_HOST` inclut le protocole (par exemple, `https://`). | Utilisez uniquement le nom de domaine sans protocole (par exemple, `example.com`, et non `https://example.com`). |
 | Erreur 530 lors du basculement | Cloudflare ne peut pas se connecter à l’origine ou la demande de basculement comporte des en-têtes non valides. | Assurez-vous que la fonction de basculement supprime les en-têtes Edge Optimize. Vérifiez que votre origine est accessible et que le DNS est correctement configuré. |
 
-**Autoriser l’optimisation sur Edge via des règles de pare-feu (facultatif)**
+**Autoriser Optimize at Edge via des règles de pare-feu (facultatif)**
 
 {{waf-allowlist-setup}}
 

@@ -1,6 +1,6 @@
 ---
 title: Contrôle d’accès
-description: Découvrez les différences entre les utilisateurs affectés au produit et les utilisateurs de l’organisation dans Adobe LLM Optimizer, ce que les utilisateurs en lecture seule voient dans l’interface utilisateur et comment les administrateurs attribuent l’accès dans Adobe Admin Console.
+description: Découvrez les différences entre les utilisateurs et utilisatrices affectés au produit et les utilisateurs et utilisatrices de l’organisation dans Adobe LLM Optimizer, ce que les utilisateurs en lecture seule peuvent voir dans l’interface d’utilisation et comment les équipes d’administration attribuent les accès dans Adobe Admin Console.
 feature: Customer Configuration
 autotag-review: '2026-05-15T17:26:43.837Z'
 TQID: 'https://experienceleague.adobe.com/hJpQQpuHBRMdKT5oKA9z0Y8H3d3p6To-n2hWKrXgZsQ'
@@ -15,67 +15,67 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 618
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
 # Contrôle d’accès
 
-Adobe LLM Optimizer prend en charge le contrôle d’accès de base, basé sur les rôles des utilisateurs. Cette fonctionnalité est disponible uniquement pour les **clients payants** et est activée sur demande. Il n’est pas disponible pour les clients en version d’évaluation.
+Adobe LLM Optimizer prend en charge le contrôle d’accès de base, basé sur les rôles des utilisateurs et utilisatrices. Cette fonctionnalité est disponible uniquement pour la **version payante** et est activée sur demande. Elle n’est pas disponible pour les clientes et clients qui utilisent la version d’évaluation.
 
 >[!IMPORTANT]
 >
->Pour demander l’accès à cette fonctionnalité, les clients payants doivent contacter leur gestionnaire de compte Adobe.
+>Pour solliciter l’accès à cette fonctionnalité, les clients et clientes de la version payante doivent contacter leur gestionnaire de compte Adobe.
 
-## Utilisateurs affectés au produit {#product-assigned-users}
+## Utilisateurs et utilisatrices affectés au produit {#product-assigned-users}
 
-Si vous êtes affecté au produit, vous disposez des mêmes fonctionnalités qu’un utilisateur organisationnel standard, en plus des autorisations suivantes :
+Si vous êtes affecté au produit, vous disposez des mêmes fonctionnalités qu’un utilisateur standard de l’organisation, ainsi que des autorisations suivantes :
 
-* Accédez en écriture à [Configuration du client](/help/dashboards/customer-configuration.md) pour les invites, les catégories, les rubriques et les paramètres associés.
-* Déployez des optimisations [Optimisez sur Edge](/help/dashboards/optimize-at-edge/overview.md) et gérez les suggestions.
-* Gérez les configurations de la console de recherche de Google.
-* Gérez l’optimisation au niveau des configurations Edge et CDN.
-* Intégrez un nouveau site.
+* Accéder en écriture à la [configuration du client](/help/dashboards/customer-configuration.md) pour les invites, les catégories, les sujets et les paramètres associés
+* Déployer des optimisations [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md) et gérer les suggestions.
+* Gérer les configurations de Google Search Console.
+* Gérer les configurations Optimize at Edge et CDN.
+* Intégrer un nouveau site.
 
-## Utilisateurs de l’organisation {#organizational-users}
+## Utilisateurs et utilisatrices de l’organisation {#organizational-users}
 
-Les utilisateurs organisationnels sont des utilisateurs standard qui ne sont **pas** affectés au produit. Si vous êtes un utilisateur de l’entreprise, vous disposez d’un accès **lecture seule** aux tableaux de bord [LLM Optimizer](/help/dashboards/dashboards-overview.md) et aux vues associées. Les restrictions suivantes s’appliquent.
+Les utilisateurs et utilisatrices de l’organisation sont des utilisateurs et utilisatrices standard qui ne sont **pas** affectés au produit. Les utilisateurs et utilisatrices de l’organisation disposent d’un accès en **lecture seule** aux [tableaux de bord LLM Optimizer](/help/dashboards/dashboards-overview.md) et aux vues associées. Les restrictions suivantes s’appliquent.
 
 ### Configuration cliente {#customer-configuration-restrictions}
 
-* Le **invite de chargement** est désactivé.
-* La gestion et la modification des invites, des catégories, des rubriques et des zones géographiques sont désactivées.
+* Le **chargement d’invites** est désactivé.
+* La gestion et la modification des invites, des catégories, des sujets et des régions sont désactivées.
 
-  ![Restrictions de configuration du client pour les utilisateurs en lecture seule](/help/dashboards/assets/access-control-customer-configuration.png)
+  ![Restrictions de configuration du client ou de la cliente pour les utilisateurs et utilisatrices en lecture seule](/help/dashboards/assets/access-control-customer-configuration.png)
 
-### Configuration du réseau CDN (configuration du client) {#cdn-configuration-restrictions}
+### Configuration du CDN (configuration du client ou de la cliente) {#cdn-configuration-restrictions}
 
-* Le **réseau CDN intégré** est désactivé (les utilisateurs en lecture seule ne peuvent pas ajouter de fournisseur de réseau CDN).
-* La fonction **Supprimer le réseau de diffusion de contenu** est désactivée (les utilisateurs en lecture seule ne peuvent pas supprimer une configuration de réseau de diffusion de contenu existante).
-* Le bouton **Envoyer** de la boîte de dialogue intégrée au réseau CDN est désactivé (les utilisateurs en lecture seule ne peuvent pas terminer la configuration du réseau CDN).
+* L’**intégration de réseau CDN** est désactivée (les utilisateurs et utilisatrices en lecture seule ne peuvent pas ajouter de fournisseur de réseau CDN).
+* La **suppression de réseau CDN** est désactivée (les utilisateurs et utilisatrices en lecture seule ne peuvent pas supprimer les configurations de réseau CDN existantes).
+* Le bouton **Envoyer** de la boîte de dialogue Intégration CDN est désactivé (les utilisateurs et utilisatrices en lecture seule ne peuvent pas valider la configuration du réseau CDN).
 
-  ![Restrictions de configuration du réseau CDN pour les utilisateurs en lecture seule](/help/dashboards/assets/access-control-cdn-configuration.png)
+  ![Restrictions de configuration du réseau CDN pour les utilisateurs et utilisatrices en lecture seule](/help/dashboards/assets/access-control-cdn-configuration.png)
 
-### Présence des marques — informations sur les données {#brand-presence-restrictions}
+### Présence de la marque — Analyses de données {#brand-presence-restrictions}
 
-* Les boutons **Supprimer** en regard des rubriques sont masqués (les utilisateurs en lecture seule ne peuvent pas supprimer de rubriques du suivi).
-* Les boutons **Supprimer** en regard des invites sont masqués (les utilisateurs en lecture seule ne peuvent pas supprimer les invites du suivi).
+* Les boutons **Supprimer** à côté des sujets sont masqués (les utilisateurs et utilisatrices en lecture seule ne peuvent pas supprimer les sujets du suivi).
+* Les boutons **Supprimer** à côté des invites sont masqués (les utilisateurs et utilisatrices en lecture seule ne peuvent pas supprimer les invites du suivi).
 
-  ![Actions de Présence des marques masquées pour les utilisateurs en lecture seule](/help/dashboards/assets/access-control-brand-presence.png)
+  ![Actions de Présence de la marque masquées pour les utilisateurs et utilisatrices en lecture seule](/help/dashboards/assets/access-control-brand-presence.png)
 
-### Opportunités de trafic agent (opportunités de page d’erreur) {#agentic-opportunities}
+### Opportunités de trafic généré par l’IA agentique (opportunités de page d’erreur) {#agentic-opportunities}
 
-Pour les opportunités telles que les pages d’erreur 404, 403 et 503 :
+Pour les opportunités telles que les pages d’erreur 404, 403 et 503 :
 
-* **Optimisation du déploiement** est masqué.
+* L’option **Optimisation du déploiement** est masquée.
 * Une alerte informative explique que l’accès au déploiement est requis.
 
-  ![Optimisation du déploiement cachée dans les opportunités de trafic sur les agents](/help/dashboards/assets/access-control-agentic-deploy.png)
+  ![L’option Optimisation du déploiement est masquée dans les opportunités de trafic généré par l’IA agentique](/help/dashboards/assets/access-control-agentic-deploy.png)
 
 ### Autres pages d’opportunité {#other-opportunities}
 
-Le comportement en lecture seule s’applique également aux types d’opportunité tels que :
+Le comportement en lecture seule s’applique également aux types d’opportunité suivants :
 
 * Table des matières
 * Synthèse
@@ -86,38 +86,38 @@ Le comportement en lecture seule s’applique également aux types d’opportuni
 * Données structurées manquantes
 * Opportunité de correctif générique
 
-Pour ces pages :
+Pour les pages suivantes :
 
-* Le paramètre **Optimisation du déploiement** est masqué lorsque l’utilisateur ne dispose pas d’un accès de déploiement.
-* Une alerte intégrée explique que l’accès au déploiement est requis. Le message est similaire au suivant : *Accès au déploiement requis — Vous n’avez pas l’autorisation de déployer des optimisations ou de gérer des suggestions. Contactez votre administrateur pour demander l’accès.*
+* L’option **Optimisation du déploiement** est masquée lorsque l’utilisateur ou l’utilisatrice ne dispose pas d’un accès au déploiement.
+* Une alerte intégrée explique que l’accès au déploiement est requis. Le message ressemble à ce qui suit : *Accès au déploiement requis — Vous n’avez pas l’autorisation de déployer des optimisations ni de gérer les suggestions. Contactez l’administrateur ou l’administratrice pour demander l’accès.*
 * La barre inférieure persistante avec les actions de déploiement est masquée.
 
   ![Alerte intégrée lorsque l’accès au déploiement est requis](/help/dashboards/assets/access-control-deploy-alert.png)
 
-  ![Optimiser pour les actions de déploiement Edge masquées pour les utilisateurs en lecture seule](/help/dashboards/assets/access-control-optimize-at-edge.png)
+  ![Actions de déploiement Optimize at Edge masquées pour les utilisateurs et utilisatrices en lecture seule](/help/dashboards/assets/access-control-optimize-at-edge.png)
 
-### Configuration de l’invite de la console de recherche de Google {#gsc-restrictions}
+### Configuration des invites Google Search Console {#gsc-restrictions}
 
 * Les actions Gérer et Connecter sont désactivées ou masquées.
 * La colonne d’actions utilisée pour ajouter des invites est masquée.
 
   ![Restrictions de configuration de Google Search Console](/help/dashboards/assets/access-control-gsc.png)
 
-### Intégration d’un nouveau site {#onboarding-restrictions}
+### Intégrer un nouveau site {#onboarding-restrictions}
 
-* L’intégration d’un nouveau site est désactivée pour les utilisateurs sans contrôle d’accès.
+* L’intégration d’un nouveau site est désactivée pour les utilisateurs et utilisatrices sans contrôle d’accès.
 
-  ![Site intégré désactivé](/help/dashboards/assets/access-control-onboarding.png)
+  ![Intégration d’un nouveau site désactivée](/help/dashboards/assets/access-control-onboarding.png)
 
-## Affecter le produit à un utilisateur ou à un groupe {#assign-product}
+## Affecter le produit à un utilisateur ou une utilisatrice, ou à un groupe {#assign-product}
 
-Un **administrateur système** de votre organisation peut utiliser [Adobe Admin Console](https://adminconsole.adobe.com/) pour affecter Adobe LLM Optimizer à un utilisateur ou à un groupe.
+L’**administrateur ou administratrice système** de votre organisation peut utiliser [Adobe Admin Console](https://adminconsole.adobe.com/) pour affecter Adobe LLM Optimizer à un utilisateur ou une utilisatrice, ou à un groupe.
 
-1. Connectez-vous à [&#128279;](https://adminconsole.adobe.com/) avec un compte disposant de droits d’administration pour votre organisation.
-1. Attribuez le profil de produit Adobe LLM Optimizer (ou le droit de produit équivalent de votre organisation) à l’utilisateur ou au groupe qui doit recevoir les fonctionnalités attribuées au produit.
+1. Connectez-vous à [Adobe Admin Console](https://adminconsole.adobe.com/) avec un compte disposant de droits d’administration pour votre organisation.
+1. Attribuez le profil de produit Adobe LLM Optimizer (ou l’équivalent dans votre organisation) à l’utilisateur ou l’utilisatrice ou au groupe qui doit bénéficier des autorisations correspondantes.
 
 Pour obtenir des instructions détaillées, voir [Gestion des produits dans Admin Console](https://helpx.adobe.com/fr/enterprise/using/manage-products.html) et [Gestion des groupes d’utilisateurs](https://helpx.adobe.com/fr/enterprise/using/user-groups.html).
 
 >[!NOTE]
 >
->Les flux d’écran dans le Adobe Admin Console peuvent changer d’une version à l’autre. Si les options ci-dessus ne correspondent pas à votre console, utilisez les liens d’aide intégrés au produit dans Adobe Admin Console ou contactez l’équipe de votre compte Adobe.
+>Les enchaînements d’écrans dans Adobe Admin Console peuvent changer d’une version à l’autre. Si les options ci-dessus ne correspondent pas à votre console, utilisez les liens d’aide intégrés au produit dans Adobe Admin Console ou contactez l’équipe Adobe en charge des comptes.

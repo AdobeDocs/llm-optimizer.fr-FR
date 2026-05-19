@@ -16,7 +16,7 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 618
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -69,10 +69,10 @@ La GEO (optimisation des moteurs génératifs) est par nature transversale. LLM 
 Avec Adobe LLM Optimizer, vous pouvez effectuer ce qui suit :
 
 **Mesurer la visibilité de la marque** : suivez quand, où et à quelle fréquence votre marque est mentionnée dans les résultats de recherche optimisée par l’IA. Allez au-delà des conjonctures grâce à un score de visibilité clair que vous pouvez utiliser comme base d’évaluation sur la durée. Référez-vous au [tableau de bord de la présence de la marque](/help/dashboards/brand-presence.md).
-**Comparer les autres** - Voyez comment votre marque se compare aux autres, y compris aux concurrents dans les moteurs génératifs. Identifiez les lacunes en matière de part de voix et découvrez les avantages concurrentiels. Référez-vous au [tableau de bord de la présence de la marque](/help/dashboards/brand-presence.md).
-**Découvrir des opportunités exploitables** - Identifiez les opportunités de contenu (par exemple, FAQ, résumés, schémas) et les opportunités techniques (explorabilité, problèmes d’indexation) qui augmentent directement les mentions et les citations. Voir [Tableau de bord des opportunités](/help/dashboards/opportunities-overview.md).
-**Suivi de l’impact du trafic depuis l’IA** - Surveillez le trafic des agences (provenant des assistants d’IA) et des trafics de recommandation (clics des utilisateurs dans les citations) vers vos propriétés. Reliez la visibilité GEO à un engagement réel. Voir [Tableau de bord du trafic dynamique](/help/dashboards/agentic-traffic.md) et [Tableau de bord du Trafic de recommandation &#x200B;](/help/dashboards/referral-traffic.md).
-**Activer Team Collaboration** - Partagez des tableaux de bord, attribuez des propriétaires pour les invites ou les catégories, et assurez-vous que les objectifs de visibilité sont suivis dans les fonctions de marketing, d&#39;optimisation du moteur de recherche (SEO) et de communication. Référez-vous au [tableau de bord de collaboration](/help/dashboards/collaboration.md).
+**Évaluer les autres marques** - Observez les performances de votre marque par rapport aux autres dans les moteurs génératifs. Identifiez les lacunes en matière de part de voix et découvrez les avantages concurrentiels. Référez-vous au [tableau de bord de la présence de la marque](/help/dashboards/brand-presence.md).
+**Découvrir les opportunités exploitables** : identifiez les opportunités de contenu (par exemple, les FAQ, les résumés, les schémas) et les opportunités techniques (explorabilité, problèmes d’indexation) qui augmentent directement les mentions et les références. Référez-vous au [tableau de bord des opportunités](/help/dashboards/opportunities-overview.md).
+**Suivre l’impact du trafic provenant de l’IA** : surveillez le trafic généré par l’IA agentique (provenant des assistants IA) et le trafic de recommandation (clics des utilisateurs et des utilisatrices à partir des références) vers vos propriétés. Reliez la visibilité GEO à un engagement réel. Référez-vous au [tableau de bord du trafic généré par l’IA agentique](/help/dashboards/agentic-traffic.md) et au [tableau de bord du trafic de recommandation](/help/dashboards/referral-traffic.md).
+**Favoriser la collaboration entre équipes** : partager les tableaux de bord, attribuer des responsables pour les prompts ou catégories, et garantir le suivi des objectifs de visibilité entre les fonctions marketing, SEO et communication. Référez-vous au [tableau de bord de collaboration](/help/dashboards/collaboration.md).
 
 ## En savoir plus
 

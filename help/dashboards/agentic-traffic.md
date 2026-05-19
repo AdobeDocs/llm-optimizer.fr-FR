@@ -18,7 +18,7 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1407
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -38,15 +38,15 @@ Cette page contient les éléments suivants :
 * [Meilleures et pires performances](#top-bottom-movers)
 * [Analyse des performances des URL et des agents utilisateurs](#user-url-performance)
 
-Si vous utilisez l’[expérience centrée sur les marques](/help/overview/quick-start.md#brand-centric-experience), accédez à **Trafic agent** et sélectionnez le site pour lequel vous souhaitez afficher les informations sur le trafic agent.
+Si vous utilisez l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), accédez à **Trafic généré par l’IA agentique** et sélectionnez le site pour lequel vous souhaitez afficher les informations sur le trafic généré par l’IA agentique.
 
-![Trafic d’agent — sélecteur de site (expérience orientée marque)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+![Trafic généré par l’IA agentique – Sélecteur de site (expérience orientée marque)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
 
 ## Transfert de journaux CDN {#cdn-setup}
 
 Sans **transfert des journaux CDN**, le tableau de bord du trafic généré par l’IA agentique est vide. Pour afficher les interactions agentiques, vous devez configurer le **transfert des journaux CDN**.
 
-### Configuration du client (navigation classique)
+### Configuration cliente (navigation classique)
 
 Lors de la première connexion, un message s’affiche, comme illustré dans l’image ci-dessous.
 
@@ -67,15 +67,15 @@ Dans la fenêtre **Fournisseur de réseau CDN intégré** :
 Si vous sélectionnez **Autre**, vous devrez contacter llmo-now@adobe.com pour obtenir de l’aide.
 
 >[!NOTE]
->Pour plus d’informations sur le transfert de journal lors de l’utilisation d’un réseau CDN géré par le client (BYOCDN), consultez [Présentation du transfert de journal BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
+>Pour plus de détails concernant le transfert des journaux lors de l’utilisation d’un CDN géré par la clientèle (BYOCDN), consultez [Vue d’ensemble du transfert de journaux BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md).
 
 Une fois activés, les journaux sont ingérés et le tableau de bord est renseigné avec des mesures telles que le nombre total d’interactions de l’agent, le taux de succès, les accès par marché, l’analyse des agents utilisateurs et les performances au niveau de l’URL.
 
 ### Expérience axée sur la marque
 
-Si vous bénéficiez d’une [expérience axée sur les marques](/help/overview/quick-start.md#brand-centric-experience), vous pouvez ajouter des informations sur le transfert des journaux CDN en accédant à **Brands Management** et en cliquant sur le libellé **CDN**.
+Si vous bénéficiez d’une [expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), vous pouvez ajouter des informations sur le transfert des journaux CDN en accédant à **Gestion des marques** et en cliquant sur le libellé **CDN**.
 
-![Gestion des marques — Transfert des journaux CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
+![Gestion des marques – Transfert des journaux CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
 LLM Optimizer traite un sous-ensemble de champs des journaux du réseau CDN. Bien que les noms des champs de journaux bruts varient selon le fournisseur de réseau CDN, ils sont normalisés et présentés comme suit :
 
@@ -126,7 +126,7 @@ Utilisez le graphique Tendances du trafic généré par l’IA agentique pour ef
 
 ## Meilleures et pires performances {#top-bottom-movers}
 
-La vue des déménageurs en haut et en bas met en évidence les URL présentant les plus grands changements de trafic d’agent d’une semaine à l’autre, à savoir les visites ou les accès des systèmes d’IA accédant à votre contenu. Le tableau **Principaux déménageurs** montre les pages qui gagnent en visibilité ou en engagement, tandis que le tableau **Principaux déménageurs** révèle les URL qui connaissent les déclins les plus importants. Cela vous permet d’identifier rapidement le contenu dont les tendances sont à la hausse, celui qui peut nécessiter une attention particulière et les emplacements où les modèles de découverte basés sur l’IA changent.
+La vue Meilleures et pires performances met en évidence les URL présentant les plus grands changements de trafic généré par l’IA agentique d’une semaine à l’autre, à savoir les visites ou les accès provenant des systèmes d’IA qui accèdent à votre contenu. La section **Meilleures performances** affiche les pages qui gagnent en visibilité ou en engagement, tandis que la section **Pires performances** révèle les URL qui connaissent les baisses les plus importantes. Cela vous permet d’identifier rapidement le contenu dont les tendances sont à la hausse, celui qui peut nécessiter une attention particulière et les emplacements où les modèles de découverte basés sur l’IA changent.
 
 ![Meilleures et pires performances](/help/dashboards/assets/movers.png)
 

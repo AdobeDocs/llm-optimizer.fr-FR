@@ -21,7 +21,7 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1530
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -39,17 +39,17 @@ Dans le tableau de bord [!UICONTROL Configuration cliente], vous pouvez personna
 
 ## Expérience axée sur la marque
 
-Par défaut, les nouveaux clients commencent par une interface ciblée et axée sur la marque, avec une configuration axée sur l’intégration. Dans cette nouvelle interface, chaque organisation commence par une marque active et d’autres marques suggérées parmi lesquelles choisir. Les clients LLM Optimizer existants passeront progressivement à cette expérience orientée marque.
+Par défaut, la nouvelle clientèle commence par une interface ciblée et axée sur la marque, avec une configuration axée sur l’intégration. Dans cette nouvelle interface, chaque organisation commence par une marque active et d’autres marques suggérées parmi lesquelles choisir. La clientèle LLM Optimizer existante passera progressivement à cette expérience orientée marque.
 
 Si vous bénéficiez d’une expérience orientée marque, **Gestion des marques** vous permet de définir comment votre marque est surveillée et analysée.
 
-![Brand Management : navigation dans l’application (expérience orientée marque)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+![Gestion des marques : navigation dans l’application (expérience orientée marque)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-![Gestion des marques — Présentation de la configuration](/help/assets/brand-centric-experience/brands-management-configuration.png)
+![Gestion des marques : vue d’ensemble de la configuration](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
-Pour configurer des rubriques et des invites pour une marque spécifique, utilisez **Gestion des invites**.
+Pour configurer des rubriques et des prompts pour une marque spécifique, utilisez **Gestion des prompts**.
 
-![Gestion des invites](/help/assets/brand-centric-experience/prompts-management.png)
+![Gestion des prompts](/help/assets/brand-centric-experience/prompts-management.png)
 
 ## Bibliothèque de prompts sectoriels
 

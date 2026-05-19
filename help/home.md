@@ -19,7 +19,7 @@ autotag-review: '2026-04-30T18:10:07.393Z'
 source-git-commit: 733c693f35c5b023681962cc5089492b95645b28
 workflow-type: tm+mt
 source-wordcount: 374
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -57,8 +57,8 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./overview/overview.md" title="Vue d’ensemble de LLM Optimizer" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/llm-overview-card.png" alt="Vue d’ensemble de LLM Optimizer"
+                    <a href="./overview/overview.md" title="Vue d’ensemble de LLM Optimizer" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/llm-overview-card.png" alt="Vue d’ensemble de LLM Optimizer"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -66,12 +66,12 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./overview/overview.md" target="_blank" rel="referrer" title="Vue d’ensemble de LLM Optimizer">Vue d’ensemble de LLM Optimizer</a>
+                        <a href="./overview/overview.md" target="_blank" rel="referrer" title="Vue d’ensemble de LLM Optimizer">Vue d’ensemble de LLM Optimizer</a>
                     </p>
                     <p class="is-size-6">Découvrez comment Adobe LLM Optimizer améliore la visibilité de la marque dans la recherche optimisée par l’IA.</p>
                 </div>
                 <a href="./overview/overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> En savoir plus </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
                 </a>
             </div>
         </div>
@@ -94,7 +94,7 @@ CARDS
                     <p class="is-size-6">Découvrez comment démarrer rapidement avec LLM Optimizer.</p>
                 </div>
                 <a href="./overview/quick-start.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> En savoir plus </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
                 </a>
             </div>
         </div>
@@ -117,7 +117,7 @@ CARDS
                     <p class="is-size-6">Découvrez comment obtenir des informations et des recommandations pour votre site à l’aide de tableaux de bord.</p>
                 </div>
                 <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> En savoir plus </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
                 </a>
             </div>
         </div>
@@ -155,8 +155,8 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./overview/best-practices-topics-prompts.md" title="Bonnes pratiques pour configurer des catégories, des rubriques, des prompts et suivre les autres" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Bonnes pratiques pour configurer des catégories, des rubriques, des prompts et suivre les autres"
+                    <a href="./overview/best-practices-topics-prompts.md" title="Bonnes pratiques pour configurer des catégories, des rubriques et des prompts, ou encore suivre les autres" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Bonnes pratiques pour configurer des catégories, des rubriques et des prompts, ou encore suivre les autres"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -164,12 +164,12 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="Bonnes pratiques pour configurer des catégories, des rubriques, des prompts et suivre les autres">Bonnes pratiques pour configurer des catégories, des rubriques, des prompts et suivre les autres</a>
+                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="Bonnes pratiques pour configurer des catégories, des rubriques et des prompts, ou encore suivre les autres">Bonnes pratiques pour configurer des catégories, des rubriques, des prompts et suivre les autres</a>
                     </p>
                     <p class="is-size-6">Découvrez comment configurer LLM Optimizer pour une surveillance de marque personnalisée et une analyse de contenu stratégique.</p>
                 </div>
                 <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> En savoir plus </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
                 </a>
             </div>
         </div>
@@ -192,7 +192,7 @@ CARDS
                     <p class="is-size-6">Découvrez comment LLM Optimizer peut vous aider à renforcer l’autorité de votre marque dans la recherche et la détection optimisées par l’IA.</p>
                 </div>
                 <a href="./tutorials/best-practices.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> En savoir plus </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
                 </a>
             </div>
         </div>
@@ -215,7 +215,7 @@ CARDS
                     <p class="is-size-6">Façonnez la présence de votre marque dans les résultats de la recherche optimisée par l’IA avec Adobe LLM Optimizer. Obtenez des informations GEO, améliorez la visibilité sur les LLM et favorisez une croissance mesurable du trafic.</p>
                 </div>
                 <a href="https://business.adobe.com/fr/products/llm-optimizer.html" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> En savoir plus </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
                 </a>
             </div>
         </div>
@@ -256,7 +256,7 @@ CARDS
                     <p class="is-size-6">Découvrez comment effectuer des optimisations dans LLM Optimizer sans apporter de modifications de création.</p>
                 </div>
                 <a href="./dashboards/optimize-at-edge/overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> En savoir plus </span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
                 </a>
             </div>
         </div>

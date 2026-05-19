@@ -1,6 +1,6 @@
 ---
-title: Analyse du Sentiment YouTube
-description: Découvrez comment LLM Optimizer analyse les vidéos et les commentaires de YouTube pour faire apparaître des recommandations qui améliorent la perception et la visibilité de votre marque dans les résultats Recherche optimisée par l'IA.
+title: Analyse des sentiments des utilisateurs et utilisatrices sur Youtube
+description: Découvrez comment LLM Optimizer analyse les vidéos et les commentaires sur YouTube pour générer des recommandations qui améliorent la perception et la visibilité de votre marque dans les résultats de recherche optimisée par l’IA.
 feature: Opportunities
 autotag-review: '2026-05-15T18:12:18.358Z'
 TQID: 'https://experienceleague.adobe.com/XevtwbOrmn6QTjMxnErSTI91WUv9m6GYWJ7LeLXdXXg'
@@ -15,107 +15,107 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 1255
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Analyse du Sentiment YouTube
+# Analyse des sentiments des utilisateurs et utilisatrices sur Youtube
 
-YouTube est l&#39;une des plateformes les plus influentes qui façonnent la perception des consommateurs et la réputation de la marque. Lorsque les systèmes d’IA répondent aux invites sur votre marque, ils citent de plus en plus les vidéos YouTube comme sources, ce qui fait que la manière dont votre marque est discutée dans ce contenu constitue un apport direct aux réponses générées par l’IA.
+YouTube est l’une des plateformes les plus influentes où se forment la perception des consommateurs et consommatrices ainsi que la réputation des marques. Lorsque les systèmes d’IA répondent aux prompts sur votre marque, ils citent de plus en plus les vidéos YouTube comme sources. La manière dont votre marque est présentée dans le contenu Youtube influence donc directement les réponses générées par l’IA.
 
-L’opportunité d’analyse du Sentiment YouTube s’affiche lorsque des vidéos YouTube sont détectées comme citations pour les invites dans l’ensemble d’invites de votre tableau de bord Présence des marques. Il analyse les vidéos citées et leurs commentaires pour le sentiment, la part de voix et les sujets récurrents. Il affiche ensuite les recommandations prioritaires afin d’améliorer la manière dont votre marque est perçue et représentée dans les réponses générées par l’IA.
+L’opportunité Analyse des sentiments des utilisateurs et utilisatrices sur YouTube s’affiche lorsque des vidéos YouTube sont détectées comme citations en réponse à des prompts de référence de votre tableau de bord Présence de la marque. Elle analyse les sentiments, la part de voix et les sujets récurrents dans les vidéos citées et leurs commentaires. Elle affiche ensuite les recommandations prioritaires afin d’améliorer la manière dont votre marque est perçue et représentée dans les réponses générées par l’IA.
 
-Il analyse votre marque à travers six dimensions :
+Elle analyse votre marque selon six critères :
 
-- **Vidéos analysées** — Nombre de vidéos YouTube examinées pour les mentions de marque et le sentiment.
+- **Vidéos analysées** — Nombre de vidéos YouTube comprises dans l’analyse des mentions de marque et des sentiments.
 - **Commentaires analysés** — Nombre de commentaires examinés dans les vidéos analysées.
-- **Mentions de marque (vidéos)** — Fréquence à laquelle votre marque est mentionnée dans le contenu vidéo.
-- **Mentions de marque (commentaires)** — Fréquence à laquelle votre marque est mentionnée dans les commentaires.
-- sentiment global (vidéos)**— sentiment agrégé vers votre marque pour le contenu vidéo.**
-- sentiment global (commentaires)**— sentiment agrégé vers votre marque dans les commentaires.**
+- **Mentions de marque (vidéos)** — Nombre de fois où votre marque est mentionnée dans les vidéos.
+- **Mentions de marque (commentaires)** — Nombre de fois où votre marque est mentionnée dans les commentaires.
+- **Sentiment général (vidéos)** — Sentiment global à l’égard de votre marque dans la totalité des vidéos.
+- **Sentiment général (commentaires)** — Sentiment global à l’égard de votre marque dans la totalité des commentaires.
 
 >[!NOTE]
->L’analyse du Sentiment YouTube est actuellement en version bêta. Les fonctionnalités et la disponibilité peuvent changer à mesure que la fonctionnalité continue de se développer.
+>L’opportunité Analyse des sentiments des utilisateurs sur YouTube est actuellement disponible en version bêta. Les fonctionnalités et la disponibilité peuvent évoluer avec le développement.
 
-![Tableau de bord d&#39;analyse de Sentiment YouTube](/help/dashboards/opportunities/assets/youtube-sentiment-overview.png)
+![Tableau de bord Analyse des sentiments des utilisateurs sur YouTube](/help/dashboards/opportunities/assets/youtube-sentiment-overview.png)
 
 ## Fonctionnement
 
-LLM Optimizer surveille les vidéos YouTube citées par les systèmes d’IA à la recherche d’invites dans le jeu d’invites de votre tableau de bord Présence des marques. Lorsque des vidéos citées sont détectées, il analyse ces vidéos et leurs commentaires pour les citations de mentions de marque, de sentiment, de part de voix et d&#39;IA. Il compare la performance de votre marque par rapport à celle de vos concurrents et des marques associées, identifie les sujets récurrents qui alimentent le sentiment et génère des recommandations pour combler les écarts de perception.
+LLM Optimizer surveille les vidéos YouTube citées par les systèmes d’IA lorsqu’ils répondent à des invites de référence du tableau de bord Présence de la marque. Lorsque des vidéos citées sont détectées, il analyse ces vidéos et leurs commentaires afin d’identifier les mentions de marque, le sentiment, la part de voix et les citations d’IA. Il compare la performance de votre marque par rapport à celle de vos concurrents et des marques associées, identifie les sujets récurrents qui alimentent le sentiment et génère des recommandations pour améliorer la perception.
 
-Si aucune vidéo YouTube n’est citée pour les invites de votre jeu d’invites, cette opportunité n’apparaîtra pas dans votre tableau de bord.
+Si aucune vidéo YouTube n’est citée en réponse aux invites de référence, cette opportunité n’apparaîtra pas dans votre tableau de bord.
 
-Les résultats s’affichent dans deux onglets : **Suggestions** et **Performances**.
+Les résultats s’affichent dans deux onglets : **Suggestions** et **Performances**.
 
 ## Suggestions
 
-Cet onglet affiche des recommandations pour améliorer la perception de votre marque sur YouTube. Les suggestions sont organisées en trois sous-onglets : **Suggestions actuelles**, **Suggestions fixes** et **Suggestions ignorées**.
+Cet onglet affiche des recommandations pour améliorer la perception de votre marque sur YouTube. Les suggestions sont réparties en trois sous-onglets : **Suggestions actuelles**, **Suggestions fixes** et **Suggestions ignorées**.
 
 ![Onglet Suggestions](/help/dashboards/opportunities/assets/youtube-sentiment-suggestions.png)
 
-Le tableau des suggestions comprend les colonnes suivantes :
+Le tableau des suggestions comprend les colonnes suivantes :
 
-- **Suggestion** — L&#39;amélioration recommandée pour combler un écart de perception.
-- **Priorité** — Niveau d’urgence (critique, élevé, Medium, faible).
-- **Éléments action** — Ouvre un panneau contenant des étapes spécifiques pour mettre en œuvre la recommandation, y compris les équipes responsables (par exemple, la stratégie de contenu, le marketing d&#39;influence, le marketing de produit).
-- **Preuve** — Ouvre un tableau Sources montrant les vidéos derrière la suggestion.
+- **Suggestion** — L’amélioration recommandée pour améliorer la perception.
+- **Priorité** — Niveau d’urgence (Critique, Élevé, Moyen, Faible).
+- **Éléments d’action** — Ouvre un panneau contenant les étapes pour mettre en œuvre la recommandation, y compris les équipes responsables (par exemple, stratégie de contenu, marketing d’influence, marketing produit).
+- **Preuves** — Ouvre un tableau Sources affichant les vidéos à l’origine de la suggestion.
 
-Le développement d’une suggestion révèle une section **Analyse IA** avec :
+Développer une suggestion fait apparaître une section **Analyse IA** qui contient ce qui suit :
 
-- **Pourquoi une amélioration est nécessaire** — Une explication de l’écart de perception identifié, y compris le contexte concurrentiel et la manière dont le problème se forme dans le contenu de YouTube.
-- **Comment l’améliorer** — Orientations spécifiques sur le contenu ou les actions qui permettraient de combler le fossé.
-- **Résultat prévu** — Résultat prévu de la mise en œuvre de la recommandation.
+- **Importance de l’amélioration** — Une explication du décalage de perception identifié, avec le contexte concurrentiel et la façon dont le problème émerge dans le contenu YouTube.
+- **Solutions d’amélioration** — Des conseils sur le contenu ou des actions qui permettraient d’améliorer la perception.
+- **Résultat attendu** — Le résultat escompté de la mise en œuvre de la recommandation.
 
-Le tableau **Sources** présente les vidéos YouTube qui pilotent la suggestion, avec les colonnes suivantes :
+Le tableau **Sources** présente les vidéos YouTube à l’origine de la suggestion, avec les colonnes suivantes :
 
 - **Vidéo** — Titre et lien vers la vidéo YouTube.
-- **Canal** : canal YouTube qui a publié la vidéo.
-- **Engagement** — Niveau d’engagement (faible, Medium, élevé).
-- **Mentions de marque** — Nombre de vos mentions de marque par rapport au nombre total de mentions dans la vidéo.
+- **Chaîne** — La chaîne YouTube qui a publié la vidéo.
+- **Engagement** — Niveau d’engagement (Faible, Moyen, Élevé).
+- **Mentions de marque** — Nombre de fois où votre marque est mentionnée par rapport au nombre total de mentions dans la vidéo.
 - **Part de voix** — Part des mentions de votre marque par rapport à toutes les marques mentionnées.
-- **Top 5 des marques** — Les marques les plus mentionnées dans la vidéo.
-- **Sentiment** — sentiment global envers votre marque dans la vidéo.
-- **Citations de l’IA** — Nombre de réponses de l’IA qui ont cité cette vidéo.
+- **Top 5 des marques** — Les marques les plus mentionnées dans la vidéo.
+- **Sentiment** — Sentiment général à l’égard de votre marque dans la vidéo.
+- **Citations IA** — Nombre de réponses d’IA qui ont cité cette vidéo.
 
 ## Performances
 
-L’onglet **Performances** fournit une répartition détaillée des performances de votre marque sur l’ensemble du contenu YouTube. Il est organisé en quatre sections.
+L’onglet **Performances** offre une analyse détaillée des performances de votre marque dans l’ensemble du contenu YouTube. Il est composé de quatre sections.
 
 ### Paysage du marché
 
-Compare les performances de votre marque par rapport aux marques associées et aux concurrents du marché en fonction des mentions.
+Compare les performances de votre marque par rapport aux marques associées et aux concurrents en fonction des mentions.
 
-![Paysage du marché](/help/dashboards/opportunities/assets/youtube-sentiment-market-landscape.png)
+![Panorama du marché](/help/dashboards/opportunities/assets/youtube-sentiment-market-landscape.png)
 
-Il montre :
+Vous y trouverez ce qui suit :
 
-- **Mentions de marque dans les vidéos** — Votre part de voix par rapport aux marques associées et aux concurrents.
-- **Mentions de marque dans les commentaires** — La même comparaison dans le contenu des commentaires.
-- **Suivi du marché** — Graphique filtrable dans lequel vous pouvez sélectionner jusqu’à cinq marques concurrentes pour comparer la part de voix des vidéos et des commentaires.
+- **Mentions de la marque dans les vidéos** — Votre part de voix par rapport aux marques associées et aux concurrents.
+- **Mentions de la marque dans les commentaires** — La même comparaison dans l’ensemble des commentaires.
+- **Suivi du marché** — Un graphique filtrable où vous pouvez sélectionner jusqu’à cinq marques concurrentes pour comparer leurs parts de voix dans les vidéos et les commentaires.
 
 ### Analyse des sentiments
 
-Effectue le suivi de la perception de la marque sur le contenu analysé avec un graphique de **répartition du Sentiment** indiquant la répartition en pourcentage du sentiment favorable, neutre et défavorable pour les vidéos et les commentaires.
+Suit la perception de la marque dans le contenu analysé avec un graphique **Répartition des sentiments** qui montrent le pourcentage de sentiments favorables, neutres et défavorables dans les vidéos et les commentaires.
 
-![Analyse de Sentiment &#x200B;](/help/dashboards/opportunities/assets/youtube-sentiment-distribution.png)
+![Analyse des sentiments des utilisateurs](/help/dashboards/opportunities/assets/youtube-sentiment-distribution.png)
 
 ### Vidéos
 
-Tableau détaillé des vidéos YouTube analysées avec les colonnes suivantes :
+Tableau détaillé des vidéos YouTube analysées, avec les colonnes suivantes :
 
 - **Vidéo** — Titre et lien vers la vidéo YouTube.
-- **Canal** : canal YouTube qui a publié la vidéo.
-- **Engagement** — Niveau d’engagement (faible, Medium, élevé).
-- **Mentions de marque** — Nombre de vos mentions de marque par rapport au nombre total de mentions dans la vidéo.
+- **Chaîne** — La chaîne YouTube qui a publié la vidéo.
+- **Engagement** — Niveau d’engagement (Faible, Moyen, Élevé).
+- **Mentions de marque** — Nombre de fois où votre marque est mentionnée par rapport au nombre total de mentions dans la vidéo.
 - **Part de voix** — Part des mentions de votre marque par rapport à toutes les marques mentionnées.
-- **Top 5 des marques** — Les marques les plus mentionnées dans la vidéo.
-- **Sentiment** — sentiment global envers votre marque dans la vidéo.
-- **Citations AI** — Nombre de signaux de citation AI associés à la vidéo.
+- **Top 5 des marques** — Les marques les plus mentionnées dans la vidéo.
+- **Sentiment** — Sentiment général à l’égard de votre marque dans la vidéo.
+- **Citations d’IA** — Nombre de citations d’IA associées à la vidéo.
 
-L’onglet Performances affiche les panneaux **Vidéos** et **Rubriques** dans une seule vue (avec l’option **Vidéos** sélectionnée). La figure suivante inclut le tableau au niveau de la vidéo et, en dessous, le résumé **Rubriques**.
+L’onglet Performances affiche les panneaux **Vidéos** et **Sujets** sur un seul écran (avec l’option **Vidéos** sélectionnée). La figure suivante inclut le tableau au niveau de la vidéo et, en dessous, le résumé **Sujets**.
 
-![Tableaux Vidéos et Rubriques de l’onglet Performances](/help/dashboards/opportunities/assets/youtube-sentiment-videos.png)
+![Tableaux Vidéos et Sujets de l’onglet Performances](/help/dashboards/opportunities/assets/youtube-sentiment-videos.png)
 
 ### Commentaires
 
@@ -123,46 +123,46 @@ Tableau détaillé des commentaires YouTube analysés, avec les mêmes colonnes 
 
 ### Rubriques
 
-Un tableau des rubriques récurrentes identifiées dans le contenu analysé, présentant :
+Tableau des sujets récurrents identifiés dans le contenu analysé qui inclut ce qui suit :
 
-- **Sujet** — Thème ou sujet récurrent identifié.
-- **Mentions de marque** — Nombre de mentions de marque associées à la rubrique.
-- **Sentiment** — sentiment global associé à la rubrique.
+- **Rubrique** : thème ou sujet récurrent identifié.
+- **Mentions de la marque** — Nombre de mentions de la marque associées au sujet en question.
+- **Sentiment** — Sentiment global associé au sujet en question.
 
-Le tableau **Rubriques** apparaît dans la même vue Performances que le tableau Vidéos ; reportez-vous à la figure de la section [Vidéos](#videos) ci-dessus.
+Le tableau **Sujets** apparaît dans la vue Performances avec le tableau Vidéos. Reportez-vous à la figure de la section [Vidéos](#videos) ci-dessus.
 
-## Faites un essai dans la démonstration
+## Tester l’opportunité avec la démo
 
-Consultez l’opportunité d’analyse de Sentiment YouTube en action à l’aide de l’environnement de démonstration Frescopa.
+Découvrez l’opportunité Analyse des sentiments des utilisateurs sur Youtube dans l’environnement de démo Frescopa.
 
-[Afficher l’analyse du Sentiment YouTube dans la démonstration de Frescopa](https://play.llmo.now/org/demo-org/opportunities/youtube-analysis/971280f5-6a07-4506-85bf-d7419dca9803?siteId=frescopa-demo)
+[Voir l’opportunité Analyses des sentiments sur YouTube dans la démo Frescopa](https://play.llmo.now/org/demo-org/opportunities/youtube-analysis/971280f5-6a07-4506-85bf-d7419dca9803?siteId=frescopa-demo)
 
 ## Questions fréquentes
 
-**Pourquoi YouTube est-il important pour Recherche optimisée par l&#39;IA ?**
+**Pourquoi YouTube est-il important pour la recherche optimisée par l’IA ?**
 
-Les systèmes d’IA utilisent de plus en plus les vidéos YouTube pour générer des réponses sur les marques, les produits et les sujets. Lorsque ces vidéos citées traitent de votre marque de manière défavorable ou inexacte, ce sentiment se répercute directement sur la manière dont les systèmes d’IA représentent votre marque. Améliorer la manière dont votre marque est discutée dans le contenu YouTube que les systèmes d’IA citent déjà est l’un des moyens les plus directs d’influencer la perception de la marque générée par l’IA.
+Les systèmes d’IA utilisent de plus en plus les vidéos YouTube lorsqu’ils génèrent des réponses sur des marques, des produits et des sujets. Lorsque les vidéos citées mentionnent votre marque de manière défavorable ou inexacte, ce sentiment se répercute directement sur la manière dont les systèmes d’IA représentent votre marque. Améliorer la présentation de votre marque dans le contenu YouTube cité par les systèmes d’IA est la manière la plus directe d’influencer la perception de la marque générée par l’IA.
 
-**Pourquoi cette opportunité ne s’affiche-t-elle pas dans mon tableau de bord ?**
+**Pourquoi cette opportunité ne s’affiche-t-elle pas dans mon tableau de bord ?**
 
-Cette opportunité apparaît uniquement lorsque des vidéos YouTube sont détectées comme citations pour les invites dans l’invite du tableau de bord de Présence des marques définie. Si aucune vidéo YouTube n’est citée pour ces invites, l’opportunité ne s’affichera pas. À mesure que votre marque gagnera en couverture YouTube et que ces vidéos seront citées par les systèmes d’IA pour votre prompt set, l’opportunité deviendra disponible.
+Cette opportunité apparaît uniquement lorsque des vidéos YouTube sont citées dans les réponses aux invites de référence du tableau de bord Présence de la marque. Si aucune vidéo YouTube n’est citée pour répondre à ces invites, l’opportunité ne s’affiche pas. À mesure que votre marque gagne en visibilité sur YouTube et que ces vidéos sont citées par les systèmes d’IA en réponse à vos invites de référence, cette opportunité finira par s’afficher.
 
-**Que signifie Sentiment global ?**
+**Qu’est-ce que le sentiment général ?**
 
-Le sentiment global reflète le ton agrégé du contenu dans lequel votre marque est mentionnée : favorable, neutre ou défavorable. Il est calculé séparément pour les vidéos et les commentaires, car ils peuvent différer considérablement.
+Le sentiment général fait référence au ton du contenu dans lequel votre marque est mentionnée : favorable, neutre ou défavorable. Le calcul est effectué séparément pour les vidéos et les commentaires, car il peut y avoir des écarts importants.
 
-**Qu’est-ce que la Part de voix ?**
+**Qu’est-ce que la part de voix ?**
 
-La part de voix est le pourcentage de mentions de marque totales de votre marque dans un élément de contenu donné ou dans tout le contenu analysé, par rapport à toutes les autres marques mentionnées.
+La part de voix correspond au pourcentage de mentions de votre marque parmi toutes les marques mentionnées dans une vidéo donnée ou dans l’ensemble des vidéos analysées.
 
-**Que sont les citations d’IA ?**
+**Que sont les citations d’IA ?**
 
-Les citations d’IA indiquent le nombre de réponses d’IA citées dans une vidéo donnée. Un nombre plus élevé de citations par l’IA indique que la vidéo est utilisée activement par les systèmes d’IA lors de la génération de réponses sur des sujets connexes, ce qui rend le sentiment de ces vidéos particulièrement important pour la représentation de votre marque par l’IA.
+Les citations d’IA indiquent combien de réponses d’IA ont cité une vidéo donnée. Un nombre élevé de citations d’IA indique que la vidéo est activement utilisée par les systèmes d’IA pour générer des réponses sur des sujets associés. Dans ce cas, le sentiment exprimé dans ces vidéos particulièrement important pour la représentation de votre marque par l’IA.
 
-**Comment les concurrents du marché sont-ils identifiés ?**
+**Comment les concurrents du marché sont-ils identifiés ?**
 
-Les concurrents sont identifiés automatiquement en fonction du secteur de votre marque et des marques les plus fréquemment co-mentionnées dans le contenu analysé. Vous pouvez également sélectionner manuellement jusqu’à cinq marques à comparer dans le graphique de suivi du marché.
+Les concurrents sont identifiés automatiquement en fonction du secteur de votre marque et des marques les plus fréquemment mentionnées avec la vôtre dans le contenu analysé. Vous pouvez sélectionner manuellement jusqu’à cinq marques pour les comparer dans le graphique de suivi du marché.
 
-**À quelle fréquence l’analyse est-elle mise à jour ?**
+**À quelle fréquence l’analyse est-elle mise à jour ?**
 
-L’analyse YouTube reflète le contenu analysé jusqu’à la date affichée dans l’en-tête du tableau de bord. Revoyez l’opportunité après la mise en œuvre des recommandations pour suivre les changements de sentiment et de part de voix.
+L’analyse YouTube reflète le contenu analysé jusqu’à la date indiquée dans l’en-tête du tableau de bord. Revenez sur cette opportunité après la mise en œuvre des recommandations afin de suivre l’évolution du sentiment et de la part de voix.
