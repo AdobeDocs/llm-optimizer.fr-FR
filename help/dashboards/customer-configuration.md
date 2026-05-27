@@ -4,10 +4,15 @@ description: Utilisez la configuration cliente pour définir comment votre marqu
 feature: Customer Configuration
 autotag-review: '2026-05-15T17:45:12.067Z'
 TQID: 'https://experienceleague.adobe.com/qa7zk54n9G19-Azz9f6mn7V1kAGvnJSOJjpxbTBeHgc'
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2: id: e69d5a42-0217-4ca5-9396-a9a826a170da
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: f16c1bda1c9919a62077811653f92d5fc2c74045
 workflow-type: tm+mt
 source-wordcount: 3935
@@ -326,7 +331,7 @@ La dernière étape consiste en une vérification de la diversité. Les invites 
 ### Utilisation {#prompt-suggestions-how-to-use}
 
 1. Ouvrez le tableau de bord **Configuration du client** et accédez à l’onglet **Demander des suggestions**.
-1. Utilisez le filtre **** pour sélectionner **Tentative de citation** afin d&#39;afficher les suggestions générées à partir du trafic d&#39;agent.
+1. Utilisez le filtre **&#x200B;**&#x200B;pour sélectionner **Tentative de citation** afin d&#39;afficher les suggestions générées à partir du trafic d&#39;agent.
 1. Examinez les colonnes **Raisonnement** et **Priorité** pour évaluer chaque suggestion.
 1. Sélectionnez les invites à ajouter et cliquez sur **Ajouter une sélection** pour les ajouter à vos invites configurées.
 
