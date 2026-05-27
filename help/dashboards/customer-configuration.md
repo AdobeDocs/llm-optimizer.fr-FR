@@ -4,19 +4,14 @@ description: Utilisez la configuration cliente pour définir comment votre marqu
 feature: Customer Configuration
 autotag-review: '2026-05-15T17:45:12.067Z'
 TQID: 'https://experienceleague.adobe.com/qa7zk54n9G19-Azz9f6mn7V1kAGvnJSOJjpxbTBeHgc'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: e69d5a42-0217-4ca5-9396-a9a826a170da
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: f16c1bda1c9919a62077811653f92d5fc2c74045
 workflow-type: tm+mt
-source-wordcount: 2249
-ht-degree: 100%
+source-wordcount: 3935
+ht-degree: 57%
 
 ---
 
@@ -37,6 +32,7 @@ Pour configurer la manière dont LLM Optimizer surveille et analyse la présenc
 * [Alias de marque](#brand-aliases)
 * [Configuration du CDN](#agentic-cdn)
 * [Google Search Console](#google-console)
+* [Suggestions rapides basées sur les tentatives de citation et le Trafic de recommandation](#prompt-suggestions)
 
 Si vous utilisez l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), accédez à **Gestion des marques** pour configurer les marques et les alias de marque, puis définissez les concurrents par rapport auxquels effectuer un suivi. **Gestion des marques** est également utilisé pour configurer des intégrations telles que Google Search Console, Adobe Analytics et le transfert du journal CDN, liées aux URL associées aux marques. Pour cela, cliquez sur les onglets correspondants : GSC, CDN, etc.
 
@@ -258,3 +254,122 @@ Oui, vous pouvez supprimer tout prompt que vous ne souhaitez pas surveiller. Les
 Q : Une fois que j’ajoute des prompts de la Google Search Console à ma liste de prompts, combien de temps vais-je voir les données de présence de la marque pour ces prompts ?
 
 Les données de présence de la marque des nouveaux prompts ajoutés apparaîtront lors de la prochaine actualisation planifiée des données, qui s’exécute généralement au début de chaque semaine. Selon le moment où vous ajoutez les prompts, les résultats s’affichent sous quelques jours.
+
+## Suggestions rapides basées sur les tentatives de citation et le Trafic de recommandation {#prompt-suggestions}
+
+Au lieu de deviner les invites importantes, **Suggestions d’invite** commencez par savoir à quoi les agents et les utilisateurs de l’IA accèdent déjà ou auxquels il est fait référence sur votre site.
+
+Adobe LLM Optimizer analyse les données de votre réseau CDN pour identifier les pages auxquelles les agents de l’IA accèdent déjà de manière cohérente (tentatives de citation) et les utilisateurs qui y font référence (trafic de recommandation LLM). Ensuite, il génère automatiquement des suggestions rapides en fonction des lacunes de votre couverture rapide actuelle. Au lieu de deviner les URL à prioriser et les invites à créer, le workflow commence par de vrais signaux de trafic : les pages que les agents atteignent déjà et la définition du type d&#39;utilisateur qui invite ces pages doit répondre.
+
+Lorsqu’une page est déjà accessible de manière cohérente par les agents d’IA, la question n’est pas de savoir comment les agents doivent la connaître, mais à quelles questions le contenu de la page peut répondre. Sans invites configurées pour ces pages, vous n&#39;avez aucune visibilité sur la façon dont votre marque apparaît dans les réponses d&#39;IA sur les sujets qui comptent le plus. L’invite de suggestions du trafic d’agents comble cet écart afin que vous puissiez commencer à effectuer le suivi et à améliorer la visibilité des marques des pages sur lesquelles les agents sont déjà les plus actifs.
+
+>[!NOTE]
+>
+> Dans l’[expérience centrée sur la marque](/help/overview/quick-start.md#brand-centric-experience), des suggestions d’invites sont affichées dans la section **Gestion des invites**.
+
+### Fonctionnement {#prompt-suggestions-how-it-works}
+
+Le workflow d’invite de suggestions s’exécute en quatre étapes, transformant les signaux de trafic CDN en suggestions d’invite prêtes à être configurées. Chaque étape s’appuie sur la précédente : en commençant par les pages où l’activité de l’agent d’IA est déjà éprouvée, en comprenant de quoi il s’agit, en vérifiant ce qui est déjà couvert et en générant des invites spécifiques, ancrées et prêtes à être publiées.
+
+![Suggestions d’invite du workflow de trafic d’agent](/help/dashboards/assets/prompt-suggestions-workflow.png)
+
+#### Étape 1 — Identification des pages à signal élevé à partir du trafic agentic {#prompt-suggestions-step-1}
+
+Le pipeline commence par identifier les pages de votre site sur lesquelles les systèmes d’IA interagissent déjà activement, à l’aide de deux signaux provenant de vos données CDN : la fréquence à laquelle les systèmes d’IA accèdent à vos pages en tant que source tout en répondant à des questions réelles des utilisateurs et utilisatrices, et le fait de savoir si ces pages orientent déjà des utilisateurs et utilisatrices réels vers votre site à partir de réponses générées par l’IA.
+
+* **Tentatives de citation** — comment les systèmes d’IA ont accédé à une page en tant que source potentielle tout en répondant aux questions des utilisateurs. Le pipeline recherche les pages qui affichent une activité de tentative de citation cohérente semaine après semaine, ce qui donne une vue d’ensemble plus globale de l’intérêt que la situation à un seul moment.
+* trafic de recommandation LLM **: instances dans lesquelles un utilisateur a cliqué à partir d’une réponse générée par l’IA pour accéder à l’URL.** Le pipeline se concentre sur les données de référence les plus récentes et donne la priorité aux pages avec le plus grand volume de visites pilotées par l’IA, en s’assurant que les suggestions sont fondées sur les modèles de recommandation actuels et éprouvés de l’IA.
+
+| Signal | Ce que cela signifie |
+|--------|---------------|
+| Tentatives de citation uniquement | Les agents accèdent constamment à cette page en tant que source potentielle |
+| TRAFIC DE RECOMMANDATION LLM uniquement | Les agents envoient activement des utilisateurs à cette page |
+| Les deux | Les agents y accèdent et les utilisateurs cliquent dessus : la cible la plus fiable |
+
+Une page peut être qualifiée par l’un ou l’autre des signaux, ou les deux. Les pages affichant les deux signaux représentent les cibles avec le degré de confiance le plus élevé pour la génération rapide.
+
+#### Etape 2 — Analyser le contenu et l&#39;intention de la page {#prompt-suggestions-step-2}
+
+Pour chaque page de qualification, le pipeline lit le contenu de la page et :
+
+* **Résume** le tout sous la forme d’une description concise et fondée sur des faits, qui devient la base de tout ce qui suit.
+* **Classe** type de page : produit, ressource, support ou hub.
+* Indique l’**intention principale du parcours** — le type de question à laquelle la page est la mieux placée pour répondre, par exemple de type informatif, didactique, comparatif ou transactionnel.
+
+Les deux classifications fonctionnent ensemble. Par exemple, les invites générées à partir d&#39;une page d&#39;assistance, telles qu&#39;un guide de configuration ou un tutoriel, sont plus susceptibles d&#39;être pertinentes pour un utilisateur existant que pour une nouvelle audience.
+
+#### Étape 3 — Vérifier la couverture d&#39;invite existante {#prompt-suggestions-step-3}
+
+Avant de générer de nouveaux éléments, le pipeline vérifie que chaque page de qualification est déjà couverte par des invites configurées dans votre compte LLM Optimizer, qui s’exécutent en deux étapes :
+
+1. Analyse de similarité sémantique qui identifie rapidement les invites candidates de votre bibliothèque d&#39;invites existantes potentiellement liées à la page.
+2. Une révision optimisée par LLM qui évalue dans quelle mesure chaque invite candidate correspond au contenu de la page, non seulement s’il est lié au sujet, mais s’il couvre le sujet de la page.
+
+Une page est considérée comme couverte si au moins une invite existante atteint ce seuil. Les pages sans correspondance adéquate sont identifiées comme des lacunes et passent à l’étape 4.
+
+#### Étape 4 : générer, vérifier la qualité et classer les invites par URL {#prompt-suggestions-step-4}
+
+![Génération d’invites et contrôle qualité](/help/dashboards/assets/prompt-suggestions-generation.png)
+
+Pour chaque page d’espace, le pipeline génère des invites à son naturel basées sur le contenu de la page. Il commence par identifier les personnes pertinentes, c’est-à-dire quelqu’un qui poserait de manière réaliste les questions auxquelles cette page répond et construirait un scénario réaliste autour de cette personne avant de générer des invites de candidat.
+
+Chaque invite fait l’objet d’un examen de qualité automatisé dans trois dimensions :
+
+* S’il est **spécifique** à cette page plutôt qu’à une question générique qui peut s’appliquer à n’importe quelle page de la catégorie.
+* Si elle est **ancrée** dans le contenu réel de la page.
+* Si cela ressemble à quelque chose qu’un **utilisateur réel** saisirait dans un outil d’IA tel que ChatGPT.
+
+Les invites qui ne réussissent pas cette révision sont réécrites avec des commentaires spécifiques et réexaminées. S&#39;ils ne sont toujours pas adoptés, ils sont abandonnés.
+
+La dernière étape consiste en une vérification de la diversité. Les invites à travers les URL trop similaires les unes aux autres sont supprimées de la liste finale. Chaque invite est balisée avec votre rubrique et votre catégorie préconfigurées et inclut un champ de raisonnement qui explique pourquoi l’URL source a été ciblée en fonction de sa tentative de citation et de ses signaux de trafic de recommandation. Un classement de priorité est également attribué aux invites afin que vous sachiez sur quelles suggestions agir en premier. Une priorité plus élevée signifie un signal d&#39;IA combiné plus fort provenant de l&#39;URL source. Les invites sont alors prêtes à être consultées sous l&#39;onglet **Suggestions d&#39;invite** dans le tableau de bord de la configuration du client.
+
+### Utilisation {#prompt-suggestions-how-to-use}
+
+1. Ouvrez le tableau de bord **Configuration du client** et accédez à l’onglet **Demander des suggestions**.
+1. Utilisez le filtre **** pour sélectionner **Tentative de citation** afin d&#39;afficher les suggestions générées à partir du trafic d&#39;agent.
+1. Examinez les colonnes **Raisonnement** et **Priorité** pour évaluer chaque suggestion.
+1. Sélectionnez les invites à ajouter et cliquez sur **Ajouter une sélection** pour les ajouter à vos invites configurées.
+
+![Onglet Suggestions d’invite avec filtre source Tentative de citation](/help/dashboards/assets/prompt-suggestions-citation-attempt.png)
+
+![Ajouter les suggestions d&#39;invite sélectionnées](/help/dashboards/assets/prompt-suggestions-add-selection.png)
+
+### Questions fréquentes {#prompt-suggestions-faq}
+
+Q : Mon organisation a-t-elle besoin d’une configuration supplémentaire pour utiliser cette fonctionnalité ?
+
+Cette fonctionnalité repose sur les données du journal du réseau CDN. Si vous avez déjà activé le [transfert de journal CDN](#cdn-configuration), aucune configuration supplémentaire n’est nécessaire. Sans les journaux CDN, les données de tentative de citation ou de trafic de recommandation ne seront pas disponibles pour analyse.
+
+Q : Pourquoi une URL spécifique ne s’affiche-t-elle pas dans les suggestions ?
+
+Il y a quelques raisons courantes. La page peut ne pas encore avoir d’activité de récupération d’IA cohérente ou de trafic de recommandation significatif ; sans l’un de ces signaux, elle n’entre pas dans le pipeline. Elle peut déjà être couverte par une invite configurée existante, car le pipeline ne génère que des suggestions pour de véritables écarts. Ou le type de page peut ne pas être éligible pour la génération d’invites.
+
+Q : Les suggestions peuvent-elles changer au fil du temps ?
+
+Oui. Le pipeline s’exécute régulièrement à mesure que de nouvelles données CDN sont disponibles. À mesure que le comportement des utilisateurs et des agents évolue (quelles pages sont consultées, à quelle fréquence et lesquelles génèrent du trafic de recommandation), les suggestions reflètent ces modifications. Les pages qui n’étaient pas très performantes auparavant peuvent être incluses dans les prochaines exécutions. Les lacunes existantes qui ont été corrigées ne généreront plus de nouvelles suggestions.
+
+Q : Pourquoi est-ce que je vois des URL auxquelles je ne m’attendais pas dans les suggestions ?
+
+Les URL affichées sont entièrement basées sur le comportement agent observé (des pages auxquelles les systèmes d’IA ont systématiquement accédé ou auxquelles ils ont référencé des utilisateurs et utilisatrices, quelle que soit la place qu’elles occupent dans votre stratégie de contenu). Dans certains cas, il peut s’agir de pages que vous n’avez jamais considérées comme importantes, mais que l’IA a consultées à plusieurs reprises. Si une URL apparaît dans les suggestions, c’est parce que les données la prennent en charge. Vous êtes toujours libre d’ignorer les suggestions qui ne correspondent pas à votre stratégie, mais les données sous-jacentes à chaque suggestion sont basées sur une véritable activité d’IA.
+
+Q : Que signifie le champ de raisonnement ?
+
+Chaque invite comprend une explication de la raison pour laquelle son URL source a été répertoriée comme suggestion. Pour les pages qualifiées par des tentatives de citation, cela indique comment la page se classe parmi toutes les pages accessibles en fonction des tentatives hebdomadaires. Pour les pages qualifiées par trafic de recommandation, il en va de même pour les pages vues de référence. Les pages contenant les deux signaux affichent les deux. Cela vous permet de comprendre la priorité et de choisir les suggestions à publier en premier.
+
+Pour une page contenant les deux signaux, le raisonnement peut ressembler à ceci : *Généré pour [URL de la page] — se classe dans le top 3 % par tentative de citation hebdomadaire médiane et dans le top 1 % par trafic de recommandation LLM.*
+
+Q : Comment la priorité est-elle déterminée ?
+
+La priorité est basée sur un score combiné de deux signaux : comment une page se classe parmi toutes les pages par tentatives de citation et comment elle se classe parmi toutes les pages par pages vues de référence LLM. Les deux sont exprimées en centiles et additionnées, de sorte que les pages qui obtiennent de bons scores sur les deux signaux se hissent naturellement en haut. Une page à laquelle l’IA accède de manière cohérente et vers laquelle elle envoie activement des utilisateurs sera toujours mieux classée qu’une page ne comportant qu’un seul signal.
+
+Q : Comment le pipeline décide-t-il quelles pages sont qualifiées en fonction des tentatives de citation ?
+
+Le pipeline recherche les pages qui affichent une activité de récupération de l’IA cohérente au fil du temps. Pour être admissible, une page doit remplir deux conditions : elle doit montrer une activité significative dans au moins la moitié des semaines dans les données disponibles et son nombre médian d’accès authentiques au cours de ces semaines actives doit se classer dans les 25 % supérieurs sur toutes les pages. Les deux conditions doivent tenir — la fréquence seule ne suffit pas et le volume des accès seul ne suffit pas non plus.
+
+Q : Comment le pipeline décide-t-il quelles pages sont qualifiées en fonction du trafic de recommandation ?
+
+Une page se qualifie si elle apparaît dans les 10 % supérieurs de toutes les pages par nombre total de visites de référence LLM au cours des trois derniers mois. Cela permet de s’assurer que les suggestions sont fondées sur des pages qui génèrent déjà des clics publicitaires réels et mesurables à partir des réponses de l’IA, en fonction du comportement récent.
+
+Q : Des suggestions rapides sont-elles disponibles dans d&#39;autres langues que l&#39;anglais ?
+
+Pas encore. Le pipeline génère actuellement des invites en anglais uniquement. La prise en charge multilingue sera ajoutée dans une version ultérieure.
