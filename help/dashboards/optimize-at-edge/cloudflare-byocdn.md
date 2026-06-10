@@ -10,9 +10,9 @@ feature_v2:
   - id: d1956731-2adb-4bb7-8301-2b239254ac72
 subfeature_v2:
   - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 3237a5fdff501eaee29b678c8c2698b95469a125
+source-git-commit: 5a903ec2b6976e7997c45848265d022ca67bed9d
 workflow-type: tm+mt
-source-wordcount: 1916
+source-wordcount: 1919
 ht-degree: 96%
 
 ---
@@ -117,7 +117,7 @@ Suivez ces étapes pour créer et configurer manuellement le worker.
 
 **Étape 2 : ajouter le code du worker**
 
-Après avoir créé le programme de travail, cliquez sur **Modifier le code** et remplacez le code par défaut par le code de [worker.js](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudflare/worker.js). Si vous disposez déjà d’un programme de travail de Cloudflare, fusionnez le code avec votre code de programme de travail existant au lieu de le remplacer entièrement.
+Après avoir créé le programme de travail, cliquez sur **Modifier le code** et remplacez le code par défaut par le code de [worker.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudflare/automation/src/worker.js). Si vous disposez déjà d’un programme de travail de Cloudflare, fusionnez le code avec votre code de programme de travail existant au lieu de le remplacer entièrement.
 
 Cliquez sur **Enregistrer et déployer** pour publier le worker.
 
