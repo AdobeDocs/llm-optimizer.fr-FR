@@ -12,10 +12,10 @@ subfeature_v2:
   - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+source-git-commit: 57c429630874b7304472f16b8c23ba9c6cff44fc
 workflow-type: tm+mt
-source-wordcount: 595
-ht-degree: 100%
+source-wordcount: 612
+ht-degree: 96%
 
 ---
 
@@ -71,7 +71,7 @@ country -> Pays/Région géographique
 * **Données d’échange des messages**
 reqHost -> Hôte de la requête
 reqPath -> Chemin de la requête
-queryStr -> Chaîne de requête
+queryStr -> Chaîne de requête (facultatif)
 reqMethod -> Méthode de requête
 ua -> Agent utilisateur
 statusCode -> Code d’état HTTP
@@ -81,13 +81,17 @@ referer -> Référent
 * **Données de performances du réseau**
 timeToFirstByte -> Time To First Byte
 
+>[!NOTE]
+>
+>Le paramètre `queryStr` est facultatif. Vous pouvez l’omettre si la chaîne de requête contient des informations PII.
+
 Les champs de jeux de données Akamai (y compris les identifiants) sont les suivants :
 
 1100, # reqTimeSec -> Heure de la demande
 2012, # country -> Pays/Région géographique
 1011, # reqHost -> Hôte de la requête
 1013, # reqPath -> Chemin de la requête
-2009, # queryStr -> Chaîne de requête
+2009, # queryStr -> Chaîne de requête (facultatif)
 1012, # reqMethod -> Méthode de requête
 1017, # ua -> Agent utilisateur
 1008, # statusCode -> Code d’état HTTP
