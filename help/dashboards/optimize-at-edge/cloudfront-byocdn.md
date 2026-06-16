@@ -4,16 +4,13 @@ description: Découvrez comment configurer CloudFront BYOCDN pour Optimize at Ed
 feature: Opportunities
 autotag-review: '2026-05-15T17:41:48.977Z'
 TQID: 'https://experienceleague.adobe.com/fGlW2FIQooU-8nv8H1lH3WOxinOFUVK7RVNol7ACPq8'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 5a903ec2b6976e7997c45848265d022ca67bed9d
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+source-git-commit: 7097550211d1570d6ff65ab980f9a160f8d2a9e0
 workflow-type: tm+mt
-source-wordcount: 2204
-ht-degree: 96%
+source-wordcount: 2343
+ht-degree: 90%
 
 ---
 
@@ -232,6 +229,27 @@ Le rôle créé automatiquement est fourni avec une politique `AWSLambdaBasicExe
 
 >[!WARNING]
 >La région de l’ARN doit être `*` : Lambda@Edge s’exécute à l’emplacement Edge le plus proche de l’utilisateur ou l’utilisatrice, de sorte que les journaux sont écrits dans CloudWatch dans la région de cet emplacement Edge (par exemple, `ap-south-1`, `eu-west-1`), pas nécessairement `us-east-1`. Le groupe de journaux utilise un nom comportant un préfixe de zone géographique : `/aws/lambda/us-east-1.FUNCTION_NAME`, où `us-east-1` correspond toujours à la zone géographique d’origine de la fonction.
+
+**Correction du lien des journaux CloudWatch**
+
+Par défaut, le raccourci **Afficher les journaux CloudWatch** de la console Lambda renvoie vers `/aws/lambda/FUNCTION_NAME` dans `us-east-1` — le mauvais groupe de journaux pour Lambda@Edge. Configurez un groupe de journaux personnalisé afin que le lien pointe vers le chemin d’accès correct.
+
+**Navigation :** Console AWS > Lambda > [votre fonction] > Configuration > Outils de surveillance et d’opérations
+
+1. Cliquez sur **Modifier**.
+
+2. Sous **Groupe de journaux CloudWatch**, sélectionnez **Personnalisé**.
+
+3. Définissez le nom du groupe de journaux personnalisé sur `/aws/lambda/us-east-1.edgeoptimize-origin`.
+
+4. Sous **Autorisations**, laissez la case **Ajouter les autorisations requises** **non cochée**.
+
+   ![Configuration de groupe de journaux personnalisé Lambda](/help/assets/optimize-at-edge/cloudfront-lambda-custom-log-group.png)
+
+5. Cliquez sur **Enregistrer**.
+
+>[!NOTE]
+>Même après ce correctif, le lien **Afficher les journaux CloudWatch** ouvre le nom correct du groupe de journaux, mais peut n’afficher aucune donnée si vous vous trouvez dans la mauvaise région. Les journaux Lambda@Edge sont écrits dans la région Edge qui a traité la requête (par exemple, `eu-west-1`, `ap-south-1`), et non `us-east-1`. Vous devez toujours passer à la bonne région dans CloudWatch pour afficher les journaux.
 
 **Publier une version**
 
