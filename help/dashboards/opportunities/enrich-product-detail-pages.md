@@ -38,7 +38,7 @@ Il présente en un coup d’œil les mesures clés suivantes :
 
 ![Tableau de bord Enrichir les pages de détails du produit](/help/dashboards/opportunities/assets/enrich-product-detail-pages-overview.png)
 
-Cette opportunité peut être optimisée à l’aide d’[Optimize at Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge). Les optimisations sont diffusées exclusivement aux agents d’IA sans impact sur les visiteurs humains (diffusion en robots uniquement), appliquées au niveau de la couche CDN sans CMS ni modifications de catalogue requises, et peuvent prendre effet en quelques minutes sans engagement des développeurs, ce qui en fait un chemin de déploiement rapide et à faible risque pour les catalogues de produits volumineux.
+Cette opportunité peut être optimisée à l’aide d’[Optimize at Edge](https://experienceleague.adobe.com/fr/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge). Les optimisations sont diffusées exclusivement aux agents d’IA sans impact sur les visiteurs humains (diffusion en robots uniquement), appliquées au niveau de la couche CDN sans CMS ni modifications de catalogue requises, et peuvent prendre effet en quelques minutes sans engagement des développeurs, ce qui en fait un chemin de déploiement rapide et à faible risque pour les catalogues de produits volumineux.
 
 ## Fonctionnement
 
@@ -48,7 +48,7 @@ Pour chaque page de produit affectée, LLM Optimizer fournit :
 
 - **Aperçu de l’analyse de l’IA** — Liste complète des informations de catalogue manquantes dans la vue de l’agent d’IA et des raisons pour lesquelles elles sont importantes pour la découverte de produits pilotée par LLM, y compris une liste de points de données récupérables tels que les variantes de produits, les options de taille, les spécifications du matériau et les détails de compatibilité, entre autres.
 
-Le correctif est appliqué à l’aide de la fonctionnalité de déploiement Edge d’Adobe [Optimize at Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge), qui fournit un instantané d’HTML entièrement prégénéré et convivial par l’IA aux agents utilisateurs de LLM au niveau de la couche CDN. Cela récupère toutes les données de catalogue précédemment masquées (y compris les variantes de produits, les spécifications techniques et les détails de fonctionnalités) sans toucher votre catalogue Commerce ou l’interface utilisateur de storefront visible par l’homme.
+Le correctif est appliqué à l’aide de la fonctionnalité de déploiement Edge d’Adobe [Optimize at Edge](https://experienceleague.adobe.com/fr/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge), qui fournit un instantané d’HTML entièrement prégénéré et convivial par l’IA aux agents utilisateurs de LLM au niveau de la couche CDN. Cela récupère toutes les données de catalogue précédemment masquées (y compris les variantes de produits, les spécifications techniques et les détails de fonctionnalités) sans toucher votre catalogue Commerce ou l’interface utilisateur de storefront visible par l’homme.
 
 ![URL avec tableau de suggestions](/help/dashboards/opportunities/assets/enrich-product-detail-pages-suggestions.png)
 
@@ -74,7 +74,7 @@ L’optimisation est diffusée exclusivement aux agents utilisateurs de l’IA v
 
 Si votre instance Commerce n’est pas encore connectée à LLM Optimizer, vous serez redirigé vers la configuration de la connexion avant que les enrichissements puissent être appliqués.
 
-Si vous n’avez pas encore effectué l’intégration, cliquer sur **Déployer des optimisations** vous redirigera vers le processus d’intégration. Pour plus d’informations sur le fonctionnement d’Optimize at Edge, les fournisseurs de réseau CDN pris en charge et le processus d’intégration, consultez la page [Optimize at Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge).
+Si vous n’avez pas encore effectué l’intégration, cliquer sur **Déployer des optimisations** vous redirigera vers le processus d’intégration. Pour plus d’informations sur le fonctionnement d’Optimize at Edge, les fournisseurs de réseau CDN pris en charge et le processus d’intégration, consultez la page [Optimize at Edge](https://experienceleague.adobe.com/fr/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge).
 
 Boîte de dialogue ![Déployer sur Edge](/help/dashboards/opportunities/assets/enrich-product-detail-pages-deploy.png)
 
