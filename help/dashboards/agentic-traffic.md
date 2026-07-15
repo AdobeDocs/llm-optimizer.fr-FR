@@ -4,30 +4,25 @@ description: Découvrez comment utiliser le tableau de bord du trafic généré 
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:33:15.711Z'
 TQID: 'https://experienceleague.adobe.com/3dWNUxcquDVip4Gg1WMYfwv8MUSbZYWqJYnkQ3aZkmc'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: e06fae5f-830b-4222-a469-b5e148d36465
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: a5bfae0a2fecc48f8deb80394817002cfb7c1a32
 workflow-type: tm+mt
-source-wordcount: 1407
-ht-degree: 100%
+source-wordcount: 1254
+ht-degree: 97%
 
 ---
 
 
 # Trafic généré par l’IA agentique {#agentic-traffic}
 
-Le tableau de bord du trafic généré par l’IA agentique montre comment les agents d’IA (robots d’exploration et chatbots) interagissent avec votre site. Cette vue vous permet de suivre le nombre total de requêtes et les mesures générales liées aux performances. Vous pouvez également afficher la distribution du trafic sur les marchés, les catégories, les pages et les agents. Les données utilisées par ce tableau de bord proviennent des journaux CDN. Vous devez donc configurer le **transfert des journaux CDN** pour afficher les mesures. Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
+Le tableau de bord du trafic généré par l’IA agentique montre comment les agents d’IA (robots d’exploration et chatbots) interagissent avec votre site. Cette vue vous permet de suivre le nombre total de requêtes et les mesures générales liées aux performances. Vous pouvez également afficher la distribution du trafic sur les marchés, les catégories, les pages et les agents. Les données utilisées par ce tableau de bord proviennent des journaux CDN. Vous devez donc configurer le **transfert des journaux CDN** pour afficher les mesures. Il existe également des filtres personnalisables pour vous aider à affiner les données affichées. Accédez à **Trafic d’agent** et sélectionnez le site pour lequel vous souhaitez afficher les informations sur le trafic d’agent.
 
-![Répartition du trafic](/help/dashboards/assets/ag-main.png)
+![Trafic généré par l’IA agentique – Sélecteur de site (expérience orientée marque)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+
+<!-- ![Traffic Distribution](/help/dashboards/assets/ag-main.png)-->
 
 Cette page contient les éléments suivants :
 
@@ -38,44 +33,15 @@ Cette page contient les éléments suivants :
 * [Meilleures et pires performances](#top-bottom-movers)
 * [Analyse des performances des URL et des agents utilisateurs](#user-url-performance)
 
-Si vous utilisez l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), accédez à **Trafic généré par l’IA agentique** et sélectionnez le site pour lequel vous souhaitez afficher les informations sur le trafic généré par l’IA agentique.
-
-![Trafic généré par l’IA agentique – Sélecteur de site (expérience orientée marque)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
-
 ## Transfert de journaux CDN {#cdn-setup}
 
 Sans **transfert des journaux CDN**, le tableau de bord du trafic généré par l’IA agentique est vide. Pour afficher les interactions agentiques, vous devez configurer le **transfert des journaux CDN**.
 
-### Configuration cliente (navigation classique)
-
-Lors de la première connexion, un message s’affiche, comme illustré dans l’image ci-dessous.
-
-![Configuration du réseau CDN](/help/dashboards/assets/ag-log-forward1.png)
-
-Sélectionnez **Accéder à la configuration** et vous accéderez automatiquement à l’onglet **Configuration du réseau CDN** du tableau de bord [Configuration cliente](/help/dashboards/customer-configuration.md).
-
-![Intégrer la configuration CDN](/help/dashboards/assets/ag-log-forward2.png)
-
-Sur cet onglet, sélectionnez **Intégrer le réseau CDN**. La fenêtre du fournisseur de réseau CDN s’affiche.
-
-<!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
-Dans la fenêtre **Fournisseur de réseau CDN intégré** :
-
-1. Sélectionnez votre fournisseur de réseau CDN (par exemple, Akamai, Fastly géré par Adobe, Fastly, AWS Cloudfront, Azure CDN, Cloudflare ou autre).
-2. Cliquez sur **Intégration** pour activer le transfert des journaux.
-
-Si vous sélectionnez **Autre**, vous devrez contacter llmo-now@adobe.com pour obtenir de l’aide.
-
->[!NOTE]
->Pour plus de détails concernant le transfert des journaux lors de l’utilisation d’un CDN géré par la clientèle (BYOCDN), consultez [Vue d’ensemble du transfert de journaux BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md).
-
-Une fois activés, les journaux sont ingérés et le tableau de bord est renseigné avec des mesures telles que le nombre total d’interactions de l’agent, le taux de succès, les accès par marché, l’analyse des agents utilisateurs et les performances au niveau de l’URL.
-
-### Expérience axée sur la marque
-
-Si vous bénéficiez d’une [expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), vous pouvez ajouter des informations sur le transfert des journaux CDN en accédant à **Gestion des marques** et en cliquant sur le libellé **CDN**.
+Vous pouvez ajouter des informations de transfert de journal CDN en accédant à **Brands Management** et en cliquant sur le libellé **CDN**.
 
 ![Gestion des marques – Transfert des journaux CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
+
+Pour plus de détails concernant le transfert des journaux lors de l’utilisation d’un CDN géré par la clientèle (BYOCDN), consultez [Vue d’ensemble du transfert de journaux BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md).
 
 LLM Optimizer traite un sous-ensemble de champs des journaux du réseau CDN. Bien que les noms des champs de journaux bruts varient selon le fournisseur de réseau CDN, ils sont normalisés et présentés comme suit :
 

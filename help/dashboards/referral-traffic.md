@@ -4,20 +4,14 @@ description: Découvrez comment utiliser le tableau de bord du trafic de recomma
 feature: Referral Traffic
 autotag-review: '2026-05-15T17:57:28.534Z'
 TQID: 'https://experienceleague.adobe.com/rMSltSJf-UH4FHoST9NhmeY-hGVNLXsFXbCLzZenW5w'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: e3c08d81-9e25-4503-9df5-8dd1f489aa99
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 09e228275cf84316ee2e8990636bb3b8865ac263
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: e3c08d81-9e25-4503-9df5-8dd1f489aa99
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: b8f87eee62cfd0fa134b2370b04d5e14b0cfa547
 workflow-type: tm+mt
-source-wordcount: 750
-ht-degree: 92%
+source-wordcount: 716
+ht-degree: 86%
 
 ---
 
@@ -26,10 +20,14 @@ ht-degree: 92%
 
 Le trafic de recommandation montre comment les visiteurs et visiteuses accèdent à votre site à partir de plateformes externes, de citations d’IA et de liens de recommandation. Il suit et analyse les sources de trafic, les tendances de recommandation et les mesures de conversion des sites web et plateformes externes. Cela vous aidera à comprendre quelles sources, régions et pages génèrent le trafic le plus engagé. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
 
->[!NOTE]
->Par défaut, ce tableau de bord génère des informations sur le trafic à partir des **journaux CDN**. Si votre entreprise fait partie d’une offre payante, vous pouvez connecter **&#x200B;**&#x200B;ou **Google Analytics 4**(GA4) afin d’ajouter des données qui mesurent l’engagement sur le site et la découverte pilotée par l’IA. Ces données sont disponibles dans l’onglet **Impact commercial**. Notez que sans intégration à Adobe Analytics ou GA4, l’onglet n’est pas renseigné. Pour plus d’informations[&#128279;](/help/dashboards/adobe-analytics-integration.md) consultez Intégration d’Adobe Analytics ou [Intégration de Google Analytics](/help/dashboards/google-analytics-integration.md).
+Accédez à **Trafic de recommandation** et sélectionnez le site pour lequel vous souhaitez afficher les informations sur le Trafic de recommandation LLM.
 
-![Page de recommandation](/help/dashboards/assets/referral-traffic.png)
+![Trafic de recommandation – Sélecteur de site (expérience orientée marque)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
+
+>[!NOTE]
+>Par défaut, ce tableau de bord génère des informations sur le trafic à partir des **journaux CDN**. Si votre entreprise fait partie d’une offre payante, vous pouvez connecter **** ou **Google Analytics 4**(GA4) afin d’ajouter des données qui mesurent l’engagement sur le site et la découverte pilotée par l’IA. Ces données sont disponibles dans l’onglet **Impact commercial**. Notez que sans intégration à Adobe Analytics ou GA4, l’onglet n’est pas renseigné. Pour plus d’informations](/help/dashboards/adobe-analytics-integration.md) consultez [Intégration d’Adobe Analytics ou [Intégration de Google Analytics](/help/dashboards/google-analytics-integration.md).
+
+<!-- ![Referral Page](/help/dashboards/assets/referral-traffic.png)-->
 
 Cette page contient les éléments suivants :
 
@@ -39,19 +37,15 @@ Cette page contient les éléments suivants :
 * [Principales URL de recommandation](#top-referrals)
 * [Détails du trafic de recommandation](#traffic-details)
 
-Si vous utilisez l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), accédez à **Trafic de recommandation** et sélectionnez le site pour lequel vous souhaitez afficher les informations sur le Trafic de recommandation LLM.
-
-![Trafic de recommandation – Sélecteur de site (expérience orientée marque)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
-
 ## Configuration {#setup}
 
 Lors de la première connexion, le tableau de bord du trafic de recommandation peut apparaître vide. Pour afficher vos données, vous devez configurer le transfert des journaux CDN.
 
-Pour les clientes et clients qui utilisent l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), vous pouvez ajouter des informations sur le transfert de journaux CDN en accédant à **Gestion des marques** et en cliquant sur le libellé **CDN**.
+Vous pouvez ajouter des informations de transfert de journal CDN en accédant à **Brands Management** et en cliquant sur le libellé **CDN**.
 
-**Configuration du client ou de la cliente (expérience classique) :** configurez le [transfert de journaux CDN](/help/dashboards/customer-configuration.md#cdn-configuration) en sélectionnant **Accéder à la configuration**.
+<!-- **Customer Configuration (classic experience):** Configure [CDN log forwarding](/help/dashboards/customer-configuration.md#cdn-configuration) by selecting **Go To Configuration**.-->
 
-![Configuration du trafic de recommandation](/help/dashboards/assets/referral-setup1.png)
+<!--![Referral Setup](/help/dashboards/assets/referral-setup1.png)-->
 
 <!--
 1. Select your Source (either CDN logs or AEM Operational Telemetry).
