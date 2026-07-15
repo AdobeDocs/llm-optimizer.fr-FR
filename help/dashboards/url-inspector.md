@@ -13,21 +13,19 @@ subfeature_v2:
   - id: aedaee53-dfb4-4ab4-9d23-fa6188148769
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+source-git-commit: d547cf05e232756afacbba7d942a27578839da98
 workflow-type: tm+mt
-source-wordcount: 718
-ht-degree: 100%
+source-wordcount: 710
+ht-degree: 97%
 
 ---
 
 
 # Inspecteur d’URL
 
-L’Inspecteur d’URL vous permet d’analyser les performances de pages spécifiques de votre domaine dans les recherches optimisées par l’IA. Il combine la visibilité, le trafic généré par l’IA agentique et les données de recommandation au niveau de l’URL pour vous donner une vue granulaire des URL citées et de leur fréquence d’apparition dans les réponses.
+L’Inspecteur d’URL vous permet d’analyser les performances de pages spécifiques de votre domaine dans les recherches optimisées par l’IA. Il combine la visibilité, le trafic généré par l’IA agentique et les données de recommandation au niveau de l’URL pour vous donner une vue granulaire des URL citées et de leur fréquence d’apparition dans les réponses. Accédez à **Inspecteur d’URL** et sélectionnez le site pour lequel vous souhaitez afficher les informations.
 
 ![Inspecteur d’URL](/help/dashboards/assets/url-insp.png)
-
-Si vous utilisez l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), accédez à **Inspecteur d’URL** et sélectionnez le site pour lequel vous souhaitez afficher les informations.
 
 ![Inspecteur d’URL – Sélecteur de site (expérience orientée marque)](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
 

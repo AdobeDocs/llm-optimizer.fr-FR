@@ -14,10 +14,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+source-git-commit: d547cf05e232756afacbba7d942a27578839da98
 workflow-type: tm+mt
-source-wordcount: 1346
-ht-degree: 100%
+source-wordcount: 1335
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,11 @@ ht-degree: 100%
 
 Le tableau de bord de présence de la marque fournit un aperçu détaillé de la manière dont votre marque est perçue au niveau des réponses générées par l’IA. Il indique où, à quelle fréquence et dans quel contexte votre marque est mentionnée. Vous pouvez utiliser ce tableau de bord pour mesurer la visibilité, suivre les citations et explorer les tendances du sentiment. Le tableau de bord est divisé en plusieurs sections, chacune fournissant des informations différentes. Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
 
-![Vue d’ensemble de présence de la marque](/help/dashboards/assets/brand-main.png)
+Accédez à la Présence des marques **&#x200B;**. Dans la liste déroulante des marques, sélectionnez la marque à analyser ou choisissez **Toutes les marques** pour bénéficier d’une visibilité sur l’ensemble de vos marques.
+
+![Présence de la marque avec le sélecteur de marque (expérience orientée marque)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
+
+<!-- ![Brand Presence overview](/help/dashboards/assets/brand-main.png)-->
 
 Cette page contient les éléments suivants :
 
@@ -35,10 +39,6 @@ Cette page contient les éléments suivants :
 * [Comparaison avec les autres](##others-comparison)
 * [Évolution du sentiment](#sentiment-trend)
 * [Informations sur les données](#data-insights)
-
-Si vous utilisez l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), accédez à **Présence de la marque**. Dans la liste déroulante des marques, sélectionnez la marque à analyser ou choisissez **Toutes les marques** pour bénéficier d’une visibilité sur l’ensemble de vos marques.
-
-![Présence de la marque avec le sélecteur de marque (expérience orientée marque)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 
 ## Filtres {#filters}
 
