@@ -4,10 +4,16 @@ description: Découvrez comment utiliser le tableau de bord de présence de la m
 feature: Brand Presence
 autotag-review: '2026-05-15T17:37:11.161Z'
 TQID: 'https://experienceleague.adobe.com/sDPtwR-uMfeIYp5K93gzYF27qYgLHBwhyajj9hGVB7Q'
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2: id: ab7fdb62-bd53-4cfd-8c2c-169f7e47f20e
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+  - id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2:
+  - id: ab7fdb62-bd53-4cfd-8c2c-169f7e47f20e
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: d547cf05e232756afacbba7d942a27578839da98
 workflow-type: tm+mt
 source-wordcount: 1335
@@ -20,7 +26,7 @@ ht-degree: 99%
 
 Le tableau de bord de présence de la marque fournit un aperçu détaillé de la manière dont votre marque est perçue au niveau des réponses générées par l’IA. Il indique où, à quelle fréquence et dans quel contexte votre marque est mentionnée. Vous pouvez utiliser ce tableau de bord pour mesurer la visibilité, suivre les citations et explorer les tendances du sentiment. Le tableau de bord est divisé en plusieurs sections, chacune fournissant des informations différentes. Il existe également des filtres personnalisables pour vous aider à affiner les données affichées.
 
-Accédez à la Présence des marques ****. Dans la liste déroulante des marques, sélectionnez la marque à analyser ou choisissez **Toutes les marques** pour bénéficier d’une visibilité sur l’ensemble de vos marques.
+Accédez à la Présence des marques **&#x200B;**. Dans la liste déroulante des marques, sélectionnez la marque à analyser ou choisissez **Toutes les marques** pour bénéficier d’une visibilité sur l’ensemble de vos marques.
 
 ![Présence de la marque avec le sélecteur de marque (expérience orientée marque)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 
