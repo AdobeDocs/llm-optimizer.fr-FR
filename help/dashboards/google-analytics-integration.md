@@ -4,10 +4,15 @@ description: Découvrez comment connecter Google Analytics 4 à LLM Optimizer po
 feature: Referral Traffic
 autotag-review: '2026-07-15T17:51:53.586Z'
 TQID: 'https://experienceleague.adobe.com/SvWn3W6hpVsWNzfWdJFvPs94lwlKX4ufjjcXKM-6xIc'
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2: id: f5a6cbd1-8a9a-4c79-a6db-ba46537f516e
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: f5a6cbd1-8a9a-4c79-a6db-ba46537f516e
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 1169
@@ -38,7 +43,7 @@ Il n’est **nécessaire** créer un projet Google Cloud, de générer un compte
 
 Le flux de connexion commence à partir du tableau de bord du [Trafic de recommandation](/help/dashboards/referral-traffic.md) comme suit :
 
-1. Ouvrez le Trafic de recommandation **** dans LLM Optimizer.
+1. Ouvrez le Trafic de recommandation **&#x200B;**&#x200B;dans LLM Optimizer.
 
 1. Ouvrez l’onglet **Impact commercial**.
 
