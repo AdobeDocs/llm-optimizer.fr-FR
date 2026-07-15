@@ -2,23 +2,17 @@
 title: Optimize at Edge
 description: Découvrez comment diffuser des optimisations dans LLM Optimizer à la périphérie du réseau CDN sans apporter de modifications.
 feature: Opportunities
-autotag-review: '2026-05-15T17:55:41.072Z'
-TQID: 'https://experienceleague.adobe.com/kMxoKtrfyzxIpLJP9nt-rq6GP37ICCNe4XienUKqDZE'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e9001ce2-5245-4a8e-8601-dd958009072f
-source-git-commit: 559e77adedb1a93215090441c93c2aa6dc664e5f
+autotag-review: '2026-07-15T18:10:00.249Z'
+TQID: 'https://experienceleague.adobe.com/nRq5punuSnNb4XXIJzkO1NGF66tsyN1rdt-O9dd8tmU'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021id: a6256a78-8814-462c-9627-86699b39cee1id: e0ec491f-fe51-42b6-801c-1c0dfcc0e64fid: fe92ae96-fc87-4fea-96a0-adc06310d4f4
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: e9001ce2-5245-4a8e-8601-dd958009072fid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
-source-wordcount: 2931
-ht-degree: 63%
+source-wordcount: 3147
+ht-degree: 67%
 
 ---
 
@@ -113,7 +107,7 @@ Le tableau suivant présente les opportunités qui peuvent améliorer l’expér
 
 L’extension de navigateur [AI Content Visibility Checker](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc) indique quelle part du contenu de votre page web est accessible aux LLM et ce qui reste masqué. Conçue comme un outil de diagnostic autonome et gratuit, elle ne nécessite aucune licence de produit ni configuration.
 
-En un seul clic, vous pouvez évaluer la lisibilité de n’importe quel site. Vous pouvez comparer côte à côte ce que voient les agents d’IA et ce que voient les utilisateurs et utilisatrices, et estimer la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer. Consultez la page [L’IA peut-elle lire votre site web ?](https://business.adobe.com/fr/blog/introducing-the-llm-optimizer-chrome-extension) pour avoir plus d’informations.
+En un seul clic, vous pouvez évaluer la lisibilité de n’importe quel site. Vous pouvez comparer côte à côte ce que voient les agents d’IA et ce que voient les utilisateurs et utilisatrices, et estimer la quantité de contenu pouvant être récupérée à l’aide de LLM Optimizer. Consultez la page [L’IA peut-elle lire votre site web ?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) pour avoir plus d’informations.
 
 ## Opportunités détaillées
 
@@ -121,7 +115,7 @@ Dans les sections qui suivent, vous pouvez afficher des détails supplémentaire
 
 ### Restauration de la visibilité du contenu
 
-Cette opportunité signale les pages où le contenu clé est masqué pour les agents d’IA en raison du rendu côté client. Pour chaque page identifiée, il vous indique exactement quel contenu est absent de la vue de l’agent d’IA, met en évidence les écarts de visibilité et vous permet d’appliquer directement des modifications pour récupérer le contenu masqué. Lorsque vous déployez cette opportunité avec Optimize sur Edge, une version pré-générée et optimisée par l’IA de la page est diffusée aux agents utilisateurs LLM afin qu’ils puissent accéder au contexte complet sans exécuter Javascript.
+Cette opportunité signale les pages où le contenu clé est masqué pour les agents d’IA en raison du rendu côté client. Pour chaque page identifiée, elle vous indique exactement quel contenu est absent de la vue de l’agent d’IA, met en évidence les écarts de visibilité et vous permet d’appliquer directement des modifications pour récupérer le contenu masqué. Lorsque vous déployez cette opportunité avec Optimize at Edge, une version pré-générée et optimisée par l’IA de la page est diffusée aux agents utilisateurs LLM afin qu’ils puissent accéder au contexte complet sans exécuter Javascript.
 Cela permet de s’assurer que la page est d’abord entièrement visible par les agents d’IA. Des améliorations supplémentaires sont apportées en plus de ce rendu HTML prédéfini.
 
 >[!IMPORTANT]
@@ -169,7 +163,7 @@ Voir [Ajout de résumés de transcription multimédia](/help/dashboards/opportun
 
 Pour chaque opportunité, vous pouvez prévisualiser, modifier, déployer, afficher en direct et restaurer les optimisations en périphérie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477986/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Prévisualiser
 
@@ -231,7 +225,7 @@ Si vous cliquez sur **Déployer les optimisations** avant d’avoir terminé la 
 
 Q : Que se passe-t-il lorsque le contenu est mis à jour à la source ?
 
-Nous diffusons la version optimisée de votre page à partir du cache tant que la page source sous-jacente n’a pas changé. Cependant, lorsque la source est modifiée pour **Recover Visibilité du contenu**, notre système s’actualise automatiquement afin que les agents d’IA reçoivent toujours le contenu le plus récent. En effet, nous utilisons les paramètres de durée de vie (TTL) du cache réduits (par ordre de minutes) afin que toute mise à jour de contenu sur votre site déclenche une nouvelle optimisation dans cette fenêtre. Pour les opportunités de contenu telles que **Ajouter des résumés compatibles avec LLM**, LLM Optimizer surveille les modifications apportées à la page source. Si une modification est détectée, nous suspendons l’optimisation et la signalons pour révision humaine afin d’éviter toute dérive du contenu entre la page visible par l’agent et la page visible par l’homme.
+Nous diffusons la version optimisée de votre page à partir du cache tant que la page source sous-jacente n’a pas changé. Cependant, lorsque la source change pour la **restauration de la visibilité du contenu**, notre système s’actualise automatiquement afin que les agents IA reçoivent toujours le contenu le plus récent. En effet, nous utilisons les paramètres de durée de vie (TTL) du cache réduits (par ordre de minutes) afin que toute mise à jour de contenu sur votre site déclenche une nouvelle optimisation dans cette fenêtre. Pour les opportunités de contenu telles que **Ajouter des résumés compatibles avec LLM**, LLM Optimizer surveille les modifications apportées à la page source. Si une modification est détectée, nous suspendons l’optimisation et la signalons pour révision humaine afin d’éviter toute dérive du contenu entre la page visible par l’agent et la page visible par les personnes.
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 Q : La fonctionnalité Optimize at Edge est-elle réservée aux sites qui utilisent Adobe Edge Delivery Service (EDS) ?

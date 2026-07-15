@@ -2,20 +2,17 @@
 title: Simplifier les contenus complexes
 description: Découvrez comment LLM Optimizer identifie les pages à trafic élevé avec une copie dense difficile à interpréter pour les agents d’IA, et comment réviser et déployer du texte simplifié avec Optimize sur Edge.
 feature: Opportunities
-autotag-review: '2026-05-15T17:58:39.879Z'
-TQID: 'https://experienceleague.adobe.com/wO3ZY-fEgOi7cD4dq0kCltk-YJSD431bkA6-9PW42Lo'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+autotag-review: '2026-07-15T18:04:55.581Z'
+TQID: 'https://experienceleague.adobe.com/uMK9qeAGMNrtvR0TYbeg8SIOKlwKf4L5NIE9ZgsJaUw'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 785
-ht-degree: 1%
+ht-degree: 10%
 
 ---
 
@@ -47,7 +44,7 @@ Les URL concernées apparaissent dans le tableau **URL avec suggestions** de l�
 
 ![URL avec suggestions sur les suggestions actuelles, ligne développée avec texte et aperçu améliorés](/help/dashboards/opportunities/assets/simplify-complex-content-expand.png)
 
-Le tableau **URL avec suggestions** répertorie les pages où un contenu simplifié aiderait à la compréhension des agents. Les suggestions sont organisées en **Suggestions actuelles**, **Suggestions fixes** et **Suggestions ignorées**. Pour chaque URL, vous pouvez :
+Le tableau **URL avec suggestions** répertorie les pages où un contenu simplifié aiderait à la compréhension des agents. Les suggestions sont organisées en **Suggestions actuelles**, **Suggestions fixes** et **Suggestions ignorées**. Pour chaque URL, vous pouvez effectuer les opérations suivantes :
 
 - **Développez la ligne** pour afficher les suggestions **Texte amélioré** de cette page.
 - **Aperçu** la comparaison avant et après pour le trafic d’agent.
@@ -64,7 +61,7 @@ Sélectionnez les URL ou les éléments de ligne avec **Texte amélioré** que v
 
 Lorsque vous êtes prêt à publier en périphérie, cliquez sur **Déployer les optimisations**. Une boîte de dialogue **Déployer vers Edge** répertorie les URL sélectionnées et les détails d’optimisation. Vérifiez la liste, puis choisissez **Déployer** ou **Annuler**.
 
-![&#x200B; Boîte de dialogue Déployer sur Edge &#x200B;](/help/dashboards/opportunities/assets/simplify-complex-content-deploy-dialog.png)
+Boîte de dialogue ![Déployer sur Edge](/help/dashboards/opportunities/assets/simplify-complex-content-deploy-dialog.png)
 
 Après un déploiement réussi, le **Déploiement terminé** confirme le nombre d’optimisations activées et note que les agents d’IA peuvent prendre du temps pour indexer la mise à jour. Fermez la boîte de dialogue et ouvrez **Suggestions fixes** pour vérifier le statut.
 
@@ -72,7 +69,7 @@ Après un déploiement réussi, le **Déploiement terminé** confirme le nombre 
 
 >[!NOTE]
 >
->Le déploiement des optimisations nécessite l’achèvement du processus d’intégration Optimizer at Edge. Si vous n’avez pas encore intégré, cliquez sur **Déployer les optimisations** pour être redirigé(e) vers le processus d’intégration. Pour plus d’informations sur le fonctionnement d’Optimize at Edge, les fournisseurs de réseau CDN pris en charge et le processus d’intégration, consultez la page [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md).
+>Le processus d’intégration à Optimize at Edge doit être terminé pour pouvoir déployer des optimisations. Si vous n’avez pas encore effectué l’intégration, cliquer sur **Déployer des optimisations** vous redirigera vers le processus d’intégration. Pour plus d’informations sur le fonctionnement d’Optimize at Edge, les fournisseurs de réseau CDN pris en charge et le processus d’intégration, consultez la page [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md).
 
 ### Suggestions fixes et Afficher en direct
 
@@ -100,6 +97,6 @@ Une fois l’opération terminée, un résumé **Annulé avec succès** s’affi
 
 ![Restauration terminée — Restauration réussie](/help/dashboards/opportunities/assets/simplify-complex-content-rollback-confirm.png)
 
-## Faites un essai dans la démonstration
+## Tester l’opportunité avec la démo
 
 Explorez le workflow Simplifier le contenu complexe dans la [démonstration de Frescopa](https://play.llmo.now/org/demo-org).
