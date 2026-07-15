@@ -99,7 +99,7 @@ La visibilité de l&#39;IA n&#39;est qu&#39;une partie de l&#39;histoire. Pour c
 
 Cette vidéo présente la vue **Impact commercial**, qui associe LLM Optimizer à Adobe Analytics afin de montrer comment le trafic référencé par l’IA se traduit par de l’engagement, des conversions et des recettes. Vous pouvez ainsi mesurer la valeur réelle de votre présence IA.
 
->[!VIDEO](https://video.tv.adobe.com/v/3492503/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3492507/?captions=fre_fr&learn=on){transcript=true}
 
 ## Fonctionnement {#how-it-works}
 
