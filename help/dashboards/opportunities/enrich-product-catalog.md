@@ -2,20 +2,23 @@
 title: Enrichissement du catalogue de produits
 description: Découvrez comment LLM Optimizer identifie les produits dotés de descriptions génériques ou techniquement denses et comment les améliorer à l’aide d’enrichissements narratifs générés par l’IA optimisés par Adobe Commerce.
 feature: Opportunities
-autotag-review: '2026-05-15T17:45:51.619Z'
-TQID: 'https://experienceleague.adobe.com/5ihGQ8L-37uWsZSDo4TVCUPBPqsqqQ5waGbH3VKPIig'
+autotag-review: '2026-07-15T17:49:49.047Z'
+TQID: 'https://experienceleague.adobe.com/icskl9CwYYRbnFNXWLflduAD9Eba1y4xtXTKaebh-hs'
 product_v2:
   - id: d830747e-f8f3-4fce-8eff-d53b333b1639
 feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
   - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+subfeature_v2:
+  - id: a6256a78-8814-462c-9627-86699b39cee1
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 1266
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -26,7 +29,7 @@ Les LLM tentent de connecter les attributs de produit à la valeur réelle, aux 
 
 L’opportunité d’enrichissement du catalogue de produits identifie les produits de votre catalogue Commerce dont les noms et descriptions sont trop génériques, trop denses sur le plan technique ou trop ambigus pour être interprétés avec précision par les ILM. Optimisé par Adobe Commerce, il génère des enrichissements narratifs et riches en intentions pour les noms et descriptions de vos produits et les applique directement à votre catalogue Commerce en un seul clic.
 
-Il fait apparaître deux mesures clés en un coup d’œil :
+Elle met en évidence deux mesures clés en un coup d’œil :
 
 - **URLs** — Liste des pages Détails du produit (produits de votre catalogue) dont la qualité d&#39;enrichissement a été évaluée.
 - **Trafic des agents** — Nombre total de visites et d’interactions sur un site qui sont initiées et dirigées par des agents d’IA autonomes (tels que des assistants ou des robots optimisés par LLM) agissant au nom des utilisateurs pour découvrir, récupérer ou interagir avec du contenu.
@@ -62,7 +65,7 @@ Le tableau **URL avec suggestions** répertorie tous les produits présentant de
 - **Marquer comme corrigé** une fois que l’enrichissement a été révisé et appliqué.
 - **Ignorer** les suggestions qui ne sont pas pertinentes pour votre stratégie de catalogue.
 
-Les suggestions sont organisées en trois vues : **Suggestions actuelles**, **Suggestions fixes** et **Suggestions ignorées**. Une fois qu’un enrichissement est appliqué, il passe aux Suggestions fixes avec le statut **Appliqué** et une action **Afficher dans le catalogue** pour vérifier la mise à jour dans Adobe Commerce. Les enrichissements appliqués peuvent être restaurés à tout moment, en restaurant le nom et la description d’origine du produit.
+Les suggestions sont organisées en trois vues : **Suggestions actuelles**, **Suggestions fixes** et **Suggestions ignorées**. Une fois qu’un enrichissement est appliqué, il passe aux Suggestions fixes avec le statut **Appliqué** et une action **Afficher dans le catalogue** pour vérifier la mise à jour dans Adobe Commerce. Les enrichissements appliqués peuvent être restaurés à tout moment, en restaurant le nom et la description d’origine du produit.
 
 <!--[Fixed suggestions with Applied status](/help/dashboards/opportunities/assets/enrich-product-catalog-fixed.png)-->
 
@@ -78,7 +81,7 @@ Les enrichissements étant directement appliqués au catalogue Adobe Commerce, l
 
 ![Boîte de dialogue Appliquer les enrichissements](/help/dashboards/opportunities/assets/enrich-product-catalog-deploy.png)
 
-## Faites un essai dans la démonstration
+## Tester l’opportunité avec la démo
 
 Consultez l’opportunité d’enrichissement du catalogue de produits en action à l’aide de l’environnement de démonstration Frescopa.
 

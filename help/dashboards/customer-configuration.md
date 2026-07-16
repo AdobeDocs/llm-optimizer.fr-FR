@@ -2,18 +2,25 @@
 title: Configuration cliente
 description: Utilisez la configuration cliente pour définir comment votre marque sera surveillée et analysée sur la plateforme LLM Optimizer.
 feature: Customer Configuration
-autotag-review: '2026-05-15T17:45:12.067Z'
-TQID: 'https://experienceleague.adobe.com/qa7zk54n9G19-Azz9f6mn7V1kAGvnJSOJjpxbTBeHgc'
+autotag-review: '2026-07-15T17:48:20.742Z'
+TQID: 'https://experienceleague.adobe.com/BvaFF-pMzojy1TNZvCQQRbcT5c5AQ75OqjclmDi14Z0'
 product_v2:
   - id: d830747e-f8f3-4fce-8eff-d53b333b1639
 feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+  - id: c898dfb2-0885-42fb-b2af-b2d756752646
   - id: d1956731-2adb-4bb7-8301-2b239254ac72
+  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
 subfeature_v2:
   - id: e69d5a42-0217-4ca5-9396-a9a826a170da
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: f16c1bda1c9919a62077811653f92d5fc2c74045
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 3935
 ht-degree: 57%
@@ -285,7 +292,7 @@ Le pipeline commence par identifier les pages de votre site sur lesquelles les s
 * **Tentatives de citation** — comment les systèmes d’IA ont accédé à une page en tant que source potentielle tout en répondant aux questions des utilisateurs. Le pipeline recherche les pages qui affichent une activité de tentative de citation cohérente semaine après semaine, ce qui donne une vue d’ensemble plus globale de l’intérêt que la situation à un seul moment.
 * trafic de recommandation LLM **: instances dans lesquelles un utilisateur a cliqué à partir d’une réponse générée par l’IA pour accéder à l’URL.** Le pipeline se concentre sur les données de référence les plus récentes et donne la priorité aux pages avec le plus grand volume de visites pilotées par l’IA, en s’assurant que les suggestions sont fondées sur les modèles de recommandation actuels et éprouvés de l’IA.
 
-| Signal | Ce que cela signifie |
+| Signal | Signification |
 |--------|---------------|
 | Tentatives de citation uniquement | Les agents accèdent constamment à cette page en tant que source potentielle |
 | TRAFIC DE RECOMMANDATION LLM uniquement | Les agents envoient activement des utilisateurs à cette page |

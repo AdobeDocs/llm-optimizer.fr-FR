@@ -2,10 +2,21 @@
 title: Intégration de Google Analytics
 description: Découvrez comment connecter Google Analytics 4 à LLM Optimizer pour mesurer les résultats commerciaux, l’engagement sur le site et les découvertes pilotées par l’IA dans le tableau de bord du Trafic de recommandation.
 feature: Referral Traffic
-source-git-commit: 368b3c1ee79660ede0c4bf9824f299d2e801c8b2
+autotag-review: '2026-07-15T17:51:53.586Z'
+TQID: 'https://experienceleague.adobe.com/SvWn3W6hpVsWNzfWdJFvPs94lwlKX4ufjjcXKM-6xIc'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: f5a6cbd1-8a9a-4c79-a6db-ba46537f516e
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 1%
+source-wordcount: 1169
+ht-degree: 17%
 
 ---
 
@@ -30,7 +41,7 @@ Il n’est **nécessaire** créer un projet Google Cloud, de générer un compte
 
 ## Connexion de GA4 au tableau de bord du Trafic de recommandation {#connect}
 
-Le flux de connexion commence à partir du tableau de bord du Trafic de recommandation [&#128279;](/help/dashboards/referral-traffic.md) comme suit :
+Le flux de connexion commence à partir du tableau de bord du [Trafic de recommandation](/help/dashboards/referral-traffic.md) comme suit :
 
 1. Ouvrez le Trafic de recommandation **&#x200B;**&#x200B;dans LLM Optimizer.
 
@@ -38,7 +49,7 @@ Le flux de connexion commence à partir du tableau de bord du Trafic de recomman
 
    Tableau de bord du Trafic de recommandation ![](/help/dashboards/assets/ga4-integration-01-business-impact-tab.png)
 
-1. Sélectionnez **Connexion à Analytics**. LLM Optimizer vous dirige vers **Configuration du client > Analytics**. Dans le sélecteur de fournisseur Analytics, sélectionnez **Connecter Google Analytics 4**.
+1. Cliquez sur **Se connecter à Analytics**. LLM Optimizer vous dirige vers **Configuration du client > Analytics**. Dans le sélecteur de fournisseur Analytics, sélectionnez **Connecter Google Analytics 4**.
 
    ![Configuration du client, onglet Analytics avec GA4 sélectionné](/help/dashboards/assets/ga4-integration-02-analytics-ga4-picker.png)
 
@@ -113,21 +124,21 @@ Aucun identifiant d’utilisateur (identifiant client Google, adresse IP, identi
 
 Q : L’intégration GA4 est-elle disponible pendant l’essai ?
 
-Non. L’intégration est disponible uniquement pour les clients LLM Optimizer payants.
+Non. L’intégration est disponible uniquement pour la clientèle LLM Optimizer payante.
 
 Q : Dois-je créer un projet Google Cloud ou un compte de service ?
 
 Non. La connexion est une connexion Google standard. LLM Optimizer gère le client OAuth Google côté Adobe ; vous n’avez besoin que d’un compte Google avec un accès Observateur sur la propriété GA4.
 
-Q : Quelles données sont collectées ou stockées ?
+Q : Quelles données sont collectées ou stockées ?
 
 LLM Optimizer fonctionne avec des mesures agrégées provenant de l’API de données GA4 autorisée par votre organisation, et non avec des données brutes au niveau de l’événement.
 
-Q : Comment les données sont-elles ingérées ?
+Q : Comment les données sont-elles ingérées ?
 
 Votre entreprise autorise LLM Optimizer à interroger l’API Data GA4 pour la propriété sélectionnée. Le trafic de recommandation aligné sur les sources LLM est consommé via cette API.
 
-Q : À quelle fréquence les données sont-elles actualisées ?
+Q : À quelle fréquence les données sont-elles actualisées ?
 
 Les données sont actualisées **tous les jours** (le jour précédent complet une fois le renvoi terminé).
 
@@ -135,7 +146,7 @@ Q : Les données brutes au niveau de l’événement sont-elles stockées dans L
 
 Non. Seules les mesures **agrégées** sont utilisées pour comprendre les modèles et les tendances de trafic.
 
-Q : Les URL complètes, les chaînes de requête ou le contenu des pages sont-ils stockés ?
+Q : Les URL complètes, les chaînes de requête ou le contenu des pages sont-ils stockés ?
 
 Les chemins d’accès aux pages de destination sont ingérés dans le cadre du rapport standard ; les chaînes de requête et le contenu des pages ne sont pas ingérés pour cette intégration.
 
@@ -143,15 +154,15 @@ Q : Les identifiants d’utilisateur (identifiant client Google, adresse IP, ide
 
 Non.
 
-Q : Combien de temps les données sont-elles conservées ?
+Q : Combien de temps les données sont-elles conservées ?
 
 Actuellement, les données sont stockées indéfiniment.
 
-Q : Les données sont-elles chiffrées en transit et au repos ?
+Q : Les données sont-elles chiffrées en transit et au repos ?
 
 Actuellement, les données sont chiffrées en transit, et non au repos. Cela peut changer dans les futures mises à jour.
 
-Q : Les données historiques sont-elles renvoyées ?
+Q : Les données historiques sont-elles renvoyées ?
 
 Oui. Après une configuration réussie, les quatre dernières semaines calendaires complètes et la semaine calendaire en cours sont renvoyées. Voir aussi [Après la connexion](#after-connect).
 
