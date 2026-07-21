@@ -24,7 +24,7 @@ ht-degree: 88%
 
 # Vue d’ensemble de LLM Optimizer
 
->[!VIDEO](https://video.tv.adobe.com/v/3492471/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3492473/?captions=fre_fr&learn=on){transcript=true}
 
 Cette page présente tout ce que vous devez savoir sur Adobe LLM Optimizer avant de commencer à utiliser l’outil :
 
