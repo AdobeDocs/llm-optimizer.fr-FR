@@ -4,9 +4,16 @@ description: Découvrez comment Adobe LLM Optimizer améliore la visibilité d
 feature: Onboarding
 autotag-review: '2026-07-15T18:10:25.350Z'
 TQID: 'https://experienceleague.adobe.com/C-54mDBaDgmIWPOrLhkeUHlK1cXMbX0kRNrJZTC--4c'
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: c898dfb2-0885-42fb-b2af-b2d756752646
+  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+  - id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
 source-git-commit: 6b0e86f1373c3b1d85d67bd8222459acfc3620dc
 workflow-type: tm+mt
 source-wordcount: 485
@@ -62,11 +69,11 @@ La GEO (optimisation des moteurs génératifs) est par nature transversale. LLM 
 
 Avec Adobe LLM Optimizer, vous pouvez effectuer ce qui suit :
 
-**Mesurer la Visibilité des marques** - Suivez quand, où et à quelle fréquence votre marque est mentionnée dans les résultats de recherche optimisés par l’IA. Allez au-delà des conjectures avec un score de visibilité clair que vous pouvez comparer au fil du temps. Voir le tableau de bord de la Présence des marques [](/help/dashboards/brand-presence.md).
-**Comparer les autres** - Voyez comment votre marque se compare aux autres, y compris aux concurrents dans les moteurs génératifs. Identifiez les lacunes en matière de parts de voix et découvrez les avantages concurrentiels. Voir le tableau de bord de la Présence des marques [](/help/dashboards/brand-presence.md).
+**Mesurer la Visibilité des marques** - Suivez quand, où et à quelle fréquence votre marque est mentionnée dans les résultats de recherche optimisés par l’IA. Allez au-delà des conjectures avec un score de visibilité clair que vous pouvez comparer au fil du temps. Voir le tableau de bord de la Présence des marques [&#128279;](/help/dashboards/brand-presence.md).
+**Comparer les autres** - Voyez comment votre marque se compare aux autres, y compris aux concurrents dans les moteurs génératifs. Identifiez les lacunes en matière de parts de voix et découvrez les avantages concurrentiels. Voir le tableau de bord de la Présence des marques [&#128279;](/help/dashboards/brand-presence.md).
 **Découvrir des opportunités exploitables** - Identifiez les opportunités de contenu (par exemple, FAQ, résumés, schémas) et les opportunités techniques (explorabilité, problèmes d’indexation) qui augmentent directement les mentions et les citations. Voir [Tableau de bord des opportunités](/help/dashboards/opportunities-overview.md).
-**Suivi de l’impact du trafic depuis l’IA** - Surveillez le trafic des agences (provenant des assistants d’IA) et des trafics de recommandation (clics des utilisateurs dans les citations) vers vos propriétés. Liez la visibilité géographique à un engagement réel. Voir [Tableau de bord du trafic dynamique](/help/dashboards/agentic-traffic.md) et [Tableau de bord du Trafic de recommandation ](/help/dashboards/referral-traffic.md).
-**Activer Team Collaboration** - Partagez des tableaux de bord, attribuez des propriétaires pour les invites ou les catégories, et assurez-vous que les objectifs de visibilité sont suivis dans les fonctions de marketing, d&#39;optimisation du moteur de recherche (SEO) et de communication. Voir [Tableau de bord ](/help/dashboards/collaboration.md).
+**Suivi de l’impact du trafic depuis l’IA** - Surveillez le trafic des agences (provenant des assistants d’IA) et des trafics de recommandation (clics des utilisateurs dans les citations) vers vos propriétés. Liez la visibilité géographique à un engagement réel. Voir [Tableau de bord du trafic dynamique](/help/dashboards/agentic-traffic.md) et [Tableau de bord du Trafic de recommandation &#x200B;](/help/dashboards/referral-traffic.md).
+**Activer Team Collaboration** - Partagez des tableaux de bord, attribuez des propriétaires pour les invites ou les catégories, et assurez-vous que les objectifs de visibilité sont suivis dans les fonctions de marketing, d&#39;optimisation du moteur de recherche (SEO) et de communication. Voir [Tableau de bord &#x200B;](/help/dashboards/collaboration.md).
 
 ## En savoir plus
 
