@@ -4,27 +4,20 @@ description: Découvrez comment Adobe LLM Optimizer améliore la visibilité d
 feature: Onboarding
 autotag-review: '2026-07-15T18:10:25.350Z'
 TQID: 'https://experienceleague.adobe.com/C-54mDBaDgmIWPOrLhkeUHlK1cXMbX0kRNrJZTC--4c'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c898dfb2-0885-42fb-b2af-b2d756752646
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
-source-git-commit: 1a2549151ab0bfe16eee89dafe5710bf6edba6a0
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+source-git-commit: 6b0e86f1373c3b1d85d67bd8222459acfc3620dc
 workflow-type: tm+mt
-source-wordcount: 623
-ht-degree: 97%
+source-wordcount: 485
+ht-degree: 88%
 
 ---
 
 
 # Vue d’ensemble de LLM Optimizer
 
->[!VIDEO](https://video.tv.adobe.com/v/3492473/?captions=fre_fr&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3492471/?learn=on){transcript=true}
 
 Cette page présente tout ce que vous devez savoir sur Adobe LLM Optimizer avant de commencer à utiliser l’outil :
 
@@ -69,11 +62,11 @@ La GEO (optimisation des moteurs génératifs) est par nature transversale. LLM 
 
 Avec Adobe LLM Optimizer, vous pouvez effectuer ce qui suit :
 
-**Mesurer la visibilité de la marque** : suivez quand, où et à quelle fréquence votre marque est mentionnée dans les résultats de recherche optimisée par l’IA. Allez au-delà des conjonctures grâce à un score de visibilité clair que vous pouvez utiliser comme base d’évaluation sur la durée. Référez-vous au [tableau de bord de la présence de la marque](/help/dashboards/brand-presence.md).
-**Évaluer les autres marques** - Observez les performances de votre marque par rapport aux autres dans les moteurs génératifs. Identifiez les lacunes en matière de part de voix et découvrez les avantages concurrentiels. Référez-vous au [tableau de bord de la présence de la marque](/help/dashboards/brand-presence.md).
-**Découvrir les opportunités exploitables** : identifiez les opportunités de contenu (par exemple, les FAQ, les résumés, les schémas) et les opportunités techniques (explorabilité, problèmes d’indexation) qui augmentent directement les mentions et les références. Référez-vous au [tableau de bord des opportunités](/help/dashboards/opportunities-overview.md).
-**Suivre l’impact du trafic provenant de l’IA** : surveillez le trafic généré par l’IA agentique (provenant des assistants IA) et le trafic de recommandation (clics des utilisateurs et des utilisatrices à partir des références) vers vos propriétés. Reliez la visibilité GEO à un engagement réel. Référez-vous au [tableau de bord du trafic généré par l’IA agentique](/help/dashboards/agentic-traffic.md) et au [tableau de bord du trafic de recommandation](/help/dashboards/referral-traffic.md).
-**Favoriser la collaboration entre équipes** : partager les tableaux de bord, attribuer des responsables pour les prompts ou catégories, et garantir le suivi des objectifs de visibilité entre les fonctions marketing, SEO et communication. Référez-vous au [tableau de bord de collaboration](/help/dashboards/collaboration.md).
+**Mesurer la Visibilité des marques** - Suivez quand, où et à quelle fréquence votre marque est mentionnée dans les résultats de recherche optimisés par l’IA. Allez au-delà des conjectures avec un score de visibilité clair que vous pouvez comparer au fil du temps. Voir le tableau de bord de la Présence des marques [](/help/dashboards/brand-presence.md).
+**Comparer les autres** - Voyez comment votre marque se compare aux autres, y compris aux concurrents dans les moteurs génératifs. Identifiez les lacunes en matière de parts de voix et découvrez les avantages concurrentiels. Voir le tableau de bord de la Présence des marques [](/help/dashboards/brand-presence.md).
+**Découvrir des opportunités exploitables** - Identifiez les opportunités de contenu (par exemple, FAQ, résumés, schémas) et les opportunités techniques (explorabilité, problèmes d’indexation) qui augmentent directement les mentions et les citations. Voir [Tableau de bord des opportunités](/help/dashboards/opportunities-overview.md).
+**Suivi de l’impact du trafic depuis l’IA** - Surveillez le trafic des agences (provenant des assistants d’IA) et des trafics de recommandation (clics des utilisateurs dans les citations) vers vos propriétés. Liez la visibilité géographique à un engagement réel. Voir [Tableau de bord du trafic dynamique](/help/dashboards/agentic-traffic.md) et [Tableau de bord du Trafic de recommandation ](/help/dashboards/referral-traffic.md).
+**Activer Team Collaboration** - Partagez des tableaux de bord, attribuez des propriétaires pour les invites ou les catégories, et assurez-vous que les objectifs de visibilité sont suivis dans les fonctions de marketing, d&#39;optimisation du moteur de recherche (SEO) et de communication. Voir [Tableau de bord ](/help/dashboards/collaboration.md).
 
 ## En savoir plus
 
@@ -81,7 +74,7 @@ Voici des ressources qui peuvent vous aider à tirer le meilleur parti de LLM O
 
 * Le [démarrage rapide](/help/overview/quick-start.md) vous permet de commencer rapidement.
 * La [vue d’ensemble des tableaux de bord](/help/dashboards/dashboards-overview.md) décrit tous les tableaux de bord disponibles dans LLM Optimizer.
-* Les [bonnes pratiques relatives à la configuration des catégories, des rubriques, des prompts et les autres marques](/help/overview/best-practices-topics-prompts.md) incluent des informations essentielles pour la configuration de LLM Optimizer.
+* [Bonnes pratiques relatives à la configuration des catégories, rubriques, invites et autres marques à suivre](/help/overview/best-practices-topics-prompts.md) comprend des informations essentielles pour la configuration de LLM Optimizer.
 * La rubrique [bonnes pratiques](/help/tutorials/best-practices.md) vous permet de découvrir les bonnes pratiques d’optimisation des LLM pour améliorer la visibilité de votre marque dans la recherche optimisée par l’IA.
 
 

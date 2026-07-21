@@ -4,58 +4,37 @@ description: Optimisez les informations des LLM en configurant des catégories, 
 feature: Best Practices, Customer Configuration
 autotag-review: '2026-07-15T17:42:20.391Z'
 TQID: 'https://experienceleague.adobe.com/nnLohajbU-fogbmBfGE5PUzdsoTJ5fjwW-ruVTjOWtM'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c898dfb2-0885-42fb-b2af-b2d756752646
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: addf009e-030a-4310-8534-776a3e62ed48
-  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: e69d5a42-0217-4ca5-9396-a9a826a170da
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: addf009e-030a-4310-8534-776a3e62ed48id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+source-git-commit: 74484901cba1f054070673f2d706b26b6360aacb
 workflow-type: tm+mt
-source-wordcount: 1537
-ht-degree: 100%
+source-wordcount: 1482
+ht-degree: 77%
 
 ---
 
-# Bonnes pratiques relatives à la configuration des catégories, rubriques, prompts et autres marques à suivre
+# Bonnes pratiques de configuration des catégories, rubriques, invites et autres marques à suivre
 
-Cette section décrit les bonnes pratiques pour décider de la manière dont vous souhaitez configurer les catégories, rubriques, prompts et autres marques à suivre. En outre, elle contient des informations sur la bibliothèque de prompts sectoriels, qu’Adobe a développée grâce à des recherches approfondies menées avec des spécialistes de chaque secteur.
+Cette section décrit les bonnes pratiques pour décider de la manière dont vous souhaitez configurer les catégories, rubriques, invites et autres marques à suivre. En outre, elle contient des informations sur la bibliothèque de prompts sectoriels, qu’Adobe a développée grâce à des recherches approfondies menées avec des spécialistes de chaque secteur.
 
-Il s’agit d’une première étape essentielle. Ce que vous décidez maintenant détermine la manière dont les informations sont adaptées au contexte de votre entreprise. Toute modification apportée aux catégories à l’avenir réinitialise les données historiques.
+Cette configuration est une première étape essentielle. Ce que vous décidez maintenant détermine la manière dont les informations sont adaptées au contexte de votre entreprise. Toute modification apportée aux catégories à l’avenir réinitialise les données historiques.
 
-Dans le tableau de bord [[!UICONTROL Configuration cliente]](/help/dashboards/customer-configuration.md), vous définissez la manière dont votre marque sera surveillée et analysée au sein de la plateforme LLM Optimizer. Référez-vous à la [[!UICONTROL configuration cliente]](/help/dashboards/customer-configuration.md) pour plus d’informations sur l’utilisation du tableau de bord.
+Dans le tableau de bord [[!UICONTROL Gestion des marques]](/help/dashboards/customer-configuration.md), vous définissez la manière dont votre marque est surveillée et analysée au sein de la plateforme LLM Optimizer.
 
-![Fenêtre de configuration cliente](/help/assets/best-practices/customer-configuration-best-practices.png)
+Vous pouvez personnaliser les catégories (telles que les unités commerciales ou les lignes de produits), effectuer le suivi d’autres marques et ajouter des alias de mention de marque pour capturer toutes les variations de votre marque dans les invites. Cette configuration garantit que la plateforme adapte les informations à votre contexte commercial, ce qui permet une visibilité, un trafic et une analyse des opportunités précis.
 
-Dans le tableau de bord [!UICONTROL Configuration cliente], vous pouvez personnaliser des catégories (telles que des unités commerciales ou des lignes de produits), effectuer le suivi d’autres marques et ajouter des alias de mention de marque pour capturer toutes les variations de votre marque dans les prompts. Cette configuration garantit que la plateforme adapte les informations à votre contexte commercial, ce qui permet une visibilité, un trafic et une analyse des opportunités précis.
+Par défaut, chaque organisation commence par une marque active et d’autres marques suggérées parmi lesquelles choisir.
 
-## Expérience axée sur la marque
+![Brand Management : navigation dans l’application (expérience orientée marque)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-Par défaut, la nouvelle clientèle commence par une interface ciblée et axée sur la marque, avec une configuration axée sur l’intégration. Dans cette nouvelle interface, chaque organisation commence par une marque active et d’autres marques suggérées parmi lesquelles choisir. La clientèle LLM Optimizer existante passera progressivement à cette expérience orientée marque.
+![Gestion des marques - Présentation de la configuration](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
-Si vous bénéficiez d’une expérience orientée marque, **Gestion des marques** vous permet de définir comment votre marque est surveillée et analysée.
+Pour configurer des rubriques et des invites pour une marque spécifique, utilisez le tableau de bord **Bibliothèque d&#39;invites**.
 
-![Gestion des marques : navigation dans l’application (expérience orientée marque)](/help/assets/brand-centric-experience/llmo-app-shell.png)
-
-![Gestion des marques : vue d’ensemble de la configuration](/help/assets/brand-centric-experience/brands-management-configuration.png)
-
-Pour configurer des rubriques et des prompts pour une marque spécifique, utilisez **Gestion des prompts**.
+<!-- Add link to Prompt Library page when available-->
 
 ![Gestion des prompts](/help/assets/brand-centric-experience/prompts-management.png)
 
@@ -65,12 +44,13 @@ Pour faciliter la prise en main des prompts et des rubriques, Adobe a créé une
 
 Pour utiliser la bibliothèque de prompts sectoriels :
 
-1. Accédez au tableau de bord **Configuration cliente**.
-1. Sélectionnez **Télécharger la bibliothèque de prompts** pour télécharger le fichier de bibliothèque à partir de LLM Optimizer.
-   ![Téléchargement de la bibliothèque de prompts sectoriels](/help/assets/best-practices/customer-configuration-prompts-library.png)
+1. Accédez au tableau de bord **Bibliothèque d’invites**.
+1. Sélectionnez **Télécharger la bibliothèque d’invites** pour télécharger le fichier de bibliothèque à partir de LLM Optimizer.
 1. Examinez les **rubriques** et **prompts** suggérés pour le secteur de votre marque dans l’onglet correspondant et choisissez les options les plus pertinentes.
 1. Consultez la **colonne Étape du parcours client** pour afficher les options de prompts tout au long du cycle de vie du client ou de la cliente (par exemple, découverte, conversion, rétention). Les prompts destinés aux premières étapes/au haut du tunnel sont hautement prioritaires, mais envisagez également des options pour les étapes ultérieures afin de favoriser la fidélisation, d’assurer le service clientèle, etc.
 1. Modifiez les rubriques ou les prompts selon les besoins pour mieux prendre en charge vos objectifs avant de charger vos rubriques et prompts dans Adobe LLM Optimizer (par exemple, ajoutez votre marque/nom de produit, ajoutez la terminologie propre à la marque). Les prompts peuvent être ajoutés à LLM Optimizer manuellement ou par chargement en masse à l’aide du modèle *.csv* fourni.
+
+<!--![Industry prompt library download](/help/assets/best-practices/download-prompts.png) - add screenshot to steps-->
 
 >[!TIP]
 >
@@ -86,11 +66,11 @@ La bibliothèque de prompts sectoriels a été élaborée dans le cadre d’une 
 
 Principales rubriques recherchées par les clients et les clientes de tous les secteurs d’activité :
 
-* **Automobile :** résolution des problèmes automobiles, comparaison des véhicules et financement/crédit-bail.
+* **Auto :** résolution des problèmes automobiles, comparaison des véhicules et financement/crédit-bail
 * **Services financiers :** recherche de produits financiers.
-* **Soins de santé :** recherche de symptômes ou de problèmes de santé, comparaison des options de traitement, compréhension des résultats de laboratoire ou des termes médicaux.
-* **Télécommunications :** comparaison des plans, des conditions contractuelles et des promotions, vérification du service dans la région locale.
-* **Voyage :** se préparer pour un voyage, rechercher et réserver un voyage.
+* **Soins de santé :** recherche des symptômes ou des problèmes de santé, comparaison des options de traitement et compréhension des résultats de laboratoire ou des termes médicaux
+* **Télécom :** Comparaison des plans, des conditions contractuelles et des promotions, et vérification du service dans la région locale
+* **AirlineTravel :** Préparation d&#39;un voyage, recherche et réservation de voyages
 
 Tendances clientes basées sur la recherche optimisée par l’IA et comportement de prompt dans les outils LLM :
 
@@ -122,12 +102,15 @@ La manière de décider de la configuration des catégories repose sur une quest
 * Si vous êtes *propriétaire de contenu/web*, choisissez l’approche **URL_DIR**.
 * Si vous êtes *responsable du marchandisage/des offres*, choisissez l’approche **Catégorie de produit/service**.
 
-![Ajouter des catégories dans LLM Optimizer](/help/assets/best-practices/add-category.png)
+<!--How do you pick a region? Or is that handled differently?-->
+
+![Ajouter des catégories dans LLM Optimizer](/help/assets/best-practices/create-category1.png)
 
 >[!IMPORTANT]
 >
 > * Choisissez une approche et respectez-la.
 > * Vous ne pouvez avoir qu’**un seul** modèle de catégorie par compte/marque. Ne mélangez pas **SBU** et **URL_DIR** en même temps.
+
 <!--Can you mix Product/Service with these?-->
 
 Exemple :
@@ -158,13 +141,14 @@ Lorsque vous établissez des rubriques, créez une liste courte et simple (6-12 
 * Support/Contact
 * Entreprise/Actualités (si vous en avez vraiment besoin)
 
-![Ajouter des rubriques dans LLM Optimizer](/help/assets/best-practices/add-topic.png)
+![Ajouter des rubriques dans LLM Optimizer](/help/assets/best-practices/add-new-topic1.png)
 
 Lors de la création de la liste, tenez compte des points suivants :
 
-* Un éditeur ou une éditrice peut-il comprendre le sujet en 5 secondes à partir du texte du prompt ? Si ce n’est pas le cas, renommez/simplifiez.
+* Quelqu&#39;un peut-il comprendre le sujet en 5 secondes à partir du texte de l&#39;invite ? Si ce n’est pas le cas, renommez/simplifiez.
 * Une autre équipe sera-t-elle chargée de la correction des différentes rubriques ? Si oui, vous avez choisi des rubriques utiles.
-  <!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
+
+<!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
 
 Quelques conseils utiles supplémentaires :
 
@@ -174,7 +158,7 @@ Quelques conseils utiles supplémentaires :
 >[!IMPORTANT]
 >
 > * Conservez les rubriques basées sur l’intention, et non sur l’organisation.
-> * N’ajoutez pas de catégories/filtres pour les marques/non-marques/zones géographiques, car vous pouvez les filtrer spécifiquement dans l’onglet **[!UICONTROL Marques]**.
+> * N’ajoutez pas de catégories/filtres pour les marques/non-marques/zones géographiques, car vous pouvez les filtrer spécifiquement dans le tableau de bord **[!UICONTROL Présence des marques]**.
 > * Les rubriques sont réparties en plusieurs catégories. Vous **ne pouvez pas** définir des rubriques uniques pour chaque catégorie.
 > * Un seul prompt **peut** exister dans plusieurs rubriques ou catégories.
 
@@ -197,11 +181,11 @@ Bonnes pratiques liées aux prompts :
 
 ## Bonnes pratiques de suivi des autres marques
 
-Suivre les autres vous permet de surveiller la visibilité et les mentions dans les réponses LLM pour les prompts et les rubriques importants pour votre entreprise.
+Le suivi d’autres marques vous permet de surveiller la visibilité et les mentions dans les réponses LLM pour les invites et les sujets importants pour votre entreprise.
 
-L’onglet [!UICONTROL **Suivi des autres**] vous permet d’ajouter d’autres utilisateurs et utilisatrices, y compris de la concurrence, pour suivre leur visibilité pour des prompts et des rubriques spécifiques.
+[!UICONTROL **Autres marques à suivre**] est disponible dans **Gestion des marques** > **Suivi des marchés** et vous permet d’en ajouter d’autres, y compris des concurrents, pour suivre leur visibilité pour des invites et des sujets spécifiques.
 
-Avec le suivi d’autres marques, vous pouvez voir à quelle fréquence d’autres marques sont mentionnées à côté de votre marque dans différentes régions et catégories et comparer leur visibilité à la vôtre.
+Avec d’autres marques à suivre, vous pouvez voir à quelle fréquence d’autres marques sont mentionnées aux côtés de votre marque dans différentes régions et catégories et comparer leur visibilité à la vôtre.
 
 >[!TIP]
 >
@@ -209,6 +193,7 @@ Avec le suivi d’autres marques, vous pouvez voir à quelle fréquence d’autr
 
 ## En savoir plus
 
-* Le [tableau de bord de configuration cliente](/help/dashboards/customer-configuration.md) vous permet de configurer le suivi des catégories, rubriques, prompts et autres marques.
+* [Brands Management](/help/dashboards/customer-configuration.md) permet de configurer les catégories et les autres marques à suivre.
+* [Bibliothèque d&#39;invites](/help/dashboards/customer-configuration.md) est l&#39;endroit où vous configurez vos rubriques et invites.
 * Les [bonnes pratiques relatives à LLM Optimizer](/help/tutorials/best-practices.md) décrivent les bonnes pratiques concernant l’optimisation des LLM.
 
