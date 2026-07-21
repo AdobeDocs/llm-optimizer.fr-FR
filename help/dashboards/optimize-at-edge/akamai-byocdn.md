@@ -18,10 +18,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: 9d2324e23e07f01e16c4fc16c96213d03214918f
 workflow-type: tm+mt
-source-wordcount: 810
-ht-degree: 98%
+source-wordcount: 795
+ht-degree: 76%
 
 ---
 
@@ -119,58 +119,44 @@ Définir l’en-tête `x-forwarded-host` sur `{{builtin.AK_HOST}}`
 
 **9. Basculement du site**
 
-La configuration de basculement de site comporte deux parties : le comportement de basculement (configuré dans la règle principale de routage Optimisation à la périphérie) et une règle d’en-tête de test de basculement distincte.
+La configuration de basculement de site comporte deux parties : un comportement de basculement dans la règle de routage principale Optimiser pour Edge et une règle sœur qui ajoute un en-tête de réponse lorsque le basculement se produit.
 
-**9a. Comportement de basculement de site (dans la règle principale de routage d’optimisation à la périphérie)**
+**9a. Configurez le comportement de basculement de site**
 
-Dans la règle de routage principale, configurez le comportement de basculement de site et le fragment de code XML avancé comme suit :
+Dans la règle de routage principale Optimiser sur Edge , créez une règle enfant nommée **Comportement de basculement de site**. Définissez-la sur **Ne correspond à aucun** et ajoutez les critères suivants :
 
->[!IMPORTANT]
->
->Le fragment de code XML de cette étape nécessite le comportement **Avancé**. Dans certains environnements Akamai, ce comportement n’est pas disponible pour la modification en libre-service. Si vous ne voyez pas l’option **Avancé**, contactez votre équipe de compte Akamai ou l’assistance Akamai pour activer la configuration requise.
+* Le **code d’état de réponse** est compris entre `400` et `599`.
+* Le **délai d’expiration d’origine** est `Yes`.
 
 ![Basculement du site](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
-Ajoutez l’en-tête de requête `x-edgeoptimize-request` avec la valeur `fo` via le code XML avancé :
+![Configuration du comportement de basculement de site](/help/assets/optimize-at-edge/akamai-step9-failover-settings.png)
 
-```
-<forward:availability.fail-action2>
-<add-header>
-<status>on</status>
-<name>x-edgeoptimize-request</name>
-<value>fo</value>
-</add-header>
-</forward:availability.fail-action2>
-```
-
-![Comportements de basculement](/help/assets/optimize-at-edge/akamai-step9-failover-behaviors.png)
-
-**9b. Règle d’en-tête du test de basculement (règle sœur)**
+**9b. Configurez la règle d&#39;en-tête de réponse de basculement**
 
 >[!IMPORTANT]
 >
 >Créez la règle **Basculement EdgeOptimize - En-tête de test** en tant que règle **sœur** (au même niveau) des règles de routage — **non** imbriquée dans celles-ci. Dans l’arborescence des règles du Gestionnaire de propriétés Akamai, la hiérarchie doit se présenter comme suit :
 >
 >```
->▼ Parent Rule
->   ▶ Optimize at Edge Routing     ← routing rule
->       EdgeOptimize Failover - Test Header       ← sibling, same level
+>▼ Optimize at Edge                         ← parent rule group
+>   ▼ Optimize at Edge Routing               ← routing child
+>       Site Failover Behavior                 ← nested child
+>   EdgeOptimize Failover - Test Header      ← sibling of routing child
 >```
 >
->Cela permet de s’assurer que la règle d’en-tête du test de basculement évalue **toutes** les règles de routage, et pas seulement une.
+>La règle sœur est évaluée lorsqu’Akamai recrée la requête ayant échoué pour le nom d’hôte d’origine. Le critère de clé API sur la règle de routage empêche cette requête d’être envoyée à nouveau à Edge Optimize.
 >
 >Assurez-vous également que la règle de **routage Optimize at Edge** n’est pas remplacée par une règle de correspondance ultérieure qui modifie l’origine, le comportement de mise en cache ou l’identifiant de cache pour les mêmes requêtes. Si une autre règle correspondante réinitialise ces comportements, le routage ou la mise en cache de l’option Optimiser à Edge risque de ne pas fonctionner comme prévu.
 
-Si la valeur `x-edgeoptimize-request` d’en-tête de requête est `fo`, définissez l’en-tête de réponse sortante `x-edgeoptimize-fo` sur `true`.
+![Configurer la règle d’en-tête de réponse de basculement](/help/assets/optimize-at-edge/akamai-step9-failover-header.png)
 
-![Règles de basculement](/help/assets/optimize-at-edge/akamai-step9-failover-rules.png)
-
-Le basculement de site garantit que si Edge Optimize renvoie une erreur `4XX` ou `5XX`, la requête est automatiquement renvoyée à votre origine par défaut, de sorte que l’utilisateur final reçoive toujours une réponse.
+Le basculement de site garantit que si Edge Optimize renvoie une erreur ou expire, Akamai recrée la demande pour votre nom d’hôte d’origine afin que le visiteur reçoive toujours la réponse habituelle du site.
 
 | Scénario | Comportement |
 | --- | --- |
-| Edge Optimize renvoie `2XX` | La réponse optimisée est transmise à la clientèle. |
-| Edge Optimize renvoie `4XX` ou `5XX` | La demande est routée vers l’origine par défaut. |
+| Edge Optimize renvoie `2XX` ou `3XX` | La réponse optimisée est diffusée. `x-edgeoptimize-request-id` est présent. |
+| Edge Optimize renvoie `4XX`-`5XX`, ou l’origine expire | La requête est recréée pour le nom d’hôte d’origine. La réponse inclut `x-edgeoptimize-fo: true`. |
 
 **Vérifier la configuration**
 
@@ -208,7 +194,7 @@ La réponse ne doit **pas** contenir l’en-tête `x-edgeoptimize-request-id`. L
 | En-tête | Trafic de robots (optimisé) | Trafic humain (non affecté) |
 |---|---|---|
 | `x-edgeoptimize-request-id` | Présent : contient un ID de requête unique | Absent |
-| `x-edgeoptimize-fo` | Présent uniquement en cas de basculement (valeur : `1`) | Absent |
+| `x-edgeoptimize-fo` | Présent uniquement en cas de basculement (valeur : `true`) | Absent |
 
 {{verify-routing-status-in-ui}}
 
