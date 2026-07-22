@@ -4,26 +4,15 @@ description: Découvrez comment configurer Cloudflare BYOCDN pour Optimize at Ed
 feature: Opportunities
 autotag-review: '2026-07-15T17:46:02.378Z'
 TQID: 'https://experienceleague.adobe.com/ZgOX0yC8qyb13Y7YNCg3Y1A6Q3TSk9-mUQ8gthzQvLM'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e0828736-236a-487b-a478-5a635455eadc
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e0828736-236a-487b-a478-5a635455eadcid: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
 source-wordcount: 1919
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
@@ -41,11 +30,11 @@ Avant de configurer les règles de routage de CloudFlare Worker, vérifiez que v
 * Clé d’API Edge Optimize récupérée à partir de l’interface d’utilisation de LLM Optimizer. Pour connaître les étapes, voir [Récupération de vos clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Facultatif) Pour tester le routage de préproduction, consultez [Clé API de préproduction](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
-**Fonctionnement du routage**
+## Fonctionnement du routage
 
 Lorsque la configuration est correcte, une requête vers votre domaine (par exemple, `www.example.com/page.html`) provenant d’un agent utilisateur agentique est interceptée par le Cloudflare Worker et acheminée vers le serveur principal d’Edge Optimize. La requête du back-end inclut les en-têtes requis.
 
-**Test de la requête du back-end**
+### Test de la requête du serveur principal
 
 Vous pouvez vérifier le routage en adressant une requête directe au back-end d’Edge Optimize.
 
@@ -57,7 +46,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
   -H 'x-edgeoptimize-config: LLMCLIENT=TRUE;'
 ```
 
-**En-têtes obligatoires**
+### En-têtes requis
 
 Les en-têtes suivants doivent être définis sur les requêtes du serveur principal d’Edge Optimize :
 
@@ -85,13 +74,13 @@ Cette option utilise le bouton **Déployer sur Cloudflare** pour créer automati
 >
 >Utilisez cette option uniquement si vous **n’avez pas** de Cloudflare Worker existant sur votre domaine. Si vous avez déjà un worker, utilisez [Option 2 : Configuration manuelle](#option-2-manual-setup) pour ajouter la logique de routage Edge Optimize à votre worker existant.
 
-**Étape 1 : Déployer le worker**
+### Étape 1 : déployer le programme de travail
 
 Cliquez sur le bouton ci-dessous pour déployer le worker Edge Optimize sur votre compte Cloudflare :
 
 [![Déployer sur Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/adobe/llmo-code-samples/tree/main/optimize-at-edge/cloudflare/automation)
 
-**Étape 2 : Remplir le formulaire de déploiement**
+### Étape 2 : remplir le formulaire de déploiement
 
 Cliquez sur le bouton pour ouvrir la page de configuration des workers. Renseignez le formulaire comme suit :
 
@@ -115,7 +104,7 @@ Une fois le worker déployé, passez à l’étape [Ajouter un itinéraire à vo
 
 Suivez ces étapes pour créer et configurer manuellement le worker.
 
-**Étape 1 : créer le Cloudflare Worker**
+### Étape 1 : créer le programme de travail Cloudflare
 
 1. Connectez-vous à votre tableau de bord Cloudflare.
 2. Accédez à **Workers et pages** dans la barre latérale.
@@ -125,13 +114,13 @@ Suivez ces étapes pour créer et configurer manuellement le worker.
 
 ![Tableau de bord de Cloudflare Workers](/help/assets/optimize-at-edge/cloudflare-workers-dashboard.png)
 
-**Étape 2 : ajouter le code du worker**
+### Étape 2 : ajouter le code de programme de travail
 
 Après avoir créé le programme de travail, cliquez sur **Modifier le code** et remplacez le code par défaut par le code de [worker.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudflare/automation/src/worker.js). Si vous disposez déjà d’un programme de travail de Cloudflare, fusionnez le code avec votre code de programme de travail existant au lieu de le remplacer entièrement.
 
 Cliquez sur **Enregistrer et déployer** pour publier le worker.
 
-**Étape 3 : Configurer les variables d’environnement et les secrets**
+### Étape 3 : configuration des variables d’environnement et des secrets
 
 Les variables d’environnement stockent en toute sécurité une configuration sensible, telle que votre clé API.
 
@@ -167,7 +156,7 @@ Vous pouvez également configurer des itinéraires au niveau de la zone :
 
 ![Itinéraires de CloudFlare Worker](/help/assets/optimize-at-edge/cloudflare-worker-routes.png)
 
-**Vérification du comportement de basculement**
+### Vérification du comportement de basculement
 
 Si Edge Optimize n’est pas disponible ou renvoie une erreur, le programme de travail bascule automatiquement sur votre origine. Les réponses de basculement incluent l’en-tête `x-edgeoptimize-fo` :
 
@@ -178,7 +167,7 @@ Si Edge Optimize n’est pas disponible ou renvoie une erreur, le programme de t
 
 Vous pouvez surveiller les événements de basculement dans les journaux de Cloudflare Workers pour résoudre les problèmes.
 
-**Comprendre la logique du worker**
+### Comprendre la logique du programme de travail
 
 Le Cloudflare Worker met en œuvre la logique suivante :
 
@@ -200,11 +189,11 @@ Le Cloudflare Worker met en œuvre la logique suivante :
 
 7. **Gestion des redirections :** l’option `redirect: "manual"` garantit que les réponses de redirection d’Edge Optimize sont transmises à la clientèle sans que le programme de travail ne les suive.
 
-**Personnalisation de la configuration**
+## Personnalisation de la configuration
 
 Vous pouvez personnaliser le comportement du worker en modifiant les constantes de configuration en haut du code :
 
-**Liste de robots agentiques**
+### Liste de robots d’agence
 
 Modifiez le tableau `AGENTIC_BOTS` pour ajouter ou supprimer des agents utilisateur :
 
@@ -223,7 +212,7 @@ const AGENTIC_BOTS = [
 ];
 ```
 
-**Chemins ciblés**
+### Chemins ciblés
 
 Par défaut, toutes les pages HTML sont acheminées vers Edge Optimize. Pour limiter le routage à des chemins spécifiques, modifiez le tableau `TARGETED_PATHS` :
 
@@ -235,7 +224,7 @@ const TARGETED_PATHS = null;
 const TARGETED_PATHS = ['/', '/page.html', '/products', '/about-us'];
 ```
 
-**Comportements de configuration**
+### Configuration du basculement
 
 Par défaut, le programme de travail bascule sur toute erreur 4XX ou 5XX d’Edge Optimize. Personnalisez ce comportement :
 
@@ -253,7 +242,7 @@ const FAILOVER_ON_4XX = false;
 const FAILOVER_ON_5XX = false;
 ```
 
-**Points importants à prendre en compte**
+### Considérations importantes
 
 * **Comportement de basculement :** le worker bascule automatiquement sur votre origine si Edge Optimize renvoie une erreur (codes d’état 4XX ou 5XX) ou si la requête échoue en raison d’une erreur réseau. Le basculement utilise `EDGE_OPTIMIZE_TARGET_HOST` comme domaine d’origine (similaire à `F_Default_Origin` pour Fastly ou à `Default_Origin` pour CloudFront). Les réponses de basculement incluent l’en-tête `x-edgeoptimize-fo: 1`, que vous pouvez utiliser pour la surveillance et le débogage.
 
@@ -265,7 +254,7 @@ const FAILOVER_ON_5XX = false;
 
 * **Journalisation :** activez la journalisation de Cloudflare Workers pour surveiller les requêtes et résoudre les problèmes. Accédez à **Workers** > **votre worker** > **Journaux** pour afficher les journaux en temps réel. Le worker consigne les événements de basculement à des fins de débogage.
 
-**Résolution des incidents**
+## Dépannage
 
 | Problème | Cause possible | Solution |
 |-------|----------------|----------|
@@ -280,11 +269,11 @@ const FAILOVER_ON_5XX = false;
 | Échec des requêtes avec un hôte non valide | `EDGE_OPTIMIZE_TARGET_HOST` inclut le protocole (par exemple, `https://`). | Utilisez uniquement le nom de domaine sans protocole (par exemple, `example.com`, et non `https://example.com`). |
 | Erreur 530 lors du basculement | Cloudflare ne peut pas se connecter à l’origine ou la demande de basculement comporte des en-têtes non valides. | Assurez-vous que la fonction de basculement supprime les en-têtes Edge Optimize. Vérifiez que votre origine est accessible et que le DNS est correctement configuré. |
 
-**Autoriser Optimize at Edge via des règles de pare-feu (facultatif)**
+## Autoriser l’optimisation sur Edge via des règles de pare-feu (facultatif)
 
 {{waf-allowlist-setup}}
 
-**Vérifier la configuration**
+## Vérifier la configuration
 
 Une fois la configuration terminée, vérifiez que le trafic des robots est acheminé vers Edge Optimize et que le trafic humain n’est pas affecté.
 
