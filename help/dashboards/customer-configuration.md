@@ -20,10 +20,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: 72cc645997dbd5ae0442fefad73fe6a4e7ffe050
 workflow-type: tm+mt
-source-wordcount: 3935
-ht-degree: 57%
+source-wordcount: 3923
+ht-degree: 56%
 
 ---
 
@@ -48,9 +48,9 @@ Pour configurer la manière dont LLM Optimizer surveille et analyse la présenc
 
 Si vous utilisez l’[expérience orientée marque](/help/overview/quick-start.md#brand-centric-experience), accédez à **Gestion des marques** pour configurer les marques et les alias de marque, puis définissez les concurrents par rapport auxquels effectuer un suivi. **Gestion des marques** est également utilisé pour configurer des intégrations telles que Google Search Console, Adobe Analytics et le transfert du journal CDN, liées aux URL associées aux marques. Pour cela, cliquez sur les onglets correspondants : GSC, CDN, etc.
 
-![Gestion des marques : navigation dans l’application (expérience orientée marque)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+![Brand Management : navigation dans l’application (expérience orientée marque)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-![Gestion des marques : vue d’ensemble de la configuration (expérience orientée marque)](/help/assets/brand-centric-experience/brands-management-configuration.png)
+![Gestion des marques - Présentation de la configuration (expérience orientée marque)](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
 >[!IMPORTANT]
 >
@@ -225,7 +225,7 @@ Après avoir intégré le compte de la Google Search Console à LLM Optimizer, v
 1. Dans l’onglet Google Search Console, passez en revue la liste des rubriques et des prompts provenant de la Search Console.
    ![Liste des prompts](/help/dashboards/assets/prompts-list.png)
 1. Cliquez sur la catégorie de rubrique/prompt de votre choix pour développer la liste.
-1. Utilisez le bouton **Ajouter** pour ajouter des prompts à la liste. Vous pouvez également ajouter des prompts et des catégories en bloc à l’aide de **Ajouter tout**.
+1. Utilisez le bouton **Ajouter** pour ajouter des invites de la liste. Vous pouvez également ajouter des invites et des catégories en bloc à l&#39;aide de **Ajouter tout**.
    ![Ajouter des prompts](/help/dashboards/assets/add-prompts.png)
 1. Une fois la sélection effectuée, cliquez sur **Enregistrer** dans le message de notification.
 
