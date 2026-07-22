@@ -19,10 +19,10 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
-source-wordcount: 2360
-ht-degree: 91%
+source-wordcount: 2343
+ht-degree: 85%
 
 ---
 
@@ -40,7 +40,7 @@ Avant de configurer CloudFront, assurez-vous d’avoir les éléments suivants 
 * Clé d’API Edge Optimize récupérée à partir de l’interface d’utilisation de LLM Optimizer. Pour connaître les étapes, voir [Récupération de vos clés API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Facultatif) Pour tester le routage de préproduction, consultez [Clé API de préproduction](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
-**Étape 1 : Créer une origine Edge Optimize**
+## Étape 1 : Création de l’origine d’optimisation d’Edge
 
 **Navigation :** Console AWS > CloudFront > Distributions > [Votre distribution] > Onglet Origines.
 
@@ -66,7 +66,7 @@ Avant de configurer CloudFront, assurez-vous d’avoir les éléments suivants 
 
 ![Création d’origine Cloudfront](/help/assets/optimize-at-edge/cloudfront-origin-creation.png)
 
-**Étape 2 : Créer une fonction de demande de visionneuse**
+## Étape 2 : créer une fonction de requête de visionneuse
 
 **Navigation :** Console AWS > CloudFront > Fonctions
 
@@ -88,7 +88,7 @@ Avant de configurer CloudFront, assurez-vous d’avoir les éléments suivants 
 ![Création de la fonction Cloudfront](/help/assets/optimize-at-edge/cloudfront-function-creation.png)
 
 
-**Étape 3 : Configurer la politique de cache**
+## Étape 3 : configurer la politique de cache
 
 **Navigation :** Console AWS > CloudFront > Distributions > [Votre Distribution] > Comportements
 
@@ -98,7 +98,7 @@ Vérifiez la politique de cache actuellement associée à votre comportement. Cl
 * **Scénario B (politique personnalisée) :** l’option **Politique de cache** sélectionnée s’affiche avec un nom de politique que votre équipe ou vous avez créé (et non pas une politique fournie par AWS).
 * **Scénario C (politique gérée) :** l’option **Politique de cache** sélectionnée s’affiche avec un nom fourni par AWS, tel que `CachingOptimized`, `CachingDisabled` ou `CachingOptimizedForUncompressedObjects`. Elles ne peuvent pas être modifiées.
 
-**Scénario A : paramètres de cache hérités**
+### Scénario A : paramètres de cache hérités
 
 Si votre comportement utilise les paramètres de cache hérités :
 
@@ -119,7 +119,7 @@ Si votre comportement utilise les paramètres de cache hérités :
 
 4. Cliquez sur **Enregistrer les modifications**.
 
-**Scénario B : non hérité avec une politique de cache personnalisée**
+### Scénario B : non hérité avec une politique de cache personnalisée
 
 Si votre comportement utilise déjà une politique de cache personnalisée (une politique que vous avez créée, et non une politique gérée par AWS) :
 
@@ -129,7 +129,7 @@ Si votre comportement utilise déjà une politique de cache personnalisée (une 
 
 2. Cliquez sur **Modifier**.
 
-3. Il est recommandé de définir **Durée de vie minimale** sur `0`. Cependant, si la durée de vie minimale actuelle est déjà très courte, vous n’avez peut-être pas besoin de la modifier.
+3. Il est recommandé de définir **durée de vie minimale** sur `0`. Cependant, si votre TTL minimale actuelle est déjà très courte, vous n’aurez peut-être pas besoin de la modifier.
    ![Paramètres de durée de vie de la politique de cache](/help/assets/optimize-at-edge/cloudfront-cache-policy-ttl.png)
 
 4. Sous **Paramètres de la clé de cache** > **En-têtes**, ajoutez `x-edgeoptimize-config` et `x-edgeoptimize-url` à vos inclusions existantes.
@@ -137,7 +137,7 @@ Si votre comportement utilise déjà une politique de cache personnalisée (une 
 
 5. Cliquez sur **Enregistrer les modifications**.
 
-**Scénario C : non hérité avec une politique de cache gérée (AWS)**
+### Scénario C : non hérité avec une politique de cache gérée (AWS)
 
 Si votre comportement utilise une politique de cache gérée par AWS (par exemple, `CachingOptimized`), vous ne pouvez pas la modifier. Vous devez créer une nouvelle politique de cache personnalisée qui réplique les paramètres de la politique gérée et y ajoute les en-têtes Edge Optimize.
 
@@ -185,12 +185,12 @@ Si votre comportement utilise une politique de cache gérée par AWS (par exempl
    3. Sélectionnez `edgeoptimize-cache` dans la liste déroulante.
    4. Cliquez sur **Enregistrer les modifications**.
 
-**Étape 4 : créer la fonction Lambda@Edge (demande et réponse d’origine)**
+## Étape 4 : créer la fonction Lambda@Edge (requête et réponse d’origine)
 
 >[!IMPORTANT]
 >Les fonctions Lambda@Edge **doivent être créées dans la région `us-east-1` (Virginie du Nord)**. Il s’agit d’une exigence d’AWS. Même si la fonction est créée dans `us-east-1`, AWS la reproduit automatiquement vers tous les emplacements Edge CloudFront dans le monde entier, afin qu’elle s’exécute à l’emplacement Edge le plus proche de l’utilisateur ou l’utilisatrice. Dans la console AWS, vérifiez que vous vous trouvez dans la région `us-east-1` avant de continuer.
 
-**Créer la fonction Lambda**
+### Création de la fonction Lambda
 
 **Navigation :** Console AWS > Lambda
 
@@ -210,7 +210,7 @@ Si votre comportement utilise une politique de cache gérée par AWS (par exempl
 
 7. Notez le **nom du rôle d’exécution** affiché sous **Configuration** > **Autorisations** (par exemple, `edgeoptimize-origin-role-xxxxx`). Vous en aurez besoin lors des étapes suivantes.
 
-**Mettre à jour la politique de confiance du rôle d’exécution**
+### Mettre à jour la politique d’approbation du rôle d’exécution
 
 Le rôle créé automatiquement n’approuve que `lambda.amazonaws.com`. Pour Lambda@Edge, vous devez également ajouter `edgelambda.amazonaws.com`.
 
@@ -225,7 +225,7 @@ Le rôle créé automatiquement n’approuve que `lambda.amazonaws.com`. Pour La
 >[!WARNING]
 >Le principal de service `edgelambda.amazonaws.com` est **obligatoire** pour Lambda@Edge. Sans cela, CloudFront ne peut pas appeler votre fonction aux emplacements Edge.
 
-**Correction de la politique d’autorisation de CloudWatch Logs**
+### Correction de la politique d’autorisation des journaux CloudWatch
 
 Le rôle créé automatiquement est fourni avec une politique `AWSLambdaBasicExecutionRole` configurée pour Lambda standard, qui une région et un nom de groupe de journaux incorrects pour Lambda@Edge. Vous devez le mettre à jour.
 
@@ -242,7 +242,7 @@ Le rôle créé automatiquement est fourni avec une politique `AWSLambdaBasicExe
 >[!WARNING]
 >La région de l’ARN doit être `*` : Lambda@Edge s’exécute à l’emplacement Edge le plus proche de l’utilisateur ou l’utilisatrice, de sorte que les journaux sont écrits dans CloudWatch dans la région de cet emplacement Edge (par exemple, `ap-south-1`, `eu-west-1`), pas nécessairement `us-east-1`. Le groupe de journaux utilise un nom comportant un préfixe de zone géographique : `/aws/lambda/us-east-1.FUNCTION_NAME`, où `us-east-1` correspond toujours à la zone géographique d’origine de la fonction.
 
-**Correction du lien des journaux CloudWatch**
+### Correction du lien des journaux CloudWatch
 
 Par défaut, le raccourci **Afficher les journaux CloudWatch** de la console Lambda renvoie vers `/aws/lambda/FUNCTION_NAME` dans `us-east-1` — le mauvais groupe de journaux pour Lambda@Edge. Configurez un groupe de journaux personnalisé afin que le lien pointe vers le chemin d’accès correct.
 
@@ -263,7 +263,7 @@ Par défaut, le raccourci **Afficher les journaux CloudWatch** de la console Lam
 >[!NOTE]
 >Même après ce correctif, le lien **Afficher les journaux CloudWatch** ouvre le nom correct du groupe de journaux, mais peut n’afficher aucune donnée si vous vous trouvez dans la mauvaise région. Les journaux Lambda@Edge sont écrits dans la région Edge qui a traité la requête (par exemple, `eu-west-1`, `ap-south-1`), et non `us-east-1`. Vous devez toujours passer à la bonne région dans CloudWatch pour afficher les journaux.
 
-**Publier une version**
+### Publication d’une version
 
 1. Sur la page de la fonction, cliquez sur **Actions** (en haut à droite) > **Publier une nouvelle version**.
 
@@ -275,7 +275,7 @@ Par défaut, le raccourci **Afficher les journaux CloudWatch** de la console Lam
 4. Copiez ou notez l’**ARN de la fonction** : vous en aurez besoin à l’étape suivante.
    ![ARN lambda](/help/assets/optimize-at-edge/cloudfront-lambda-arn.png)
 
-**Étape 5 : associer les fonctions et la politique de mise en cache à un comportement**
+## Étape 5 : associer les fonctions et la politique de cache au comportement
 
 **Navigation :** Console AWS > CloudFront > Distributions > [Votre Distribution] > Comportements
 
@@ -294,11 +294,11 @@ Par défaut, le raccourci **Afficher les journaux CloudWatch** de la console Lam
 
 4. Cliquez sur **Enregistrer les modifications**.
 
-**Autoriser Optimize at Edge via des règles de pare-feu (facultatif)**
+## Autoriser l’optimisation sur Edge via des règles de pare-feu (facultatif)
 
 {{waf-allowlist-setup}}
 
-**Étape 6 : tester la configuration**
+## Étape 6 : tester la configuration
 
 **1. Tester le trafic de robots (doit être optimisé)**
 
@@ -372,7 +372,7 @@ Vous pouvez également accéder à l’onglet **Métriques** dans **Console AWS 
 
 Si le groupe de journaux n’apparaît pas, vérifiez que les autorisations IAM ont été correctement mises à jour à l’étape 4. Vérifiez également les autres régions AWS à proximité : l’emplacement Edge qui a servi votre demande peut ne pas être celui que vous attendez.
 
-**Résolution des incidents**
+## Dépannage
 
 | Problème | Cause possible | Solution |
 |-------|----------------|----------|
@@ -382,16 +382,16 @@ Si le groupe de journaux n’apparaît pas, vérifiez que les autorisations IAM 
 | Le cache ne respecte pas `cache-control: no-store` | La durée de vie minimale est peut être trop élevée. | Définissez la durée de vie minimale sur `0` dans votre politique de cache (étape 3). Si la durée de vie minimale est déjà très courte, le problème doit venir d’ailleurs. |
 | Trafic régulier (non agentique) interrompu après la configuration | Mauvaise configuration de la politique de cache | Si vous avez créé une nouvelle politique de cache (scénario C), assurez-vous d’avoir répliqué tous les paramètres de la politique gérée d’origine. |
 
-**Désactivation et réactivation d’Optimize à l’emplacement Edge**
+## Désactivation et réactivation d’Optimize dans Edge
 
 La fonction Lambda@Edge (`edgeoptimize-origin`) est associée aux événements de demande et de réponse d’origine de votre comportement CloudFront. Comme elle s’exécute en ligne sur chaque demande (humaine et agentique) passant par ce comportement, une panne de Lambda@Edge aura un impact sur l’ensemble du trafic réel, et pas seulement sur les demandes agentiques. Si vous détectez une panne de Lambda@Edge, supprimez immédiatement les associations de fonctions pour rétablir le flux de trafic normal vers votre origine par défaut.
 
-**Détection d’une panne de Lambda@Edge**
+### Comment détecter une panne de Lambda@Edge
 
 * **Tableau de bord d’intégrité du service AWS** — Dans le [Tableau de bord d’intégrité du service AWS](https://health.aws.amazon.com/health/status), vérifiez si un incident actif affecte **Amazon CloudFront** ou **AWS Lambda**. Si une panne globale ou régionale s’affiche ici, cela confirme que le problème vient de l’infrastructure AWS plutôt que de votre configuration.
 * **Erreurs Lambda@Edge** — Accédez à **Console AWS > CloudFront > Surveillance > [Votre distribution]**. Ouvrez l’onglet **Erreurs Lambda@Edge** et consultez le graphique **Erreurs d’exécution**. Si le taux d’erreurs est élevé, Lambda@Edge est peut-être en panne.
 
-**Désolidarisation de la fonction Lambda@Edge**
+### Désolidarisation de la fonction Lambda@Edge
 
 **Navigation :** Console AWS > CloudFront > Distributions > [Votre distribution] > Comportements
 
@@ -415,7 +415,7 @@ La fonction Lambda@Edge (`edgeoptimize-origin`) est associée aux événements d
 
 Une fois déployé, l’ensemble du trafic est dirigé directement vers votre origine par défaut. Aucune configuration n’est supprimée ; la fonction Lambda et ses associations peuvent être restaurées à tout moment.
 
-**Rattachement de la fonction Lambda@Edge**
+### Rattachement de la fonction Lambda@Edge
 
 **Navigation :** Console AWS > CloudFront > Distributions > [Votre distribution] > Comportements
 

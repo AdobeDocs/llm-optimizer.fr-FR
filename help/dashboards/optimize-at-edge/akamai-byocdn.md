@@ -18,10 +18,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 9d2324e23e07f01e16c4fc16c96213d03214918f
+source-git-commit: 4f0c6d398e2aab337485b7e26cf6f2aba56375fd
 workflow-type: tm+mt
 source-wordcount: 795
-ht-degree: 76%
+ht-degree: 70%
 
 ---
 
@@ -42,7 +42,7 @@ Avant de configurer les règles du gestionnaire de propriétés Akamai, vérifie
 
 La règle Akamai Property Manager suivante redirige le trafic des pages HTML agentiques vers Edge Optimize. La configuration contient les étapes suivantes :
 
-**1. Définir les critères de routage (correspondance de l’agent utilisateur et du trafic HTML)**
+## &#x200B;1. Définir des critères de routage (correspondance de trafic Agent-utilisateur et HTML)
 
 Définir le routage pour les agents utilisateurs suivants :
 
@@ -64,7 +64,7 @@ Définir le routage pour les agents utilisateurs suivants :
 
 ![Définir les critères de routage](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
-**2. Définir l’origine et le comportement SSL**
+## &#x200B;2. Définir l’origine et le comportement SSL
 
 Définir l’origine comme `live.edgeoptimize.net` et faire correspondre le SAN à `*.edgeoptimize.net`
 
@@ -74,17 +74,17 @@ Définir l’origine comme `live.edgeoptimize.net` et faire correspondre le SAN 
 
 ![Définir l’origine et le comportement SSL](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
-**3. Définir la variable de clé de cache**
+## &#x200B;3. Définir la variable de clé de cache
 
 Définir la variable de clé de cache `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` sur `LLMCLIENT=TRUE;X_FORWARDED_HOST={{builtin.AK_HOST}}`
 
 ![Définir la variable de clé de cache](/help/assets/optimize-at-edge/akamai-step3-cachekey.png)
 
-**4. Règles de mise en cache**
+## &#x200B;4. Règles de mise en cache
 
 ![Règles de mise en cache](/help/assets/optimize-at-edge/akamai-step4-rules.png)
 
-**5. Modifier les en-têtes des requêtes entrantes**
+## &#x200B;5. Modifier les en-têtes des demandes entrantes
 
 Définissez les en-têtes de requête entrante suivants :
 `x-edgeoptimize-api-key` à la clé API récupérée depuis LLMO
@@ -93,7 +93,7 @@ Définissez les en-têtes de requête entrante suivants :
 
 ![Modifier les en-têtes des requêtes entrantes](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
-**Autoriser Optimize at Edge via des règles de pare-feu (facultatif)**
+## Autoriser l’optimisation sur Edge via des règles de pare-feu (facultatif)
 
 {{waf-allowlist-setup}}
 
@@ -103,25 +103,25 @@ Définissez les en-têtes de requête entrante suivants :
 >
 >Placez également sur la liste autorisée l’agent utilisateur `*AdobeEdgeOptimize/1.0*` et l’en-tête `x-edgeoptimize-fetcher-key` dans Akamai Bot Manager.
 
-**6. Modifier les en-têtes de réponse entrante**
+## &#x200B;6. Modifier les en-têtes de réponse entrante
 
 ![Modifier les en-têtes de réponse entrante](/help/assets/optimize-at-edge/akamai-step6-response.png)
 
-**7. Modification de l’ID de cache**
+## &#x200B;7. Modification de l’ID de cache
 
 ![Modification de l’ID de cache](/help/assets/optimize-at-edge/akamai-step7-cacheid.png)
 
-**8. Modifier les en-têtes des requêtes sortantes**
+## &#x200B;8. Modifier Les En-Têtes De Requête Sortante
 
 Définir l’en-tête `x-forwarded-host` sur `{{builtin.AK_HOST}}`
 
 ![Modifier les en-têtes des requêtes entrantes](/help/assets/optimize-at-edge/akamai-step8-outgoing-request.png)
 
-**9. Basculement du site**
+## &#x200B;9. Basculement de site
 
 La configuration de basculement de site comporte deux parties : un comportement de basculement dans la règle de routage principale Optimiser pour Edge et une règle sœur qui ajoute un en-tête de réponse lorsque le basculement se produit.
 
-**9a. Configurez le comportement de basculement de site**
+### 9 bis. Configuration du comportement de basculement de site
 
 Dans la règle de routage principale Optimiser sur Edge , créez une règle enfant nommée **Comportement de basculement de site**. Définissez-la sur **Ne correspond à aucun** et ajoutez les critères suivants :
 
@@ -132,7 +132,7 @@ Dans la règle de routage principale Optimiser sur Edge , créez une règle enfa
 
 ![Configuration du comportement de basculement de site](/help/assets/optimize-at-edge/akamai-step9-failover-settings.png)
 
-**9b. Configurez la règle d&#39;en-tête de réponse de basculement**
+### 9 ter. Configuration de la règle d’en-tête de réponse de basculement
 
 >[!IMPORTANT]
 >
@@ -158,7 +158,7 @@ Le basculement de site garantit que si Edge Optimize renvoie une erreur ou expir
 | Edge Optimize renvoie `2XX` ou `3XX` | La réponse optimisée est diffusée. `x-edgeoptimize-request-id` est présent. |
 | Edge Optimize renvoie `4XX`-`5XX`, ou l’origine expire | La requête est recréée pour le nom d’hôte d’origine. La réponse inclut `x-edgeoptimize-fo: true`. |
 
-**Vérifier la configuration**
+## Vérifier la configuration
 
 Une fois la configuration terminée, vérifiez que le trafic des robots est acheminé vers Edge Optimize et que le trafic humain n’est pas affecté.
 
